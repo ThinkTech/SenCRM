@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
-	<name>Customers</name>
+	<name>Company</name>
 	<main>true</main>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
@@ -11,7 +11,7 @@
 	<version>1.0</version>
 	<menus>
 		<menu>
-			<menuItem label="Customers" />
+			<menuItem label="Customers" icon="customers-16"/>
 			<menuItem label="Prospects" url="prospects" icon="prospects-16"/>
 			<menuItem label="Partners" url="partners" icon="partners-16"/>
 		</menu>
