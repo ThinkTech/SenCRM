@@ -1,14 +1,11 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<h1 class="preferences-32">Preferences</h1>
 <div id="content">
-
+<h1 class="preferences-32">Preferences <a title="Help" class="help-16">Help</a></h1>
 <fieldset class="preferences">
 	<legend>Templates</legend>
 	<div id="extensions">
-	
-	   <s:iterator value="#application.templateManager.templates">
-	   
-	      <div class="extension" style="display:${backend?'inline-block':'none'}">
+	   <s:iterator value="templateManager.backendTemplates">
+	      <div class="extension">
 	      <img class="selected" src="${images}/selected-32.png" style="display:${template==name?'inline-block':'none'}"/>
 		  <a>
 		  <img src="${thumbnail}"/>
@@ -29,11 +26,7 @@
 				  <span>Version : ${version}</span>
 		 </div>
 		</div>
-		
 	   </s:iterator>
-			
 	</div>
 </fieldset>
-
 </div>
-<script type="text/javascript" src="${js}/preferences.js"></script>

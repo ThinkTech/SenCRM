@@ -108,14 +108,16 @@
 	padding-left : 3.9%;
 }
 
-.account fieldset,.permissions fieldset fieldset {
+.account fieldset {
 	display : inline-block;
-	width : 31%;
+	width : 45%;
 	margin-left : 1%;
 	vertical-align : top;
 	line-height : 1.45em;
-	padding : 4px;
+	padding : 5px;
 	margin-top : 4px;
+	margin-bottom : 25px;
+	padding-bottom : 10px;
 }
 
 #permissions > fieldset {
@@ -124,14 +126,14 @@
 
 .account fieldset > span {
 	display : inline-block;
-	width : 44%;
+	width : 57%;
 	text-align : left;
 	white-space : nowrap;
 }
 
 .account fieldset > span.text-right {
 	text-align : right;
-    width : 38%;
+    width : 25%;
 }
 
 .account h2 {
@@ -144,8 +146,46 @@
 	line-height : 1.5em;
 }
 
+.account .change-password input[type=password] {
+	margin-top : 5px;
+}
+
 .account .change-password input[type=submit] {
 	float : right;
 	margin-right : 15px;
 	margin-top : 10px;
+}
+
+@media(max-width:1199px ){
+	.account fieldset{width:60%}
+}
+
+@media(max-width:1024px ){
+	.account fieldset{width:70%} 
+}
+  
+@media(max-width:991px ){
+	.account fieldset{width:70%} 
+	.account img{width:32px;height:32px}
+}
+
+
+@media(max-width:767px ){
+	.account fieldset{width:70%} 
+	.account img{width:32px;height:32px}
+	
+}
+
+@media(max-width:640px){
+	.account fieldset{width:85%} 
+	.account img{width:32px;height:32px;display:none}
+	.account fieldset > span {font-size : 85%;width:70%}
+}
+
+@media(max-width:480px){
+}
+@media(max-width:360px){
+	.account fieldset > span.text-right {display : none}
+}
+@media(max-width:320px){
 }

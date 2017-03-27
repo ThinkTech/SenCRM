@@ -17,10 +17,14 @@
 		</menu>
 	</menus>
 	<actions>
-		<action name="login"  url="login"  global="true" script="users.groovy" method="login" />
-		<action name="logout" url="logout" global="true" script="users.groovy" method="logout">
+		<action name="login"  url="login"  global="true" script="module.groovy" method="login"/>
+		<action name="logout" url="logout" global="true" script="module.groovy" method="logout">
 			<result type="redirect">/</result>
 		</action>
-		<action name="selectTemplate" url="preferences/templates/select"  script="users.groovy" method="selectTemplate"/>
+		<action name="selectTemplate" url="preferences/templates/select"  script="module.groovy" method="selectTemplate"/>
+		<action name="changePassword" url="changePassword"  script="module.groovy" method="changePassword">
+		    <result type="redirect">/users</result>
+		</action>
+		
 	</actions>
 </module>

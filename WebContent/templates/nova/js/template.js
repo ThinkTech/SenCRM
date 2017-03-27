@@ -1,30 +1,27 @@
-page.form.edit = () => {
-	$('#create').magnificPopup('open');
-	page.form.reset();
+const toggle = () => {
+	const aside = $("aside");
+	if(aside.hasClass("toggled")) {
+		aside.removeClass("toggled");
+	}else {
+		aside.addClass("toggled");
+	}
 };
-
-page.form.reset = () => {
-	const wizard = $('#wizard').smartWizard('goToStep',1);
-	const length = $("> div",wizard).length;
-	for(var i=2;i<=length;i++) wizard.smartWizard('disableStep',i);
-	setTimeout(() => $("input:eq(0)",$(".stepContainer div:eq(0)")).focus(), 100);
-};
-
-const onFinish = () => {
-	page.form.submit();
-	$('#create').magnificPopup('close');
-	return true;
-};
-
-const onShowStep = (obj,context) => {
-	$("input:eq(0)",$(".stepContainer div").eq(context.toStep-1)).focus();
-	return true;
-};
-
-page.form.init = () => {
-	$('#form').css("display","block").addClass("mfp-hide");
-	head.load("templates/nova/js/jquery.smartWizard.js","templates/nova/js/jquery.magnific-popup.min.js", () => {
-		$('#wizard').addClass("swMain").smartWizard({noForwardJumping:true,onShowStep:onShowStep,onFinish:onFinish});
-		$('#create').magnificPopup({type:'inline'}).click(() => page.form.reset());
+document.addEventListener("DOMContentLoaded", () => {
+	$("body").click(function(event) {
+		const aside = $("aside");
+		if(!$("aside,aside h1, aside li").is($(event.target)) && !$("button.aside-toggle").is($(event.target)) && !$("button.aside-toggle span.icon-bar").is($(event.target))) {
+			aside.removeClass("toggled");
+		}
 	});
-};
+	$(window).scroll(function(){
+	    if ($(this).scrollTop() > 300) {
+	      $('.scrollToTop').fadeIn();
+	    } else {
+	      $('.scrollToTop').fadeOut();
+	    }
+	});
+	$('.scrollToTop').click(function(){
+	    $('html, body').animate({scrollTop : 0},800);
+	    return false;
+	});
+});
