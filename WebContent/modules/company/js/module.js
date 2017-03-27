@@ -26,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		$("<div class='row-count'/>").html(rows + " records").insertAfter("#list");
 	}
 	$("#search input").focus().val($("#search input").val());
+	$("a.refresh-16").attr("href",window.location.href);
 });

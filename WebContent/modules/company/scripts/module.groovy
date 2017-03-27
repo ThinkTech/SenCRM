@@ -1,3 +1,4 @@
+
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig
@@ -37,7 +38,15 @@ class TicketAction extends ActionSupport {
 	def search = new Search()
 	def tickets
 	
-	def createTicket() {
+	def createCustomer() {
+	    SUCCESS
+	}
+	
+	def createProspect() {
+	    SUCCESS
+	}
+	
+	def createPartner() {
 	    SUCCESS
 	}
 	

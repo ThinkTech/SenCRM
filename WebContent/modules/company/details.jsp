@@ -67,7 +67,4 @@
 	  'instanceReady': function(evt) {
 		  CKEDITOR.instances.editor.focus(); 
   }}});
-  document.addEventListener("DOMContentLoaded", () => {
-		$("a.refresh-16").attr("href",window.location.href);
-	});
 </script>

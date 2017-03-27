@@ -17,7 +17,15 @@
 		</menu>
     </menus>
     <actions>
-		<action url="createTicket" method="createTicket">
+		<action url="customers/create" method="createCustomer">
+			<result>create</result>
+		</action>
+		
+		<action url="prospects/create" method="createProspect">
+			<result>create</result>
+		</action>
+		
+		<action url="partners/create" method="createPartner">
 			<result>create</result>
 		</action>
 		
