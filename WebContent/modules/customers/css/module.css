@@ -6,6 +6,23 @@
 	background-image: url("../images/icon-32.png");
 }
 
+.prospects-16 {
+	background-image: url("../images/prospects-16.png");
+}
+
+.prospects-32 {
+	background-image: url("../images/prospects-32.png");
+}
+
+.partners-16 {
+	background-image: url("../images/partners-16.png");
+}
+
+.partners-32 {
+	background-image: url("../images/partners-32.png");
+}
+
+
 .form-ticket {
 	margin-top : 5px;
 }

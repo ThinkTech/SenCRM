@@ -35,7 +35,7 @@
 		   	      <h1 class="icon-16">${menu.label}</h1>
 		   	   		<ul>
 		   	         <s:iterator value="#menu.menuItems">
-						<li class="icon-16"><a href="${url}" title="${label}">${label}</a></li>
+						<li class="icon-16 ${icon}"><a href="${url}" title="${label}">${label}</a></li>
 					</s:iterator>
 					 </ul>
 			   </s:iterator>

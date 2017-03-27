@@ -12,8 +12,8 @@
 	<menus>
 		<menu>
 			<menuItem label="Customers" />
-			<menuItem label="Prospects" url="prospects" />
-			<menuItem label="Partners" url="partners" />
+			<menuItem label="Prospects" url="prospects" icon="prospects-16"/>
+			<menuItem label="Partners" url="partners" icon="partners-16"/>
 		</menu>
     </menus>
     <actions>
