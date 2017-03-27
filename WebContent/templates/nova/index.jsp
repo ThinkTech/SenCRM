@@ -18,7 +18,7 @@
 		<header>
 		   <div class="logo">
 		     <img src="${logo}"/>
-		     <h2 class="app_title">SenCRM</h2>
+		     <h2>SenCRM</h2>
 		   </div>
 		   <div class="topmenu">
 		         <s:iterator value="modules">
