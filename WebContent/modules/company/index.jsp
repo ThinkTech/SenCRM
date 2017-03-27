@@ -7,7 +7,7 @@
 	  <option value="">ID</option>
 	  <option value="">First Name</option>
 	   <option value="" >Last Name</option>
-       <option value="">Date Of Birth</option>
+       <option value="">Type</option>
        <option value="">Country</option>
        <option value="">Created By</option>
 	</select>
@@ -20,8 +20,7 @@
        <th title="ID">ID</th>
        <th title="First Name">First Name</th>
        <th title="Last Name">Last Name</th>
-       <th title="Profession">Profession</th>
-       <th title="Date Of Birth">Date Of Birth</th>
+       <th title="Type">Type</th>
        <th title="Country">Country</th>
        <th title="Created By">Created By</th>
     </tr>
