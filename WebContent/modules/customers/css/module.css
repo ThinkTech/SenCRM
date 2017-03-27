@@ -1,0 +1,228 @@
+.icon-16 {
+	background-image: url("../images/icon-16.png");
+}
+
+.icon-32 {
+	background-image: url("../images/icon-32.png");
+}
+
+.form-ticket {
+	margin-top : 5px;
+}
+
+.form-ticket fieldset > div {
+	width : 80%;
+	margin-left : 1.2%;
+	padding : 20px;
+}
+
+.form-ticket fieldset label {
+	width : 29%;
+	display : inline-block;
+	text-align : right;
+	padding-top : 10px;
+	vertical-align : top;
+	font-weight : bold;
+	background-color : #f8f8f8;
+	border : 1px solid #eee;
+	border-radius : 3px;
+	white-space : nowrap;
+	height : 22px;
+	padding-right : 1px;
+}
+
+
+.form-ticket  input,.form-ticket  select {
+	display : inline-block;
+	margin-bottom : 10px;
+	width : 55%;
+}
+
+.form-ticket div.message {
+	height : 250px;
+	border : 1px solid #eee;
+	background-color : #fff;
+}
+
+.form-ticket textarea {
+	width : 90%;
+	display : none;
+}
+
+.form-ticket input[type=submit]{
+	width : 80px;
+	margin-left : 80%;
+	border-radius : 2px;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+.close-ticket {
+	width : auto;
+	display : inline-block;
+	padding : 3px;
+	border-radius : 2px;
+	border:1px solid #ada1a1;
+	float : right;
+	color : #000;
+	font-size : 68%;
+	margin-right : 50px;
+	cursor : pointer;
+	background-repeat : no-repeat;
+	background-image : url(../images/icon-16.png);
+	background-position : 0px 4px;
+	padding-left : 19px;
+	padding-right : 5px;
+}
+
+.ticket-details {
+   width : 36%;	
+   display : inline-block;
+   vertical-align : top;
+   margin-top : 3px;
+}
+
+.ticket-messages  {
+	margin-top : 10px;
+}
+.ticket-messages form textarea {
+	display : none;
+}
+
+.ticket-messages form > div {
+   margin : auto;	
+   margin-top : 10px;
+   height : 250px;
+   border : 1px solid #eee;
+   background-color : #fff;
+}
+
+.form-ticket h3, .ticket-messages h4 {
+	background-image : url(../images/message-16.png);
+	background-repeat : no-repeat;
+	padding-left : 18px;
+	background-position-y: 5px;
+	margin-left : 10px;
+}
+
+.form-ticket h3 {
+	background-position-y: 3px;
+	margin-top : -3px;
+	margin-bottom : 6px;
+	margin-left : 0px;
+}
+
+.ticket-message {
+	margin : auto;
+	background-color : #fdfdfd;
+	padding : 8px;
+	padding-left : 10px;
+	padding-top : 0px;
+	font-size : 85%;
+}
+
+
+.ticket-message-header {
+	margin-bottom : 8px;
+	font-size : 82%;
+}
+
+.ticket-message-header span.user-type {
+	width : auto;
+	display : inline-block;
+	padding : 2px;
+	border-radius : 2px;
+	border:1px solid #ada1a1;
+	background-repeat : no-repeat;
+	padding-left : 19px;
+	padding-right : 5px;
+	background-position : 2px 1.5px;
+	font-size : 95%;
+	text-transform : capitalize;
+}
+
+.customer {
+	background-color : #fff;
+}
+
+.support {
+	background-color : #82dde0;
+}
+
+.ticket-message-header span.user-name {
+	width : auto;
+	display : inline-block;
+	font-weight : bold;
+	margin-left : 2px;
+	padding-top : 5px;
+}
+
+.ticket-message-header .time {
+	float : right;
+	margin-right : 1%;
+	display : inline-block;
+	width : 25%;
+	font-size : 80%;
+	color : #4c4444;
+	font-weight : bold;
+} 
+
+.ticket-details span  {
+	font-size : 70%;
+	display : inline-block;
+}
+
+.ticket-details span.title  {
+	width : 50%;
+}
+
+
+/*--------------------*/
+/* Responsive Style */
+/*--------------------*/
+
+
+@media(max-width:1199px ){
+	
+}
+
+@media(max-width:1024px ){
+	
+}
+  
+@media(max-width:991px ){
+	.ticket-details span.title {width:100%;text-align:left}
+	.form-ticket fieldset > div {width : 100%;}
+	.form-ticket fieldset label {width:40%}
+	.form-ticket input[type=submit]{margin-left : 75%;}
+}
+
+
+@media(max-width:767px ){
+	.ticket-details {width:37%}
+	.ticket-details span {font-size:70%}
+	.ticket-details span:not(.title) {padding-left:2px}
+	.form-ticket {margin-top : 10px}
+	.ticket-messages h4 {background-position-y : 7px}
+}
+@media(max-width:640px){
+	.ticket-details span {white-space:nowrap}
+	.ticket-details span.title {width:100%;text-align:left}
+	.ticket-message {padding-left:5px}
+	.ticket-message-header{font-size:75%}
+	.ticket-message-header .time {display:none}
+	.form-ticket input[type=submit]{margin-left : 65%;}
+}
+ 
+@media(max-width:480px ){
+	.ticket-details {width:90%}
+	.ticket-messages h4 {background-position-y : 7px}
+	.form-ticket input[type=submit]{margin-left : 55%;}
+}
+@media(max-width:360px ){
+	
+}
+@media(max-width:320px ){
+	.form-ticket input[type=submit]{margin-left : 45%;margin-top : 40px;}
+	.scrollToTop {bottom : 5px}
+}

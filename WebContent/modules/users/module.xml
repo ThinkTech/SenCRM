@@ -5,7 +5,7 @@
 	<administrable>false</administrable>
 	<author>Mamadou Lamine Ba</author>
 	<authorEmail>laminba2003@yahoo.fr</authorEmail>
-	<description>module to manage users</description>
+	<description>module for managing users</description>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2016</copyright>
 	<license>GNU/GPL</license>

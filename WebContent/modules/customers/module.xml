@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>Customers</name>
+	<main>true</main>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>module for managing customers, prospects and partners</description>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<menus>
+		<menu>
+			<menuItem label="Customers" />
+			<menuItem label="Prospects" url="prospects" />
+			<menuItem label="Partners" url="partners" />
+		</menu>
+    </menus>
+    <actions>
+		<action url="createTicket" method="createTicket">
+			<result>create</result>
+		</action>
+		
+		<action url="saveTicket"  method="saveTicket">
+			<result type="redirect">/tickets</result>
+		</action>
+		
+		<action url="opened/details" method="showTicket">
+			<result>details</result>
+			<result name="error" type="redirect">/tickets</result>
+		</action>
+		
+		<action url="closed/details" method="showTicket">
+			<result>details</result>
+			<result name="error" type="redirect">/tickets/closed</result>
+		</action>
+		
+		<action  url="addMessage"  method="addMessage"/>
+		
+		<action url="closeTicket"  method="closeTicket">
+			<result type="redirect">/tickets/closed</result>
+		</action>
+		
+		<action url="closed" method="showClosedTickets">
+			<result>closed</result>
+		</action>
+		
+		<action url="opened/search" method="searchOpenedTickets">
+			<result>index</result>
+		</action>
+		
+		<action url="closed/search" method="searchClosedTickets">
+			<result>closed</result>
+		</action>
+		
+	</actions>
+</module>
