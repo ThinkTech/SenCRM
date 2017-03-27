@@ -33,20 +33,33 @@ class Search {
 
 class TicketAction extends ActionSupport {
 
+    def entity
 	def ticket = new Ticket()
 	def message = new Message()
 	def search = new Search()
 	def tickets
 	
+	
+	def showProspects() {
+	    SUCCESS
+	}
+	
+	def showPartners() {
+	    SUCCESS
+	}
+	
 	def createCustomer() {
+	    entity = "customer"
 	    SUCCESS
 	}
 	
 	def createProspect() {
+	    entity = "prospect"
 	    SUCCESS
 	}
 	
 	def createPartner() {
+	    entity = "partner"
 	    SUCCESS
 	}
 	

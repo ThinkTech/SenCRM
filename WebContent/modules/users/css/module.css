@@ -10,10 +10,6 @@
 	background-image: url("../images/preferences-32.png");
 }
 
-#content .preferences {
-	width : 100%;
-}
-
 #extensions {
 	padding : 10px;
 }
@@ -127,13 +123,13 @@
 .account fieldset > span {
 	display : inline-block;
 	width : 57%;
-	text-align : left;
 	white-space : nowrap;
+	padding-top : 2px;
 }
 
 .account fieldset > span.text-right {
-	text-align : right;
     width : 25%;
+    padding-top : 0px;
 }
 
 .account h2 {

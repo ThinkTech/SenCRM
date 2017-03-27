@@ -113,7 +113,7 @@ h1.agile_head {
 
 h1.app_title {
 	font-size: 2.1em;
-    color: #e9f7f9;
+    color: #1d0c05;
     font-weight: 600;
     letter-spacing: 2px;
     margin-left : 20px;
@@ -127,7 +127,6 @@ h1.app_title img {
 h1.app_title span {
 	display : block;
 	margin-left:50px;
-	color : #1d0c05;
 }
 
 #wait {padding-top : 23%;padding-left : 47%}
@@ -168,6 +167,7 @@ h1.app_title span {
 	font-weight: 600;
 	padding: 0.7em 0;
 	letter-spacing: 1px;
+	margin : auto;
 }
 .w3_agile_login input[type="submit"]:hover,.agile_its_registration input[type="submit"]:hover,.agile_its_registration input[type="reset"]:hover{
 	color: #000;

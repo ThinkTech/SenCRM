@@ -17,6 +17,19 @@
 		</menu>
     </menus>
     <actions>
+    
+        <action url="customers">
+			<result>index</result>
+		</action>
+		
+		<action url="prospects" method="showProspects">
+			<result>prospects</result>
+		</action>
+		
+		<action url="partners" method="showPartners">
+			<result>partners</result>
+		</action>
+		
 		<action url="customers/create" method="createCustomer">
 			<result>create</result>
 		</action>
