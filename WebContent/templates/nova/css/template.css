@@ -382,3 +382,6 @@ span a {
 	aside {position : fixed;width:200px;margin-left : 27px;margin-top:6px;z-index : 11;}
 	aside.toggled {display:block;}
 }
+@media(max-width:320px ){
+	.scrollToTop {bottom : 5px}
+}
