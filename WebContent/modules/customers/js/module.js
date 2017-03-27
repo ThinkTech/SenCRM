@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	var tbody = $("tbody");
 	const rows = $("tr",tbody).length; 
 	if(!rows) {
-		tbody.append("<tr class='empty'><td valign='top' colspan='"+$("th").length+"'>no ticket found</td></tr>");
-		$(".row-count").html("0 rows");
+		tbody.append("<tr class='empty'><td valign='top' colspan='"+$("th").length+"'>no record found</td></tr>");
+		$("<div class='row-count'/>").html("0 records").insertAfter("#list");
 	}else {
 		page.table.paginate();
-		$(".row-count").html(rows + " rows");
+		$("<div class='row-count'/>").html(rows + " records").insertAfter("#list");
 	}
 	$("#search input").focus().val($("#search input").val());
 });

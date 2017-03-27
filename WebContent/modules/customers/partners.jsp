@@ -46,7 +46,7 @@
 </table>
 
 </div>
-<div class="row-count"></div>
+
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
