@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>HRM</name>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>module for managing human resources</description>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<menus>
+		<menu>
+			<menuItem label="Employees"/>
+		</menu>
+    </menus>
+    <actions>
+    
+		
+	</actions>
+</module>

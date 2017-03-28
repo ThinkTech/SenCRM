@@ -1,4 +1,3 @@
-
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig

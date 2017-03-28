@@ -21,9 +21,9 @@
 <fieldset>
    <legend>Change your password </legend>
 	<span class="text-right">New : </span>
-	<span><input type="password" required/> </span><br/>
+	<input type="password" required/><br/>
 	<span class="text-right">Confirm : </span>
-	<span><input type="password" required/> </span>
+	<input type="password" required/>
 	<input type="submit" value="Change"/>
 	<br clear="all"/>
 </fieldset>

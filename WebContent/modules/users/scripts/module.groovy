@@ -11,7 +11,7 @@ class UserAction extends ActionSupport {
 		  user.lastName = "Ba"
 		  user.role = "support"
 		  session.setAttribute("user",user)
-		  def module = moduleManager.main
+		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
 		  response.setContentType("application/json")
 		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
@@ -20,7 +20,7 @@ class UserAction extends ActionSupport {
 		  user.lastName = "Ba"
 		  user.role = "customer"
 		  session.setAttribute("user",user)
-		  def module = moduleManager.main
+		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
 		  response.setContentType("application/json")
 		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))

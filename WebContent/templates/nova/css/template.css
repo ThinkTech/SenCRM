@@ -338,11 +338,6 @@ fieldset {
 	font-family : Maven Pro;
 }
 
-legend {
-	 color : #000;
-	 line-height : 1.3em;
-}
-
 select,input {
 	background : #feffdb;
 	border : 1px solid #06d0d8;
