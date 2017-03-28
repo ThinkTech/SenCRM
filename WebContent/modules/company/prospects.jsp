@@ -1,15 +1,15 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
 <h1 class="prospects-32">Prospects <a title="Help" class="help-16">Help</a> <a  title="Refresh" class="refresh-16">Refresh</a> <a href="company/prospects/create" title="Create Prospect" class="new-16">Create</a></h1>
-<form id="search" action="tickets/opened/search" method="post">
+<form id="search" action="company/prospects/search" method="post">
 	<span>Search :</span>
 	<select name="search.filter">
-	  <option value="">ID</option>
-	  <option value="">Name</option>
-	   <option value="">Type</option>
-	   <option value="">Category</option>
-       <option value="">Country</option>
-       <option value="">Created By</option>
+	   <option value="id">ID</option>
+	  <option value="name">Name</option>
+	   <option value="type">Type</option>
+	   <option value="category">Category</option>
+       <option value="country">Country</option>
+       <option value="createdBy">Created By</option>
 	</select>
 	<input name="search.value" type="text" value="${search.value}" placeholder="Search..."/>
 </form>

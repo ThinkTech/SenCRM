@@ -1,18 +1,48 @@
 import org.metamorphosis.core.ActionSupport
-import org.metamorphosis.core.Search
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender
 import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
 
+class Entity {
+  def name
+  def sigle
+  def type
+  def category
+  def country
+  def town
+  def address
+  def telephone
+  def mobile
+  def email
+  def bp
+  def fax
+  def contact = new Contact()
+  def String instance
+}
+
+class Contact {
+  def firstName
+  def lastName
+  def profession
+  def dateOfBirth
+  def gender
+  def country
+  def town
+  def telephone
+  def mobile
+  def email
+}
 
 class ModuleAction extends ActionSupport {
 
-    def entity
-	def search = new Search()
-	def tickets
+    def entity = new Entity()
+	def entities
 	
+	def String execute() {
+	   SUCCESS
+	}
 	
 	def showProspects() {
 	    SUCCESS
@@ -23,30 +53,44 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def createCustomer() {
-	    entity = "customer"
+	    entity.instance = "customer"
 	    SUCCESS
 	}
 	
 	def createProspect() {
-	    entity = "prospect"
+	    entity.instance = "prospect"
 	    SUCCESS
 	}
 	
 	def createPartner() {
-	    entity = "partner"
+	    entity.instance = "partner"
 	    SUCCESS
 	}
 	
 	def saveEntity()  {
-		SUCCESS
+		return entity.instance
 	}
 	
-	def String execute() {
-	   SUCCESS
+	def searchCustomers() {
+	    println search.filter
+	    println search.value
+	    SUCCESS
+	}
+	
+	def searchProspects() {
+	    println search.filter
+	    println search.value
+	    SUCCESS
+	}
+	
+	def searchPartners() {
+	    println search.filter
+	    println search.value
+	    SUCCESS
 	}
 		
 	
-	def getTemplate(ticket,message) {
+	def getTemplate(entity,message) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
 		def text = '''\
@@ -73,7 +117,7 @@ class ModuleAction extends ActionSupport {
 		    }
 		 }
 		'''
-		def template = engine.createTemplate(text).make([ticket:ticket, message : message,url : "http://localhost:8080/sentickets/tickets/details?id="+ticket.id])
+		def template = engine.createTemplate(text).make([entity:entity, message : message,url : "http://localhost:8080/sentickets/tickets/details?id="+ticket.id])
 		template.toString()
 	}
 		

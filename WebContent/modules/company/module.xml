@@ -42,8 +42,22 @@
 			<result>create</result>
 		</action>
 		
+		<action url="saveEntity" method="saveEntity">
+			<result name="customer" type="redirect">/company/customers</result>
+			<result name="prospect" type="redirect">/company/prospects</result>
+			<result name="partner" type="redirect">/company/partners</result>
+		</action>
+		
 		<action url="customers/search" method="searchCustomers">
-			<result>closed</result>
+			<result>index</result>
+		</action>
+		
+		<action url="prospects/search" method="searchProspects">
+			<result>prospects</result>
+		</action>
+		
+		<action url="partners/search" method="searchPartners">
+			<result>partners</result>
 		</action>
 		
 	</actions>
