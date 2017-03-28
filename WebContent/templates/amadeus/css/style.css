@@ -127,6 +127,7 @@ h1.app_title img {
 h1.app_title span {
 	display : block;
 	margin-left:50px;
+	font-family : tahoma;
 }
 
 #wait {padding-top : 23%;padding-left : 47%}
