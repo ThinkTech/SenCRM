@@ -138,8 +138,10 @@
 	background-image : none;
 }
 
-.account .change-password fieldset {
-	line-height : 1.5em;
+.account .change-password fieldset > span.text-right {
+	padding-top : 5px;
+	margin-top: 5px;
+    padding-top: 2px;
 }
 
 .account .change-password input[type=password] {

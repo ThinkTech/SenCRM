@@ -5,9 +5,9 @@
 	<span>Search :</span>
 	<select name="search.filter">
 	  <option value="">ID</option>
-	  <option value="">First Name</option>
-	   <option value="" >Last Name</option>
-       <option value="">Type</option>
+	  <option value="">Name</option>
+	   <option value="">Type</option>
+	   <option value="">Category</option>
        <option value="">Country</option>
        <option value="">Created By</option>
 	</select>
@@ -18,9 +18,9 @@
  <thead>
     <tr>
        <th title="ID">ID</th>
-       <th title="First Name">First Name</th>
-       <th title="Last Name">Last Name</th>
+       <th title="Name">Name</th>
        <th title="Type">Type</th>
+       <th title="Category">Category</th>
        <th title="Country">Country</th>
        <th title="Created By">Created By</th>
     </tr>

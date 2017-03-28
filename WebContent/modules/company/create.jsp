@@ -7,43 +7,50 @@
      <fieldset class="info">
 		<legend>${entity}</legend>
 		
-		<label class="required text-right">First Name : </label>
-		<input title="First Name" name="firstName"  type="text"/>
+		<label class="required text-right">Name : </label>
+		<input title="Name" name="name"  type="text"/>
 		
-		<label class="required text-right">Last Name : </label>
-		<input title="Last Name" name="lastName" type="text"/>
+		<label class="required text-right">Sigle : </label>
+		<input title="Sigle" name="sigle" type="text"/>
 		
 		<label class="required text-right">Type :</label>
 		<select title="Type" name="type">
-			 <option>Individual</option>
 		 	<option>Company</option>
+		 	<option>Organization</option>
 		</select>
 		
-		<label class="text-right">Profession :</label>
-		<input title="Profession" name="profession" type="text"/>
-		
-		<label class="text-right">Date Of Birth :</label>
-		<input title="Date Of Birth" name="dateOfBirth" type="text"/>
-		
-		<label class="required text-right">Sex :</label>
-		<select title="Sex" name="sex">
-			 <option>Male</option>
-		 	<option>Female</option>
+		<label class="text-right">Category :</label>
+		<select title="Category" name="category">
+		 	<option>Individual</option>
+		 	<option>S.A</option>
+		 	<option>S.A.R.L</option>
 		</select>
 		
 		<label class="required text-right">Country :</label>
 		<select title="Country" name="country">
-			 <option>USA</option>
+			 <option>Senegal</option>
 		</select>
+		
+		<label class="required text-right">Town :</label>
+		<input title="Town" name="town" type="text"/>
+		
+		<label class="text-right">Address :</label>
+		<input title="Address" name="address" type="text"/>
 		
 		<label class="text-right">Telephone :</label>
 		<input title="Telephone" name="telephone" type="text"/>
 		
-		<label class="required text-right">Mobile :</label>
+		<label class="text-right">Mobile :</label>
 		<input title="Mobile" name="mobile" type="text"/>
 	   
 	    <label class="text-right">Email :</label>
 		<input title="Email" name="email" type="text"/>
+		
+		<label class="text-right">BP :</label>
+		<input title="BP" name="bp" type="text"/>
+		
+		<label class="text-right">Fax :</label>
+		<input title="Fax" name="fax" type="text"/>
 		
 		<input name="createdBy" type="hidden" value="tetiana"/>
 	
@@ -64,30 +71,25 @@
 		<label class="text-right">Date Of Birth :</label>
 		<input title="Date Of Birth" name="contact[dateOfBirth]" type="text"/>
 		
-		<label class="required text-right">Sex :</label>
-		<select title="Sex" name="contact[sex]">
+		<label class="required text-right">Gender :</label>
+		<select title="Gender" name="contact[sex]">
 			 <option>Male</option>
 		 	<option selected="selected">Female</option>
 		</select>
 		
 		<label class="required text-right">Country :</label>
 		<select title="Country" name="contact[country]">
+		     <option>Senegal</option>
 			 <option>USA</option>
 		</select>
 		
-		<label class="required text-right">Relation :</label>
-		<select title="Relation"  name="contact[relation]">
-		     <option>Wife</option>
-			 <option>Husband</option>
-			 <option>Parent</option>
-			 <option>Friend</option>
-			 <option>Other</option>
-		</select>
+		<label class="text-right">Town :</label>
+		<input title="Town" name="town" type="text"/>
 		
 		<label class="text-right">Telephone :</label>
 		<input title="Telephone" name="contact[telephone]" type="text"/>
 		
-		<label class="required text-right">Mobile :</label>
+		<label class="text-right">Mobile :</label>
 		<input title="Mobile" name="contact[mobile]" type="text"/>
 	   
 	    <label class="text-right">Email :</label>
