@@ -1,70 +1,53 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
-<h1 class="icon-32">Ticket : ${ticket.id} <a title="Help" class="help-16">Help</a> <a title="Refresh" class="refresh-16" style="display:${ticket.dateClose==null ? 'inline-block':'none'}">Refresh</a> <a href="tickets/createTicket" title="Create Ticket" class="new-16">Create</a>  <a class="back-16" href="${ticket.dateClose==null ? 'tickets' :'tickets/closed'}" title="Back">Back</a></h1>
-<h3>${ticket.subject}</h3>
-<a href="tickets/closeTicket?id=${ticket.id}" title="Close it now" class="close-ticket ${ticket.user.role}" onclick="return closeTicket(event,'Are you sure that you want to close this ticket?');" style="display:${ticket.dateClose==null ? 'block':'none'}">Close it now</a>
-<div class="ticket-details">
- <span class="title text-right">Created on :</span>
- <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span><br>
- <span class="title text-right">Last message on :</span>
- <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span><br>
- <span class="title text-right">Current status :</span>
- <span>${ticket.status}</span>
+<h1 class="icon-32 ${entity.instance}s-32">${entity.instance} : ${entity.name} ${entity.sigle} <a title="Help" class="help-16">Help</a> <a title="Refresh" class="refresh-16">Refresh</a> <a href="company/${entity.instance}s/create" title="Create ${entity.instance}" class="new-16">Create</a>  <a class="back-16" href="company/${entity.instance}s" title="Back">Back</a></h1>
+<div class="details">
+ <span class="text-right">Type :</span>
+ <span>${entity.type}</span>
+  <span class="text-right">Category :</span>
+ <span>${entity.category}</span>
+ <span class="text-right">Business :</span>
+ <span>${entity.business}</span>
+  <span class="text-right">Size :</span>
+ <span>${entity.size}</span>
 </div>
-<div class="ticket-details">
- <span class="title text-right">Department :</span>
- <span>${ticket.department}</span><br>
- <span class="title text-right">Product :</span>
- <span>${ticket.product}</span><br>
- <span class="title text-right">Priority :</span>
- <span>${ticket.priority}</span><br>
+<div class="details">
+ <span class="text-right">Ninea :</span>
+ <span>${entity.ninea}</span>
+  <span class="text-right">RC :</span>
+ <span>${entity.rc}</span>
+ <span class="text-right">State :</span>
+  <span>${entity.state}</span>
+  <span class="text-right">Target :</span>
+  <span>${entity.target}</span>
+  <span class="text-right">Country :</span> 
+  <span>${entity.address.country}</span>
+  <span class="text-right">Town :</span>
+  <span>${entity.address.town}</span>
 </div>
-<div class="ticket-messages">
-<div class="ticket-message">
-   <div class="ticket-message-header">
-     <span class="user-type account-16 ${ticket.user.role}">${ticket.user.role}</span>
-     <span class="user-name">${ticket.user.fullName}</span>
-     <div class="time">
-       <span>Date : <s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
-     </div>
-   </div>
-   <div>
-     ${ticket.message}
-   </div>
-   <hr/>
+<fieldset>
+    <legend>Actual Address</legend>
+    <div class="details">
+	  <span class="text-right">Location :</span>
+	 <span>${entity.address.location}</span>
+	 <span class="text-right">Longitude :</span>
+	 <span>${entity.address.longitude}</span>
+	  <span class="text-right">Latitude :</span>
+	 <span>${entity.address.latitude}</span>
+	  <span class="text-right">Altitude :</span>
+	 <span>${entity.address.altitude}</span>
+	  <span class="text-right">Telephone :</span>
+	 <span>${entity.address.telephone}</span>
+	  <span class="text-right">Mobile :</span>
+	 <span>${entity.address.mobile}</span>
+	  <span class="text-right">Email :</span>
+	 <span>${entity.address.email}</span>
+	  <span class="text-right">BP :</span>
+	 <span>${entity.address.bp}</span>
+	  <span class="text-right">Fax :</span>
+	 <span>${entity.address.fax}</span>
+	  <span class="text-right">Website :</span>
+	 <span><a href="${entity.address.website}" target="_blank">${entity.address.website}</a></span>
+	</div>
+</fieldset>
 </div>
-<s:iterator value="ticket.messages">
- <div class="ticket-message">
-   <div class="ticket-message-header">
-     <span class="user-type account-16 ${ticket.user.role}">${ticket.user.role}</span>
-     <span class="user-name">${ticket.user.fullName}</span>
-     <div class="time">
-       <span>Date : <s:date name="dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
-     </div>
-   </div>
-   <div>
-     ${content}
-   </div>
-   <hr/>
-</div>
-</s:iterator>
-<div style="display:${ticket.dateClose==null ? 'block':'none'}">
-<h4>Post a Message</h4>
-<form class="form-ticket" onsubmit="return validate();" action="tickets/addMessage">
-<div class="message">
-<textarea id="editor" name="message.content"> </textarea>
-</div>
-<input name="ticket.id" type="hidden" value="${ticket.id}"/>
-<input name="ticket.subject" type="hidden" value="${ticket.subject}"/>
-<input type="submit" title="Send Message" value="Send"/>
-</form>
-</div>
-</div>
-</div>
-<script src="https://cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>
-<script>
-  CKEDITOR.replace('editor',{on:{
-	  'instanceReady': function(evt) {
-		  CKEDITOR.instances.editor.focus(); 
-  }}});
-</script>

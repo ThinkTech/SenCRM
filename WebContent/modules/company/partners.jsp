@@ -28,15 +28,14 @@
 
 <tbody>
   
-  <s:iterator value="tickets">
+  <s:iterator value="entities">
 	<tr>
-	<td class="icon-16">${id}</td>
-	<td title="${subject}"><a href="tickets/opened/details?id=${id}">${subject}</a></td>
-	<td><s:date name="dateCreation" format="dd/MM/yyyy hh:mm:ss" /></td>
-	<td>${product}</td>
-	<td>${department}</td>
-	<td>${priority}</td>
-	<td>${status}</td>
+	<td class="partner-16">${id}</td>
+	<td title="${name}"><a href="company/partners/details?id=${id}">${name}</a></td>
+	<td>${type}</td>
+	<td>${category}</td>
+	<td>${address.country}</td>
+	<td>${createdBy.fullName}</td>
 	</tr>
 </s:iterator>
    

@@ -48,6 +48,19 @@
 			<result name="partner" type="redirect">/company/partners</result>
 		</action>
 		
+		
+		<action url="customers/details" method="showCustomer">
+			<result>details</result>
+		</action>
+		
+		<action url="prospects/details" method="showProspect">
+			<result>details</result>
+		</action>
+		
+		<action url="partners/details" method="showPartner">
+			<result>details</result>
+		</action>
+		
 		<action url="customers/search" method="searchCustomers">
 			<result>index</result>
 		</action>

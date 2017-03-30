@@ -6,20 +6,37 @@ import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
 
 class Entity {
-  def name
-  def sigle
-  def type
-  def category
-  def country
-  def town
+  long id
+  String name
+  String sigle
+  String type
+  String category
+  String ninea
+  String rc
+  String business
+  String size
+  String state
+  String target
   def address
-  def telephone
-  def mobile
-  def email
-  def bp
-  def fax
-  def contact = new Contact()
-  def String instance
+  def contacts = []
+  String instance
+  def createdOn
+  def createdBy
+}
+
+class Address {
+  String country
+  String town
+  String location
+  String longitude
+  String latitude
+  String altitude
+  String telephone
+  String mobile
+  String email
+  String bp
+  String fax
+  String website
 }
 
 class Contact {
@@ -28,27 +45,41 @@ class Contact {
   def profession
   def dateOfBirth
   def gender
-  def country
-  def town
-  def telephone
-  def mobile
-  def email
 }
 
 class ModuleAction extends ActionSupport {
 
     def entity = new Entity()
+    def address = new Address()
 	def entities
 	
 	def String execute() {
+	   println "getting customers"
+	   entities = session.getAttribute("customers")
+	   if(!entities) {
+	   		entities = []
+	   		session.setAttribute("customers",entities) 
+	   }
 	   SUCCESS
 	}
 	
 	def showProspects() {
+	    println "getting prospects"
+	    entities = session.getAttribute("prospects")
+	    if(!entities) {
+	   		entities = []
+	   		session.setAttribute("prospects",entities) 
+	    }
 	    SUCCESS
 	}
 	
 	def showPartners() {
+	    println "getting partners"
+	    entities = session.getAttribute("partners")
+	    if(!entities) {
+	   		entities = []
+	   		session.setAttribute("partners",entities) 
+	    }
 	    SUCCESS
 	}
 	
@@ -68,8 +99,57 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def saveEntity()  {
+	    entities = session.getAttribute(entity.instance+"s")
+	    entity.id = new Random().nextLong() + 1
+	    entity.createdBy = loggedUser
+	    entity.address = address
+	    entity.createdOn = new Date()
+	    entities << entity
 		return entity.instance
 	}
+	
+	def showCustomer() {
+	    Long id = Long.parseLong(request.getParameter("id"))
+	    entities = session.getAttribute("customers");
+	    def found;
+	    for(int i=0;i<entities.size();i++) {
+	        if(id.equals(entities[i].id)) {
+	           entity = entities[i]
+	           found = true
+	           break
+	        }
+	    }
+	    found ? SUCCESS : ERROR
+	}
+	
+	def showProspect() {
+	    Long id = Long.parseLong(request.getParameter("id"))
+	    entities = session.getAttribute("prospects");
+	    def found;
+	    for(int i=0;i<entities.size();i++) {
+	        if(id.equals(entities[i].id)) {
+	           entity = entities[i]
+	           found = true
+	           break
+	        }
+	    }
+	    found ? SUCCESS : ERROR
+	}
+	
+	def showPartner() {
+	    Long id = Long.parseLong(request.getParameter("id"))
+	    entities = session.getAttribute("partners");
+	    def found;
+	    for(int i=0;i<entities.size();i++) {
+	        if(id.equals(entities[i].id)) {
+	           entity = entities[i]
+	           found = true
+	           break
+	        }
+	    }
+	    found ? SUCCESS : ERROR
+	}
+	
 	
 	def searchCustomers() {
 	    println search.filter
