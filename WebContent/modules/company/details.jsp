@@ -60,14 +60,27 @@
 </fieldset>
 </div>
 
-<div title="Contact
-">
+<div title="Contact">
 <fieldset>
     <div class="details">
 	</div>
 </fieldset>
 </div>
 
+<div title="Projects">
+<fieldset>
+    <div class="details">
+	</div>
+</fieldset>
+</div>
+
+
+<div title="Billing">
+<fieldset>
+    <div class="details">
+	</div>
+</fieldset>
+</div>
 
 </div>
 </div>
