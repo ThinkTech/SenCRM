@@ -4,9 +4,7 @@
  <a title="Help" class="help-16">Help</a>
 </div>
 <h1 class="icon-32">Account</h1>
-<img src="${images}/user_64.png" width="64px" height="64px"/>
-<fieldset>
-   <legend>Info Account</legend>
+<div class="details">
    <span class="text-right">Type : </span>
    <span>${loggedUser.role}</span>
    <span class="text-right">Email : </span>
@@ -16,20 +14,20 @@
    <span class="text-right">Last Name : </span>
    <span>${loggedUser.lastName}</span>
    <span class="text-right">Last Logon : </span>
-   <span><s:date name="loggedUser.lastLogon" format="dd/MM/yyyy hh:mm:ss" /></span>
-</fieldset>
-<form action="${changePassword}" method="post">
+   <span><s:date name="loggedUser.lastLogon" format="dd/MM/yyyy hh:mm:ss" /></span>  
+</div>
 <div class="change-password">
 <img src="${images}/security_64.png" width="64px" height="64px"/>
+<form id="form" action="${changePassword}" method="post">
 <fieldset>
    <legend>Change your password </legend>
-	<span class="text-right">New : </span>
+	<label class="text-right">New : </label>
 	<input type="password" required/><br/>
-	<span class="text-right">Confirm : </span>
+	<label class="text-right">Confirm : </label>
 	<input type="password" required/>
 	<input type="submit" value="Change"/>
 	<br clear="all"/>
 </fieldset>
-</div>
 </form>
+</div>
 </div>
