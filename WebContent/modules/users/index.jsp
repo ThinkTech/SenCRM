@@ -4,7 +4,7 @@
  <a title="Help" class="help-16">Help</a>
 </div>
 <h1 class="icon-32">Account</h1>
-<img src="${images}/user_64.png"/>
+<img src="${images}/user_64.png" width="64px" height="64px"/>
 <fieldset>
    <legend>Info Account</legend>
    <span class="text-right">Type : </span>
@@ -20,7 +20,7 @@
 </fieldset>
 <form action="${changePassword}" method="post">
 <div class="change-password">
-<img src="${images}/security_64.png"/>
+<img src="${images}/security_64.png" width="64px" height="64px"/>
 <fieldset>
    <legend>Change your password </legend>
 	<span class="text-right">New : </span>
