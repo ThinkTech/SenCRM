@@ -1,7 +1,10 @@
 <div id="content">
-<h1 class="icon-32 ${entity.instance}s-32">Create ${entity.instance} <a title="Help" class="help-16">Help</a> <a href="company/${entity.instance}s" title="Back" class="back-16">Back</a></h1>
+<div class="buttons">
+ <a href="company/${entity.instance}s" title="Back" class="back-16">Back</a>
+ <a title="Help" class="help-16">Help</a> 
+</div>
+<h1 class="icon-32 ${entity.instance}s-32">Create ${entity.instance}</h1>
 <div>
-
 <form id="form" action="company/saveEntity" method="post"> 
    
      <fieldset>

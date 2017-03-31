@@ -1,6 +1,11 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
-<h1 class="customers-32">Customers <a title="Help" class="help-16">Help</a> <a title="Refresh" class="refresh-16">Refresh</a> <a href="company/customers/create" title="Create Customer" class="new-16">Create</a></h1>
+<div class="buttons">
+<a href="company/customers/create" title="Create Customer" class="new-16">Create</a>
+ <a title="Refresh" class="refresh-16">Refresh</a> 
+ <a title="Help" class="help-16">Help</a> 
+</div>
+<h1 class="customers-32">Customers</h1>
 <form id="search" action="company/customers/search" method="post">
 	<span>Search :</span>
 	<select name="search.filter">

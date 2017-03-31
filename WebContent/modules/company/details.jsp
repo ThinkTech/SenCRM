@@ -1,6 +1,12 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
-<h1 class="icon-32 ${entity.instance}s-32">${entity.instance} : ${entity.name} ${entity.sigle} <a title="Help" class="help-16">Help</a> <a title="Refresh" class="refresh-16">Refresh</a> <a href="company/${entity.instance}s/create" title="Create ${entity.instance}" class="new-16">Create</a>  <a class="back-16" href="company/${entity.instance}s" title="Back">Back</a></h1>
+<div class="buttons">
+ <a class="back-16" href="company/${entity.instance}s" title="Back">Back</a>
+ <a href="company/${entity.instance}s/create" title="Create ${entity.instance}" class="new-16">Create</a> 
+ <a title="Refresh" class="refresh-16">Refresh</a>
+ <a title="Help" class="help-16">Help</a> 
+</div>
+<h1 class="icon-32 ${entity.instance}s-32">${entity.instance} : ${entity.name} ${entity.sigle}</h1>
 <div class="details">
  <span class="text-right">Type :</span>
  <span>${entity.type}</span>
@@ -25,8 +31,9 @@
   <span class="text-right">Town :</span>
   <span>${entity.address.town}</span>
 </div>
+<h2><i class="fa fa-info"></i>Additional Informations</h2>
 <div id="tabs"> 
-   <div title="Actual Address">
+   <div title="Address">
 <fieldset>
     <div class="details">
 	  <span class="text-right"><i class="fa fa-map-marker"></i>Location :</span>

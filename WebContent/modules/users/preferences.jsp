@@ -1,6 +1,9 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
-<h1 class="preferences-32">Preferences <a title="Help" class="help-16">Help</a></h1>
+<div class="buttons">
+ <a title="Help" class="help-16">Help</a>
+</div>
+<h1 class="preferences-32">Preferences</h1>
 <fieldset class="preferences">
 	<legend>Templates</legend>
 	<div id="extensions">

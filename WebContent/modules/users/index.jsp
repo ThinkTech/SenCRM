@@ -1,6 +1,9 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content" class="account">
-<h1 class="icon-32">Account <a title="Help" class="help-16">Help</a></h1>
+<div class="buttons">
+ <a title="Help" class="help-16">Help</a>
+</div>
+<h1 class="icon-32">Account</h1>
 <img src="${images}/user_64.png"/>
 <fieldset>
    <legend>Info Account</legend>
