@@ -25,29 +25,42 @@
   <span class="text-right">Town :</span>
   <span>${entity.address.town}</span>
 </div>
+<div id="tabs"> 
+   <div title="Actual Address">
 <fieldset>
-    <legend>Actual Address</legend>
     <div class="details">
-	  <span class="text-right">Location :</span>
+	  <span class="text-right"><i class="fa fa-map-marker"></i>Location :</span>
 	 <span>${entity.address.location}</span>
-	 <span class="text-right">Longitude :</span>
+	 <span class="text-right"><i class="fa fa-map-marker"></i>Longitude :</span>
 	 <span>${entity.address.longitude}</span>
-	  <span class="text-right">Latitude :</span>
+	  <span class="text-right"><i class="fa fa-map-marker"></i>Latitude :</span>
 	 <span>${entity.address.latitude}</span>
-	  <span class="text-right">Altitude :</span>
+	  <span class="text-right"><i class="fa fa-map-marker"></i>Altitude :</span>
 	 <span>${entity.address.altitude}</span>
-	  <span class="text-right">Telephone :</span>
+	  <span class="text-right"><i class="fa fa-phone"></i>Telephone :</span>
 	 <span>${entity.address.telephone}</span>
-	  <span class="text-right">Mobile :</span>
+	  <span class="text-right"><i class="fa fa-mobile"></i>Mobile :</span>
 	 <span>${entity.address.mobile}</span>
-	  <span class="text-right">Email :</span>
+	  <span class="text-right"><i class="fa fa-envelope"></i>Email :</span>
 	 <span>${entity.address.email}</span>
-	  <span class="text-right">BP :</span>
+	  <span class="text-right"><i class="fa fa-envelope"></i>BP :</span>
 	 <span>${entity.address.bp}</span>
-	  <span class="text-right">Fax :</span>
+	  <span class="text-right"><i class="fa fa-print"></i>Fax :</span>
 	 <span>${entity.address.fax}</span>
-	  <span class="text-right">Website :</span>
+	  <span class="text-right"><i class="fa fa-external-link"></i>Website :</span>
 	 <span><a href="${entity.address.website}" target="_blank">${entity.address.website}</a></span>
 	</div>
 </fieldset>
+</div>
+
+<div title="Contact
+">
+<fieldset>
+    <div class="details">
+	</div>
+</fieldset>
+</div>
+
+
+</div>
 </div>
