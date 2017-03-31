@@ -5,6 +5,8 @@
 </div>
 <h1 class="icon-32">Account</h1>
 <div class="details">
+   <span class="text-right">Company : </span>
+   <span>ThinkTech</span>
    <span class="text-right">Type : </span>
    <span>${loggedUser.role}</span>
    <span class="text-right">Email : </span>
