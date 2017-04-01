@@ -43,6 +43,8 @@
 		 	<option value="Hosting">Hosting</option>
 		 	<option value="Industrial">Industrial</option>
 		 	<option value="Construction">Construction</option>
+		 	<option value="Consulting">Consulting</option>
+		 	<option value="Provision of services">Provision of services</option>
 		 	<option value="Other">Other</option>
 		</select>
 		
@@ -57,6 +59,7 @@
 		<select title="State" name="entity.state">
 		 	<option value="rising">rising</option>
 		 	<option value="growing">growing</option>
+		 	<option value="strong">strong</option>
 		 	<option value="struggling">struggling</option>
 		 	<option value="falling">falling</option>
 		</select>
@@ -69,11 +72,7 @@
 		 	<option value="all">all</option>
 		</select>
 		
-	</fieldset>
-      
-      <fieldset>
-        <legend>Actual Address</legend>
-        <label class="required text-right"><i class="fa fa-globe"></i>Country :</label>
+		<label class="required text-right"><i class="fa fa-globe"></i>Country :</label>
 		<select title="Country" name="address.country">
 			<option value="AF">Afghanistan</option>
 			<option value="AX">Åland Islands</option>
@@ -329,24 +328,35 @@
 		<label class="required text-right"><i class="fa fa-globe"></i>Town :</label>
 		<input title="Town" name="address.town" type="text"/>
 		
+		
+	</fieldset>
+	
+	 <fieldset>
+		<legend>Contact</legend>
+		
+		<label class="required text-right">First Name : </label>
+		<input title="First Name" name="contact.firstName"  type="text"/>
+		
+		<label class="required text-right">Last Name : </label>
+		<input title="Last Name" name="contact.lastName" type="text"/>
+	   
+	    <label class="text-right"><i class="fa fa-envelope"></i>Email :</label>
+		<input title="Email" name="address.email" type="text"/>
+		
+		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
+		<input title="Mobile" name="address.mobile" type="text"/>
+		
+	</fieldset>
+      
+      <fieldset>
+        <legend>Address</legend>
+		
 		<label class="text-right"><i class="fa fa-map-marker"></i>Location :</label>
 		<input title="Address" name="address.location" type="text"/>
-		
-		<label class="text-right"><i class="fa fa-map-marker"></i>Longitude :</label>
-		<input title="Ninea" name="address.longitude" type="text"/>
-		
-		<label class="text-right"><i class="fa fa-map-marker"></i>Latitude :</label>
-		<input title="RC" name="address.latitude" type="text"/>
-		
-		<label class="text-right"><i class="fa fa-map-marker"></i>Altitude :</label>
-		<input title="RC" name="address.altitude" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-phone"></i> Telephone :</label>
 		<input title="Telephone" name="address.telephone" type="text"/>
 		
-		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
-		<input title="Mobile" name="address.mobile" type="text"/>
-	   
 	    <label class="text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input title="Email" name="address.email" type="text"/>
 		
