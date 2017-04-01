@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
 	<name>Support</name>
-	<main>true</main>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>module for managing support tickets</description>
