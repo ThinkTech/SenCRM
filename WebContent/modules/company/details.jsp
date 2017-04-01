@@ -67,6 +67,13 @@
 </fieldset>
 </div>
 
+<div title="Account">
+<fieldset>
+    <div class="details">
+	</div>
+</fieldset>
+</div>
+
 <div title="Projects">
 <fieldset>
     <div class="details">
