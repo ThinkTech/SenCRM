@@ -43,14 +43,16 @@ class Contact {
   def firstName
   def lastName
   def profession
-  def dateOfBirth
-  def gender
+  def email
+  def telephone
+  def mobile
 }
 
 class ModuleAction extends ActionSupport {
 
     def entity = new Entity()
     def address = new Address()
+    def contact = new Contact()
 	def entities
 	
 	def String execute() {

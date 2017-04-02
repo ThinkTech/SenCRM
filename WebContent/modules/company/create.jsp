@@ -334,17 +334,23 @@
 	 <fieldset>
 		<legend>Contact</legend>
 		
-		<label class="required text-right">First Name : </label>
+		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
 		<input title="First Name" name="contact.firstName"  type="text"/>
 		
-		<label class="required text-right">Last Name : </label>
+		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input title="Last Name" name="contact.lastName" type="text"/>
+		
+		<label class="text-right"><i class="fa fa-user"></i>Profession :</label>
+		<input title="Email" name="contact.profession" type="text"/>
 	   
 	    <label class="text-right"><i class="fa fa-envelope"></i>Email :</label>
-		<input title="Email" name="address.email" type="text"/>
+		<input title="Email" name="contact.email" type="text"/>
+		
+		<label class="text-right"><i class="fa fa-phone"></i>Telephone :</label>
+		<input title="Mobile" name="contact.telephone" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
-		<input title="Mobile" name="address.mobile" type="text"/>
+		<input title="Mobile" name="contact.mobile" type="text"/>
 		
 	</fieldset>
       
