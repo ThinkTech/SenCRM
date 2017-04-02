@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
 <div class="buttons">
- <a class="back-16" href="company/${structure.instance}s" title="Back">Back</a>
+ <a href="${referer}" title="Back" class="back-16">Back</a>
  <a href="company/${structure.instance}s/create" title="Create ${structure.instance}" class="new-16">Create</a> 
  <a title="Refresh" class="refresh-16">Refresh</a>
  <a title="Help" class="help-16">Help</a> 

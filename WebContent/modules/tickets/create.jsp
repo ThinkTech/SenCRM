@@ -1,6 +1,6 @@
 <div id="content">
 <div class="buttons">
- <a href="tickets" title="Back" class="back-16">Back</a>
+ <a href="${referer}" title="Back" class="back-16">Back</a>
  <a title="Help" class="help-16">Help</a>
 </div>
 <h1 class="icon-32">New Ticket</h1>
@@ -33,7 +33,7 @@
 <h4>Enter your Message</h4>
 <textarea id="editor" name="ticket.message"> </textarea>
 </div>
-<input type="submit" title="Send Message"  value="Send"/>
+<input type="submit" title="Create Ticket"  value="Create"/>
 </fieldset>
 </form>
 </div>

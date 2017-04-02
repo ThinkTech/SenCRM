@@ -1,6 +1,6 @@
 <div id="content">
 <div class="buttons">
- <a href="company/${structure.instance}s" title="Back" class="back-16">Back</a>
+ <a href="${referer}" title="Back" class="back-16">Back</a>
  <a title="Help" class="help-16">Help</a> 
 </div>
 <h1 class="icon-32 ${structure.instance}s-32">Create ${structure.instance}</h1>
