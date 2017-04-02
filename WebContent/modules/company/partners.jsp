@@ -33,7 +33,7 @@
 
 <tbody>
   
-  <s:iterator value="entities">
+  <s:iterator value="structures">
 	<tr>
 	<td class="partner-16">${id}</td>
 	<td title="${name}"><a href="company/partners/details?id=${id}">${name}</a></td>

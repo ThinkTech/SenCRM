@@ -2,121 +2,81 @@ import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender
+import org.metamorphosis.core.Structure
+import org.metamorphosis.core.Contact
+import org.metamorphosis.core.Address
 import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
 
-class Entity {
-  long id
-  String name
-  String sigle
-  String type
-  String category
-  String ninea
-  String rc
-  String business
-  String size
-  String state
-  String target
-  def address
-  def contacts = []
-  String instance
-  def createdOn
-  def createdBy
-}
-
-class Address {
-  String country
-  String town
-  String location
-  String longitude
-  String latitude
-  String altitude
-  String telephone
-  String mobile
-  String email
-  String bp
-  String fax
-  String website
-}
-
-class Contact {
-  def firstName
-  def lastName
-  def profession
-  def email
-  def telephone
-  def mobile
-}
 
 class ModuleAction extends ActionSupport {
 
-    def entity = new Entity()
-    def address = new Address()
+    def structure = new Structure()
     def contact = new Contact()
-	def entities
+	def structures
 	
 	def String execute() {
 	   println "getting customers"
-	   entities = session.getAttribute("customers")
-	   if(!entities) {
-	   		entities = []
-	   		session.setAttribute("customers",entities) 
+	   structures = session.getAttribute("customers")
+	   if(!structures) {
+	   		structures = []
+	   		session.setAttribute("customers",structures) 
 	   }
 	   SUCCESS
 	}
 	
 	def showProspects() {
 	    println "getting prospects"
-	    entities = session.getAttribute("prospects")
-	    if(!entities) {
-	   		entities = []
-	   		session.setAttribute("prospects",entities) 
+	    structures = session.getAttribute("prospects")
+	    if(!structures) {
+	   		structures = []
+	   		session.setAttribute("prospects",structures) 
 	    }
 	    SUCCESS
 	}
 	
 	def showPartners() {
 	    println "getting partners"
-	    entities = session.getAttribute("partners")
-	    if(!entities) {
-	   		entities = []
-	   		session.setAttribute("partners",entities) 
+	    structures = session.getAttribute("partners")
+	    if(!structures) {
+	   		structures = []
+	   		session.setAttribute("partners",structures) 
 	    }
 	    SUCCESS
 	}
 	
 	def createCustomer() {
-	    entity.instance = "customer"
+	    structure.instance = "customer"
 	    SUCCESS
 	}
 	
 	def createProspect() {
-	    entity.instance = "prospect"
+	    structure.instance = "prospect"
 	    SUCCESS
 	}
 	
 	def createPartner() {
-	    entity.instance = "partner"
+	    structure.instance = "partner"
 	    SUCCESS
 	}
 	
-	def saveEntity()  {
-	    entities = session.getAttribute(entity.instance+"s")
-	    entity.id = new Random().nextLong() + 1
-	    entity.createdBy = loggedUser
-	    entity.address = address
-	    entity.createdOn = new Date()
-	    entities << entity
-		return entity.instance
+	def saveStructure()  {
+	    structures = session.getAttribute(structure.instance+"s")
+	    structure.id = new Random().nextLong() + 1
+	    structure.createdBy = loggedUser
+	    structure.createdOn = new Date()
+	    structure.contacts << contact
+	    structures << structure
+		return structure.instance
 	}
 	
 	def showCustomer() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    entities = session.getAttribute("customers");
+	    structures = session.getAttribute("customers");
 	    def found;
-	    for(int i=0;i<entities.size();i++) {
-	        if(id.equals(entities[i].id)) {
-	           entity = entities[i]
+	    for(int i=0;i<structures.size();i++) {
+	        if(id.equals(structures[i].id)) {
+	           structure = structures[i]
 	           found = true
 	           break
 	        }
@@ -126,11 +86,11 @@ class ModuleAction extends ActionSupport {
 	
 	def showProspect() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    entities = session.getAttribute("prospects");
+	    structures = session.getAttribute("prospects");
 	    def found;
-	    for(int i=0;i<entities.size();i++) {
-	        if(id.equals(entities[i].id)) {
-	           entity = entities[i]
+	    for(int i=0;i<structures.size();i++) {
+	        if(id.equals(structures[i].id)) {
+	           structure = structures[i]
 	           found = true
 	           break
 	        }
@@ -140,11 +100,11 @@ class ModuleAction extends ActionSupport {
 	
 	def showPartner() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    entities = session.getAttribute("partners");
+	    structures = session.getAttribute("partners");
 	    def found;
-	    for(int i=0;i<entities.size();i++) {
-	        if(id.equals(entities[i].id)) {
-	           entity = entities[i]
+	    for(int i=0;i<structures.size();i++) {
+	        if(id.equals(structures[i].id)) {
+	           structure = structures[i]
 	           found = true
 	           break
 	        }
@@ -172,7 +132,7 @@ class ModuleAction extends ActionSupport {
 	}
 		
 	
-	def getTemplate(entity,message) {
+	def getTemplate(structure,message) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
 		def text = '''\
@@ -199,7 +159,7 @@ class ModuleAction extends ActionSupport {
 		    }
 		 }
 		'''
-		def template = engine.createTemplate(text).make([entity:entity, message : message,url : "http://localhost:8080/sentickets/tickets/details?id="+ticket.id])
+		def template = engine.createTemplate(text).make([structure:structure, message : message,url : "http://localhost:8080/sentickets/tickets/details?id="+ticket.id])
 		template.toString()
 	}
 		

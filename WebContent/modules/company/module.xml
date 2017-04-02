@@ -42,7 +42,7 @@
 			<result>create</result>
 		</action>
 		
-		<action url="saveEntity" method="saveEntity">
+		<action url="save" method="saveStructure">
 			<result name="customer" type="redirect">/company/customers</result>
 			<result name="prospect" type="redirect">/company/prospects</result>
 			<result name="partner" type="redirect">/company/partners</result>
