@@ -4,7 +4,7 @@
 <a href="tickets/closeTicket?id=${ticket.id}" title="Close it now" class="icon-16" onclick="return closeTicket(event,'Are you sure that you want to close this ticket?');" style="${ticket.dateClose==null ? '':'display:none'}">Close it now</a>
 <a class="back-16" href="${ticket.dateClose==null ? 'tickets' :'tickets/closed'}" title="Back">Back</a>  
 <a title="Refresh" class="refresh-16" style="${ticket.dateClose==null ? '':'display:none'}">Refresh</a>
-<a href="tickets/createTicket" title="Create Ticket" class="new-16">Create</a> 
+<a href="tickets/create" title="Create Ticket" class="new-16">Create</a> 
 <a title="Help" class="help-16">Help</a>    
 </div>
 <h1 class="icon-32">Ticket : ${ticket.id}</h1>

@@ -15,11 +15,11 @@
 		</menu>
     </menus>
     <actions>
-		<action url="createTicket" method="createTicket">
+		<action url="create" method="createTicket">
 			<result>create</result>
 		</action>
 		
-		<action url="saveTicket"  method="saveTicket">
+		<action url="save"  method="saveTicket">
 			<result type="redirect">/tickets</result>
 		</action>
 		

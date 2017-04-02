@@ -6,7 +6,7 @@
 <h1 class="icon-32">New Ticket</h1>
 <div>
 
-<form id="form"  onsubmit="return validate();" action="tickets/saveTicket">
+<form id="form"  onsubmit="return validate();" action="tickets/save">
 <fieldset>
 <legend>Information</legend>
 <label class="required text-right">Department :</label>

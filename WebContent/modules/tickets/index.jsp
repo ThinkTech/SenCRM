@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
 <div class="buttons">
-<a href="tickets/createTicket" title="Create Ticket" class="new-16">Create</a>
+<a href="tickets/create" title="Create Ticket" class="new-16">Create</a>
 <a  title="Refresh" class="refresh-16">Refresh</a>
  <a title="Help" class="help-16">Help</a> 
 </div>
