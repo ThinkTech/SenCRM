@@ -10,6 +10,7 @@ class UserAction extends ActionSupport {
 		  user.firstName = "Mamadou Lamine"
 		  user.lastName = "Ba"
 		  user.role = "support"
+		  user.structure.name = "ThinkTech"
 		  session.setAttribute("user",user)
 		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
@@ -19,6 +20,7 @@ class UserAction extends ActionSupport {
 		  user.firstName = "Pape Babacar"
 		  user.lastName = "Ba"
 		  user.role = "customer"
+		  user.structure.name = "ThinkTech"
 		  session.setAttribute("user",user)
 		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
@@ -28,6 +30,7 @@ class UserAction extends ActionSupport {
 		  user.firstName = "Mamadou"
 		  user.lastName = "Diaw"
 		  user.role = "support"
+		  user.structure.name = "ThinkTech"
 		  session.setAttribute("user",user)
 		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
