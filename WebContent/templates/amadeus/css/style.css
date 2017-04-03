@@ -95,7 +95,7 @@ input:focus,select:focus,a:focus {
 }
 .wrap {
 	padding: 1.5em;
-    width: 25%;
+    width: 28%;
     margin: 1em auto;
     background:#000;
 	
@@ -286,44 +286,48 @@ h1.app_title span {
 /* -- Responsive code -- */
 
 
+@media screen and (max-width: 1300px){
+	.wrap {
+     width: 37%;}
+}
+
 @media screen and (max-width: 1024px){
 	.wrap {
-     width: 35%;}
+     width: 40%;}
      #wait {padding-top : 30%;padding-left : 45%}
 }	 
 @media screen and (max-width: 991px){
 	.wrap {
-     width: 33%;}
+     width: 45%;}
      #wait {padding-top : 33%;padding-left : 45%}
 	
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {
     font-size: 2em;}
-	.wrap {padding: 1.5em;width: 37%;}
+	.wrap {padding: 1.5em;width: 55%;}
 	#wait {padding-top : 33%;padding-left : 45%}
 }
 @media screen and (max-width: 768px){
 	h1.agile_head {
     font-size: 1.7em;margin-bottom : 40px}
 	.wrap {
-     width: 38%;}
+     width: 60%;}
      #wait {padding-top : 40%;padding-left : 43%}
 	
 }
 @media screen and (max-width: 736px){
 	.wrap {
-     width: 40%;}
-	
+     width: 60%;}
 }
 @media screen and (max-width: 667px){
 	.wrap {
-	width: 44%;}
+	width: 60%;}
 	#wait {padding-top : 40%;padding-left : 40%}
 }
 @media screen and (max-width: 640px){
 	.wrap {
-	width: 46%;}
+	width: 70%;}
 	
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4}
@@ -331,7 +335,7 @@ h1.app_title span {
 }
 @media screen and (max-width: 600px){
 	.wrap {
-	width: 47%;}
+	width: 70%;}
 	
 	h1.agile_head {
     font-size: 1.6em;}
@@ -351,13 +355,13 @@ h1.app_title span {
    font-size: 1.6em;
     letter-spacing: 4px;}
 	.wrap {
-	width: 52%;}
+	width: 75%;}
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4;}
 }
 @media screen and (max-width: 480px){
 	.wrap {
-    width: 61%;
+    width: 95%;
 	margin: 2em auto;}
 	
 	h1.agile_head {
@@ -382,7 +386,7 @@ h1.app_title span {
 	line-height: 1.5;}
 	
 	.wrap {
-    width: 65%;
+    width: 95%;
     padding: 1.5em;}
     
     #wait {padding-top : 60%;padding-left : 35%}
@@ -397,7 +401,7 @@ h1.app_title span {
     font-size: .8em;}
 	
 	.wrap {
-    width: 76%;
+    width: 95%;
     padding: 1.5em;}
 	
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
@@ -406,7 +410,7 @@ h1.app_title span {
 }	
 @media screen and (max-width: 375px){
 	.wrap {
-    width: 83%;
+    width: 95%;
     padding: 1.5em;}
 }
 @media screen and (max-width: 320px){
