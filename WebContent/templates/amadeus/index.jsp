@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <base href="${path}"/>
 <title>ThinkTech Portal</title>
-<meta property="og:url"  content="http://portal.thinktech.sn/" />
+<meta property="og:url"  content="${baseUrl}" />
 <meta property="og:type" content="website" />
 <meta property="og:title"  content="Welcome to ThinkTech Portal" />
 <meta property="og:description"  content="Portal for interacting with us and to follow the evolution of your projects." />
@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body class="bg agileinfo">
    <h1 class="app_title"><img src="${logo}"/><span>SenCRM</span></h1>
-   <h1 class="agile_head text-center">thinktech.sn</h1>
+   <h1 class="agile_head text-center">Identification</h1>
    <div class="w3layouts_main wrap">
     <!--Horizontal Tab-->
         <div id="parentHorizontalTab_agile">
