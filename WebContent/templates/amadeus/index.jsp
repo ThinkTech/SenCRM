@@ -64,7 +64,6 @@ $(document).ready(function() {
 	$('input[type=email]').focus();
 	$(".agile_form").submit(function(event){
 		app.authenticate($(this));
-		event.preventDefault();
 		return false;
 	});
 });
