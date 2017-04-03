@@ -22,9 +22,9 @@
   <span>${structure.state}</span>
   <span class="text-right">Target :</span>
   <span>${structure.target}</span>
-  <span class="text-right">Country :</span> 
+  <span class="text-right"><i class="fa fa-globe"></i>Country :</span> 
   <span>${structure.address.country}</span>
-  <span class="text-right">Town :</span>
+  <span class="text-right"><i class="fa fa-globe"></i>Town :</span>
   <span>${structure.address.town}</span>
 </div>
 <div class="details">
@@ -56,8 +56,6 @@
 	 <span>${structure.address.altitude}</span>
 	  <span class="text-right"><i class="fa fa-phone"></i>Telephone :</span>
 	 <span>${structure.address.telephone}</span>
-	  <span class="text-right"><i class="fa fa-mobile"></i>Mobile :</span>
-	 <span>${structure.address.mobile}</span>
 	  <span class="text-right"><i class="fa fa-envelope"></i>Email :</span>
 	 <span>${structure.address.email}</span>
 	  <span class="text-right"><i class="fa fa-envelope"></i>BP :</span>
@@ -66,6 +64,12 @@
 	 <span>${structure.address.fax}</span>
 	  <span class="text-right"><i class="fa fa-external-link"></i>Website :</span>
 	 <span><a href="${structure.address.website}" target="_blank">${structure.address.website}</a></span>
+	  <span class="text-right"><i class="fa fa-youtube"></i>Youtube :</span>
+	 <span><a href="${structure.address.youtube}" target="_blank">${structure.address.youtube}</a></span>
+	  <span class="text-right"><i class="fa fa-facebook"></i>Facebook :</span>
+	 <span><a href="${structure.address.facebook}" target="_blank">${structure.address.facebook}</a></span>
+	  <span class="text-right"><i class="fa fa-twitter"></i>Twitter :</span>
+	 <span><a href="${structure.address.twitter}" target="_blank">${structure.address.twitter}</a></span>
 	</div>
 </fieldset>
 </div>
@@ -73,6 +77,36 @@
 <div title="Contact">
 <fieldset>
     <div class="details">
+       <s:iterator value="structure.contacts">
+          <span class="text-right">First Name :</span>
+		  <span>${firstName}</span>
+		  <span class="text-right">Last Name :</span>
+		  <span>${lastName}</span>
+		  <span class="text-right">Profession :</span> 
+		  <span>${profession}</span>
+		  <span class="text-right">Email :</span>
+		  <span>${email}</span>
+		  <span class="text-right"><i class="fa fa-globe"></i>Country :</span> 
+		  <span>${address.country}</span>
+		  <span class="text-right"><i class="fa fa-globe"></i>Town :</span>
+		  <span>${address.town}</span>
+		  <span class="text-right"><i class="fa fa-phone"></i>Telephone :</span>
+	     <span>${address.telephone}</span>
+	      <span class="text-right"><i class="fa fa-mobile"></i>Mobile :</span>
+	     <span>${address.mobile}</span>
+	     <span class="text-right"><i class="fa fa-envelope"></i>BP :</span>
+	   <span>${address.bp}</span>
+	  <span class="text-right"><i class="fa fa-print"></i>Fax :</span>
+	 <span>${address.fax}</span>
+	      <span class="text-right"><i class="fa fa-external-link"></i>Website :</span>
+	   <span><a href="${address.website}" target="_blank">${address.website}</a></span>
+	  <span class="text-right"><i class="fa fa-youtube"></i>Youtube :</span>
+	 <span><a href="${address.youtube}" target="_blank">${address.youtube}</a></span>
+	  <span class="text-right"><i class="fa fa-facebook"></i>Facebook :</span>
+	 <span><a href="${address.facebook}" target="_blank">${address.facebook}</a></span>
+	  <span class="text-right"><i class="fa fa-twitter"></i>Twitter :</span>
+	 <span><a href="${address.twitter}" target="_blank">${address.twitter}</a></span>
+	  </s:iterator>
 	</div>
 </fieldset>
 </div>
