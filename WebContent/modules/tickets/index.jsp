@@ -9,7 +9,6 @@
 <form id="search" action="tickets/opened/search" method="post">
 	<span>Search :</span>
 	<select name="search.filter">
-	   <option value="id">ID</option>
 	   <option value="subject">Subject</option>
        <option value="product">Product</option>
        <option value="priority">Priority</option>
@@ -20,7 +19,6 @@
 <table>
  <thead>
     <tr>
-       <th title="ID">ID</th>
        <th title="Ticket Subject">Ticket Subject</th>
        <th title="Date of Creation">Date of Creation</th>
        <th title="Product">Product</th>
@@ -34,8 +32,7 @@
   
   <s:iterator value="tickets">
 	<tr>
-	<td class="icon-16">${id}</td>
-	<td title="${subject}"><a href="tickets/opened/details?id=${id}">${subject}</a></td>
+	<td class="icon-16" title="${subject}"><a href="tickets/opened/details?id=${id}">${subject}</a></td>
 	<td><s:date name="dateCreation" format="dd/MM/yyyy hh:mm:ss" /></td>
 	<td>${product}</td>
 	<td>${department}</td>

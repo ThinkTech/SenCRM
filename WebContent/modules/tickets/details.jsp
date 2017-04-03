@@ -10,10 +10,6 @@
 <h1 class="icon-32">Ticket : ${ticket.id}</h1>
 <h3>${ticket.subject}</h3>
 <div class="details">
- <span class="text-right">Created on :</span>
- <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
- <span class="text-right">Last message on :</span>
- <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
  <span class="text-right">Current status :</span>
  <span>${ticket.status}</span>
  <span class="text-right">Department :</span>
@@ -22,6 +18,10 @@
  <span>${ticket.product}</span>
  <span class="text-right">Priority :</span>
  <span>${ticket.priority}</span>
+  <span class="text-right">Created on :</span>
+ <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
+ <span class="text-right">Last message on :</span>
+ <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
 </div>
 <div class="ticket-messages">
 <div class="ticket-message">
