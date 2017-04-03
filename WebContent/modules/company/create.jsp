@@ -600,6 +600,9 @@
 		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
 		<input title="Mobile" name="contact.address.mobile" type="text"/>
 		
+		<label class="text-right"><i class="fa fa-key"></i>Create Account :</label>
+		<input title="Create Account" name="" type="checkbox"/>
+		
 	</fieldset>
       
       <fieldset>
