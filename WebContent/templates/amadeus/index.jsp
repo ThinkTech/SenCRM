@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div id="parentHorizontalTab_agile">
             <div class="resp-tabs-container hor_1">
                <div class="w3_agile_login">
-                    <form action="${login}" class="agile_form">
+                    <form action="${login}" class="agile_form" method="post">
                       <span id="error-message"></span>
 					  <p>Email</p>
 					  <input type="email" name="user.email" required="required" />
@@ -64,6 +64,7 @@ $(document).ready(function() {
 	$('input[type=email]').focus();
 	$(".agile_form").submit(function(event){
 		app.authenticate($(this));
+		event.preventDefault();
 		return false;
 	});
 });

@@ -4,6 +4,7 @@ const validate = function(){
 		  CKEDITOR.instances.editor.focus(); 
 	  });
 	  return false;
-    } 
+    }
+    $("input[type=submit]",this).attr("disabled","disabled");
 	return true;
 };
