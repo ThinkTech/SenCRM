@@ -9,7 +9,6 @@
 <form id="search" action="company/partners/search" method="post">
 	<span>Search :</span>
 	<select name="search.filter">
-	   <option value="id">ID</option>
 	  <option value="name">Name</option>
 	   <option value="type">Type</option>
 	   <option value="category">Category</option>
@@ -22,7 +21,6 @@
 <table>
  <thead>
     <tr>
-       <th title="ID">ID</th>
        <th title="Name">Name</th>
        <th title="Type">Type</th>
        <th title="Category">Category</th>
@@ -35,8 +33,7 @@
   
   <s:iterator value="structures">
 	<tr>
-	<td class="partner-16">${id}</td>
-	<td title="${name}"><a href="company/partners/details?id=${id}">${name}</a></td>
+	<td class="partner-16" title="${name}"><a href="company/partners/details?id=${id}">${name}</a></td>
 	<td>${type}</td>
 	<td>${category}</td>
 	<td>${address.country}</td>

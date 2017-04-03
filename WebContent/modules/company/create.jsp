@@ -49,7 +49,7 @@
 		
 		<label class="text-right">State :</label>
 		<select title="State" name="structure.state">
-		 	<option value="rising">rising</option>
+		 	<option value="rising">starting</option>
 		 	<option value="growing">growing</option>
 		 	<option value="strong">strong</option>
 		 	<option value="struggling">struggling</option>

@@ -27,6 +27,12 @@
   <span class="text-right">Town :</span>
   <span>${structure.address.town}</span>
 </div>
+<div class="details">
+ <span class="text-right">Created On :</span>
+  <span><s:date name="structure.createdOn" format="dd/MM/yyyy hh:mm:ss" /></span>
+  <span class="text-right">Created By :</span>
+  <span>${structure.createdBy.fullName}</span>
+</div>
 <h2><i class="fa fa-info"></i>Informations</h2>
 <div id="tabs"> 
 
