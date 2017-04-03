@@ -6,7 +6,7 @@
 <h1 class="icon-32">New Ticket</h1>
 <div>
 
-<form id="form"  onsubmit="return validate();" action="tickets/save">
+<form id="form" action="tickets/save">
 <fieldset>
 <legend>Information</legend>
 <label class="required text-right">Department :</label>
@@ -48,5 +48,15 @@
   CKEDITOR.replace('editor');
   document.addEventListener("DOMContentLoaded", function(){
 		$("input:first").focus();
+		$("form").on("submit",function(){
+			if(CKEDITOR.instances.editor.getData().trim() =='') {
+				  alert("Enter your message",function() {
+					  CKEDITOR.instances.editor.focus(); 
+				  });
+				  return false;
+			} 
+			$("input[type=submit]",this).attr("disabled","disabled");
+		    return true;
+		});
   });
 </script>
