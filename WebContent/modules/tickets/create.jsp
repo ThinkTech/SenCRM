@@ -41,7 +41,7 @@
 <script src="https://cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>
 <script>
   CKEDITOR.replace('editor');
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", function(){
 		$("input:first").focus();
   });
 </script>

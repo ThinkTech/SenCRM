@@ -48,7 +48,7 @@
 </div>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",function(){
 	const filter = "${search.filter}";
 	if(filter) $("#search select").val(filter); 
 });

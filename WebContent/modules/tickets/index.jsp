@@ -19,7 +19,7 @@
 <table>
  <thead>
     <tr>
-       <th title="Ticket Subject">Ticket Subject</th>
+       <th title="Subject">Subject</th>
        <th title="Date of Creation">Date of Creation</th>
        <th title="Product">Product</th>
        <th title="Department">Department</th>
@@ -48,7 +48,7 @@
 </div>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",function(){
 	const filter = "${search.filter}";
 	if(filter) $("#search select").val(filter); 
 });
