@@ -1,15 +1,14 @@
-const validate = () => {
+const validate = function() {
     if(CKEDITOR.instances.editor.getData().trim() =='') {
-	  alert("Enter your message",() => {
+	  alert("Enter your message",function() {
 		  CKEDITOR.instances.editor.focus(); 
 	  });
 	  return false;
     } 
-    $("input[type=submit]").attr("disabled","disabled");
 	return true;
 };
 const closeTicket = function(event,message) {
-	confirm(message,() => {
+	confirm(message,function() {
 		const href = $(event.target).attr("href");
 		location.href = href;
 	});
