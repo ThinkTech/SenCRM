@@ -603,6 +603,9 @@
 		<label class="text-right"><i class="fa fa-key"></i>Create Account :</label>
 		<input title="Create Account" name="" type="checkbox"/>
 		
+		<label class="text-right"><i class="fa fa-connectdevelop"></i>Send Invitation :</label>
+		<input title="Send Invitation" name="" type="checkbox"/>
+		
 	</fieldset>
       
       <fieldset>
