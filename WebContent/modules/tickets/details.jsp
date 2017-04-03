@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
 <div class="buttons">
-<a href="tickets/closeTicket?id=${ticket.id}" title="Close it now" class="icon-16" onclick="return closeTicket(event,'Are you sure that you want to close this ticket?');" style="${ticket.dateClose==null ? '':'display:none'}">Close it now</a>
+<a href="${baseUrl}/tickets/closeTicket?id=${ticket.id}" title="Close it now" class="icon-16" onclick="return closeTicket(event,'Are you sure that you want to close this ticket?');" style="${ticket.dateClose==null ? '':'display:none'}">Close it now</a>
 <a href="${referer}" title="Back" class="back-16">Back</a>
 <a title="Refresh" class="refresh-16" style="${ticket.dateClose==null ? '':'display:none'}">Refresh</a>
 <a href="tickets/create" title="Create Ticket" class="new-16">Create</a> 

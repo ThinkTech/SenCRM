@@ -8,9 +8,9 @@ const validate = function() {
 	return true;
 };
 const closeTicket = function(event,message) {
+	const href = $(event.target).attr("href");
 	confirm(message,function() {
-		const href = $(event.target).attr("href");
-		location.href = href;
+		window.location.href = href;
 	});
 	return false;
 };
