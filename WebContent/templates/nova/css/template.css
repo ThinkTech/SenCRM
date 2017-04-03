@@ -219,19 +219,6 @@ aside h1 {
   background-color: #000;
 }
 
-
-#selection span {
-	color : #06d0d8;
-}
-
-#details > h2 {
-	 background-color : #fdfdfd;
-	 color : rgb(48, 9, 3);
-}
-
-#details > h2 a:hover {
-	border : 1px solid rgb(234, 133, 17);
-}
 .new-16 {
 	background-image: url("../images/new-16.png");
 }
@@ -274,10 +261,6 @@ input[type=submit]{
 	background : #06d0d8;
 	color : white;
 	height : 34px;
-}
-
-input[type=submit]:hover{
-	background : rgb(10, 136, 255);
 }
 
 h1 {
