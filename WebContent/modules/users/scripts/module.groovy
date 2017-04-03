@@ -6,7 +6,6 @@ class UserAction extends ActionSupport {
 	def user = new User()
 	
 	def login()  {
-	    println "agent "+request.getHeader("user-agent")
 		if(user.email.equals("lamine.ba@thinktech.sn")) {
 		  user.firstName = "Mamadou Lamine"
 		  user.lastName = "Ba"
