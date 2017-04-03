@@ -34,14 +34,7 @@
   <span>${structure.createdBy.fullName}</span>
 </div>
 <h2><i class="fa fa-info"></i>Informations</h2>
-<div id="tabs"> 
-
-<div title="Additional">
-<fieldset>
-    <div class="details">
-    </div>
-</fieldset>
-</div>
+<div id="tabs">
 
 <div title="Address">
 <fieldset>
@@ -98,7 +91,7 @@
 	   <span>${address.bp}</span>
 	  <span class="text-right"><i class="fa fa-print"></i>Fax :</span>
 	 <span>${address.fax}</span>
-	      <span class="text-right"><i class="fa fa-external-link"></i>Website :</span>
+	  <span class="text-right"><i class="fa fa-external-link"></i>Website :</span>
 	   <span><a href="${address.website}" target="_blank">${address.website}</a></span>
 	  <span class="text-right"><i class="fa fa-youtube"></i>Youtube :</span>
 	 <span><a href="${address.youtube}" target="_blank">${address.youtube}</a></span>
@@ -130,6 +123,13 @@
 <fieldset>
     <div class="details">
 	</div>
+</fieldset>
+</div>
+
+<div title="Additional">
+<fieldset>
+    <div class="details">
+    </div>
 </fieldset>
 </div>
 
