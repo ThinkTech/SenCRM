@@ -13,6 +13,7 @@
 <select name="ticket.department">
 <option value="Technical Support">Technical Support</option>
 <option value="Sales">Sales</option>
+<option value="Billing">Billing</option>
 <option value="Software">Software</option>
 </select>
 <label class="required text-right">Product :</label>
