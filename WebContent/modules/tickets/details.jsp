@@ -22,6 +22,10 @@
  <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
  <span class="text-right">Last message on :</span>
  <span><s:date name="ticket.dateCreation" format="dd/MM/yyyy hh:mm:ss" /></span>
+ <span class="text-right">Created by :</span>
+ <span>${ticket.user.fullName}</span>
+ <span class="text-right">Structure :</span>
+ <span>${ticket.user.structure.name}</span>
 </div>
 <div class="ticket-messages">
 <div class="ticket-message">

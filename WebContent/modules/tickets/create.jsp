@@ -29,6 +29,10 @@
 <option value="normal" selected>normal</option>
 <option value="urgent">urgent</option>
 </select>
+<label class="required text-right" class="required">Customer :</label>
+<input type="text" required value="${loggedUser.fullName}" readonly/>
+<label class="required text-right" class="required">Structure :</label>
+<input type="text" required value="${loggedUser.structure.name}" readonly/>
 <div class="message">
 <h4>Enter your Message</h4>
 <textarea id="editor" name="ticket.message"> </textarea>

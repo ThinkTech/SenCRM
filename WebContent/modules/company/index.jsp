@@ -13,7 +13,7 @@
 	   <option value="type">Type</option>
 	   <option value="category">Category</option>
        <option value="country">Country</option>
-       <option value="createdBy">Created By</option>
+       <option value="createdBy">Created by</option>
 	</select>
 	<input name="search.value" type="text" value="${search.value}" placeholder="Search..."/>
 </form>
@@ -25,8 +25,8 @@
        <th title="Type">Type</th>
        <th title="Category">Category</th>
        <th title="Country">Country</th>
-       <th title="Created On">Created On</th>
-       <th title="Created By">Created By</th>
+       <th title="Created on">Created on</th>
+       <th title="Created by">Created by</th>
     </tr>
  </thead>
 

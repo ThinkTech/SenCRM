@@ -9,8 +9,12 @@
 	<span>Search :</span>
 	<select name="search.filter">
 	   <option value="subject">Subject</option>
+	   <option value="createdBy">Created by</option>
+	   <option value="createdOn">Created on</option>
        <option value="product">Product</option>
+       <option value="department">Department</option>
        <option value="priority">Priority</option>
+       <option value="status">Status</option>
 	</select>
 	<input name="search.value" type="text" value="${search.value}" placeholder="Search..."/>
 </form>
@@ -19,7 +23,8 @@
  <thead>
     <tr>
        <th title="Subject">Subject</th>
-       <th title="Date of Creation">Date of Creation</th>
+       <th title="Created by">Created by</th>
+       <th title="Created on">Created on</th>
        <th title="Product">Product</th>
        <th title="Department">Department</th>
        <th title="Priority">Priority</th>
@@ -30,6 +35,7 @@
   <s:iterator value="tickets">
 	<tr>
 	<td class="icon-16" title="${subject}"><a href="tickets/closed/details?id=${id}">${subject}</a></td>
+	<td>${user.fullName}</td>
 	<td><s:date name="dateCreation" format="dd/MM/yyyy hh:mm:ss" /></td>
 	<td>${product}</td>
 	<td>${department}</td>
