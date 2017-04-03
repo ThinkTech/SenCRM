@@ -110,6 +110,10 @@
 	margin-left : 30px;
 }
 
+#form input:not([type="submit"]){
+	width : 43%;
+}
+
 .account h2 {
 	display : inline-block;
 	width : 70%;
