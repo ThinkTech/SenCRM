@@ -6,6 +6,7 @@
    <meta charset="UTF-8"/>
    <base href="${path}"/>
    <title>${title}</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1"/>
    <link href="${logo}" rel="icon" type="image/x-icon" />
    <link href="css/metamorphosis.css" rel="stylesheet"/>
    <link href="templates/nova/css/template.css" rel="stylesheet" />

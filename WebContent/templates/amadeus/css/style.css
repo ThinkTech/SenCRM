@@ -353,9 +353,9 @@ h1.app_title span {
 @media screen and (max-width: 568px){
 	h1.agile_head {
    font-size: 1.6em;
-    letter-spacing: 4px;}
+    letter-spacing: 4px;display:none}
 	.wrap {
-	width: 75%;}
+	width: 85%;}
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4;}
 }
