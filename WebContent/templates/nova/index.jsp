@@ -49,7 +49,7 @@
 	          </button>
 		      <tiles:insertAttribute name="content"/>
 		      <footer>
-			    <p>&copy; 2017 Designed by <a href="http://www.thinktech.sn" target="_blank">ThinkTech</a></p>
+			    <p>&copy; 2017 Designed by <a href="https://www.thinktech.sn" target="_blank">ThinkTech</a></p>
 		     </footer>
 		   </main>
 	</div>

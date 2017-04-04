@@ -49,7 +49,7 @@
 		
 		<label class="required text-right">State :</label>
 		<select required title="State" name="structure.state">
-		 	<option value="rising">starting</option>
+		 	<option value="starting">starting</option>
 		 	<option value="growing">growing</option>
 		 	<option value="strong">strong</option>
 		 	<option value="struggling">struggling</option>
@@ -102,10 +102,10 @@
 		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
 		<input title="Mobile" name="contact.address.mobile" type="text"/>
 		
-		<label class="text-right"><i class="fa fa-key"></i>Create Account :</label>
+		<label class="text-right"><i class="fa fa-check-square"></i>Create Account :</label>
 		<input title="Create Account" name="" type="checkbox"/>
 		
-		<label class="text-right"><i class="fa fa-connectdevelop"></i>Send Invitation :</label>
+		<label class="text-right"><i class="fa fa-check-square"></i>Send Invitation :</label>
 		<input title="Send Invitation" name="" type="checkbox"/>
 		
 	</fieldset>

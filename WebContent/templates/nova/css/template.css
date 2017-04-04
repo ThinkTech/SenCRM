@@ -252,12 +252,12 @@ div.pager span.active {
     color: #fff;
 }
 
-input:focus,select:focus,a:focus { 
+input:focus,select:focus,a:focus,textarea { 
 	border : 1px solid rgb(234, 133, 17);
 }
 
 input[type=submit]{
-	border : 1px solid rgb(10, 136, 247);
+	border : 1px solid #06d0d8;
 	background : #06d0d8;
 	color : white;
 	height : 34px;
