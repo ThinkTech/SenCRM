@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div id="content">
 <div class="buttons">
- <a title="Help" class="help-16">Help</a>
+ <a href="${referer}" title="Back" class="back-16">Back</a>
 </div>
 <h1 class="preferences-32">Preferences</h1>
 <fieldset class="preferences">

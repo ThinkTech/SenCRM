@@ -81,18 +81,6 @@
 	white-space : nowrap;
 }
 
-
-#content h2 {
-	margin-bottom :35px;
-}
-
-#content canvas {
-	width : 95%;
-	height : 7em;
-	margin-top : 0.5em;
-	margin-bottom : 0.5em;
-}
-
 .account {
 	padding-left : 3.9%;
 }
@@ -108,16 +96,11 @@
 #form fieldset {
 	width : 40%;
 	margin-left : 30px;
+	padding-top : 15px;
 }
 
 #form input:not([type="submit"]){
 	width : 43%;
-}
-
-.account h2 {
-	display : inline-block;
-	width : 70%;
-	background-image : none;
 }
 
 .account .change-password {

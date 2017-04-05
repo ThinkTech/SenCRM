@@ -10,10 +10,10 @@
 	<span>Search :</span>
 	<select name="search.filter">
 	  <option value="name">Name</option>
-	   <option value="type">Type</option>
-	   <option value="category">Category</option>
        <option value="country">Country</option>
-       <option value="createdBy">Created By</option>
+       <option value="city">City</option>
+	   <option value="location">Location</option>
+       <option value="createdOn">Created on</option>
 	</select>
 	<input name="search.value" type="text" value="${search.value}" placeholder="Search..."/>
 </form>
@@ -21,11 +21,11 @@
 <table>
  <thead>
     <tr>
-       <th title="Name">Name</th>
-       <th title="Type">Type</th>
-       <th title="Category">Category</th>
+      <th title="Name">Name</th>
        <th title="Country">Country</th>
-       <th title="Created By">Created By</th>
+       <th title="City">City</th>
+       <th title="Location">Location</th>
+       <th title="Created on">Created on</th>
     </tr>
  </thead>
 
@@ -34,10 +34,10 @@
   <s:iterator value="structures">
 	<tr>
 	<td class="customer-16" title="${name}"><a href="company/prospects/details?id=${id}">${name}</a></td>
-	<td>${type}</td>
-	<td>${category}</td>
 	<td>${address.country}</td>
-	<td>${createdBy.fullName}</td>
+	<td>${address.city}</td>
+	<td>${address.location}</td>
+	<td><s:date name="createdOn" format="dd/MM/yyyy hh:mm:ss" /></td>
 	</tr>
 </s:iterator>
    

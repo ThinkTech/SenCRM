@@ -1,16 +1,51 @@
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.User
 
+class UserDao extends AbstractDao {
+  
+   
+   def authenticate(user) {
+        def success = false
+        def connection = getConnection()
+	    def SQL = "select id, firstName, lastName, role, structure_id from users where email = '${user.email}' and password = '${user.password}';"
+	    def stmt = connection.createStatement()
+	    def rs = stmt.executeQuery(SQL)
+	    if(rs.next()) {
+		  success = true
+		  user.id = rs.getLong(1)
+		  user.firstName = rs.getString(2)
+		  user.lastName = rs.getString(3)
+		  user.role = rs.getString(4)
+		  user.structure.id = rs.getInt(5)
+		  SQL = "select base from structures where id = ${user.structure.id};"
+		  rs = stmt.executeQuery(SQL)
+	      if(rs.next()) {
+	         user.structure.database = rs.getString("base")
+	      }
+	    }
+	    stmt.close()
+	    connection.close()
+	    success  
+   }
+   
+   def changePassword(user,password) {
+       def connection = getConnection()
+	   def SQL = "update users set password = '${password}' where id = ${user.id};"
+	   def stmt = connection.createStatement()
+	   stmt.executeUpdate(SQL)
+	   stmt.close()
+	   connection.close()
+   }
+   
+}
+
 class UserAction extends ActionSupport {
 
 	def user = new User()
 	
 	def login()  {
-		if(user.email.equals("lamine.ba@thinktech.sn")) {
-		  user.firstName = "Mamadou Lamine"
-		  user.lastName = "Ba"
-		  user.role = "support"
-		  user.structure.name = "ThinkTech"
+	    def userDao = new UserDao()
+		if(userDao.authenticate(user)) {
 		  session.setAttribute("user",user)
 		  def module = moduleManager.getMain(user)
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
@@ -54,7 +89,9 @@ class UserAction extends ActionSupport {
 	}
 	
 	def changePassword() {
-	    println "changing password"
+	    println "changing password "+user.password
+	    def userDao = new UserDao()
+	    userDao.changePassword(loggedUser,user.password)
 	    SUCCESS
 	}
 	

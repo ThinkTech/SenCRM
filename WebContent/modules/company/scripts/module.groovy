@@ -7,7 +7,92 @@ import org.metamorphosis.core.Contact
 import org.metamorphosis.core.Address
 import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
+import java.sql.Timestamp
 
+class ModuleDao extends AbstractDao {
+
+    def getStructures(instance,user) {
+     def results = []
+     try {
+      def connection = getConnection(user.structure)
+       def SQL = "select id, name, country, city,location,createdOn,createdBy from ${instance};"
+	   def stmt = connection.createStatement()
+	   def rs = stmt.executeQuery(SQL)
+	   while(rs.next()) {
+	      def result = new Structure()
+	      result.id = rs.getLong("id")
+	      result.name = rs.getString("name")
+	      result.address.country = rs.getString("country")
+	      result.address.city = rs.getString("city")
+	      result.address.location = rs.getString("location")
+	      result.createdOn = rs.getTimestamp("createdOn")
+	      results << result
+	   }
+	   stmt.close()
+	   connection.close()
+	   }catch(e) {
+	     println e
+	   }
+	    results
+    }
+    
+    def getStructure(instance,id,user) {
+     def result=null;
+     try {
+      def connection = getConnection(user.structure)
+       def SQL = "select * from ${instance} where id = ${id};"
+	   def stmt = connection.createStatement()
+	   def rs = stmt.executeQuery(SQL)
+	   if(rs.next()) {
+	      result = new Structure()
+	      result.id = rs.getLong("id")
+	      result.name = rs.getString("name")
+	      result.sigle = rs.getString("sigle")
+	      result.type = getValue("type",rs.getString("typeof"))
+	      result.business = getValue("business",rs.getString("business"))
+	      result.state = getValue("state",rs.getString("state"))
+	      result.target = getValue("target",rs.getString("target"))
+	      result.address.country = rs.getString("country")
+	      result.address.city = rs.getString("city")
+	      result.address.location = rs.getString("location")
+	      result.address.longitude = rs.getString("longitude")
+	      result.address.latitude = rs.getString("latitude")
+	      result.address.altitude = rs.getString("altitude")
+	      result.address.telephone = rs.getString("telephone")
+	      result.address.email = rs.getString("email")
+	      result.address.bp = rs.getString("bp")
+	      result.address.fax = rs.getString("fax")
+	      result.address.website = rs.getString("website")
+	      result.address.youtube = rs.getString("youtube")
+	      result.address.facebook = rs.getString("facebook")
+	      result.address.twitter = rs.getString("twitter")
+	      result.createdOn = rs.getTimestamp("createdOn")
+	      result.createdBy = getUser(rs.getLong("createdBy"))
+	   }
+	   stmt.close()
+	   connection.close()
+	   }catch(e) {
+	     println e
+	   }
+	   result
+    }
+    
+    def saveStructure(instance,structure,user) {
+     try {
+       def connection = getConnection(user.structure)
+       def SQL = """\
+           insert into ${instance}(name,sigle,typeof,business,state,target,country,city,location,telephone,email,website,createdBy) 
+           values("${structure.name}","${structure.sigle}","${structure.type}","${structure.business}","${structure.state}","${structure.target}","${structure.address.country}","${structure.address.city}",
+           "${structure.address.location}","${structure.address.telephone}","${structure.address.email}","${structure.address.website}",${user.id}) ;"""
+	   def stmt = connection.createStatement()
+	   stmt.executeUpdate(SQL)
+	     stmt.close()
+	   connection.close()
+	   }catch(e) {
+	     println e
+	   }
+    }
+}
 
 class ModuleAction extends ActionSupport {
 
@@ -17,31 +102,22 @@ class ModuleAction extends ActionSupport {
 	
 	def String execute() {
 	   println "getting customers"
-	   structures = session.getAttribute("customers")
-	   if(!structures) {
-	   		structures = []
-	   		session.setAttribute("customers",structures) 
-	   }
+	   def moduleDao = new ModuleDao()
+	   structures = moduleDao.getStructures("customers",loggedUser)
 	   SUCCESS
 	}
 	
 	def showProspects() {
 	    println "getting prospects"
-	    structures = session.getAttribute("prospects")
-	    if(!structures) {
-	   		structures = []
-	   		session.setAttribute("prospects",structures) 
-	    }
+	    def moduleDao = new ModuleDao()
+	    structures = moduleDao.getStructures("prospects",loggedUser)
 	    SUCCESS
 	}
 	
 	def showPartners() {
 	    println "getting partners"
-	    structures = session.getAttribute("partners")
-	    if(!structures) {
-	   		structures = []
-	   		session.setAttribute("partners",structures) 
-	    }
+	    def moduleDao = new ModuleDao()
+	    structures = moduleDao.getStructures("partners",loggedUser)
 	    SUCCESS
 	}
 	
@@ -61,55 +137,33 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def saveStructure()  {
-	    structures = session.getAttribute(structure.instance+"s")
-	    structure.id = new Random().nextLong() + 1
-	    structure.createdBy = loggedUser
-	    structure.createdOn = new Date()
-	    structure.contacts << contact
-	    structures << structure
+	    def moduleDao = new ModuleDao()
+	    moduleDao.saveStructure(structure.instance+"s",structure,loggedUser)
 		return structure.instance
 	}
 	
 	def showCustomer() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    structures = session.getAttribute("customers");
-	    def found;
-	    for(int i=0;i<structures.size();i++) {
-	        if(id.equals(structures[i].id)) {
-	           structure = structures[i]
-	           found = true
-	           break
-	        }
-	    }
-	    found ? SUCCESS : ERROR
+	    def moduleDao = new ModuleDao()
+	    structure = moduleDao.getStructure("customers",id,loggedUser)
+	    structure.instance = "customer"
+	    structure ? SUCCESS : ERROR
 	}
 	
 	def showProspect() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    structures = session.getAttribute("prospects");
-	    def found;
-	    for(int i=0;i<structures.size();i++) {
-	        if(id.equals(structures[i].id)) {
-	           structure = structures[i]
-	           found = true
-	           break
-	        }
-	    }
-	    found ? SUCCESS : ERROR
+	    def moduleDao = new ModuleDao()
+	    structure = moduleDao.getStructure("prospects",id,loggedUser)
+	    structure.instance = "prospect"
+	    structure ? SUCCESS : ERROR
 	}
 	
 	def showPartner() {
 	    Long id = Long.parseLong(request.getParameter("id"))
-	    structures = session.getAttribute("partners");
-	    def found;
-	    for(int i=0;i<structures.size();i++) {
-	        if(id.equals(structures[i].id)) {
-	           structure = structures[i]
-	           found = true
-	           break
-	        }
-	    }
-	    found ? SUCCESS : ERROR
+	    def moduleDao = new ModuleDao()
+	    structure = moduleDao.getStructure("partners",id,loggedUser)
+	    structure.instance = "partner"
+	    structure ? SUCCESS : ERROR
 	}
 	
 	

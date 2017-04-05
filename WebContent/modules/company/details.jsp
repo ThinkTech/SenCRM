@@ -10,12 +10,8 @@
 <div class="details">
  <span class="text-right">Type :</span>
  <span>${structure.type}</span>
-  <span class="text-right">Category :</span>
- <span>${structure.category}</span>
  <span class="text-right">Business :</span>
  <span>${structure.business}</span>
-  <span class="text-right">Size :</span>
- <span>${structure.size}</span>
 </div>
 <div class="details">
  <span class="text-right">State :</span>
@@ -24,13 +20,13 @@
   <span>${structure.target}</span>
   <span class="text-right"><i class="fa fa-globe"></i>Country :</span> 
   <span>${structure.address.country}</span>
-  <span class="text-right"><i class="fa fa-globe"></i>Town :</span>
-  <span>${structure.address.town}</span>
+  <span class="text-right"><i class="fa fa-globe"></i>City :</span>
+  <span>${structure.address.city}</span>
 </div>
 <div class="details">
- <span class="text-right">Created On :</span>
+ <span class="text-right">Created on :</span>
   <span><s:date name="structure.createdOn" format="dd/MM/yyyy hh:mm:ss" /></span>
-  <span class="text-right">Created By :</span>
+  <span class="text-right">Created by :</span>
   <span>${structure.createdBy.fullName}</span>
 </div>
 <h2><i class="fa fa-info"></i>Informations</h2>
@@ -50,7 +46,7 @@
 	  <span class="text-right"><i class="fa fa-phone"></i>Telephone :</span>
 	 <span>${structure.address.telephone}</span>
 	  <span class="text-right"><i class="fa fa-envelope"></i>Email :</span>
-	 <span>${structure.address.email}</span>
+	 <span><a href="mailto:${structure.address.email}">${structure.address.email}</a></span>
 	  <span class="text-right"><i class="fa fa-envelope"></i>BP :</span>
 	 <span>${structure.address.bp}</span>
 	  <span class="text-right"><i class="fa fa-print"></i>Fax :</span>
@@ -67,7 +63,7 @@
 </fieldset>
 </div>
 
-<div title="Contact">
+<div title="Contacts">
 <fieldset>
     <div class="details">
        <s:iterator value="structure.contacts">
@@ -78,11 +74,11 @@
 		  <span class="text-right">Profession :</span> 
 		  <span>${profession}</span>
 		  <span class="text-right">Email :</span>
-		  <span>${email}</span>
+		  <span><a href="mailto:${address.email}">${address.email}</a></span>
 		  <span class="text-right"><i class="fa fa-globe"></i>Country :</span> 
 		  <span>${address.country}</span>
-		  <span class="text-right"><i class="fa fa-globe"></i>Town :</span>
-		  <span>${address.town}</span>
+		  <span class="text-right"><i class="fa fa-globe"></i>City :</span>
+		  <span>${address.city}</span>
 		  <span class="text-right"><i class="fa fa-phone"></i>Telephone :</span>
 	     <span>${address.telephone}</span>
 	      <span class="text-right"><i class="fa fa-mobile"></i>Mobile :</span>
@@ -104,7 +100,7 @@
 </fieldset>
 </div>
 
-<div title="Account">
+<div title="Accounts">
 <fieldset>
     <div class="details">
 	</div>
