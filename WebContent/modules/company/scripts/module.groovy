@@ -135,20 +135,27 @@ class ModuleDao extends AbstractDao {
        """
        def rs = stmt.executeQuery(SQL)
        if(rs.next()) {
-           println "user already exists"
            def user_id = rs.getLong(1)
            SQL = """\
             insert INTO accounts(role,structure_id,user_id) VALUES("${structure.instance}",${user.currentAccount.structure.id},${user_id});
            """
-            println SQL
             stmt.executeUpdate(SQL)
        }else {
-           println "create user"
-           // SQL = """\
-           //   insert INTO users(firstName,lastName,email,password,role,structure_id) 
-           // VALUES("${contact.firstName}","${contact.lastName}","${contact.address.email}","passer","${structure.instance}",${user.currentAccount.structure.id});
-           // ;"""
-	       //stmt.executeUpdate(SQL);
+           SQL = """\
+             insert INTO users(firstName,lastName,email,password) 
+             VALUES("${contact.firstName}","${contact.lastName}","${contact.address.email}","passer");
+           """
+	       stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS);
+	       def generatedKeys = stmt.getGeneratedKeys()
+		   if(generatedKeys.next()) {
+	            def user_id = generatedKeys.getLong(1)
+                SQL = """\
+                   insert INTO accounts(role,structure_id,user_id) VALUES("${structure.instance}",${user.currentAccount.structure.id},${user_id});
+                 """
+                println SQL
+                stmt.executeUpdate(SQL)
+	       }
+     
        }
 	   stmt.close()
 	   connection.close()
