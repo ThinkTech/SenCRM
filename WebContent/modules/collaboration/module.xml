@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>collaboration</name>
+	<roles>customer,partner</roles>
+	<administrable>false</administrable>
+	<author>Mamadou Lamine Ba</author>
+	<authorEmail>laminba2003@yahoo.fr</authorEmail>
+	<description>module for collaboration</description>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2016</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<menus>
+		<menu>
+			<menuItem label="Account" />
+			<menuItem label="Preferences" url="preferences" />
+		</menu>
+	</menus>
+	<actions>
+		<action name="login"  url="login"  global="true"  method="login"/>
+		<action name="logout" url="logout" global="true"  method="logout">
+			<result type="redirect">/</result>
+		</action>
+		<action name="selectTemplate" url="preferences/templates/select"   method="selectTemplate"/>
+		<action name="changePassword" url="changePassword"   method="changePassword">
+		    <result type="redirect">/users</result>
+		</action>
+		
+	</actions>
+</module>

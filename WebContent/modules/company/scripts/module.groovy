@@ -131,10 +131,25 @@ class ModuleDao extends AbstractDao {
        def connection = getConnection()
        def stmt = connection.createStatement()
        def SQL = """\
-           insert INTO users(firstName,lastName,email,password,role,structure_id) 
-           VALUES("${contact.firstName}","${contact.lastName}","${contact.address.email}","passer","${structure.instance}",${user.structure.id});
-           ;"""
-	   stmt.executeUpdate(SQL);
+           select id from users where email = '${contact.address.email}';
+       """
+       def rs = stmt.executeQuery(SQL)
+       if(rs.next()) {
+           println "user already exists"
+           def user_id = rs.getLong(1)
+           SQL = """\
+            insert INTO accounts(role,structure_id,user_id) VALUES("${structure.instance}",${user.currentAccount.structure.id},${user_id});
+           """
+            println SQL
+            stmt.executeUpdate(SQL)
+       }else {
+           println "create user"
+           // SQL = """\
+           //   insert INTO users(firstName,lastName,email,password,role,structure_id) 
+           // VALUES("${contact.firstName}","${contact.lastName}","${contact.address.email}","passer","${structure.instance}",${user.currentAccount.structure.id});
+           // ;"""
+	       //stmt.executeUpdate(SQL);
+       }
 	   stmt.close()
 	   connection.close()
 	   }catch(e) {
@@ -214,13 +229,13 @@ class ModuleAction extends ActionSupport {
 	def saveStructure()  {
 	    def moduleDao = new ModuleDao()
 	    structure.contacts << contact
-	    moduleDao.saveStructure(structure,loggedUser)
+	    //moduleDao.saveStructure(structure,loggedUser)
 	    if(structure.createAccount && contact.address.email) {
 	        moduleDao.createAccount(structure,contact,loggedUser)
 	    	def mailSender = new MailSender()
 	    	def fullName = contact.firstName + " " + contact.lastName
 	    	def mail = new Mail(fullName,contact.address.email,"Invitation",getTemplate(structure))
-	    	mailSender.sendMail(mail,true)
+	    	//mailSender.sendMail(mail,true)
 	    }
 		return structure.instance
 	}

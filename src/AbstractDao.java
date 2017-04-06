@@ -9,7 +9,6 @@ import org.metamorphosis.core.User;
 
 public abstract class AbstractDao {
 
-	
 	protected Connection getConnection() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");  
 		return DriverManager.getConnection("jdbc:mysql://localhost/common","root","thinktech");
