@@ -98,10 +98,10 @@
 		
 		<label class="text-right"><i class="fa fa-mobile"></i>Mobile :</label>
 		<input title="Mobile" name="contact.address.mobile" type="text"/>
-		
-		<label class="text-right"><i class="fa fa-check-square"></i>Create Account :</label>
-		<input title="Create Account" value="true" name="structure.createAccount" type="checkbox"/>
-		
+		<div style="display:${structure.instance == 'customer' || structure.instance == 'partner' ? 'initial' : 'none'}">
+		  <label class="text-right"><i class="fa fa-check-square"></i>Create Account :</label>
+		  <input title="Create Account" value="true" name="structure.createAccount" type="checkbox"/>
+		</div>
 	</fieldset>
         
 	<input type="hidden" name="structure.instance" value="${structure.instance}"/>
