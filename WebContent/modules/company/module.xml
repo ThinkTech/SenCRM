@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
 	<name>Company</name>
+	<roles>manager</roles>
 	<main>true</main>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
@@ -49,15 +50,15 @@
 		</action>
 		
 		
-		<action url="customers/details" method="showCustomer">
+		<action url="customers/details" method="showStructure">
 			<result>details</result>
 		</action>
 		
-		<action url="prospects/details" method="showProspect">
+		<action url="prospects/details" method="showStructure">
 			<result>details</result>
 		</action>
 		
-		<action url="partners/details" method="showPartner">
+		<action url="partners/details" method="showStructure">
 			<result>details</result>
 		</action>
 		

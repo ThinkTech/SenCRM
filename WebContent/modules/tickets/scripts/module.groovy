@@ -183,17 +183,17 @@ class TicketAction extends ActionSupport {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
 		def text = '''\
-		 div {
-		    img(src : "http://thinktech.sn/images/logo.png", style : "display:block;margin : 0 auto")
-		    div(style : "margin-top:10px;padding:10px;height:120px;text-align:center;background:#eee") {
-		      h4(style : "font-size: 35px;color: rgb(0, 0, 0);white-space: nowrap;margin: 3px") {
-		        span("New Notification from the technical support")
+		 div(style : "margin-left:auto;margin-right:auto;width:90%") {
+		    img(src : "https://thinktech.sn/images/logo.png", style : "display:block;margin : 0 auto")
+		    div(style : "margin-top:10px;padding:10px;height:90px;text-align:center;background:#eee") {
+		      h4(style : "font-size: 200%;color: rgb(0, 0, 0);margin: 3px") {
+		        span("New Notification from the $ticket.department team")
 		      }
-		      h1(style : "font-size: 29px;white-space: nowrap;color:#06d0d8;margin: 3px;font-weight: bold;text-transform: uppercase;line-height: 57px;") {
+		      h1(style : "font-size: 150%;color:#06d0d8;margin-top: 15px;font-weight: bold;text-transform: uppercase;") {
 		        span("Ticket : $ticket.id")
 		      }
 		    }
-		    div(style : "width:60%;margin:auto;margin-bottom:30px") {
+		    div(style : "width:60%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("$message")
 		    }
 		    div(style : "text-align:center") {

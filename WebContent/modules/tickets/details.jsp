@@ -64,6 +64,7 @@
 </div>
 <input name="ticket.id" type="hidden" value="${ticket.id}"/>
 <input name="ticket.subject" type="hidden" value="${ticket.subject}"/>
+<input name="ticket.department" type="hidden" value="${ticket.department}"/>
 <input type="submit" title="Send Message" value="Send"/>
 </form>
 </div>

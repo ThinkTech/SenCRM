@@ -100,7 +100,7 @@
 		<input title="Mobile" name="contact.address.mobile" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-check-square"></i>Create Account :</label>
-		<input title="Create Account" name="" type="checkbox"/>
+		<input title="Create Account" value="true" name="structure.createAccount" type="checkbox"/>
 		
 	</fieldset>
         

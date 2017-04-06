@@ -22,9 +22,7 @@
   <span>${structure.address.country}</span>
   <span class="text-right"><i class="fa fa-globe"></i>City :</span>
   <span>${structure.address.city}</span>
-</div>
-<div class="details">
- <span class="text-right">Created on :</span>
+  <span class="text-right">Created on :</span>
   <span><s:date name="structure.createdOn" format="dd/MM/yyyy hh:mm:ss" /></span>
   <span class="text-right">Created by :</span>
   <span>${structure.createdBy.fullName}</span>
@@ -95,6 +93,10 @@
 	 <span><a href="${address.facebook}" target="_blank">${address.facebook}</a></span>
 	  <span class="text-right"><i class="fa fa-twitter"></i>Twitter :</span>
 	 <span><a href="${address.twitter}" target="_blank">${address.twitter}</a></span>
+	 <span class="text-right">Created on :</span>
+    <span><s:date name="createdOn" format="dd/MM/yyyy hh:mm:ss" /></span>
+    <span class="text-right">Created by :</span>
+    <span>${createdBy.fullName}</span>
 	  </s:iterator>
 	</div>
 </fieldset>
