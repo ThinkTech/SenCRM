@@ -176,12 +176,21 @@ h1.app_title span {
 }
 .login_w3ls{
     margin: 1.5em 0 0;
-    text-align:center;
+    text-align:left;
+    padding-left : 20%;
 	
 }
+
+.login_w3ls span {
+	color: #fff;
+	font-size: 1em;
+	margin-left: 10px;
+	margin-right : 10px;
+}
+
 .login_w3ls a {
 	color: #dcffff;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 .login_w3ls a:hover {
 	color: #fff;
@@ -414,6 +423,10 @@ h1.app_title span {
     padding: 1.5em;}
 }
 @media screen and (max-width: 320px){
+	
+	.login_w3ls{
+    padding-left : 7%;
+	}
 	
 	h1.agile_head {
     letter-spacing: 3px;

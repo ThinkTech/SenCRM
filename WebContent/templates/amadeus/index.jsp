@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <input type="submit" value="LogIn" class="agileinfo" />
 					</form>
 					 <div class="login_w3ls">
-				        <a href="#">Forgot Password</a>
+				        <a href="#">Forgot Password</a> <span>|</span> <a href="#">Register</a>
 					 </div>    
                 </div>
             </div>
