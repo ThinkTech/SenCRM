@@ -6,14 +6,14 @@
 </div>
 <h1 class="icon-32">Account</h1>
 <div class="details">
-    <span class="text-right">Type : </span>
-   <span>${loggedUser.role}</span>
    <span class="text-right">First Name : </span>
    <span>${loggedUser.firstName}</span>
    <span class="text-right">Last Name : </span>
    <span>${loggedUser.lastName}</span>  
    <span class="text-right">Email : </span>
    <span>${loggedUser.email}</span>
+   <span class="text-right">Language : </span>
+   <span>en</span>
 </div>
 <div class="change-password">
 <img src="${images}/security_64.png" width="64px" height="64px"/>

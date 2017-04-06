@@ -1,30 +1,46 @@
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.User
+import org.metamorphosis.core.Account
 
 class UserDao extends AbstractDao {
   
    
    def authenticate(user) {
-        def success = false
+       def success = false
+       try {
         def connection = getConnection()
-	    def SQL = "select id, firstName, lastName, role, structure_id from users where email = '${user.email}' and password = '${user.password}';"
+	    def SQL = """\
+	        select u.id, u.firstName, u.lastName, a.role, a.structure_id from users u, accounts a 
+	        where u.email = '${user.email}' and u.password = '${user.password}' and u.id = a.user_id;
+	        """    
+	    println SQL
 	    def stmt = connection.createStatement()
 	    def rs = stmt.executeQuery(SQL)
-	    if(rs.next()) {
+	    while(rs.next()) {
 		  success = true
-		  user.id = rs.getLong(1)
-		  user.firstName = rs.getString(2)
-		  user.lastName = rs.getString(3)
-		  user.role = rs.getString(4)
-		  user.structure.id = rs.getInt(5)
-		  SQL = "select base from structures where id = ${user.structure.id};"
-		  rs = stmt.executeQuery(SQL)
-	      if(rs.next()) {
-	         user.structure.database = rs.getString("base")
+		  user.id = rs.getLong("id")
+		  user.firstName = rs.getString("firstName")
+		  user.lastName = rs.getString("lastName")
+		  def account = new Account()
+		  account.role = rs.getString("role")
+		  account.structure.id = rs.getInt("structure_id")
+		  SQL = "select base from structures where id = ${account.structure.id};"
+		  def stmt2 = connection.createStatement()
+		  def rs2 = stmt2.executeQuery(SQL)
+	      if(rs2.next()) {
+	        account.structure.database = rs2.getString("base")
+	        user.accounts << account
 	      }
+	      stmt2.close()
+	      println account.role
+	    println account.structure.id
+	    println account.structure.database
 	    }
 	    stmt.close()
 	    connection.close()
+	    }catch(e){
+	      println e
+	    }
 	    success  
    }
    

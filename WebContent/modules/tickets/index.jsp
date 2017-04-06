@@ -10,8 +10,6 @@
 	<span>Search :</span>
 	<select name="search.filter">
 	   <option value="subject">Subject</option>
-	   <option value="createdBy">Created by</option>
-	   <option value="createdOn">Created on</option>
        <option value="product">Product</option>
        <option value="department">Department</option>
        <option value="priority">Priority</option>
@@ -24,7 +22,6 @@
  <thead>
     <tr>
        <th title="Subject">Subject</th>
-       <th title="Created by">Created by</th>
        <th title="Created on">Created on</th>
        <th title="Product">Product</th>
        <th title="Department">Department</th>

@@ -13,7 +13,7 @@ class ModuleDao extends AbstractDao {
     def getStructures(instance,user) {
      def results = []
      try {
-      def connection = getConnection(user.structure)
+      def connection = getConnection(user)
        def SQL = "select id, name, country, city,location,createdOn,createdBy from structures where instance = '${instance}';"
 	   def stmt = connection.createStatement()
 	   def rs = stmt.executeQuery(SQL)
@@ -38,7 +38,7 @@ class ModuleDao extends AbstractDao {
     def getStructure(id,user) {
      def result=null;
      try {
-      def connection = getConnection(user.structure)
+      def connection = getConnection(user)
       def stmt = connection.createStatement()
        def SQL = "select * from structures where id = ${id};"
 	   def rs = stmt.executeQuery(SQL)
@@ -102,7 +102,7 @@ class ModuleDao extends AbstractDao {
     
     def saveStructure(structure,user) {
      try {
-       def connection = getConnection(user.structure)
+       def connection = getConnection(user)
        def stmt = connection.createStatement()
        def SQL = """\
            insert into structures(name,sigle,instance,typeof,business,state,target,country,city,location,telephone,email,website,createdBy) 
@@ -140,6 +140,31 @@ class ModuleDao extends AbstractDao {
 	   }catch(e) {
 	     println e
 	   }
+    }
+    
+    def searchStructures(instance,search,user) {
+     def results = []
+     try {
+      def connection = getConnection(user)
+       def SQL = "select id, name, country, city,location,createdOn,createdBy from structures where instance = '${instance}' and ${search.filter} like '${search.value}%';"
+	   def stmt = connection.createStatement()
+	   def rs = stmt.executeQuery(SQL)
+	   while(rs.next()) {
+	      def result = new Structure()
+	      result.id = rs.getLong("id")
+	      result.name = rs.getString("name")
+	      result.address.country = rs.getString("country")
+	      result.address.city = rs.getString("city")
+	      result.address.location = rs.getString("location")
+	      result.createdOn = rs.getTimestamp("createdOn")
+	      results << result
+	   }
+	   stmt.close()
+	   connection.close()
+	   }catch(e) {
+	     println e
+	   }
+	    results
     }
     
 }
@@ -214,21 +239,27 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	
+	def search(instance) {
+	    if(!search.value) {
+	    	showStructures(instance)
+	    }else {
+	       def moduleDao = new ModuleDao()
+	       structures = moduleDao.searchStructures(instance,search,loggedUser)
+	    }
+	}
+	
 	def searchCustomers() {
-	    println search.filter
-	    println search.value
+	    search("customer")
 	    SUCCESS
 	}
 	
 	def searchProspects() {
-	    println search.filter
-	    println search.value
+	    search("prospect")
 	    SUCCESS
 	}
 	
 	def searchPartners() {
-	    println search.filter
-	    println search.value
+	    search("partner")
 	    SUCCESS
 	}
 		

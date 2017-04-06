@@ -13,7 +13,6 @@
        <option value="country">Country</option>
         <option value="city">City</option>
 	   <option value="location">Location</option>
-       <option value="createdOn">Created on</option>
 	</select>
 	<input name="search.value" type="text" value="${search.value}" placeholder="Search..."/>
 </form>

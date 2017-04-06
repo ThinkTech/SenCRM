@@ -15,11 +15,15 @@ insert into structures(name,typeof,business,state,target,country,city,location,e
 values('ThinkTech',"1","1","1","4","SEN","Dakar","Lot 6, Sonepi, Industrial Zone,Thiaroye Azur","info@thinktech.sn","https://www.thinktech.sn","thinktech",1);
 
 
-CREATE TABLE users(id int AUTO_INCREMENT PRIMARY KEY, firstName varchar(100) not null,lastName varchar(100) not null,email varchar(100) not null, password varchar(100) not null, 
-role varchar(100) not null, lang varchar(2), structure_id int not null,FOREIGN KEY (structure_id) REFERENCES structures(id));
+CREATE TABLE users(id int AUTO_INCREMENT PRIMARY KEY, firstName varchar(100) not null,lastName varchar(100) not null, email varchar(100) not null, password varchar(100) not null,lang varchar(2));
 
-insert INTO users(firstName,lastName,email,password,role,structure_id) VALUES("Mamadou Lamine","Ba","lamine.ba@thinktech.sn","passer","manager",1);
+insert INTO users(firstName,lastName,email,password) VALUES("Mamadou Lamine","Ba","lamine.ba@thinktech.sn","passer");
 
+CREATE TABLE accounts(id int AUTO_INCREMENT PRIMARY KEY, 
+role varchar(100) not null, structure_id int not null, user_id int not null,FOREIGN KEY(user_id) REFERENCES users(id));
+
+insert INTO accounts(role,structure_id,user_id) VALUES("manager",1,1);
+ 
 drop database thinktech;
 
 create database thinktech;

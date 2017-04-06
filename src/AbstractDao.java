@@ -2,6 +2,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
+import org.metamorphosis.core.Account;
 import org.metamorphosis.core.Structure;
 import org.metamorphosis.core.User;
 
@@ -13,7 +15,9 @@ public abstract class AbstractDao {
 		return DriverManager.getConnection("jdbc:mysql://localhost/common","root","thinktech");
 	}
 	
-	protected Connection getConnection(Structure structure) throws Exception {
+	protected Connection getConnection(User user) throws Exception {
+		Account account = user.getCurrentAccount();
+		Structure structure = account.getStructure();
 		Class.forName("com.mysql.jdbc.Driver");  
 		return DriverManager.getConnection("jdbc:mysql://localhost/"+structure.getDatabase(),"root","thinktech");
 	}
