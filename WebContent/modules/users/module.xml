@@ -3,12 +3,12 @@
 	<name>users</name>
 	<visible>false</visible>
 	<administrable>false</administrable>
-	<author>Mamadou Lamine Ba</author>
-	<authorEmail>laminba2003@yahoo.fr</authorEmail>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>module for managing users</description>
 	<creationDate>2016-09-01</creationDate>
-	<copyright>© 2016</copyright>
-	<license>GNU/GPL</license>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
 	<version>1.0</version>
 	<menus>
 		<menu>

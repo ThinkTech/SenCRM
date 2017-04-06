@@ -3,12 +3,12 @@
 	<name>collaboration</name>
 	<roles>customer,partner</roles>
 	<administrable>false</administrable>
-	<author>Mamadou Lamine Ba</author>
-	<authorEmail>laminba2003@yahoo.fr</authorEmail>
-	<description>module for collaboration</description>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>module for collaborating</description>
 	<creationDate>2016-09-01</creationDate>
-	<copyright>© 2016</copyright>
-	<license>GNU/GPL</license>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
 	<version>1.0</version>
 	<menus>
 		<menu>
