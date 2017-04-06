@@ -49,6 +49,11 @@
 			<result name="partner" type="redirect">/company/partners</result>
 		</action>
 		
+		<action url="delete" method="deleteStructure">
+			<result name="customer" type="redirect">/company/customers</result>
+			<result name="prospect" type="redirect">/company/prospects</result>
+			<result name="partner" type="redirect">/company/partners</result>
+		</action>
 		
 		<action url="customers/details" method="showStructure">
 			<result>details</result>
