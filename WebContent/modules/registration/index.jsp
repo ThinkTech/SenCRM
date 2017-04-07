@@ -94,5 +94,6 @@ document.addEventListener("DOMContentLoaded",function(){
 		$("input[type=submit]",this).attr("disabled","disabled");
 	});
 	app.getCountries("en","SEN");
+	$("input:first").focus();
 });
 </script>

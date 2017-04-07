@@ -37,12 +37,14 @@
 	font-size: 84%;
     padding-top: 5px;
     width : 29%;
+    margin-top : 1px;
 }
 
 #form input:not([type="submit"]), #form select {
 	width : 70%;
 	height : 35px;
 	margin-top : 1px;
+	border : 1px solid;
 }
 
 #form input[type=checkbox] {
