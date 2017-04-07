@@ -5,9 +5,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /*--reset--*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -31,11 +28,6 @@ body {
 	margin:0;
 	font-size: 100%;
 	font-family: 'Lato', sans-serif;
-}
-h1,h2,h3,h4,h5,h6,input,p,a,select,button,textarea,label{
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	margin:0;
 }
 .text-center {
 	text-align: center;
@@ -84,6 +76,10 @@ label{
 	text-align:center;
 }
 
+.text-right {
+	background:#000;
+}
+
 input:focus,select:focus,a:focus { 
 	border : 1px solid rgb(234, 133, 17);
 }
@@ -107,24 +103,31 @@ h1.agile_head {
     font-weight: 600;
     padding-top: 2.6em;
     letter-spacing: 5px;
-    font-family : Verdana;
     padding-left : 8px;
+    margin-top : -40px;
 }
 
-h1.app_title {
-	font-size: 2.1em;
-    color: #040100;
-    font-weight: 600;
+div.app_title {
     letter-spacing: 2px;
     margin-left : 20px;
-	margin-top : 10px;
+    margin-top : 10px;
 }
 
-h1.app_title img {
+div.app_title a,div.app_title a:visited {
+	color: #040100;
+	font-size: 2.1em;
+    font-weight: 600;
+}
+
+div.app_title a:focus {
+	border : none;
+}
+
+div.app_title img {
 	position : absolute;
 }
 
-h1.app_title span {
+div.app_title a {
 	display : block;
 	margin-left:50px;
 	font-family : tahoma;
@@ -140,6 +143,10 @@ h1.app_title span {
 }
 
 /* form */
+
+#form input:not([type="submit"]), #form select {
+	background : #cfbfa8;
+}
 
 .w3_agile_login input[type="email"],.w3_agile_login input[type="password"],.agile_its_registration input[type="text"],.agile_its_registration input[type="password"],.agile_its_registration input[type="email"]{
     padding: 0.7em 1em;

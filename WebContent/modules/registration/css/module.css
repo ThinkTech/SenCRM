@@ -1,0 +1,98 @@
+.registration {
+	width : 40%;
+	margin : auto;
+}
+
+.registration > h1 {
+	font-size: 2em;
+    white-space: nowrap;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-weight : bold;
+    text-align : center;
+}
+
+.registration p {
+	background-color: #eceaea;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.success {
+	margin-top : 50px;
+	margin-bottom : 100px;
+	width : 50%;
+}
+
+#form fieldset {
+	margin-bottom : 5px;
+	padding-bottom : 15px;
+	background : transparent;
+	padding-right : 30px;
+}
+
+#form fieldset label {
+	height : 35px;
+	font-size: 84%;
+    padding-top: 5px;
+    width : 29%;
+}
+
+#form input:not([type="submit"]), #form select {
+	width : 70%;
+	height : 35px;
+	margin-top : 1px;
+}
+
+#form input[type=checkbox] {
+	margin-right : 52%;
+	width : 35px;
+}
+
+
+/*--------------------*/
+/* Responsive Style */
+/*--------------------*/
+
+
+@media(max-width:1199px ){
+	.success {width : 60%;}
+	.registration {width : 50%;}
+}
+
+@media(max-width:1024px ){
+	.registration {width : 45%;}
+}
+  
+@media(max-width:991px ){
+	.success {width : 50%;}
+	.registration {width : 60%;}
+}
+
+@media(max-width:767px ){
+	h4 {background-position-y : 6px}
+	.registration {width : 70%;}
+	.registration > h1 {font-size:1.5em}
+}
+@media(max-width:640px){
+	.success {width : 90%;}
+	.registration {width : 90%;}
+	#form fieldset label {width : 40%;}
+	#form input:not([type="submit"]), #form select {width : 50%;}
+    #form input[type=checkbox] {width:35px;margin-right : 40%}
+}
+ 
+@media(max-width:480px ){
+	.registration {width : 95%;}
+	#form fieldset label {width : 40%;}
+	#form input:not([type="submit"]), #form select {width : 55%;}
+    #form input[type=checkbox] {width:35px;margin-right : 45%}
+}
+@media(max-width:360px ){
+	#form fieldset label {width : 40%;}
+	#form input:not([type="submit"]), #form select {width : 58%;}
+    #form input[type=checkbox] {width:35px;margin-right : 40%}
+}
+@media(max-width:320px ){
+}
