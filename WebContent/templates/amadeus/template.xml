@@ -2,6 +2,7 @@
 <template>
 	<name>amadeus</name>
 	<type>front-end</type>
+	<redirect>login.jsp</redirect>
 	<selected>true</selected>
 	<author>w3layouts.com</author>
 	<authorUrl>https://w3layouts.com/</authorUrl>
