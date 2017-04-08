@@ -81,17 +81,24 @@
 		   <label title="${description}" class="required text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox"/> 
 		</s:iterator>
-	  
 	</fieldset>
-        	
+	<div class="captcha">
+     <div class="g-recaptcha" data-sitekey="6LfcIBwUAAAAAMpRV6hzY9LHZJWbGyO4k668VXP1"></div>
+    </div>    	
 	<input type="submit" title="Create Account"  value="Create"/>
 </form>
 
 </div>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <script>
 document.addEventListener("DOMContentLoaded",function(){
 	$("form").on("submit",function(){
+		if(!grecaptcha.getResponse()) {
+			alert("you must check the captcha");
+			return false;
+		}
 		$("input[type=submit]",this).attr("disabled","disabled");
+		return true;
 	});
 	app.getCountries("en","SEN");
 	$("input:first").focus();

@@ -52,6 +52,13 @@
 	width : 35px;
 }
 
+.gc-reset{
+transform:scale(0.95) !important;
+-webkit-transform:scale(0.95) !important;
+transform-origin:0 0 !important;
+-webkit-transform-origin:0 0 !important;
+}
+
 
 /*--------------------*/
 /* Responsive Style */
@@ -84,6 +91,7 @@
 	#form input:not([type="submit"]), #form select {width : 50%;}
     #form input[type=checkbox] {width:35px;margin-right : 40%}
 }
+
  
 @media(max-width:480px ){
 	.registration {width : 95%;}
@@ -95,6 +103,8 @@
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 58%;}
     #form input[type=checkbox] {width:35px;margin-right : 40%}
+    .captcha{max-width:286px;width:286px;overflow:hidden}
 }
 @media(max-width:320px ){
+	.captcha{max-width:286px;width:286px;overflow:hidden}
 }
