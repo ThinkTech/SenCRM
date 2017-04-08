@@ -13,14 +13,14 @@
 		<input title="Sigle" name="account.structure.sigle" type="text"/>
 		
 		<label class="required text-right">Type :</label>
-		<select required title="Type" name="account.structure.type">
+		<select title="Type" name="account.structure.type">
 		 	<option value="1">Company</option>
 		 	<option value="2">Organization</option>
 		 	<option value="3">Government</option>
 		</select>
 		
 		<label class="required text-right">Business :</label>
-		<select required title="Business" name="account.structure.business">
+		<select title="Business" name="account.structure.business">
 		    <option value="1">Software</option>
 		 	<option value="2">Hosting</option>
 		 	<option value="3">Industrial</option>
@@ -31,7 +31,7 @@
 		</select>
 		
 		<label class="required text-right">State :</label>
-		<select required title="State" name="account.structure.state">
+		<select title="State" name="account.structure.state">
 		 	<option value="1">rising</option>
 		 	<option value="2">growing</option>
 		 	<option value="3">strong</option>
@@ -39,7 +39,7 @@
 		</select>
 		
 		<label class="required text-right">Target :</label>
-		<select required title="Target" name="account.structure.target">
+		<select title="Target" name="account.structure.target">
 		 	<option value="1">Companies</option>
 		 	<option value="2">Governments</option>
 		 	<option value="3">Communities</option>
@@ -53,6 +53,9 @@
 		<label class="text-right"><i class="fa fa-globe"></i>City :</label>
 		<input   title="City" name="account.structure.address.city" type="text"/>
 		
+		<label class="text-right"><i class="fa fa-globe"></i>Address :</label>
+		<input   title="City" name="account.structure.address.location" type="text"/>
+		
 	</fieldset>
 	
 	 <fieldset>
@@ -64,22 +67,28 @@
 		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input required title="Last Name" name="user.lastName" type="text"/>
 		
-	    <label class="text-right"><i class="fa fa-envelope"></i>Email :</label>
-		<input title="Email" name="user.email" type="email"/>
+	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
+		<input required title="Email" name="user.email" type="email"/>
+		
+		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
+		<select title="Language" name="">
+		        <option value="en">English</option>
+		</select>
 		
 		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
-		<input title="Password" name="user.password" type="password"/>
+		<input required id="password" title="Password" name="user.password" type="password"/>
 		
 		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
-		<input title="Confirm"  type="password"/>
+		<input required id="confirm" title="Confirm"  type="password"/>
 		
 	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
-	   <s:iterator value="moduleManager.modules">
+	   <s:iterator value="subscription">
 		   <label title="${description}" class="required text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox"/> 
+		   <span class="price">2500 XOF/Month</span>
 		</s:iterator>
 	</fieldset>
 	<div class="captcha">
@@ -93,10 +102,18 @@
 <script>
 document.addEventListener("DOMContentLoaded",function(){
 	$("form").on("submit",function(){
-		if(!grecaptcha.getResponse()) {
-			alert("you must check the captcha");
+		const password = $("#password");
+		const confirm = $("confirm");
+		if(password.val() != confirm.val()) {
+			alert("the two passwords are not identicals",function(){
+				password.focus();
+			});
 			return false;
 		}
+		/*if(!grecaptcha.getResponse()) {
+			alert("you must check the captcha");
+			return false;
+		}*/
 		$("input[type=submit]",this).attr("disabled","disabled");
 		return true;
 	});

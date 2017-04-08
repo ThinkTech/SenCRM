@@ -111,6 +111,7 @@ div.app_title {
     letter-spacing: 2px;
     margin-left : 20px;
     margin-top : 10px;
+    width : 210px;
 }
 
 div.app_title a,div.app_title a:visited {
