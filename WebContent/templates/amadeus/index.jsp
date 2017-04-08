@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <base href="${path}"/>
-<title>${title ? title : 'ThinkTech Portal'}</title>
+<title>${title!=null ? title : 'ThinkTech Portal'}</title>
 <meta property="og:url"  content="${baseUrl}" />
 <meta property="og:type" content="website" />
 <meta property="og:title"  content="Welcome to ThinkTech Portal" />
