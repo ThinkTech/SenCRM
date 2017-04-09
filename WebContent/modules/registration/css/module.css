@@ -23,16 +23,15 @@
 
 
 .registration .price {
-    position: absolute;
+    display: inline-block;
     color: #1c5206;
-    background: #fff;
     padding: 5px;
+    padding-top : 10px;
     font-size: 70%;
-    margin-left : -50px;
-}
-
-.registration .price:last-of-type {
-    margin-left : -47px;
+    width : 40%;
+    height : 34px;
+    vertical-align : top;
+    white-space:nowrap;
 }
 
 .success {
@@ -82,7 +81,7 @@
 }
 
 #form input[type=checkbox] {
-	margin-right : 52%;
+	margin-right : 2px;
 	width : 35px;
 }
 
@@ -123,7 +122,7 @@ transform-origin:0 0 !important;
 	.registration {width : 90%;}
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 50%;}
-    #form input[type=checkbox] {width:35px;margin-right : 40%}
+    #form input[type=checkbox] {width:35px;}
 }
 
  
@@ -131,15 +130,14 @@ transform-origin:0 0 !important;
 	.registration {width : 95%;}
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 55%;}
-    #form input[type=checkbox] {width:35px;margin-right : 45%}
-    .registration .price {margin-left : -80px;margin-top:5px}
-    .registration .price:last-of-type { margin-left: -78px;}
+    #form input[type=checkbox] {width:35px;}
 }
 @media(max-width:360px ){
-	#form fieldset label {width : 40%;}
-	#form input:not([type="submit"]), #form select {width : 58%;}
-    #form input[type=checkbox] {width:35px;margin-right : 40%}
+	#form fieldset label {width : 50%;}
+	#form input:not([type="submit"]), #form select {width : 48%;}
+    #form input[type=checkbox] {width:35px;}
     .captcha{max-width:286px;width:286px;overflow:hidden}
+    .registration .price {width:30%}
 }
 @media(max-width:320px ){
 	.captcha{max-width:286px;width:286px;overflow:hidden}
