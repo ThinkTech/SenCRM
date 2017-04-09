@@ -36,6 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
   <script src="https://use.fontawesome.com/cb87d958ba.js" async defer></script>
+  <script src="${js}/module.js" async defer></script>
 </body>
 </html>
 

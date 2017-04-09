@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>Home</name>
+	<type>front-end</type>
+	<main>true</main>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>module for managing the home page</description>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+</module>
