@@ -20,7 +20,7 @@ CREATE TABLE users(id int AUTO_INCREMENT PRIMARY KEY, firstName varchar(100) not
 insert INTO users(firstName,lastName,email,password) VALUES("Mamadou Lamine","Ba","lamine.ba@thinktech.sn","passer");
 
 CREATE TABLE accounts(id int AUTO_INCREMENT PRIMARY KEY, 
-main boolean default false,activated boolean default false,role varchar(100) not null, structure_id int not null, user_id int not null,FOREIGN KEY(user_id) REFERENCES users(id),createdOn TIMESTAMP DEFAULT NOW(),createdBy int);
+main boolean,activated boolean,trial boolean,role varchar(100) not null, structure_id int not null, user_id int not null,FOREIGN KEY(user_id) REFERENCES users(id),createdOn TIMESTAMP DEFAULT NOW(),createdBy int);
 
 insert INTO accounts(role,structure_id,user_id) VALUES("manager",1,1);
  
