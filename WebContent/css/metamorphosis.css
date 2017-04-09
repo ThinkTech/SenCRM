@@ -116,6 +116,44 @@ input {
 	margin-right : 0px;
 }
 
+.scrollToTop{
+  background-color: #06d0d8;
+  color: #fff;
+}
+.scrollToTop:hover,.scrollToTop:focus{  
+  color: #fff;
+}
+
+/*scrol to top*/
+
+.scrollToTop {
+  bottom: 35px;
+  display: none;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+  z-index: 9;
+  border:1px solid;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius : 50%;
+  line-height : 45px;
+}
+
+.scrollToTop:hover, .scrollToTop:focus{
+  text-decoration: none;
+  outline: none;
+  background-color: #000;
+}
+
 fieldset {
 	background-repeat: no-repeat;
 	background-position: 4px 15px;
@@ -918,4 +956,5 @@ ul.tabs li h2 {
 }
 @media(max-width:320px ){
 	input[type=submit]{margin-left : 45%;margin-top : 40px;}
+	.scrollToTop {bottom : 5px}
 }

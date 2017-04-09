@@ -133,7 +133,7 @@ transform-origin:0 0 !important;
 	#form input:not([type="submit"]), #form select {width : 55%;}
     #form input[type=checkbox] {width:35px;margin-right : 45%}
     .registration .price {margin-left : -80px;margin-top:5px}
-    
+    .registration .price:last-of-type { margin-left: -78px;}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 40%;}
@@ -143,4 +143,5 @@ transform-origin:0 0 !important;
 }
 @media(max-width:320px ){
 	.captcha{max-width:286px;width:286px;overflow:hidden}
+	
 }

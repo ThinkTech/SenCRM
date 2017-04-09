@@ -25,10 +25,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <link rel="shortcut icon" href="images/logo.png"  sizes="32x32"/>  
 </head>
 <body class="bg agileinfo">
+ <!-- scroll to top  -->   
+   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">SenCRM</a></div>
    <script src="js/jquery-3.1.1.min.js"></script>
-   <script src="templates/amadeus/js/easyResponsiveTabs.js" async defer></script>
-   <script src="js/metamorphosis.js" async defer></script>
+   <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
+   <script src="js/metamorphosis.js"></script>
    <tiles:insertAttribute name="content"/>
    <div class="agileits_w3layouts_copyright text-center">
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="//thinktech.sn/" target="_blank">ThinkTech</a></p>
