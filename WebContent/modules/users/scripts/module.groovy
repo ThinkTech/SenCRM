@@ -1,6 +1,8 @@
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.User
 import org.metamorphosis.core.Account
+import org.metamorphosis.core.Subscription
+
 
 class UserDao extends AbstractDao {
   
@@ -33,8 +35,7 @@ class UserDao extends AbstractDao {
 	      }
 	      stmt2.close()
 	      println account.role
-	    println account.structure.id
-	    println account.structure.database
+	      
 	    }
 	    stmt.close()
 	    connection.close()
@@ -64,6 +65,11 @@ class UserAction extends ActionSupport {
 		if(userDao.authenticate(user)) {
 		  session.setAttribute("user",user)
 		  def module = moduleManager.getMain(user)
+		  def structure = user.accounts[0].structure
+		  structure.subscription = new Subscription()
+		  structure.subscription.modules << moduleManager.modules[1]
+		   structure.subscription.modules << moduleManager.modules[2]
+		   structure.subscription.modules << moduleManager.modules[3]
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
 		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 		}else if(user.email.equals("pbb@thinktech.sn")) {

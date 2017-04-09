@@ -57,7 +57,7 @@
 		<label class="text-right"><i class="fa fa-globe"></i>City :</label>
 		<input   title="City" name="structure.address.city" type="text"/>
 		
-		<label class="text-right"><i class="fa fa-map-marker"></i>Location :</label>
+		<label class="text-right"><i class="fa fa-map-marker"></i>Address :</label>
 		<input title="Address" name="structure.address.location" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-phone"></i> Telephone :</label>

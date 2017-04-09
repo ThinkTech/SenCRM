@@ -361,7 +361,7 @@ aside ul li {
 	font-weight: 500;
 	line-height: 2em;
 	background-repeat: no-repeat;
-	background-position: 16% 20%;
+	background-position: 16% 49%;
 }
 
 aside a {
@@ -780,9 +780,8 @@ ul.tabs li {
 	font-size: 75%;
 	font-weight: bold;
 	background: #fff;
-	overflow: hidden;
 	position: relative;
-	width: 90px;
+	min-width: 90px;
     padding-top: 6px;
     border-radius: 5px;
     margin-right: 3px;

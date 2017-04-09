@@ -2,7 +2,6 @@
 <div id="content">
 <div class="buttons">
  <a href="${referer}" title="Back" class="back-16">Back</a>
- <a href="${baseUrl}/company/delete?id=${structure.id}&instance=${structure.instance}" title="Delete" class="delete-16" onclick="return deleteStructure(event,'Are you sure that you want to delete this structure?');">Delete</a>
  <a href="company/${structure.instance}s/create" title="Create ${structure.instance}" class="new-16">Create</a> 
  <a title="Refresh" class="refresh-16">Refresh</a>
  <a title="Help" class="help-16">Help</a> 
@@ -31,7 +30,7 @@
 <h2><i class="fa fa-info"></i>Informations</h2>
 <div id="tabs">
 
-<div title="Address">
+<div title="${structure.type}">
 <fieldset>
     <div class="details">
 	  <span class="text-right"><i class="fa fa-map-marker"></i>Location :</span>
@@ -125,12 +124,6 @@
 </fieldset>
 </div>
 
-<div title="Additional">
-<fieldset>
-    <div class="details">
-    </div>
-</fieldset>
-</div>
 
 </div>
 </div>

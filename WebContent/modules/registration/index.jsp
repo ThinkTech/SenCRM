@@ -103,7 +103,7 @@
 document.addEventListener("DOMContentLoaded",function(){
 	$("form").on("submit",function(){
 		const password = $("#password");
-		const confirm = $("confirm");
+		const confirm = $("#confirm");
 		if(password.val() != confirm.val()) {
 			alert("the two passwords are not identicals",function(){
 				password.focus();

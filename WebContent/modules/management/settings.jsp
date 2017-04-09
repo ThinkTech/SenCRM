@@ -29,7 +29,14 @@
 <h2><i class="fa fa-info"></i>Informations</h2>
 <div id="tabs">
 
-<div title="Address">
+<div title="Account">
+<fieldset>
+    <div class="details">
+	</div>
+</fieldset>
+</div>
+
+<div title="${structure.type}">
 <fieldset>
     <div class="details">
 	  <span class="text-right"><i class="fa fa-map-marker"></i>Location :</span>
@@ -60,15 +67,14 @@
 </fieldset>
 </div>
 
-<div title="Account">
+<div title="Logo">
 <fieldset>
     <div class="details">
 	</div>
 </fieldset>
 </div>
 
-
-<div title="Billing">
+<div title="Departments">
 <fieldset>
     <div class="details">
 	</div>

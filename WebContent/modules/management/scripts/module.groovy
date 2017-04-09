@@ -254,13 +254,6 @@ class ModuleAction extends ActionSupport {
 	    structure ? SUCCESS : ERROR
 	}
 	
-	def deleteStructure() {
-	    Long id = Long.parseLong(request.getParameter("id"))
-	    def moduleDao = new ModuleDao()
-	    return request.getParameter("instance")
-	}
-	
-	
 	def search(instance) {
 	    if(!search.value) {
 	    	showStructures(instance)
