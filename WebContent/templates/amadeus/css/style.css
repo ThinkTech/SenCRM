@@ -155,7 +155,7 @@ div.app_title a {
     color: #fff;
     width: 98.5%;
 	background: transparent;
-	border: 1px solid #d9d9ce;
+	border: 1px solid #1bd3da;
 	font-size:0.85em;
 	outline: none;
 	letter-spacing: 1px;
@@ -167,21 +167,15 @@ div.app_title a {
 .w3_agile_login input[type="submit"] {
 	width:98.5%;
     text-transform: uppercase;
-    background: #00BCD4;
     outline: none;
     border: none;
     cursor: pointer;
-	color: #000;
-	font-size:0.85em;
 	font-weight: 600;
 	padding: 0.7em 0;
 	letter-spacing: 1px;
 	margin : auto;
 }
-.w3_agile_login input[type="submit"]:hover,.agile_its_registration input[type="submit"]:hover,.agile_its_registration input[type="reset"]:hover{
-	color: #000;
-	background: #fff;
-}
+
 .login_w3ls{
     margin: 1.5em 0 0;
     text-align:left;
@@ -275,6 +269,11 @@ div.app_title a {
 }
 /* //form */
 /* copyright */
+
+.agileits_w3layouts_copyright  {
+	margin-top: 50px;
+}
+
 .agileits_w3layouts_copyright a:hover {
 	color: #00BCD4;
 	text-decoration: none;
@@ -290,6 +289,7 @@ div.app_title a {
 }
 .agileits_w3layouts_copyright.text-center {
     padding-bottom: 2em;
+    word-spacing : 2px;
 }
 
 #alert-dialog-container span:nth-child(1) {
@@ -327,7 +327,7 @@ div.app_title a {
 }
 @media screen and (max-width: 768px){
 	h1.agile_head {
-    font-size: 1.7em;margin-bottom : 40px}
+    font-size: 1.7em;}
 	.wrap {
      width: 60%;}
      #wait {padding-top : 40%;padding-left : 43%}

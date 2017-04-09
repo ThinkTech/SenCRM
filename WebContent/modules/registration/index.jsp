@@ -87,7 +87,7 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="subscription">
 		   <label title="${description}" class="required text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox"/> 
+		   <input type="checkbox" data-checked="${mandatory}" data-disabled="${mandatory}"/> 
 		   <span class="price">2500 XOF/Month</span>
 		</s:iterator>
 	</fieldset>
@@ -116,6 +116,12 @@ document.addEventListener("DOMContentLoaded",function(){
 		}*/
 		$("input[type=submit]",this).attr("disabled","disabled");
 		return true;
+	});
+	$("input[type=checkbox]").each(function(index,element){
+		const checked = $(element).attr("data-checked");
+		if(checked=='true') $(element).attr("checked","true");
+		const disabled = $(element).attr("data-checked");
+		if(disabled=='true') $(element).attr("disabled","true");
 	});
 	app.getCountries("en","SEN");
 	$("input:first").focus();

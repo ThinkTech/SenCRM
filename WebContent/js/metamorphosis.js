@@ -186,7 +186,7 @@ page.init = function() {
 	$("#alert-dialog-container").on('keydown', function(event) {     
        switch (event.keyCode) {
             case 27:
-            	$(this).hide();
+            	$(document.activeElement).click();
                 break;
             case 13:
             	$(document.activeElement).click();

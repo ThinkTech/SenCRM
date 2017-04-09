@@ -27,13 +27,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body class="bg agileinfo">
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">SenCRM</a></div>
    <script src="js/jquery-3.1.1.min.js"></script>
-   <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
-   <script src="js/metamorphosis.js"></script>
+   <script src="templates/amadeus/js/easyResponsiveTabs.js" async defer></script>
+   <script src="js/metamorphosis.js" async defer></script>
    <tiles:insertAttribute name="content"/>
    <div class="agileits_w3layouts_copyright text-center">
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="//thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
-  <script src="https://use.fontawesome.com/cb87d958ba.js"></script>
+  <script src="https://use.fontawesome.com/cb87d958ba.js" async defer></script>
 </body>
 </html>
 

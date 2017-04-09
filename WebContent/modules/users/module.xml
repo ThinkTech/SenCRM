@@ -2,6 +2,7 @@
 <module>
 	<name>users</name>
 	<visible>false</visible>
+	<mandatory>true</mandatory>
 	<administrable>false</administrable>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>

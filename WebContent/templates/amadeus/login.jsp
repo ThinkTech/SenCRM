@@ -6,14 +6,14 @@
                <div class="w3_agile_login">
                     <form action="${login}" class="agile_form" method="post">
                       <span id="error-message"></span>
-					  <p>Email</p>
+					  <p><i class="fa fa-envelope"></i>Email</p>
 					  <input type="email" name="user.email" required="required" />
-					  <p>Password</p>
+					  <p><i class="fa fa-key"></i>Password</p>
 					  <input type="password" name="user.password" required="required" class="password" /> 
 					  <input type="submit" value="LogIn" class="agileinfo" />
 					</form>
 					 <div class="login_w3ls">
-				        <a href="#">Forgot Password</a> <span>|</span> <a href="registration">Create Account</a>
+				        <a href="#"><i class="fa fa-key"></i>Forgot Password</a> <span>|</span> <a href="registration"><i class="fa fa-user"></i>Create Account</a>
 					 </div>    
                 </div>
             </div>

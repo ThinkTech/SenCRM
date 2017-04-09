@@ -3,6 +3,7 @@
 	<name>Management</name>
 	<roles>manager</roles>
 	<main>true</main>
+	<mandatory>true</mandatory>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>module for managing customers, prospects and partners</description>
