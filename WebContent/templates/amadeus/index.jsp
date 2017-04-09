@@ -33,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <script src="js/metamorphosis.js"></script>
    <tiles:insertAttribute name="content"/>
    <div class="agileits_w3layouts_copyright text-center">
-			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="//thinktech.sn/" target="_blank">ThinkTech</a></p>
+			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
   <script src="https://use.fontawesome.com/cb87d958ba.js" async defer></script>
 </body>
