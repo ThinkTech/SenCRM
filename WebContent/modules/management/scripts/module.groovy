@@ -284,6 +284,13 @@ class ModuleAction extends ActionSupport {
 	    search("partner")
 	    SUCCESS
 	}
+	
+	def showSettings() {
+	    def moduleDao = new ModuleDao()
+	    def id = loggedUser.currentAccount.structure.id
+	    structure = moduleDao.getStructure(id,loggedUser)
+	    SUCCESS
+	}
 		
 	def getTemplate(structure) {
 	    TemplateConfiguration config = new TemplateConfiguration()

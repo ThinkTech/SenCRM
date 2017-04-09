@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
 	<name>Management</name>
+	<url>company</url>
 	<roles>manager</roles>
 	<main>true</main>
 	<mandatory>true</mandatory>
@@ -16,6 +17,7 @@
 			<menuItem label="Customers" icon="customers-16"/>
 			<menuItem label="Prospects" url="prospects" icon="prospects-16"/>
 			<menuItem label="Partners" url="partners" icon="partners-16"/>
+			<menuItem label="Settings" url="settings" />
 		</menu>
     </menus>
     <actions>
@@ -78,6 +80,10 @@
 		
 		<action url="partners/search" method="searchPartners">
 			<result>partners</result>
+		</action>
+		
+		<action url="settings" method="showSettings">
+			<result>settings</result>
 		</action>
 		
 	</actions>
