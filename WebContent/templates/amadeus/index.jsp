@@ -9,11 +9,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <base href="${path}"/>
-<title>${title!=null ? title : 'ThinkTech Portal'}</title>
+<title>${title!=null ? title : 'SenCRM'}</title>
 <meta property="og:url"  content="${baseUrl}" />
 <meta property="og:type" content="website" />
-<meta property="og:title"  content="Welcome to ThinkTech Portal" />
-<meta property="og:description"  content="Portal for interacting with us and to follow the evolution of your projects." />
+<meta property="og:title"  content="Welcome to SenCRM" />
+<meta property="og:description"  content="Customer Relation Management Software as a Service for managing your structure." />
 <meta property="og:image" content="${baseUrl}/images/image.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
