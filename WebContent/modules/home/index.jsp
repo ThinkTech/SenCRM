@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
     <a href="http://support.thinktech.sn" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
     <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
@@ -9,7 +10,7 @@
   <div class="center">
         <h1><span>Welcome To</span> SenCRM</h1>
               <p>
-				<b>We offer</b> a complete and integrated <b>CRM</b> solution that breaks down silos to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
+				We offer a modular and extensible <b>CRM</b> solution that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
 			 </p>
   </div>
   </li>
@@ -30,6 +31,21 @@
     </div>
   </li>
 </ul>
+</div>
+<div class="video">
+  <div class="video-container">
+     <iframe id="player" src="https://www.youtube.com/embed/z9Ul9ccDOqE"  frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="center">
+<h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
+<s:iterator value="moduleManager.backendModules">
+  <div class="center module">
+     <h2>${name}</h2>
+	 <img src="modules/${id}/images/icon-32.png"/>
+	 <span>${description}</span>
+  </div>
+</s:iterator>
 </div>
 <div class="center">
 <div class="center">

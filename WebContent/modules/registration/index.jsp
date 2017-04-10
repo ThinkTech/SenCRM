@@ -85,7 +85,7 @@
 	
 	<fieldset>
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
-	   <s:iterator value="subscription">
+	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="required text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox" data-checked="${mandatory}" data-disabled="${mandatory}"/> 
 		   <span class="price">2500 XOF/Month</span>

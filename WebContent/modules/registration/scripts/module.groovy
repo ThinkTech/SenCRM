@@ -19,15 +19,7 @@ class ModuleAction extends ActionSupport {
 
     def account = new Account()
     def user = new User() 
-    def subscription
-    
-    def String execute() {
-       subscription = []
-       for(def module : moduleManager.modules) {
-          if(module.backend) subscription << module
-       }
-       SUCCESS
-    }
+    def subscription = []
     
 	def register() {
 	   println account.structure.name
