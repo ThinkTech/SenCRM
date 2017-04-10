@@ -8,7 +8,7 @@
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1><span>Welcome To</span> SenCRM</h1>
+        <h1>Welcome To SenCRM</h1>
               <p>
 				We offer a modular and extensible <b>CRM Solution</b> that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
 			 </p>
@@ -16,7 +16,7 @@
   </li>
   <li>
   <div class="center">
-     <h1>Beautiful <span>Clear and Flexible</span></h1>
+     <h1>Beautiful, Clear and Flexible</h1>
               <p>
  				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster.
  				</p>
@@ -24,7 +24,7 @@
   </li>
   <li>
     <div class="center">
-       <h1><span>Beausiness</span> & Corporate</h1>
+       <h1>Beausiness & Corporate</h1>
               <p>
 				 A modern, integrated <b>CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
 			  </p>
