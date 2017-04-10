@@ -72,24 +72,6 @@ class UserAction extends ActionSupport {
 		   structure.subscription.modules << moduleManager.modules[3]
 		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
 		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
-		}else if(user.email.equals("pbb@thinktech.sn")) {
-		  user.firstName = "Pape Babacar"
-		  user.lastName = "Ba"
-		  user.role = "customer"
-		  user.structure.name = "ThinkTech"
-		  session.setAttribute("user",user)
-		  def module = moduleManager.getMain(user)
-		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
-		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
-		}else if(user.email.equals("mamadou.diaw@thinktech.sn")) {
-		  user.firstName = "Mamadou"
-		  user.lastName = "Diaw"
-		  user.role = "support"
-		  user.structure.name = "ThinkTech"
-		  session.setAttribute("user",user)
-		  def module = moduleManager.getMain(user)
-		  def url = module ? request.contextPath+"/"+module.url: request.contextPath+"/"
-		  response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 		}
 		else {
 		  response.setStatus(404)
