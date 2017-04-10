@@ -59,6 +59,17 @@ h1,h2,h3,h4,h5,h6{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }	
+
+h1.header {
+	font-size: 2em;
+    white-space: nowrap;
+    padding: 0px;
+    font-weight : bold;
+    text-align : center;
+    line-height: 30px;
+    margin-top: 50px;
+}
+
 p{
 	margin:0;
 	

@@ -1,4 +1,4 @@
-<h1 class="agile_head text-center"><i class="fa fa-user"></i>Identification</h1>
+<h1 class="header"><i class="fa fa-user"></i>Identification</h1>
    <div class="w3layouts_main wrap">
     <!--Horizontal Tab-->
         <div id="parentHorizontalTab_agile">

@@ -95,27 +95,6 @@ input {
 	padding-left: 2px;
 }
 
-.buttons {
-	float: right;
-}
-
-.buttons a {
-	font-size: 12px;
-	background-repeat: no-repeat;
-	padding: 6px;
-	padding-left: 22px;
-	background-position: 4.3% 50%;
-	margin-right: 5px;
-	text-align: center;
-	cursor: pointer;
-	font-weight: normal;
-	user-select: none;
-}
-
-.buttons a:last-of-type {
-	margin-right : 0px;
-}
-
 .scrollToTop{
   background-color: #06d0d8;
   color: #fff;
@@ -284,6 +263,35 @@ header img {
 	display: inline-block;
 	vertical-align: top;
 }
+
+.buttons {
+	position : absolute;
+	top : 10px;
+	right : 10px;
+}
+
+.button {
+    float: right;
+    margin-right: 10px;
+    background: #191717;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #06d0d8;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom : 15px;
+}
+
+.button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.button i {
+	margin-right : 3px;
+}
+
 
 .topmenu {
 	display: inline-block;
@@ -923,7 +931,7 @@ ul.tabs li h2 {
 	input[type=submit]{margin-left : 65%;}
 	.details span {width:58%}
 	.details span.text-right {width:35%}
-	.buttons {width : 100%;margin-top: 25px;line-height: 35px;}
+	.buttons {width : 100%;margin-top: 25px;}
 	.buttons a {margin-bottom : 5px}
 	#content h1 {overflow : hidden;white-space:nowrap}
 	#form fieldset label {width:35%}
@@ -948,6 +956,7 @@ ul.tabs li h2 {
 	#form input:not([type="submit"]), #form select {width: 45%;}
 	#form input[type=checkbox]{width:24px;margin-right:39%;margin-top : 3px;}
 	input[type=submit]{margin-left : 55%;}
+	.buttons {position:relative;margin-top:0px}
 }
 @media(max-width:360px ){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:55%}
