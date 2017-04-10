@@ -89,6 +89,7 @@ label{
 
 .text-right {
 	background:#000;
+	color : #dcffff;
 }
 
 input:focus,select:focus,a:focus { 

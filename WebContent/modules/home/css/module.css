@@ -73,12 +73,13 @@
 
 .module h2 {
 	margin-bottom: 15px;
-    background: #bfa58c;
     text-transform: capitalize;
     width: auto;
     margin-top: 15px;
-    padding-left: 5px;
+    padding-right: 10px;
     border: 1px solid;
+    height : auto;
+    padding-bottom : 5px;
 }
 
 .module img {
