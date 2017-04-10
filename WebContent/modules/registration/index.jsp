@@ -1,4 +1,8 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<div class="buttons">
+    <a href="http://support.thinktech.sn" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
+    <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+</div>
 <div class="registration">
 <h1 class="text-center"><i class="fa fa-user"></i>Create your account</h1>
 <form id="form" action="registration/register" method="post"> 
