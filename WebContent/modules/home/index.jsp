@@ -10,7 +10,7 @@
   <div class="center">
         <h1><span>Welcome To</span> SenCRM</h1>
               <p>
-				We offer a modular and extensible <b>CRM</b> solution that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
+				We offer a modular and extensible <b>CRM solution</b> that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
 			 </p>
   </div>
   </li>
