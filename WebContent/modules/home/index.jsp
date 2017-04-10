@@ -10,7 +10,7 @@
   <div class="center">
         <h1><span>Welcome To</span> SenCRM</h1>
               <p>
-				We offer a modular and extensible <b>CRM solution</b> that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
+				We offer a modular and extensible <b>CRM Solution</b> that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
 			 </p>
   </div>
   </li>
@@ -18,7 +18,7 @@
   <div class="center">
      <h1>Beautiful <span>Clear and Flexible</span></h1>
               <p>
- 				Today's mobile salesforce needs a <b>CRM</b> system that is easy to use and provides the relevant information they need to make sales faster.
+ 				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster.
  				</p>
   </div>
   </li>
