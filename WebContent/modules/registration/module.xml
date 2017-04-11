@@ -2,6 +2,7 @@
 <module>
 	<name>Registration</name>
 	<type>front-end</type>
+	<title>Registration</title>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>module for managing the registration</description>

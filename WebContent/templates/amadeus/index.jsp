@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <base href="${path}"/>
-<title>${title!=null ? title : 'SenCRM'}</title>
+<title>${title}</title>
 <meta property="og:url"  content="${baseUrl}" />
 <meta property="og:type" content="website" />
 <meta property="og:title"  content="Welcome To SenCRM" />
