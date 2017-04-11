@@ -48,7 +48,7 @@ class ModuleAction extends ActionSupport {
 		    }
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
-		      p("Please confirm your email address to get full access to SenCRM")
+		      p("Please confirm your email address to get full access to $app")
 		    }
 		    div(style : "text-align:center") {
 		       a(href : "$url/registration/confirm?id=1245555",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
@@ -60,13 +60,13 @@ class ModuleAction extends ActionSupport {
 		  div(style :"margin-top:10px;font-size : 11px;text-align:center") {
 		      p("You're receiving this email because you (or someone using this email)")
 		      p(" created an account using this address")
-		      p("Didn't sign up for SenCRM? <a href='$url/registration/close?id=1245555'>Close account</a>")
+		      p("Didn't sign up for $app? <a href='$url/registration/close?id=1245555'>Close account</a>")
 		  }
 		  
 		   
 		 }
 		'''
-		def template = engine.createTemplate(text).make([account:account,url : baseUrl])
+		def template = engine.createTemplate(text).make([account:account,url : baseUrl,app : getInitParameter('app_name')])
 		template.toString()
 	}
 		

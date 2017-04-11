@@ -8,6 +8,6 @@
  solution and were are really opened to any feedback.
  
  <span>Regards<br/>
- Thinktech Team</span>
+ ThinkTech Team</span>
  </p>
 </div>
