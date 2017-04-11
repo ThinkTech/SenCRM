@@ -107,7 +107,7 @@
 	</div>
 	<div>
 	  <p>
-	   By clicking on the Create button below, you understand and agree that the use of ${initParam['app_name']} is subject to these <a href="#">Terms of Use</a> 
+	   By clicking on the Create button below, you understand and agree that the use of ${app_name} is subject to these <a href="#">Terms of Use</a> 
 	   and this <a href="#">Privacy Policy</a>, including the fact that ThinkTech may transfer your personal information collected in connection with your 
 	   registration to its affiliates globally and to third party entities that provide services to ThinkTech.
 	  </p>

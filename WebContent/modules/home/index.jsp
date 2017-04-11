@@ -8,7 +8,7 @@
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1>Welcome To SenCRM</h1>
+        <h1>Welcome To ${app_name}</h1>
               <p>
 				We offer a modular and extensible <b>CRM Solution</b> that is easy to use to deliver a seamless customer experience across marketing, sales, commerce, service, and social.
 			 </p>
@@ -50,7 +50,7 @@
 <div class="center">
 <div class="center">
 <p>
-<h2>SenCRM is tested with the following browser</h2>
+<h2>${app_name} is tested with the following browser</h2>
     <ul class="list">
       <li>Internet Explorer 6,7,8,9</li>
       <li>Firefox 3,6,8,11</li>

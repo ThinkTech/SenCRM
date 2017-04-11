@@ -12,8 +12,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>${title}</title>
 <meta property="og:url"  content="${baseUrl}" />
 <meta property="og:type" content="website" />
-<meta property="og:title"  content="${initParam['app_title']}" />
-<meta property="og:description"  content="${initParam['app_description']}" />
+<meta property="og:title"  content="${app_title}" />
+<meta property="og:description"  content="${app_description}" />
 <meta property="og:image" content="${baseUrl}/images/image.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -27,7 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body class="bg agileinfo">
  <!-- scroll to top  -->   
    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-   <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${initParam['app_name']}</a></div>
+   <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
    <tiles:insertAttribute name="content"/>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>

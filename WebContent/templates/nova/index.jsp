@@ -6,6 +6,11 @@
    <meta charset="UTF-8"/>
    <base href="${path}"/>
    <title>${title}</title>
+   <meta property="og:url"  content="${baseUrl}" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title"  content="${app_title}" />
+   <meta property="og:description"  content="${app_description}" />
+   <meta property="og:image" content="${baseUrl}/images/image.jpg" />
    <meta name="viewport" content="width=device-width,initial-scale=1"/>
    <link href="${logo}" rel="icon" type="image/x-icon" />
    <link href="css/metamorphosis.css" rel="stylesheet"/>
@@ -19,7 +24,7 @@
 		<header>
 		   <div class="logo">
 		     <img src="${logo}"/>
-		     <h2>SenCRM</h2>
+		     <h2>${app_name}</h2>
 		   </div>
 		   <div class="topmenu">
 		         <s:iterator value="modules">
@@ -49,7 +54,7 @@
 	          </button>
 		      <tiles:insertAttribute name="content"/>
 		      <footer>
-			    <p>&copy; 2017 Designed by <a href="https://www.thinktech.sn" target="_blank">ThinkTech</a></p>
+			    <p>&copy; 2017 Designed by <a href="http://www.thinktech.sn" target="_blank">ThinkTech</a></p>
 		     </footer>
 		   </main>
 	</div>
