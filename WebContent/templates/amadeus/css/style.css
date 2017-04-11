@@ -103,6 +103,15 @@ input:focus,select:focus,a:focus {
 	background-attachment: fixed;
 	background-color : #cfbfa8;
 }
+
+.module {
+	background : #e9e4e8;
+}
+
+.success {
+	background-color: #eceaea;
+}
+
 .wrap {
 	padding: 1.5em;
     width: 28%;
