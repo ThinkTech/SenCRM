@@ -127,7 +127,9 @@ document.addEventListener("DOMContentLoaded",function(){
 		const disabled = $(element).attr("data-checked");
 		if(disabled=='true') $(element).attr("disabled","true");
 	});
-	app.getCountries("en","SEN");
+	$.get("https://ipinfo.io", function(response) {
+		  app.getCountries("en",response.country);
+	}, "jsonp");
 	$("input:first").focus();
 });
 </script>
