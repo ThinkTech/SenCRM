@@ -1,3 +1,4 @@
+
 .registration {
 	width : 40%;
 	margin : auto;
@@ -21,6 +22,21 @@
     margin-bottom : 30px;
 }
 
+#form p {
+	margin-bottom : 0px;
+	margin-top : 0px;
+	padding-top : 10px;
+	font-size : 90%;
+}
+
+#form p span {
+	display: inline-block;
+    width: auto;
+    position: absolute;
+    padding-right: 8px;
+    line-height: 1.2em;
+    padding-top: 10px;
+}
 
 .registration .price {
     display: inline-block;

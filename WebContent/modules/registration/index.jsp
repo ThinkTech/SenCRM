@@ -7,7 +7,32 @@
 <h1 class="text-center"><i class="fa fa-user"></i>Create your account</h1>
 <form id="form" action="registration/register" method="post"> 
    
-     <fieldset>
+	 <fieldset>
+		<h1><i class="fa fa-user"></i>Account</h1>
+		
+		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
+		<input required title="First Name" name="user.firstName"  type="text"/>
+		
+		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
+		<input required title="Last Name" name="user.lastName" type="text"/>
+		
+	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
+		<input required title="Email" name="user.email" type="email"/>
+		
+		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
+		<select title="Language" name="">
+		        <option value="en">English</option>
+		</select>
+		
+		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
+		<input required id="password" title="Password" name="user.password" type="password"/>
+		
+		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
+		<input required id="confirm" title="Confirm"  type="password"/>
+		
+	</fieldset>
+	
+	<fieldset>
 		<h1><i class="fa fa-building"></i>Structure</h1>
 		
 		<label class="required text-right">Name : </label>
@@ -54,38 +79,14 @@
 		<select class="country" required title="Country" name="account.structure.address.country">
 		</select>
 		
-		<label class="text-right"><i class="fa fa-globe"></i>City :</label>
-		<input   title="City" name="account.structure.address.city" type="text"/>
+		<label class="required text-right"><i class="fa fa-globe"></i>City :</label>
+		<input  required title="City" name="account.structure.address.city" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-globe"></i>Address :</label>
 		<input   title="City" name="account.structure.address.location" type="text"/>
 		
 	</fieldset>
 	
-	 <fieldset>
-		<h1><i class="fa fa-user"></i>Account</h1>
-		
-		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
-		<input required title="First Name" name="user.firstName"  type="text"/>
-		
-		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
-		<input required title="Last Name" name="user.lastName" type="text"/>
-		
-	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
-		<input required title="Email" name="user.email" type="email"/>
-		
-		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
-		<select title="Language" name="">
-		        <option value="en">English</option>
-		</select>
-		
-		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
-		<input required id="password" title="Password" name="user.password" type="password"/>
-		
-		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
-		<input required id="confirm" title="Confirm"  type="password"/>
-		
-	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
@@ -95,6 +96,19 @@
 		   <span class="price">2500 XOF/Month</span>
 		</s:iterator>
 	</fieldset>
+	<div>
+	   <p>
+	      <input type="checkbox" checked/> 
+		  <span>Yes, send me emails on ThinkTech Products, Services and Events.</span> 
+	   </p>
+	</div>
+	<div>
+	  <p>
+	   By clicking on the Create button below, you understand and agree that the use of SenCRM is subject to these <a href="#">Terms of Use</a> 
+	   and this <a href="#">Privacy Policy</a>, including the fact that ThinkTech may transfer your personal information collected in connection with your 
+	   registration to its affiliates globally and to third party entities that provide services to ThinkTech.
+	  </p>
+	</div>
 	<div class="captcha">
      <div class="g-recaptcha" data-sitekey="6LfcIBwUAAAAAMpRV6hzY9LHZJWbGyO4k668VXP1"></div>
     </div>    	
