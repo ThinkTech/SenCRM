@@ -16,6 +16,9 @@
 		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input required title="Last Name" name="user.lastName" type="text"/>
 		
+		<label class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
+		<input required title="Profession" name="user.profession" type="text"/>
+		
 	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input required title="Email" name="user.email" type="email"/>
 		
