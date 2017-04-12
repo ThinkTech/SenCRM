@@ -10,7 +10,7 @@ public class DataManager {
 		Map<String,String> map = new HashMap<String,String>();
 		map.put("1", "Company");
 		map.put("2", "Organization");
-		map.put("3", "Governement");
+		map.put("3", "Government");
 		data.put("type", map);
 		map = new HashMap<String,String>();
 		map.put("1", "Software");

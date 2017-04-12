@@ -51,13 +51,29 @@
 		
 		<label class="required text-right">Business :</label>
 		<select title="Business" name="account.structure.business">
-		    <option value="1">Software</option>
-		 	<option value="2">Hosting</option>
-		 	<option value="3">Industrial</option>
+		    <option value="1">Government</option>
+		    <option value="2">Telecommunication</option>
+		 	<option value="3">Legal services</option>
 		 	<option value="4">Construction</option>
-		 	<option value="5">Consulting</option>
-		 	<option value="6">Provision of services</option>
-		 	<option value="7">Other</option>
+		 	<option value="5">Food processing</option>
+		 	<option value="6">Consulting</option>
+		 	<option value="7">Gambling</option>
+		 	<option value="8">Retail sales</option>
+		 	<option value="9">Franchising</option>
+		 	<option value="10">Real estate</option>
+		 	<option value="11">Education</option>
+		 	<option value="12">Pharmaceuticals</option>
+		 	<option value="13">Hospitality/Tourism</option>
+		 	<option value="14">Mass media</option>
+		 	<option value="15">Healthcare/hospitals</option>
+		 	<option value="16">Public health</option>
+		 	<option value="17" selected>Information technology</option>
+		 	<option value="18">Waste disposal</option>
+		 	<option value="19">Banking</option>
+		 	<option value="20">Insurance</option>
+		 	<option value="21">Financial services</option>
+		 	<option value="22">FMCG</option>
+		 	<option value="23">Other</option>
 		</select>
 		
 		<label class="required text-right">State :</label>
