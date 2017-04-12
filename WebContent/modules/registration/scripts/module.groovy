@@ -25,9 +25,10 @@ class ModuleAction extends ActionSupport {
 	   println account.structure.name
 	   def dao = new ModuleDao()
 	   dao.saveAccount(account, {
-	       def mailSender = new MailSender()
+	       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
+	       def mailSender = new MailSender(mailConfig)
 	       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
-	       mailSender.sendMail(mail,true)
+	       mailSender.sendMail(mail)
 	   })
 	   SUCCESS
 	}
