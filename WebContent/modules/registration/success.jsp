@@ -1,3 +1,6 @@
+<div class="buttons">
+    <a href="${baseUrl}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+</div>
 <div class="registration success">
  <h1><i class="fa fa-user"></i>Account Created</h1>
  <p>
