@@ -10,7 +10,7 @@
 					  <input type="email" name="user.email" required="required" />
 					  <p><i class="fa fa-key"></i>Password</p>
 					  <input type="password" name="user.password" required="required" class="password" /> 
-					  <input type="submit" value="LogIn" class="agileinfo" />
+					  <input type="submit" value="Sign in" class="agileinfo" />
 					</form>
 					 <div class="login_w3ls">
 				        <a href="#"><i class="fa fa-key"></i>Forgot Password</a> <span>|</span> <a href="registration"><i class="fa fa-user"></i>Create Account</a>
