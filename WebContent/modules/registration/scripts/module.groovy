@@ -48,8 +48,8 @@ class ModuleAction extends ActionSupport {
 		    }
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
-		      p("Please confirm your email address to get access to $app in order to use the modules to which you have subscribed.")
-		      p("You can update your subscription at any time once connected to the application.")
+		      p("Please confirm your email address to get access to $app to use the modules to which you have subscribed.")
+		      p("You can update your subscription at any time once logged to your account.")
 		    }
 		    div(style : "text-align:center") {
 		       a(href : "$url/registration/confirm?id=1245555",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
