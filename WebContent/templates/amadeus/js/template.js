@@ -6,7 +6,7 @@ $(document).ready(function() {
 		fit: true, // 100% fit in a container
 		tabidentify: 'hor_1' // The tab groups identifier
 	});
-	$('input[type=email]').focus();
+	$('#email').focus();
 	$(".agile_form").submit(function(event){
 		app.authenticate($(this));
 		return false;
