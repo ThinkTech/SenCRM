@@ -7,7 +7,7 @@
 <form id="form" action="registration/register" method="post"> 
    
 	 <fieldset>
-		<h1><i class="fa fa-user"></i>Account</h1>
+		<h1><i class="fa fa-user"></i>Manager</h1>
 		
 		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
 		<input required title="First Name" name="user.firstName"  type="text"/>
