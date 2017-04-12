@@ -47,6 +47,7 @@
 		<select title="Type" name="account.structure.type">
 		 	<option value="1">Company</option>
 		 	<option value="2">Organization</option>
+		 	<option value="3">Government</option>
 		</select>
 		
 		<label class="required text-right">Business :</label>
