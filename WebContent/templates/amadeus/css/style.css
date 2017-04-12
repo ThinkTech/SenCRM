@@ -189,7 +189,6 @@ div.app_title a {
 }
 .w3_agile_login input[type="submit"] {
 	width:98.5%;
-    text-transform: uppercase;
     outline: none;
     border: none;
     cursor: pointer;
