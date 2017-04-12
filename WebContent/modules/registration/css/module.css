@@ -9,7 +9,7 @@
     padding: 0px;
     font-weight : bold;
     text-align : center;
-    margin-top : 40px;
+    margin-top : 20px;
     margin-bottom : 20px;
 }
 
@@ -130,7 +130,6 @@ transform-origin:0 0 !important;
 @media(max-width:767px ){
 	h4 {background-position-y : 6px}
 	.registration {width : 70%;}
-	.registration > h1 {font-size:1.5em}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
@@ -147,6 +146,7 @@ transform-origin:0 0 !important;
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 55%;}
     #form input[type=checkbox] {width:35px;}
+    .registration > h1 {font-size:1.5em}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 50%;}
