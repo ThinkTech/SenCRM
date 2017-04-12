@@ -16,7 +16,7 @@
   </li>
   <li>
   <div class="center">
-     <h1>Beautiful, Clear and Flexible</h1>
+     <h1>Beautiful, Clear & Flexible</h1>
               <p>
  				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster.
  				</p>
