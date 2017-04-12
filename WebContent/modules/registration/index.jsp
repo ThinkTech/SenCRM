@@ -1,6 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
-    <a href="http://support.thinktech.sn" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
     <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>
 <div class="registration">
@@ -48,7 +47,6 @@
 		<select title="Type" name="account.structure.type">
 		 	<option value="1">Company</option>
 		 	<option value="2">Organization</option>
-		 	<option value="3">Government</option>
 		</select>
 		
 		<label class="required text-right">Business :</label>
