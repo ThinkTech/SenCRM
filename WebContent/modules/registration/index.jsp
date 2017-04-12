@@ -73,7 +73,7 @@
 		 	<option value="19">Banking</option>
 		 	<option value="20">Insurance</option>
 		 	<option value="21">Financial services</option>
-		 	<option value="22">FMCG</option>
+		 	<option value="22">FMCG (Fast-Moving Consumer Goods)</option>
 		 	<option value="23">Other</option>
 		</select>
 		
