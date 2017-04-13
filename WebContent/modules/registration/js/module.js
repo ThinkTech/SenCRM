@@ -28,23 +28,23 @@ app.ready(function(){
 		$("input[type=submit]").attr("disabled","disabled");
 		return true;
 	});
-	var total = 0;
+	var price = 0;
 	$("input[type=checkbox]").each(function(index,element){
 		const checked = $(element).attr("data-checked");
 		if(checked=='true') {
 			$(element).attr("checked","true").on('change', function() {
 			    this.checked=!this.checked?!alert('this module is mandatory'):true;
 			});
-			total += 2500;
+			price += 2500;
 		}else {
 			$(element).on('change', function() {
-			    total = this.checked ? total + 2500 : total -2500;
-			    $("#total").html(total);
+			    price = this.checked ? price + 2500 : price -2500;
+			    $("#price").html(price);
 			});
 		}
 		
 	});
-	$("#total").html(total);
+	$("#price").html(price);
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
