@@ -17,16 +17,8 @@ class ModuleDao extends AbstractDao {
 
 class Registration {
     
-    String choice
+    String subscription
     boolean mailing
-    
-    def setChoice(String choice) {
-       this.choice = choice
-    }
-    
-    def setMailing(boolean mailing) {
-       this.mailing = mailing
-    }
 
 }
 
@@ -34,12 +26,11 @@ class ModuleAction extends ActionSupport {
 
     def account = new Account()
     def user = new User() 
-    def subscription = []
     def registration = new Registration()
     
 	def register() {
 	   println account.structure.name
-	   println registration.choice
+	   println registration.subscription
 	   println registration.mailing
 	   def dao = new ModuleDao()
 	  /* dao.saveAccount(account, {
