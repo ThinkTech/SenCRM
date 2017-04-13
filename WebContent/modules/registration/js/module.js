@@ -1,5 +1,5 @@
 app.ready(function(){
-	$("form").on("submit",function(){
+	$("form").on("submit",function(event){
 		const password = $("#password");
 		const confirm = $("#confirm");
 		if(password.val() != confirm.val()) {
@@ -12,7 +12,20 @@ app.ready(function(){
 			alert("you must check the captcha");
 			return false;
 		}*/
-		$("input[type=submit]",this).attr("disabled","disabled");
+		$("input[required]").each(function(index,element){
+			const val = $(element).val();
+			if(val.trim() == '') {
+				$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
+				alert("this field is required",function(){
+					$(element).focus();
+					$("input[type=submit]").removeAttr("disabled");
+				});
+				event.preventDefault() ;
+			    event.stopPropagation();
+			    return false;
+			}
+		});
+		$("input[type=submit]").attr("disabled","disabled");
 		return true;
 	});
 	$("input[type=checkbox]").each(function(index,element){

@@ -37,7 +37,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
    <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>
-   <script src="https://use.fontawesome.com/cb87d958ba.js" async defer></script>
 </body>
 </html>
 
