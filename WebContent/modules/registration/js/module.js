@@ -8,10 +8,10 @@ app.ready(function(){
 			});
 			return false;
 		}
-		/*if(!grecaptcha.getResponse()) {
+		if(!grecaptcha.getResponse()) {
 			alert("you must check the captcha");
 			return false;
-		}*/
+		}
 		$("input[required]").each(function(index,element){
 			const val = $(element).val();
 			if(val.trim() == '') {

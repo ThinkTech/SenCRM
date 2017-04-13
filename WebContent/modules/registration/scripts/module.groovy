@@ -29,14 +29,17 @@ class ModuleAction extends ActionSupport {
     def registration = new Registration()
     
 	def register() {
-	  def dao = new ModuleDao()
-	  dao.saveAccount(user,account,registration,{
-	       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
-	       def mailSender = new MailSender(mailConfig)
-	       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
-	       mailSender.sendMail(mail)
-	   })
-	   SUCCESS
+	  def captcha = request.getParameter("g-recaptcha-response");
+	  if(captcha) {
+	      def dao = new ModuleDao()
+		  dao.saveAccount(user,account,registration,{
+		       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
+		       def mailSender = new MailSender(mailConfig)
+		       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
+		       mailSender.sendMail(mail)
+		   })
+	   }
+	   captcha ? SUCCESS : ERROR
 	}
 	def getTemplate(account) {
 	    TemplateConfiguration config = new TemplateConfiguration()
