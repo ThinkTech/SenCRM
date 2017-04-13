@@ -9,6 +9,7 @@ app.ready(function(){
 			});
 			return false;
 		}
+		var valid = true;
 		$("input[required]").each(function(index,element){
 			const val = $(element).val();
 			if(val.trim() == '') {
@@ -19,10 +20,10 @@ app.ready(function(){
 				});
 				event.preventDefault() ;
 			    event.stopPropagation();
-			    return false;
+			    return valid = false;
 			}
 		});
-		if(!grecaptcha.getResponse()) {
+		if(valid && !grecaptcha.getResponse()) {
 			alert("you must check the captcha");
 			return false;
 		}
