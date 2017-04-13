@@ -3,6 +3,7 @@ app.ready(function(){
 		const password = $("#password");
 		const confirm = $("#confirm");
 		if(password.val() != confirm.val()) {
+			$("html, body").animate({ scrollTop: password.offset().top }, 500);
 			alert("the two passwords are not identicals",function(){
 				password.focus();
 			});
