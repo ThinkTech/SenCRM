@@ -9,7 +9,7 @@ import groovy.text.markup.MarkupTemplateEngine
 
 class ModuleDao extends AbstractDao {
 
-    def saveAccount(account,callback) {
+    def saveAccount(user,account,registration,callback) {
        println "creating account"
        callback()
     }
@@ -24,8 +24,8 @@ class Registration {
 
 class ModuleAction extends ActionSupport {
 
-    def account = new Account()
     def user = new User() 
+    def account = new Account()
     def registration = new Registration()
     
 	def register() {
@@ -33,7 +33,7 @@ class ModuleAction extends ActionSupport {
 	   println registration.subscription
 	   println registration.mailing
 	   def dao = new ModuleDao()
-	  /* dao.saveAccount(account, {
+	  /* dao.saveAccount(user,account,registration) {
 	       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 	       def mailSender = new MailSender(mailConfig)
 	       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
