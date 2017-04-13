@@ -17,7 +17,7 @@ class ModuleDao extends AbstractDao {
 
 class Registration {
     
-    String choice;
+    String choice
     boolean mailing
     
     def setChoice(String choice) {
