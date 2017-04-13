@@ -30,7 +30,7 @@ class ModuleAction extends ActionSupport {
     
 	def register() {
 	  def dao = new ModuleDao()
-	  dao.saveAccount(user,account,registration) {
+	  dao.saveAccount(user,account,registration,{
 	       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 	       def mailSender = new MailSender(mailConfig)
 	       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
