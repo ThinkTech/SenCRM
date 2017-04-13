@@ -15,21 +15,39 @@ class ModuleDao extends AbstractDao {
     }
 }
 
+class Registration {
+    
+    String choice;
+    boolean mailing
+    
+    def setChoice(String choice) {
+       this.choice = choice
+    }
+    
+    def setMailing(boolean mailing) {
+       this.mailing = mailing
+    }
+
+}
+
 class ModuleAction extends ActionSupport {
 
     def account = new Account()
     def user = new User() 
     def subscription = []
+    def registration = new Registration()
     
 	def register() {
 	   println account.structure.name
+	   println registration.choice
+	   println registration.mailing
 	   def dao = new ModuleDao()
-	   dao.saveAccount(account, {
+	  /* dao.saveAccount(account, {
 	       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 	       def mailSender = new MailSender(mailConfig)
 	       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
 	       mailSender.sendMail(mail)
-	   })
+	   })*/
 	   SUCCESS
 	}
 	def getTemplate(account) {

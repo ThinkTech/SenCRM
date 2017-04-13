@@ -142,13 +142,13 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="required text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox" data-checked="${mandatory}" data-disabled="${mandatory}"/> 
+		   <input type="checkbox" value="${name}" name="registration.choice" data-checked="${mandatory}"/> 
 		   <span class="price">2500 XOF/Month</span>
 		</s:iterator>
 	</fieldset>
 	<div>
 	   <p>
-	      <input type="checkbox" checked/> 
+	      <input value="true" name="registration.mailing" type="checkbox" checked/> 
 		  <span>Yes, send me emails on ThinkTech Products, Services and Events.</span> 
 	   </p>
 	</div>

@@ -30,9 +30,12 @@ app.ready(function(){
 	});
 	$("input[type=checkbox]").each(function(index,element){
 		const checked = $(element).attr("data-checked");
-		if(checked=='true') $(element).attr("checked","true");
-		const disabled = $(element).attr("data-checked");
-		if(disabled=='true') $(element).attr("disabled","true");
+		if(checked=='true') {
+			$(element).attr("checked","true").on('change', function() {
+			    this.checked=!this.checked?!alert('this module is mandatory'):true;
+			});
+		}
+		
 	});
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);

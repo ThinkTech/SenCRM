@@ -55,6 +55,7 @@
 	width : 50%;
 	border-radius : 5px;
 	border : 1px solid;
+	font-size : 90%;
 }
 
 .success > h1 {
@@ -129,6 +130,7 @@ transform-origin:0 0 !important;
 @media(max-width:767px ){
 	h4 {background-position-y : 6px}
 	.registration {width : 70%;}
+	.registration p {width : 99%}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
