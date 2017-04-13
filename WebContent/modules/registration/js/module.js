@@ -8,10 +8,6 @@ app.ready(function(){
 			});
 			return false;
 		}
-		if(!grecaptcha.getResponse()) {
-			alert("you must check the captcha");
-			return false;
-		}
 		$("input[required]").each(function(index,element){
 			const val = $(element).val();
 			if(val.trim() == '') {
@@ -25,6 +21,10 @@ app.ready(function(){
 			    return false;
 			}
 		});
+		if(!grecaptcha.getResponse()) {
+			alert("you must check the captcha");
+			return false;
+		}
 		$("input[type=submit]").attr("disabled","disabled");
 		return true;
 	});
