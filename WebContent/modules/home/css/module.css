@@ -122,10 +122,8 @@
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
-	.rslides {height : 230px}
 }
 @media(max-width:360px ){
-	.rslides {height : 300px}
 }
 @media(max-width:320px ){
 }
