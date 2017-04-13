@@ -145,6 +145,8 @@
 		   <input type="checkbox" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
 		   <span class="price">2500 XOF/Month</span>
 		</s:iterator>
+	<label title="Total" class="text-right"><i class="fa fa-money"></i>Price : </label>
+	<span  class="price"><span id="total">2500</span> XOF/Month</span>
 	</fieldset>
 	<div>
 	   <p>

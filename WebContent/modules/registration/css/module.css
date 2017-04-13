@@ -77,7 +77,6 @@
 	margin-bottom : 5px;
 	padding-bottom : 15px;
 	background : transparent;
-	padding-right : 30px;
 }
 
 #form fieldset label {
@@ -85,13 +84,11 @@
 	font-size: 84%;
     padding-top: 5px;
     width : 29%;
-    margin-top : 1px;
 }
 
 #form input:not([type="submit"]), #form select {
 	width : 70%;
 	height : 35px;
-	margin-top : 1px;
 	border : 1px solid;
 }
 
@@ -115,28 +112,28 @@ transform-origin:0 0 !important;
 
 @media(max-width:1199px ){
 	.success {width : 60%;}
-	.registration {width : 50%;}
+	.registration {width : 55%;}
 }
 
 @media(max-width:1024px ){
-	.registration {width : 45%;}
+	.registration {width : 60%;}
 }
   
 @media(max-width:991px ){
 	.success {width : 50%;}
-	.registration {width : 60%;}
+	.registration {width : 67%;}
 }
 
 @media(max-width:767px ){
 	h4 {background-position-y : 6px}
-	.registration {width : 70%;}
+	.registration {width : 80%;}
 	.registration p {width : 99%}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
 	.registration {width : 90%;}
 	#form fieldset label {width : 40%;}
-	#form input:not([type="submit"]), #form select {width : 50%;}
+	#form input:not([type="submit"]), #form select {width : 57%;}
     #form input[type=checkbox] {width:35px;}
     .registration > h1 {margin-top : 50px}
     .success > h1 {margin-top : 20px}

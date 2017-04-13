@@ -21,7 +21,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="templates/amadeus/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" type="text/css" href="templates/amadeus/css/easy-responsive-tabs.css" />
 <link href="${css}/module.css" rel="stylesheet" />
- <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
  <link rel="shortcut icon" href="images/logo.png"  sizes="32x32"/>  
 </head>
 <body class="bg agileinfo">
