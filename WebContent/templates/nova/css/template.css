@@ -265,6 +265,10 @@ select,input {
 	height : 24px;
 }
 
+#form fieldset label {
+	margin-top : 2px;
+}
+
 a {
 	color : rgb(0, 172, 235);
 }
