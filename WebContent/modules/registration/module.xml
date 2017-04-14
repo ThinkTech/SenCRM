@@ -19,7 +19,14 @@
 	    <action url="success">
 			<result>success</result>
 		</action>
-			
+		
+		<action url="account/confirm" method="confirm">
+			<result type="redirect">/login</result>
+		</action>	
+		
+		<action url="account/close" method="close">
+			<result>success</result>
+		</action>
 		
 	</actions>
 </module>

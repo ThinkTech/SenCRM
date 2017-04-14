@@ -10,27 +10,27 @@
 		<h1><i class="fa fa-user"></i>Manager</h1>
 		
 		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
-		<input required title="First Name" name="user.firstName"  type="text"/>
+		<input required title="First Name" name="user.firstName" maxlength="100"  type="text"/>
 		
 		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
-		<input required title="Last Name" name="user.lastName" type="text"/>
+		<input required title="Last Name" name="user.lastName" maxlength="100" type="text"/>
 		
 		<label class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
-		<input required title="Profession" name="user.profession" type="text"/>
+		<input required title="Profession" name="user.profession" maxlength="100" type="text"/>
 		
 	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
-		<input required title="Email" name="user.email" type="email"/>
+		<input required title="Email" name="user.email" maxlength="100" type="email"/>
 		
 		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
-		<select title="Language" name="">
+		<select title="Language" name="user.lang">
 		        <option value="en">English</option>
 		</select>
 		
 		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
-		<input required id="password" title="Password" name="user.password" type="password"/>
+		<input required id="password" title="Password" name="user.password" maxlength="100" type="password"/>
 		
 		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
-		<input required id="confirm" title="Confirm"  type="password"/>
+		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
 		
 	</fieldset>
 	
