@@ -113,7 +113,7 @@ class ModuleAction extends ActionSupport {
 		  dao.saveAccount(moduleManager,user,account,registration,{
 		       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 		       def mailSender = new MailSender(mailConfig)
-		       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
+		       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account,registration.subscription))
 		       mailSender.sendMail(mail)
 		   })
 	  // }
@@ -135,7 +135,7 @@ class ModuleAction extends ActionSupport {
 	    SUCCESS
 	}
 	
-	def getTemplate(account) {
+	def getTemplate(account,subscription) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
 		def text = '''\
@@ -153,6 +153,12 @@ class ModuleAction extends ActionSupport {
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
 		      p("Please confirm your email address to get access to $app to use the modules to which you have subscribed.")
+		      def modules = subscription.split(",")
+		      ul(style : "font-weight:bold") {
+		        for(def module in modules) {
+		          li("$module")
+		        }
+		      }
 		      p("You can update your subscription at any time once logged to your account.")
 		    }
 		    div(style : "text-align:center") {
@@ -171,7 +177,7 @@ class ModuleAction extends ActionSupport {
 		   
 		 }
 		'''
-		def template = engine.createTemplate(text).make([account:account,url : baseUrl,app : getInitParameter('app_name')])
+		def template = engine.createTemplate(text).make([account:account,subscription:subscription,url : baseUrl,app : getInitParameter('app_name')])
 		template.toString()
 	}
 		
