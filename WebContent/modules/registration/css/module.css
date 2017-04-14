@@ -92,7 +92,7 @@
 	border : 1px solid;
 }
 
-#form input[type=checkbox] {
+#form input[type=checkbox],#form input[type=radio] {
 	margin-right : 2px;
 	width : 35px;
 }
@@ -134,7 +134,7 @@ transform-origin:0 0 !important;
 	.registration {width : 90%;}
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 57%;}
-    #form input[type=checkbox] {width:35px;}
+    #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
     .registration > h1 {margin-top : 50px}
     .success > h1 {margin-top : 20px}
 }
@@ -144,13 +144,13 @@ transform-origin:0 0 !important;
 	.registration {width : 95%;}
 	#form fieldset label {width : 40%;}
 	#form input:not([type="submit"]), #form select {width : 55%;}
-    #form input[type=checkbox] {width:35px;}
+    #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
     .registration > h1 {font-size:1.5em}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 50%;}
 	#form input:not([type="submit"]), #form select {width : 48%;}
-    #form input[type=checkbox] {width:35px;}
+    #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:0%}
     .captcha{max-width:286px;width:286px;overflow:hidden}
     .registration .price {width:30%}
 }

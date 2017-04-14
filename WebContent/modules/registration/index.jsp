@@ -145,9 +145,24 @@
 		   <input type="checkbox" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
 		   <span class="price" title="2500 XOF/Month">2500 XOF/Month</span>
 		</s:iterator>
-	<label title="Total" class="text-right"><i class="fa fa-money"></i>Price : </label>
-	<span  class="price"><span id="price">2500</span> XOF/Month</span>
 	</fieldset>
+	
+	<fieldset>
+	  <h1><i class="fa fa-database"></i>Hosting Model</h1>
+	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
+		 <input type="radio" value="free" name="registration.hosting" checked/> 
+		 <span class="price"  title="Free">Free</span>
+	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Database</label>
+		 <input type="radio" value="private" name="registration.hosting"/> 
+		 <span class="price" title="2500 XOF/Month">2500 XOF/Month</span>
+	</fieldset>
+	
+	<fieldset>
+	  <h1><i class="fa fa-money"></i>Pricing</h1>
+	     <label title="Total" class="text-right"><i class="fa fa-money"></i>Amount : </label>
+		 <span  class="price"><span id="amount">2500</span> XOF/Month</span>
+	</fieldset>
+	
 	<div>
 	   <p>
 	      <input value="true" name="registration.mailing" type="checkbox" checked/> 
