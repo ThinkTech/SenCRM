@@ -33,6 +33,10 @@ class ModuleDao extends AbstractDao {
 		      if(generatedKeys.next()) {
 		          def structure_id = generatedKeys.getLong(1)
 		          SQL = """\
+	                insert into subscription(mailing, modules,structure_id) VALUES(${registration.mailing},"${registration.subscription}",${structure_id});
+	              """
+	              stmt.executeUpdate(SQL)
+		          SQL = """\
 	                insert into accounts(main,activated,trial,role,user_id,structure_id,createdBy) VALUES(true,false,true,"manager",${user_id},${structure_id},${user_id});
 	              """
 	              stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
@@ -41,6 +45,14 @@ class ModuleDao extends AbstractDao {
 		            account.id = generatedKeys.getLong(1)
 		          }
 		      }
+		      SQL = """\
+		       drop database IF EXISTS $base;
+              """
+              stmt.executeUpdate(SQL)
+              SQL = """\
+               create database $base;  
+              """
+              stmt.executeUpdate(SQL)
 	      }
 	      stmt.close()
 	      connection.close()
