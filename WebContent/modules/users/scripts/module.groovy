@@ -15,7 +15,6 @@ class UserDao extends AbstractDao {
 	        select id, firstName, lastName from users 
 	        where email = '${user.email}' and password = '${user.password}';
 	        """    
-	    println SQL
 	    def stmt = connection.createStatement()
 	    def rs = stmt.executeQuery(SQL)
 	    if(rs.next()) {
@@ -26,7 +25,6 @@ class UserDao extends AbstractDao {
 	        select activated, role, structure_id from accounts 
 	        where user_id = ${user.id};
 	        """    
-	       println SQL
 	       rs = stmt.executeQuery(SQL)
 	       while(rs.next()) {
 	          def account = new Account()
@@ -51,7 +49,6 @@ class UserDao extends AbstractDao {
 	      }
 	    }
 	    success = user.accounts.size() ? true : false
-	    println success
 	    stmt.close()
 	    connection.close()
 	    }catch(e){
@@ -103,7 +100,6 @@ class UserAction extends ActionSupport {
 	}
 	
 	def changePassword() {
-	    println "changing password "+user.password
 	    def userDao = new UserDao()
 	    userDao.changePassword(loggedUser,user.password)
 	    SUCCESS

@@ -9,9 +9,10 @@ import groovy.text.markup.MarkupTemplateEngine
 
 class ModuleDao extends AbstractDao {
 
-    def saveAccount(user,account,registration,callback) {
+    def saveAccount(moduleManager,user,account,registration,callback) {
        try {
           def connection = getConnection()
+          connection.setAutoCommit(false);
           def stmt = connection.createStatement()
           def SQL = """\
              insert INTO users(firstName,lastName,profession,email,password,lang) 
@@ -47,12 +48,24 @@ class ModuleDao extends AbstractDao {
 		      }
 		      SQL = """\
 		       drop database IF EXISTS $base;
-              """
-              stmt.executeUpdate(SQL)
-              SQL = """\
                create database $base;  
+               use $base;  
               """
-              stmt.executeUpdate(SQL)
+		      def names = registration.subscription.split(",")
+		      for(def name in names) {
+		         name = name.trim()
+		         def module = moduleManager.getModuleByName(name) 
+		         def file =  new File(module.folder.absolutePath +"/sql/module.sql")
+		         if(file.exists()) {
+		            file.eachLine {  
+         				line -> SQL += line; 
+      				} 
+		         }
+		      }
+		      def lines = SQL.split(";")
+		      for(def line in lines) stmt.addBatch(line)
+		      stmt.executeBatch();
+              connection.commit();
 	      }
 	      stmt.close()
 	      connection.close()
@@ -69,7 +82,6 @@ class ModuleDao extends AbstractDao {
           def SQL = """\
              update accounts set activated = true where id = $id;
           """
-          println SQL
 	      stmt.executeUpdate(SQL)
 	      stmt.close()
 	      connection.close()
@@ -98,7 +110,7 @@ class ModuleAction extends ActionSupport {
 	  def captcha = request.getParameter("g-recaptcha-response")
 	  //if(captcha) {
 	      def dao = new ModuleDao()
-		  dao.saveAccount(user,account,registration,{
+		  dao.saveAccount(moduleManager,user,account,registration,{
 		       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 		       def mailSender = new MailSender(mailConfig)
 		       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account))
@@ -110,7 +122,6 @@ class ModuleAction extends ActionSupport {
 	
 	def confirm() {
 	    def id = request.getParameter("id")
-	    println "confirmation account "+id
 	    if(id) {
 	       def dao = new ModuleDao()
 	       dao.activateAccount(id)
