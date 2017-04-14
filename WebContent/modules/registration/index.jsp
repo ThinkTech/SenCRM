@@ -38,10 +38,10 @@
 		<h1><i class="fa fa-building"></i>Structure</h1>
 		
 		<label class="required text-right">Name : </label>
-		<input required title="Name" name="account.structure.name"  type="text"/>
+		<input maxlength="100" required title="Name" name="account.structure.name" maxlength="100"  type="text"/>
 		
 		<label class="text-right">Sigle : </label>
-		<input title="Sigle" name="account.structure.sigle" type="text"/>
+		<input title="Sigle" name="account.structure.sigle" maxlength="30" type="text"/>
 		
 		<label class="required text-right">Type :</label>
 		<select title="Type" name="account.structure.type">
@@ -130,10 +130,10 @@
 		</select>
 		
 		<label class="required text-right"><i class="fa fa-globe"></i>City :</label>
-		<input  required title="City" name="account.structure.address.city" type="text"/>
+		<input  required title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
 		
 		<label class="text-right"><i class="fa fa-globe"></i>Address :</label>
-		<input   title="Address" name="account.structure.address.location" type="text"/>
+		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
 		
 	</fieldset>
 	
