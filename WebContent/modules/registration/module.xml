@@ -28,5 +28,13 @@
 			<result>success</result>
 		</action>
 		
+		<action url="terms">
+			<result>terms</result>
+		</action>
+		
+		<action url="privacy">
+			<result>privacy</result>
+		</action>
+		
 	</actions>
 </module>

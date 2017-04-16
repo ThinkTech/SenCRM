@@ -3,13 +3,12 @@
 	margin : auto;
 }
 
-.registration > h1 {
-	font-size: 2em;
-    padding: 0px;
-    font-weight : bold;
-    text-align : center;
-    margin-top : 20px;
-    margin-bottom : 20px;
+.terms {
+	width : 50%;
+}
+
+.terms > h1 {
+	margin-top : 10px;
 }
 
 .registration p {
@@ -20,6 +19,23 @@
     margin : auto;
     margin-bottom : 30px;
 }
+
+
+.terms > p {
+	margin-bottom : 0px;
+	margin-top : 0px;
+}
+
+
+.registration > h1 {
+	font-size: 2em;
+    padding: 0px;
+    font-weight : bold;
+    text-align : center;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
 
 #form p {
 	margin-bottom : 0px;
