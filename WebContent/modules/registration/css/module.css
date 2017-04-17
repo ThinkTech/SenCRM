@@ -7,6 +7,10 @@
 	width : 50%;
 }
 
+.terms p {
+	font-size : 95%;
+}
+
 .terms > h1 {
 	margin-top : 10px;
 }
