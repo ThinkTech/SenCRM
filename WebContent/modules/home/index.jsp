@@ -39,21 +39,25 @@
 </div>
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
-<div id="accordion" class="center">
-<ul>
+
+
+<section class="ac-container center">
 <s:iterator value="moduleManager.backendModules">
-    <li>
-      <a href="#${id}"><span class="text-right"><i class="fa fa-puzzle-piece"></i>${name}</span></a>
-      <div id="${id}" class="accordion module">
-         <div>
-	 		<img src="modules/${id}/images/icon-32.png"/>
-	 		<span>${description}</span>
-  		 </div>
-      </div>
-    </li>
-</s:iterator>    
-</ul>
+<div>
+	<input id="${id}" name="accordion-1" type="checkbox" />
+	<label class="text-right" for="${id}"><i class="fa fa-puzzle-piece"></i>${name}</label>
+	<article class="ac-small module">
+	    <div>
+	 	<img src="modules/${id}/images/icon-32.png"/>
+	 	<span>${description}</span>
+  		</div>
+		<p>details of the module.</p>
+	</article>
 </div>
+</s:iterator>
+				
+</section>
+
 
 </div>
 <div class="center">
