@@ -39,13 +39,22 @@
 </div>
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
+<div id="accordion" class="center">
+<ul>
 <s:iterator value="moduleManager.backendModules">
-  <div class="center module">
-     <h2 class="text-right">${name}</h2>
-	 <img src="modules/${id}/images/icon-32.png"/>
-	 <span>${description}</span>
-  </div>
-</s:iterator>
+    <li>
+      <a href="#${id}"><span class="text-right"><i class="fa fa-puzzle-piece"></i>${name}</span></a>
+      <div id="${id}" class="accordion module">
+         <div>
+	 		<img src="modules/${id}/images/icon-32.png"/>
+	 		<span>${description}</span>
+  		 </div>
+      </div>
+    </li>
+</s:iterator>    
+</ul>
+</div>
+
 </div>
 <div class="center">
 <div class="center">
