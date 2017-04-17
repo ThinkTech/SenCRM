@@ -135,6 +135,11 @@ class ModuleAction extends ActionSupport {
 	    SUCCESS
 	}
 	
+	def resetPassword() {
+	    println "reset password "
+	    SUCCESS
+	}
+	
 	def getTemplate(account,subscription) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)

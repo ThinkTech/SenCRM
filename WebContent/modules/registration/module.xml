@@ -28,6 +28,10 @@
 			<result>success</result>
 		</action>
 		
+		<action url="password/reset" method="resetPassword">
+			<result type="redirect">/login</result>
+		</action>
+		
 		<action url="terms">
 			<result>terms</result>
 		</action>
