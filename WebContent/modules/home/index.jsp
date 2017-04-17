@@ -40,11 +40,10 @@
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
 
-
 <section class="ac-container center">
 <s:iterator value="moduleManager.backendModules">
 <div>
-	<input id="${id}" name="accordion-1" type="checkbox" />
+	<input id="${id}" name="${id}" type="checkbox" />
 	<label class="text-right" for="${id}"><i class="fa fa-puzzle-piece"></i>${name}</label>
 	<article class="ac-small module">
 	    <div>
