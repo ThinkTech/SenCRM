@@ -13,7 +13,7 @@
 					  <input type="submit" value="Sign in" class="agileinfo" />
 					</form>
 					 <div class="login_w3ls">
-				        <a href="#"><i class="fa fa-key"></i>Forgot Password</a> <span>|</span> <a href="registration"><i class="fa fa-user"></i>Create Account</a>
+				        <a href="password/reset"><i class="fa fa-key"></i>Forgot Password</a> <span>|</span> <a href="registration"><i class="fa fa-user"></i>Create Account</a>
 					 </div>    
                 </div>
             </div>
