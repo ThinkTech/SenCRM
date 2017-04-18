@@ -148,6 +148,11 @@ class ModuleAction extends ActionSupport {
 	    SUCCESS
 	}
 	
+	def changePassword() {
+	    println "changing password "
+	    SUCCESS
+	}
+	
 	def getTemplate(account,subscription) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
@@ -212,7 +217,7 @@ class ModuleAction extends ActionSupport {
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("To change your password, click here or paste the following link into your browser.")
 		      p(style : "text-align:center") {
-		         span("<br><a style='text-align:center'>$url/registration/password/change?token=1225466554558787878</a><br><br>")
+		         span("<br><a href='$url/password/change?token=1225466554558787878' style='text-align:center'>$url/password/change?token=1225466554558787878</a><br><br>")
 		      }
 		      p("Thanks for using $app!<br><b>ThinkTech Team</b>")
 		    }

@@ -32,6 +32,10 @@
 			<result>resetPassword</result>
 		</action>
 		
+		<action url="password/change" method="changePassword">
+			<result type="redirect">/login</result>
+		</action>
+		
 		<action url="terms">
 			<result>terms</result>
 		</action>
