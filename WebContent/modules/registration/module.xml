@@ -29,7 +29,7 @@
 		</action>
 		
 		<action url="password/reset" method="resetPassword">
-			<result type="redirect">/login</result>
+			<result>resetPassword</result>
 		</action>
 		
 		<action url="terms">

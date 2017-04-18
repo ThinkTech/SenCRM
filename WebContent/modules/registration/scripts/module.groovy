@@ -137,6 +137,14 @@ class ModuleAction extends ActionSupport {
 	
 	def resetPassword() {
 	    println "reset password "
+	    def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
+		def mailSender = new MailSender(mailConfig)
+		def user = new User()
+		user.firstName = "Mamadou Lamine"
+		user.lastName = "Ba"
+		user.email = "lamine.ba@thinktech.sn"
+		def mail = new Mail(user.fullName,user.email,"${user.fullName}, here's the link to reset your password",getResetPasswordTemplate(user))
+		mailSender.sendMail(mail)
 	    SUCCESS
 	}
 	
@@ -185,6 +193,41 @@ class ModuleAction extends ActionSupport {
 		def template = engine.createTemplate(text).make([account:account,subscription:subscription,url : baseUrl,app : getInitParameter('app_name')])
 		template.toString()
 	}
+	
+	def getResetPasswordTemplate(user) {
+	    TemplateConfiguration config = new TemplateConfiguration()
+		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
+		def text = '''\
+		 div(style : "background:#fafafa;padding-bottom:16px"){
+		 div(style : "padding-bottom:12px;margin-left:auto;margin-right:auto;width:80%;background:#fff") {
+		    img(src : "https://thinktech.sn/images/logo.png", style : "display:block;margin : 0 auto")
+		    div(style : "margin-top:10px;padding:10px;height:90px;text-align:center;background:#eceaea") {
+		      h4(style : "font-size: 200%;color: rgb(0, 0, 0);margin: 3px") {
+		        span("Hi ${user.fullName}")
+		      }
+		      p(style : "font-size:150%;color:rgb(100,100,100)"){
+		         span("Reset your password")
+		      }
+		    }
+		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
+		      p("To change your password, click here or paste the following link into your browser.")
+		      p(style : "text-align:center") {
+		         span("<br><a style='text-align:center'>$url/registration/password/change?token=1225466554558787878</a><br><br>")
+		      }
+		      p("Thanks for using $app!<br><b>ThinkTech Team</b>")
+		    }
+		  }
+		  
+		  div(style :"margin-top:10px;font-size : 11px;text-align:center") {
+		      p("This email was intended for ${user.fullName}.")
+		  }
+		   
+		 }
+		'''
+		def template = engine.createTemplate(text).make([user:user,url : baseUrl,app : getInitParameter('app_name')])
+		template.toString()
+	}
+	
 		
 }
 
