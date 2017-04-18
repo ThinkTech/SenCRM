@@ -7,6 +7,11 @@
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>module for managing your account and those of your collaborators</description>
+	<details>
+	The users module allows users to log in, and log out.
+    The users module supports user roles, which can be set up with fine-grained permissions allowing each role to do only what is permitted. 
+    Users can modify their personal configuration settings through their individual my account page. 
+	</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>

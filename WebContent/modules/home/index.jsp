@@ -50,7 +50,7 @@
 	 	<img src="modules/${id}/images/icon-32.png"/>
 	 	<span>${description}</span>
   		</div>
-		<p>details of the module.</p>
+		<p>${details}</p>
 	</article>
 </div>
 </s:iterator>

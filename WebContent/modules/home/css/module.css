@@ -136,7 +136,7 @@
 	color: #777;
 	line-height: 23px;
 	font-size: 14px;
-	padding: 20px;
+	padding-top: 4px;
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .ac-container input:checked ~ article{
