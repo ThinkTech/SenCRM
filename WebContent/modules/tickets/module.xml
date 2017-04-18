@@ -4,7 +4,7 @@
 	<roles>manager,support</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>module for managing your support tickets</description>
+	<description>Module for managing your support tickets</description>
 	<details>The support module provides a ticketing system for resolving any product related issue, offering complete email integration.
 	Tickets can be assigned to users and they can view all tickets assigned to them.
 	</details>

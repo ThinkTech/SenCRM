@@ -5,7 +5,7 @@
 	<administrable>false</administrable>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>module for collaborating with your customers and partners</description>
+	<description>Module for collaborating with your customers and partners</description>
 	<details>The collaboration module let you give access to your customers and partners
 	so that they can follow the evolution of their projects and to report issues.</details>
 	<creationDate>2016-09-01</creationDate>
