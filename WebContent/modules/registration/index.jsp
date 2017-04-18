@@ -148,11 +148,11 @@
 	</fieldset>
 	
 	<fieldset>
-	  <h1><i class="fa fa-database"></i>Hosting Model</h1>
+	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input type="radio" value="free" name="registration.hosting" checked/> 
 		 <span class="price"  title="Free">Free</span>
-	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Database</label>
+	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio" value="private" name="registration.hosting"/> 
 		 <span class="price" title="2500 XOF/Month">2500 XOF/Month</span>
 	</fieldset>
