@@ -142,21 +142,19 @@ class ModuleAction extends ActionSupport {
        def authenticationResponse = authenticationService.signin(USER_EMAIL, USER_PASSWORD);
        println "Signin response: " + authenticationResponse
        if(authenticationResponse.isOK()) {
-           final String session = authenticationResponse.getSession();
-           
+           def session = authenticationResponse.getSession()
            JSONObject env = new JSONObject()
                 .put("ishaenabled", false)
-                .put("shortdomain", ENV_NAME);
-           
+                .put("shortdomain", ENV_NAME)
            def mysqlNode = new JSONObject()
                 .put("nodeType", "mysql5")
                 .put("extip", false)
                 .put("fixedCloudlets", 0)
-                .put("flexibleCloudlets", 2);
-           def nodes = new JSONArray().put(mysqlNode);
-           System.out.println("Creating environment...");
+                .put("flexibleCloudlets", 2)
+           def nodes = new JSONArray().put(mysqlNode)
+           println "Creating environment..."
            def scriptEvalResponse = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
-           println "CreateEnvironment response: " + scriptEvalResponse;
+           println "CreateEnvironment response: " + scriptEvalResponse
        }
        }catch(e) {
            println e
