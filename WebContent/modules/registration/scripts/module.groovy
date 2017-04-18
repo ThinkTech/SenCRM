@@ -219,7 +219,7 @@ class ModuleAction extends ActionSupport {
 		      p(style : "text-align:center") {
 		         span("<br><a href='$url/password/change?token=1225466554558787878' style='text-align:center'>$url/password/change?token=1225466554558787878</a><br><br>")
 		      }
-		      p("Thanks for using $app!<br><b>ThinkTech Team</b>")
+		      p("Thanks for using $app!<br><br><b>Regards</b><br><b>ThinkTech Team</b>")
 		    }
 		  }
 		  
