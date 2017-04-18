@@ -12,6 +12,10 @@
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>
 	<version>1.0</version>
+	<pricing>
+	   <amount>3000</amount>
+	   <currency>XOF</currency>
+	</pricing>
 	<menus>
 		<menu>
 			<menuItem label="Account" />

@@ -37,10 +37,12 @@ app.ready(function(){
 			$(element).attr("checked","true").on('change', function() {
 			    this.checked=!this.checked?!alert('this module is mandatory'):true;
 			});
-			amount += 2500;
+			const price = parseInt($(this).attr("data-amount"));
+			amount += price;
 		}else {
 			$(element).on('change', function() {
-			    amount = this.checked ? amount + 2500 : amount - 2500;
+				const price = parseInt($(this).attr("data-amount"));
+			    amount = this.checked ? amount + price : amount - price;
 			    $("#amount").html(amount);
 			});
 		}

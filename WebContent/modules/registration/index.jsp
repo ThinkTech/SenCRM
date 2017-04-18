@@ -149,8 +149,8 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price" title="2500 XOF/Month">2500 XOF/Month</span>
+		   <input type="checkbox" data-amount="${pricing.amount}" data-currency="${pricing.currency}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
+		   <span class="price"  title="${pricing.amount} ${pricing.currency}/Month">${pricing.amount} ${pricing.currency}/Month</span>
 		</s:iterator>
 	</fieldset>
 	
@@ -167,7 +167,7 @@
 	<fieldset>
 	  <h1><i class="fa fa-money"></i>Pricing</h1>
 	     <label title="Total" class="text-right"><i class="fa fa-money"></i>Amount : </label>
-		 <span  class="price"><span id="amount">2500</span> XOF/Month</span>
+		 <span  class="price"><span id="amount"></span> XOF/Month</span>
 	</fieldset>
 	
 	<div>
