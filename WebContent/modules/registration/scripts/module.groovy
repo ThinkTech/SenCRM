@@ -6,6 +6,13 @@ import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender
 import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
+import com.jelastic.api.development.response.ScriptEvalResponse;
+import com.jelastic.api.development.response.interfaces.ArrayResponse;
+import com.jelastic.api.environment.Control;
+import com.jelastic.api.users.Authentication;
+import com.jelastic.api.users.response.AuthenticationResponse;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 class ModuleDao extends AbstractDao {
 
@@ -118,6 +125,43 @@ class ModuleAction extends ActionSupport {
 		  })
 	  }
 	  captcha ? SUCCESS : ERROR
+	}
+	
+	def createDatabase() {
+	   try {
+	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
+       def HOSTER_URL = "https://app.mircloud.host"; // your hosting provider’s URL, see http://docs.jelastic.com/en/jelastic-hoster-info
+       def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
+       def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
+       def ENV_NAME = "test-api-environment-" + new Random().nextInt(100)
+       def  authenticationService = new Authentication(PLATFORM_APPID)
+       authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
+       def environmentService = new Control(PLATFORM_APPID)
+       environmentService.setServerUrl(HOSTER_URL + "/1.0/")
+       println "Authenticate user..."
+       def authenticationResponse = authenticationService.signin(USER_EMAIL, USER_PASSWORD);
+       println "Signin response: " + authenticationResponse
+       if(authenticationResponse.isOK()) {
+           final String session = authenticationResponse.getSession();
+           
+           JSONObject env = new JSONObject()
+                .put("ishaenabled", false)
+                .put("shortdomain", ENV_NAME);
+           
+           def mysqlNode = new JSONObject()
+                .put("nodeType", "mysql5")
+                .put("extip", false)
+                .put("fixedCloudlets", 0)
+                .put("flexibleCloudlets", 2);
+           def nodes = new JSONArray().put(mysqlNode);
+           System.out.println("Creating environment...");
+           def scriptEvalResponse = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
+           println "CreateEnvironment response: " + scriptEvalResponse;
+       }
+       }catch(e) {
+           println e
+       }
+        
 	}
 	
 	def confirm() {

@@ -15,6 +15,11 @@
        <artifactId>mysql-connector-java</artifactId>
        <version>5.1.41</version>
    </dependency>
+   <dependency>
+    <groupId>com.jelastic</groupId>
+    <artifactId>jelastic-public-j2se</artifactId>
+    <version>4.8</version>
+</dependency>
  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
