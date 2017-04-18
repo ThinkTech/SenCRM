@@ -97,7 +97,7 @@ class Registration {
     
     String subscription
     boolean mailing
-
+    String hosting
 }
 
 class ModuleAction extends ActionSupport {
