@@ -109,6 +109,13 @@
 		 	<option value="55">Other</option>
 		</select>
 		
+		<label class="required text-right">Size :</label>
+		<select title="Size" name="account.structure.size">
+		 	<option value="1">small</option>
+		 	<option value="2">medium</option>
+		 	<option value="3">big</option>
+		</select>
+		
 		<label class="required text-right">State :</label>
 		<select title="State" name="account.structure.state">
 		 	<option value="1">rising</option>
