@@ -149,15 +149,15 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox" data-amount="${pricing.amount}" data-currency="${pricing.currency}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price"  title="${pricing.amount} ${pricing.currency}/Month">${pricing.amount} ${pricing.currency}/Month</span>
+		   <input type="checkbox" data-amount="${price}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
+		   <span class="price"  title="${price} XOF/Month">${price} XOF/Month</span>
 		</s:iterator>
 	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
-		 <input type="radio" value="free" name="registration.hosting" checked/> 
+		 <input type="radio" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price"  title="Free">Free</span>
 	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio" value="private" name="registration.hosting"/> 

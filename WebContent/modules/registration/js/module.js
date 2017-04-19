@@ -23,10 +23,10 @@ app.ready(function(){
 			}
 		});
 		if(!valid) return false;
-		if(!grecaptcha.getResponse()) {
+		/*if(!grecaptcha.getResponse()) {
 			alert("you must check the captcha");
 			return false;
-		}
+		}*/
 		$("input[type=submit]").attr("disabled","disabled");
 		return true;
 	});

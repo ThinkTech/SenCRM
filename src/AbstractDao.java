@@ -2,8 +2,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import org.metamorphosis.core.Account;
+import org.metamorphosis.core.DatabaseInfo;
 import org.metamorphosis.core.Structure;
 import org.metamorphosis.core.User;
 
@@ -11,14 +11,22 @@ public abstract class AbstractDao {
 
 	protected Connection getConnection() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");  
-		return DriverManager.getConnection("jdbc:mysql://localhost/common","root","thinktech");
+		return DriverManager.getConnection("jdbc:mysql://mysql29936-thinktech-database.mircloud.host/common","root","ntDPcqpzbJ");
 	}
 	
 	protected Connection getConnection(User user) throws Exception {
 		Account account = user.getCurrentAccount();
 		Structure structure = account.getStructure();
+		DatabaseInfo info = structure.getDatabaseInfo();
 		Class.forName("com.mysql.jdbc.Driver");  
-		return DriverManager.getConnection("jdbc:mysql://localhost/"+structure.getDatabase(),"root","thinktech");
+		return DriverManager.getConnection("jdbc:mysql://"+info.getHost()+":"+info.getPort()+"/"+info.getName(),info.getUser(),info.getPassword());
+	}
+	
+	protected Connection getConnection(Structure structure) throws Exception {
+		DatabaseInfo info = structure.getDatabaseInfo();
+		Class.forName("com.mysql.jdbc.Driver");  
+		System.out.println("jdbc:mysql://"+info.getHost()+":"+info.getPort()+"/"+info.getName()+" " +info.getUser()+" "+info.getPassword());
+		return DriverManager.getConnection("jdbc:mysql://"+info.getHost()+":"+info.getPort(),info.getUser(),info.getPassword());
 	}
 	
 	protected User getUser(Long id) throws Exception {

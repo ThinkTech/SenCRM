@@ -1,6 +1,7 @@
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.Account
 import org.metamorphosis.core.User
+import org.metamorphosis.core.DatabaseInfo
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender
@@ -16,26 +17,38 @@ import org.json.JSONObject;
 
 class ModuleDao extends AbstractDao {
 
-    def saveAccount(moduleManager,user,account,registration,callback) {
+    def saveAccount(registration,callback) {
        try {
           def connection = getConnection()
           connection.setAutoCommit(false);
           def stmt = connection.createStatement()
           def SQL = """\
              insert INTO users(firstName,lastName,profession,email,password,lang) 
-             VALUES("${user.firstName}","${user.lastName}","${user.profession}","${user.email}","${user.password}","${user.lang}");
+             VALUES("${registration.user.firstName}","${registration.user.lastName}","${registration.user.profession}","${registration.user.email}","${registration.user.password}","${registration.user.lang}");
           """
 	      stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
 	      def generatedKeys = stmt.getGeneratedKeys()
 	      if(generatedKeys.next()) {
 	          def user_id = generatedKeys.getLong(1)
-	          def base =  "database_"+user_id
-	          SQL = """\
-                insert into structures(name,sigle,typeof,business,state,target,country,city,location,base,createdBy) 
-                values('${account.structure.name}','${account.structure.sigle}',"${account.structure.type}","${account.structure.business}",
-                "${account.structure.state}","${account.structure.target}","${account.structure.address.country}",
-                "${account.structure.address.city}","${account.structure.address.location}","${base}",${user_id});              
-              """
+	          def database_name =  "database_"+user_id
+	          if(!registration.account.structure.databaseInfo) {
+	            println "colocation "
+	            SQL = """\
+                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_name,createdBy) 
+                 values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
+                 "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
+                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${database_name}",${user_id});              
+                """
+              }else {
+                println "private server"
+	            SQL = """\
+                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_host,database_name,database_port,database_user,database_password,createdBy) 
+                 values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
+                 "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
+                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${registration.account.structure.databaseInfo.host}","${registration.account.structure.databaseInfo.name}",
+                 "${registration.account.structure.databaseInfo.port}","${registration.account.structure.databaseInfo.user}","${registration.account.structure.databaseInfo.password}",${user_id});              
+                """
+              }
               stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
               generatedKeys = stmt.getGeneratedKeys()
 		      if(generatedKeys.next()) {
@@ -50,29 +63,23 @@ class ModuleDao extends AbstractDao {
 	              stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
 	              generatedKeys = stmt.getGeneratedKeys()
 		          if(generatedKeys.next()) {
-		            account.id = generatedKeys.getLong(1)
+		            registration.account.id = generatedKeys.getLong(1)
 		          }
 		      }
-		      SQL = """\
-		       drop database IF EXISTS $base;
-               create database $base;  
-               use $base;  
-              """
-		      def names = registration.subscription.split(",")
-		      for(def name in names) {
-		         name = name.trim()
-		         def module = moduleManager.getModuleByName(name) 
-		         def file =  new File(module.folder.absolutePath +"/sql/module.sql")
-		         if(file.exists()) {
-		            file.eachLine {  
-         				line -> SQL += line; 
-      				} 
-		         }
+		      if(!registration.account.structure.databaseInfo) {
+		        def lines = registration.getSQL(database_name)
+		        for(def line in lines) stmt.addBatch(line)
+		        stmt.executeBatch()
+		      }else {
+		         def connection2 = getConnection(registration.account.structure)
+                 connection2.setAutoCommit(false);
+                 def stmt2 = connection2.createStatement()
+                 def lines = registration.getSQL(registration.account.structure.databaseInfo.name)
+		         for(def line in lines) stmt2.addBatch(line)
+		         stmt2.executeBatch()
+                 connection2.commit()
 		      }
-		      def lines = SQL.split(";")
-		      for(def line in lines) stmt.addBatch(line)
-		      stmt.executeBatch();
-              connection.commit();
+              connection.commit()
 	      }
 	      stmt.close()
 	      connection.close()
@@ -101,39 +108,79 @@ class ModuleDao extends AbstractDao {
 }
 
 class Registration {
-    
+    def user = new User() 
+    def account = new Account()
+    def moduleManager
     String subscription
     boolean mailing
     String hosting
+    
+    def getSQL(database_name) {
+        def SQL = """\
+        drop database IF EXISTS $database_name;
+        create database $database_name;  
+        use $database_name;  
+        """
+        def names = subscription.split(",")
+        for(def name in names) {
+         name = name.trim()
+         def module = moduleManager.getModuleByName(name) 
+         def file =  new File(module.folder.absolutePath +"/sql/module.sql")
+         if(file.exists()) {
+            file.eachLine {  
+ 				line -> SQL += line; 
+			} 
+         }
+        }
+       SQL.split(";")
+    }
 }
 
 class ModuleAction extends ActionSupport {
 
     def user = new User() 
     def account = new Account()
-    def registration = new Registration()
+    def registration = new Registration(user : user, account : account,moduleManager : moduleManager)
     
 	def register() {
-	  def captcha = request.getParameter("g-recaptcha-response")
+	  /*def captcha = request.getParameter("g-recaptcha-response")*/
+	  def captcha = "fake"
 	  if(captcha) {
-	      def dao = new ModuleDao()
-		  dao.saveAccount(moduleManager,user,account,registration,{
-		       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
-		       def mailSender = new MailSender(mailConfig)
-		       def mail = new Mail(user.fullName,user.email,"${user.fullName}, please confirm your email address",getTemplate(account,registration.subscription))
-		       mailSender.sendMail(mail)
-		  })
+	      if(registration.hosting.equals("private")) {
+	          def database_name = registration.account.structure.name.replaceAll("\\s","_")
+	          registration.account.structure.databaseInfo = new DatabaseInfo()
+	          registration.account.structure.databaseInfo.name = database_name
+	          registration.account.structure.databaseInfo.user = "root"
+	          registration.account.structure.databaseInfo.password = "passer"
+	          createDatabaseServer(registration.account.structure,{
+	             createAccount(registration)
+	          })
+	      }else {
+	          createAccount(registration)
+	      }
+	      
 	  }
 	  captcha ? SUCCESS : ERROR
 	}
 	
-	def createDatabase() {
+	def createAccount(registration) {
+	     def dao = new ModuleDao()
+		 dao.saveAccount(registration,{
+		       def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
+		       def mailSender = new MailSender(mailConfig)
+		       def mail = new Mail(registration.user.fullName,registration.user.email,"${registration.user.fullName}, please confirm your email address",getRegistrationTemplate(registration))
+		       mailSender.sendMail(mail)
+		 })
+	}
+	
+	def createDatabaseServer(structure,callback) {
 	   try {
 	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
        def HOSTER_URL = "https://app.mircloud.host"; // your hosting provider’s URL, see http://docs.jelastic.com/en/jelastic-hoster-info
        def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
        def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
-       def ENV_NAME = "test-api-environment-" + new Random().nextInt(100)
+       def ENV_NAME = structure.name.replaceAll("\\s","-") + "-" + structure.address.country + "-database"
+       println "env name " + ENV_NAME
        def  authenticationService = new Authentication(PLATFORM_APPID)
        authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
        def environmentService = new Control(PLATFORM_APPID)
@@ -153,8 +200,16 @@ class ModuleAction extends ActionSupport {
                 .put("flexibleCloudlets", 2)
            def nodes = new JSONArray().put(mysqlNode)
            println "Creating environment..."
-           def scriptEvalResponse = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
-           println "CreateEnvironment response: " + scriptEvalResponse
+           def response = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
+           println "CreateEnvironment response: " + response
+           def jsonResponse = response.toJSON()
+           nodes = jsonResponse.get("response").get("nodes")
+           def nodeid = nodes.get(0).get("id")
+           structure.databaseInfo.port = nodes.get(0).get("port")
+           structure.databaseInfo.host = nodes.get(0).get("url")
+           structure.databaseInfo.host = structure.databaseInfo.host.substring(8,structure.databaseInfo.host.length())
+           environmentService.resetNodePasswordById(ENV_NAME,session,nodeid,structure.databaseInfo.password)
+           callback()
        }
        }catch(e) {
            println e
@@ -178,7 +233,7 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def resetPassword() {
-	    println "reset password "
+	    /*println "reset password "
 	    def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 		def mailSender = new MailSender(mailConfig)
 		def user = new User()
@@ -186,7 +241,8 @@ class ModuleAction extends ActionSupport {
 		user.lastName = "Ba"
 		user.email = "lamine.ba@thinktech.sn"
 		def mail = new Mail(user.fullName,user.email,"${user.fullName}, here's the link to reset your password",getResetPasswordTemplate(user))
-		mailSender.sendMail(mail)
+		mailSender.sendMail(mail)*/
+		createDatabase()
 	    SUCCESS
 	}
 	
@@ -195,7 +251,7 @@ class ModuleAction extends ActionSupport {
 	    SUCCESS
 	}
 	
-	def getTemplate(account,subscription) {
+	def getRegistrationTemplate(registration) {
 	    TemplateConfiguration config = new TemplateConfiguration()
 		MarkupTemplateEngine engine = new MarkupTemplateEngine(config)
 		def text = '''\
@@ -213,7 +269,7 @@ class ModuleAction extends ActionSupport {
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
 		      p("Please confirm your email address to get access to $app to use the modules to which you have subscribed.")
-		      def modules = subscription.split(",")
+		      def modules = registration.subscription.split(",")
 		      ul(style : "font-weight:bold") {
 		        for(def module in modules) {
 		          li("$module")
@@ -222,7 +278,7 @@ class ModuleAction extends ActionSupport {
 		      p("You can update your subscription at any time once logged to your account.")
 		    }
 		    div(style : "text-align:center") {
-		       a(href : "$url/registration/account/confirm?id=$account.id",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
+		       a(href : "$url/registration/account/confirm?id=$registration.account.id",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
 		         span("Confirm your email")
 		       }
 		    }
@@ -231,13 +287,13 @@ class ModuleAction extends ActionSupport {
 		  div(style :"margin-top:10px;font-size : 11px;text-align:center") {
 		      p("You're receiving this email because you (or someone using this email)")
 		      p(" created an account using this address")
-		      p("Didn't sign up for $app? <a href='$url/registration/account/close?id=$account.id'>Close account</a>")
+		      p("Didn't sign up for $app? <a href='$url/registration/account/close?id=$registration.account.id'>Close account</a>")
 		  }
 		  
 		   
 		 }
 		'''
-		def template = engine.createTemplate(text).make([account:account,subscription:subscription,url : baseUrl,app : getInitParameter('app_name')])
+		def template = engine.createTemplate(text).make([registration:registration,url : baseUrl,app : getInitParameter('app_name')])
 		template.toString()
 	}
 	
