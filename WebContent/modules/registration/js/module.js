@@ -28,7 +28,17 @@ app.ready(function(){
 			return false;
 		}*/
 		$("input[type=submit]").attr("disabled","disabled");
-		return true;
+		var url = $(this).attr("action");
+		var data = $(this).serialize();
+		app.post(url,data, function(response) {
+			window.location.href = response.url;
+		}, function(error) {
+			alert("error", function() {
+				$("input[type=email]").focus();
+			});
+		});
+		$("html, body").animate({ scrollTop: 0 }, 500);
+		return false;
 	});
 	var amount = 0;
 	$("input[type=checkbox]").each(function(index,element){

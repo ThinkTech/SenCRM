@@ -30,17 +30,16 @@ class ModuleDao extends AbstractDao {
 	      def generatedKeys = stmt.getGeneratedKeys()
 	      if(generatedKeys.next()) {
 	          def user_id = generatedKeys.getLong(1)
-	          def database_name =  "database_"+user_id
 	          if(!registration.account.structure.databaseInfo) {
-	            println "colocation "
+	            registration.database_name =  "database_"+user_id
+	            registration.stmt = stmt
 	            SQL = """\
                  insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_name,createdBy) 
                  values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
                  "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
-                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${database_name}",${user_id});              
+                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${registration.database_name}",${user_id});              
                 """
               }else {
-                println "private server"
 	            SQL = """\
                  insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_host,database_name,database_port,database_user,database_password,createdBy) 
                  values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
@@ -62,31 +61,35 @@ class ModuleDao extends AbstractDao {
 	              """
 	              stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
 	              generatedKeys = stmt.getGeneratedKeys()
-		          if(generatedKeys.next()) {
-		            registration.account.id = generatedKeys.getLong(1)
-		          }
+		          if(generatedKeys.next()) registration.account.id = generatedKeys.getLong(1)
 		      }
-		      if(!registration.account.structure.databaseInfo) {
-		        def lines = registration.getSQL(database_name)
-		        for(def line in lines) stmt.addBatch(line)
-		        stmt.executeBatch()
-		      }else {
-		         def connection2 = getConnection(registration.account.structure)
-                 connection2.setAutoCommit(false);
-                 def stmt2 = connection2.createStatement()
-                 def lines = registration.getSQL(registration.account.structure.databaseInfo.name)
-		         for(def line in lines) stmt2.addBatch(line)
-		         stmt2.executeBatch()
-                 connection2.commit()
-		      }
-              connection.commit()
+		      createDatabase(registration)
 	      }
+	      connection.commit()
 	      stmt.close()
 	      connection.close()
 	      callback()
 	   }catch(e) {
 	     println e
 	   }
+    }
+    
+    def createDatabase(registration) {
+        if(!registration.account.structure.databaseInfo) {
+		    def lines = registration.getSQL(registration.database_name)
+		    for(def line in lines) registration.stmt.addBatch(line)
+		    registration.stmt.executeBatch()
+		}else {
+	         def connection = getConnection(registration.account.structure)
+             connection.setAutoCommit(false)
+             def stmt = connection.createStatement()
+             def lines = registration.getSQL(registration.account.structure.databaseInfo.name)
+	         for(def line in lines) stmt.addBatch(line)
+	         stmt.executeBatch()
+             connection.commit()
+             stmt.close()
+             connection.close()
+		}
     }
     
     def activateAccount(id) {
@@ -108,12 +111,14 @@ class ModuleDao extends AbstractDao {
 }
 
 class Registration {
-    def user = new User() 
-    def account = new Account()
+    def user
+    def account
     def moduleManager
     String subscription
     boolean mailing
     String hosting
+    def database_name
+    def stmt 
     
     def getSQL(database_name) {
         def SQL = """\
@@ -137,8 +142,7 @@ class Registration {
 }
 
 class ModuleAction extends ActionSupport {
-
-    def user = new User() 
+    def user =  new User()
     def account = new Account()
     def registration = new Registration(user : user, account : account,moduleManager : moduleManager)
     
@@ -158,9 +162,9 @@ class ModuleAction extends ActionSupport {
 	      }else {
 	          createAccount(registration)
 	      }
-	      
+	      def url = request.contextPath+"/"+module.url+"/success"
+	      response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 	  }
-	  captcha ? SUCCESS : ERROR
 	}
 	
 	def createAccount(registration) {

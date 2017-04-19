@@ -12,9 +12,7 @@
 	<version>1.0</version>
     <actions>
     
-		<action url="register" method="register">
-			<result type="redirect">/registration/success</result>
-		</action>
+		<action url="register" method="register"/>
 	
 	    <action url="success">
 			<result>success</result>
