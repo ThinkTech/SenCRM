@@ -81,7 +81,7 @@ class ModuleDao extends AbstractDao {
 	         def connection = getConnection(registration.account.structure)
              connection.setAutoCommit(false)
              def stmt = connection.createStatement()
-	         for(def sql in registration.getSQL(registration.database_name)) stmt.addBatch(sql)
+	         for(def sql in registration.getSQL(registration.account.structure.databaseInfo.name)) stmt.addBatch(sql)
 	         stmt.executeBatch()
              connection.commit()
              stmt.close()
@@ -133,7 +133,8 @@ class Registration {
 			} 
          }
         }
-       SQL.split(";")
+        println SQL
+        SQL.split(";")
     }
     
     def getModules() {
@@ -175,6 +176,9 @@ class ModuleAction extends ActionSupport {
 	      	def url = request.contextPath+"/"+module.url+"/success"
 	      	response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 	      }else {
+	        if(registration.hosting.equals("private")) {
+	           deleteDatabaseServer(account.structure) 
+	        }
 	        response.setStatus(404)
 		    response.writer.write(groovy.json.JsonOutput.toJson([message: "error during the registration"]))
 	      }
@@ -224,6 +228,30 @@ class ModuleAction extends ActionSupport {
            structure.databaseInfo.host = structure.databaseInfo.host.substring(8,structure.databaseInfo.host.length())
            environmentService.resetNodePasswordById(ENV_NAME,session,nodeid,structure.databaseInfo.password)
            callback()
+       }
+       }catch(e) {
+           println e
+       }
+        
+	}
+	
+	
+	def deleteDatabaseServer(structure) {
+	   try {
+	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
+       def HOSTER_URL = "https://app.mircloud.host"; // your hosting provider’s URL, see http://docs.jelastic.com/en/jelastic-hoster-info
+       def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
+       def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
+       def ENV_NAME = structure.name.replaceAll("\\s","-") + "-" + structure.address.country + "-database"
+       def  authenticationService = new Authentication(PLATFORM_APPID)
+       authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
+       def environmentService = new Control(PLATFORM_APPID)
+       environmentService.setServerUrl(HOSTER_URL + "/1.0/")
+       def authenticationResponse = authenticationService.signin(USER_EMAIL, USER_PASSWORD);
+       if(authenticationResponse.isOK()) {
+           def session = authenticationResponse.getSession()
+           def response = environmentService.deleteEnv(ENV_NAME, session,"mirhosting");
+           println response
        }
        }catch(e) {
            println e

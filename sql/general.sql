@@ -1,8 +1,8 @@
-drop database IF EXISTS common;
+drop database IF EXISTS general;
 
-create database common;
+create database general;
 
-use common;
+use general;
 
 create table structures(id int AUTO_INCREMENT PRIMARY KEY,name varchar(100) not null,
 sigle varchar(30),typeof varchar(2),business varchar(5),size varchar(1),state varchar(1),target varchar(1),
