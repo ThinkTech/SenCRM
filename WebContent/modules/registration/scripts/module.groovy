@@ -74,15 +74,13 @@ class ModuleDao extends AbstractDao {
     
     def createDatabase(registration) {
         if(!registration.account.structure.databaseInfo) {
-		    def lines = registration.getSQL(registration.database_name)
-		    for(def line in lines) registration.stmt.addBatch(line)
+		    for(def sql in registration.getSQL(registration.database_name)) registration.stmt.addBatch(sql)
 		    registration.stmt.executeBatch()
 		}else {
 	         def connection = getConnection(registration.account.structure)
              connection.setAutoCommit(false)
              def stmt = connection.createStatement()
-             def lines = registration.getSQL(registration.account.structure.databaseInfo.name)
-	         for(def line in lines) stmt.addBatch(line)
+	         for(def sql in registration.getSQL(registration.database_name)) stmt.addBatch(sql)
 	         stmt.executeBatch()
              connection.commit()
              stmt.close()

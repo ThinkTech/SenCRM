@@ -67,6 +67,7 @@ app.ready(function(){
 		if(checked) {
 			const price = parseInt($(this).attr("data-price"));
 			amount += price;
+			previousRadio = $(this);
 		}
 		$(element).on('change', function() {
 			if(!previousRadio) {
@@ -80,7 +81,7 @@ app.ready(function(){
 			    price = parseInt($(this).attr("data-price"));
 			    amount = amount + price;
 			    $("#amount").html(amount.toString().formatDigits());
-			    previousRadio = null
+			    previousRadio = $(this);
 			}
 		});
 		

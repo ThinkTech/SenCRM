@@ -158,8 +158,8 @@
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
-		 <input type="radio" data-price="0" value="colocation" name="registration.hosting" checked/> 
-		 <span class="price"  title="Free">Free</span>
+		 <input type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
+		 <span class="price"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
 	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="price" title="20 ${initParam.app_currency}/Month">20 ${initParam.app_currency}/Month</span>
