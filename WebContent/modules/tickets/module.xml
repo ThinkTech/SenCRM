@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
+    <id>mod_support</id>
 	<name>support</name>
 	<roles>manager,support</roles>
 	<author>ThinkTech</author>

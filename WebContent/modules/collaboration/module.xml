@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
+    <id>mod_collaboration</id>
 	<name>collaboration</name>
 	<roles>manager,customer,partner</roles>
 	<administrable>false</administrable>

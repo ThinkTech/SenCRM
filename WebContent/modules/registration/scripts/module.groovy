@@ -53,7 +53,7 @@ class ModuleDao extends AbstractDao {
 		      if(generatedKeys.next()) {
 		          def structure_id = generatedKeys.getLong(1)
 		          SQL = """\
-	                insert into subscription(mailing, modules,structure_id) VALUES(${registration.mailing},"${registration.subscription}",${structure_id});
+	                insert into subscriptions(mailing, modules,structure_id) VALUES(${registration.mailing},"${registration.subscription}",${structure_id});
 	              """
 	              stmt.executeUpdate(SQL)
 		          SQL = """\
@@ -126,10 +126,7 @@ class Registration {
         create database $database_name;  
         use $database_name;  
         """
-        def names = subscription.split(",")
-        for(def name in names) {
-         name = name.trim()
-         def module = moduleManager.getModuleByName(name) 
+        for(def module in modules) {
          def file =  new File(module.folder.absolutePath +"/sql/module.sql")
          if(file.exists()) {
             file.eachLine {  
@@ -139,6 +136,17 @@ class Registration {
         }
        SQL.split(";")
     }
+    
+    def getModules() {
+        def modules = []
+        def ids = subscription.split(",")
+        for(def id in ids) {
+         def module = moduleManager.getModuleById(id.trim()) 
+         if(module)modules << module 
+        }
+      modules
+    }
+    
 }
 
 class ModuleAction extends ActionSupport {
@@ -226,7 +234,6 @@ class ModuleAction extends ActionSupport {
 	
 	def confirm() {
 	    def code = request.getParameter("activation_code")
-	    println "confirmation"
 	    if(code) {
 	       def dao = new ModuleDao()
 	       dao.activateAccount(code)
@@ -270,10 +277,9 @@ class ModuleAction extends ActionSupport {
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
 		      p("Please confirm your email address to get access to $app to use the modules to which you have subscribed.")
-		      def modules = registration.subscription.split(",")
 		      ul(style : "font-weight:bold") {
-		        for(def module in modules) {
-		          li("$module")
+		        for(def module in registration.modules) {
+		          li("$module.name")
 		        }
 		      }
 		      p("You can update your subscription at any time once logged to your account.")

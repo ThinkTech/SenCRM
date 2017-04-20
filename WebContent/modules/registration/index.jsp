@@ -150,7 +150,7 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox" data-price="${price}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
+		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
 		   <span class="price"  title="${price} ${initParam.app_currency}/Month">${price} ${initParam.app_currency}/Month</span>
 		</s:iterator>
 	</fieldset>
