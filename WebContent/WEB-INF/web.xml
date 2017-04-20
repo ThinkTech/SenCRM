@@ -19,7 +19,7 @@
   
   <context-param>
      <param-name>app_currency</param-name>
-     <param-value>XOF</param-value>
+     <param-value>$</param-value>
   </context-param>
   
 </web-app>
