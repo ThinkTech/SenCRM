@@ -119,6 +119,7 @@ class Registration {
     String hosting
     def database_name
     def stmt 
+    def complete 
     
     def getSQL(database_name) {
         def SQL = """\
@@ -162,8 +163,13 @@ class ModuleAction extends ActionSupport {
 	      }else {
 	          createAccount(registration)
 	      }
-	      def url = request.contextPath+"/"+module.url+"/success"
-	      response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
+	      if(registration.complete) {
+	      	def url = request.contextPath+"/"+module.url+"/success"
+	      	response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
+	      }else {
+	        response.setStatus(404)
+		    response.writer.write(groovy.json.JsonOutput.toJson([message: "error during the registration"]))
+	      }
 	  }
 	}
 	
@@ -174,6 +180,7 @@ class ModuleAction extends ActionSupport {
 		       def mailSender = new MailSender(mailConfig)
 		       def mail = new Mail(registration.user.fullName,registration.user.email,"${registration.user.fullName}, please confirm your email address",getRegistrationTemplate(registration))
 		       mailSender.sendMail(mail)
+		       registration.complete = true
 		 })
 	}
 	

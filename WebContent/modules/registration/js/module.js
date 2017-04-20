@@ -27,14 +27,17 @@ app.ready(function(){
 			alert("you must check the captcha");
 			return false;
 		}*/
-		$("input[type=submit]").attr("disabled","disabled");
+		$("input,a").attr("disabled","disabled");
+		$("body").css("opacity","0.6");
 		var url = $(this).attr("action");
 		var data = $(this).serialize();
 		app.post(url,data, function(response) {
 			window.location.href = response.url;
 		}, function(error) {
-			alert("error", function() {
-				$("input[type=email]").focus();
+			alert("error during the registration, please try again", function() {
+				$("input,a").removeAttr("disabled");
+				$("body").css("opacity","1");
+				$("input[name='user.firstName']").focus();
 			});
 		});
 		$("html, body").animate({ scrollTop: 0 }, 500);
