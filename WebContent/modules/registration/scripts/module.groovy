@@ -152,12 +152,12 @@ class ModuleAction extends ActionSupport {
 	  def captcha = "fake"
 	  if(captcha) {
 	      if(registration.hosting.equals("private")) {
-	          def database_name = registration.account.structure.name.replaceAll("\\s","_")
-	          registration.account.structure.databaseInfo = new DatabaseInfo()
-	          registration.account.structure.databaseInfo.name = database_name
-	          registration.account.structure.databaseInfo.user = "root"
-	          registration.account.structure.databaseInfo.password = "passer"
-	          createDatabaseServer(registration.account.structure,{
+	          def database_name = account.structure.name.replaceAll("\\s","_")
+	          account.structure.databaseInfo = new DatabaseInfo()
+	          account.structure.databaseInfo.name = database_name
+	          account.structure.databaseInfo.user = "root"
+	          account.structure.databaseInfo.password = "passer"
+	          createDatabaseServer(account.structure,{
 	             createAccount(registration)
 	          })
 	      }else {
@@ -191,14 +191,11 @@ class ModuleAction extends ActionSupport {
        def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
        def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
        def ENV_NAME = structure.name.replaceAll("\\s","-") + "-" + structure.address.country + "-database"
-       println "env name " + ENV_NAME
        def  authenticationService = new Authentication(PLATFORM_APPID)
        authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
        def environmentService = new Control(PLATFORM_APPID)
        environmentService.setServerUrl(HOSTER_URL + "/1.0/")
-       println "Authenticate user..."
        def authenticationResponse = authenticationService.signin(USER_EMAIL, USER_PASSWORD);
-       println "Signin response: " + authenticationResponse
        if(authenticationResponse.isOK()) {
            def session = authenticationResponse.getSession()
            JSONObject env = new JSONObject()
@@ -210,9 +207,7 @@ class ModuleAction extends ActionSupport {
                 .put("fixedCloudlets", 0)
                 .put("flexibleCloudlets", 2)
            def nodes = new JSONArray().put(mysqlNode)
-           println "Creating environment..."
            def response = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
-           println "CreateEnvironment response: " + response
            def jsonResponse = response.toJSON()
            nodes = jsonResponse.get("response").get("nodes")
            def nodeid = nodes.get(0).get("id")
