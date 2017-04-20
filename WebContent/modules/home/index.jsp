@@ -47,7 +47,7 @@
 	<label class="text-right" for="${id}"><i class="fa fa-puzzle-piece"></i>${name}</label>
 	<article class="ac-small module">
 	    <div>
-	 	<img src="modules/${id}/images/icon-32.png"/>
+	 	<img src="modules/${folder.name}/images/icon-32.png"/>
 	 	<span>${description}</span>
   		</div>
 		<p>${details}</p>
