@@ -7,20 +7,20 @@ import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender
 import groovy.text.markup.TemplateConfiguration
 import groovy.text.markup.MarkupTemplateEngine
-import com.jelastic.api.development.response.ScriptEvalResponse;
-import com.jelastic.api.development.response.interfaces.ArrayResponse;
-import com.jelastic.api.environment.Control;
-import com.jelastic.api.users.Authentication;
-import com.jelastic.api.users.response.AuthenticationResponse;
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.jelastic.api.development.response.ScriptEvalResponse
+import com.jelastic.api.development.response.interfaces.ArrayResponse
+import com.jelastic.api.environment.Control
+import com.jelastic.api.users.Authentication
+import com.jelastic.api.users.response.AuthenticationResponse
+import org.json.JSONArray
+import org.json.JSONObject
 
 class ModuleDao extends AbstractDao {
 
     def saveAccount(registration,callback) {
        try {
           def connection = getConnection()
-          connection.setAutoCommit(false);
+          connection.setAutoCommit(false)
           def stmt = connection.createStatement()
           def SQL = """\
              insert INTO users(firstName,lastName,profession,email,password,lang) 
@@ -134,7 +134,7 @@ class Registration {
          def file =  new File(module.folder.absolutePath +"/sql/module.sql")
          if(file.exists()) {
             file.eachLine {  
- 				line -> SQL += line; 
+ 				line -> SQL += line
 			} 
          }
         }
@@ -239,7 +239,7 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def resetPassword() {
-	    /*println "reset password "
+	    println "reset password "
 	    def mailConfig = new MailConfig("noreply@thinktech.sn","xgC#xo@6","smtp.thinktech.sn")
 		def mailSender = new MailSender(mailConfig)
 		def user = new User()
@@ -247,8 +247,7 @@ class ModuleAction extends ActionSupport {
 		user.lastName = "Ba"
 		user.email = "lamine.ba@thinktech.sn"
 		def mail = new Mail(user.fullName,user.email,"${user.fullName}, here's the link to reset your password",getResetPasswordTemplate(user))
-		mailSender.sendMail(mail)*/
-		createDatabase()
+		mailSender.sendMail(mail)
 	    SUCCESS
 	}
 	
