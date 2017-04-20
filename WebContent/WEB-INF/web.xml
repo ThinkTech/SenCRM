@@ -17,5 +17,9 @@
      <param-value>Customer Relation Management Software as a Service for managing your structure.</param-value>
   </context-param>
   
+  <context-param>
+     <param-name>app_currency</param-name>
+     <param-value>XOF</param-value>
+  </context-param>
   
 </web-app>

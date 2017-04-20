@@ -150,25 +150,25 @@
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
-		   <input type="checkbox" data-amount="${price}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price"  title="${price} XOF/Month">${price} XOF/Month</span>
+		   <input type="checkbox" data-price="${price}" value="${name}" name="registration.subscription" data-checked="${mandatory}"/> 
+		   <span class="price"  title="${price} ${initParam.app_currency}/Month">${price} ${initParam.app_currency}/Month</span>
 		</s:iterator>
 	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
-		 <input type="radio" value="colocation" name="registration.hosting" checked/> 
+		 <input type="radio" data-price="0" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price"  title="Free">Free</span>
 	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
-		 <input type="radio" value="private" name="registration.hosting"/> 
-		 <span class="price" title="2500 XOF/Month">2500 XOF/Month</span>
+		 <input type="radio"  data-price="3000" value="private" name="registration.hosting"/> 
+		 <span class="price" title="3000 ${initParam.app_currency}/Month">3000 ${initParam.app_currency}/Month</span>
 	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-money"></i>Pricing</h1>
 	     <label title="Total" class="text-right"><i class="fa fa-money"></i>Amount : </label>
-		 <span  class="price"><span id="amount"></span> XOF/Month</span>
+		 <span  class="price"><span id="amount"></span> ${initParam.app_currency}/Month</span>
 	</fieldset>
 	
 	<div>
