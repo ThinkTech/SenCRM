@@ -27,19 +27,19 @@ app.ready(function(){
 			alert("you must check the captcha");
 			return false;
 		}*/
-		$("input,a").attr("disabled","disabled");
-		$("body").css("opacity","0.6");
 		var url = $(this).attr("action");
 		var data = $(this).serialize();
 		app.post(url,data, function(response) {
 			window.location.href = response.url;
 		}, function(error) {
+			$("body").css("opacity","1");
 			alert("error during the registration, please try again", function() {
-				$("input,a").removeAttr("disabled");
-				$("body").css("opacity","1");
+				$("input,a,select").removeAttr("disabled");
 				$("input[name='user.firstName']").focus();
 			});
 		});
+		$("input,a,select").attr("disabled","disabled");
+		$("body").css("opacity","0.6");
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		return false;
 	});

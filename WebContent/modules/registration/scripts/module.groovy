@@ -57,11 +57,9 @@ class ModuleDao extends AbstractDao {
 	              """
 	              stmt.executeUpdate(SQL)
 		          SQL = """\
-	                insert into accounts(main,activated,trial,role,user_id,structure_id,createdBy) VALUES(true,false,true,"manager",${user_id},${structure_id},${user_id});
+	                insert into accounts(main,activated,activation_code,trial,role,user_id,structure_id,createdBy) VALUES(true,false,"${registration.activationCode}",true,"manager",${user_id},${structure_id},${user_id});
 	              """
-	              stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
-	              generatedKeys = stmt.getGeneratedKeys()
-		          if(generatedKeys.next()) registration.account.id = generatedKeys.getLong(1)
+	              stmt.executeUpdate(SQL)
 		      }
 		      createDatabase(registration)
 	      }
@@ -92,12 +90,12 @@ class ModuleDao extends AbstractDao {
 		}
     }
     
-    def activateAccount(id) {
+    def activateAccount(code) {
        try {
           def connection = getConnection()
           def stmt = connection.createStatement()
           def SQL = """\
-             update accounts set activated = true where id = $id;
+             update accounts set activated = true where activation_code = '$code';
           """
 	      stmt.executeUpdate(SQL)
 	      stmt.close()
@@ -119,6 +117,7 @@ class Registration {
     String hosting
     def database_name
     def stmt 
+    def activationCode
     def complete 
     
     def getSQL(database_name) {
@@ -151,6 +150,8 @@ class ModuleAction extends ActionSupport {
 	  /*def captcha = request.getParameter("g-recaptcha-response")*/
 	  def captcha = "fake"
 	  if(captcha) {
+	      registration.activationCode = UUID.randomUUID().toString() + "-" + UUID.randomUUID().toString()
+	      println registration.subscription
 	      if(registration.hosting.equals("private")) {
 	          def database_name = account.structure.name.replaceAll("\\s","_")
 	          account.structure.databaseInfo = new DatabaseInfo()
@@ -224,17 +225,12 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def confirm() {
-	    def id = request.getParameter("id")
-	    if(id) {
+	    def code = request.getParameter("activation_code")
+	    println "confirmation"
+	    if(code) {
 	       def dao = new ModuleDao()
-	       dao.activateAccount(id)
+	       dao.activateAccount(code)
 	    }
-	    SUCCESS
-	}
-	
-	def close() {
-	    def id = request.getParameter("id")
-	    println "closing account "+id
 	    SUCCESS
 	}
 	
@@ -283,7 +279,7 @@ class ModuleAction extends ActionSupport {
 		      p("You can update your subscription at any time once logged to your account.")
 		    }
 		    div(style : "text-align:center") {
-		       a(href : "$url/registration/account/confirm?id=$registration.account.id",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
+		       a(href : "$url/registration/account/confirm?activation_code=$registration.activationCode",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {
 		         span("Confirm your email")
 		       }
 		    }
@@ -292,7 +288,6 @@ class ModuleAction extends ActionSupport {
 		  div(style :"margin-top:10px;font-size : 11px;text-align:center") {
 		      p("You're receiving this email because you (or someone using this email)")
 		      p(" created an account using this address")
-		      p("Didn't sign up for $app? <a href='$url/registration/account/close?id=$registration.account.id'>Close account</a>")
 		  }
 		  
 		   

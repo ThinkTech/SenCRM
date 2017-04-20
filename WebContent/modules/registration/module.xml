@@ -22,10 +22,6 @@
 			<result type="redirect">/login</result>
 		</action>	
 		
-		<action url="account/close" method="close">
-			<result>success</result>
-		</action>
-		
 		<action url="password/reset" method="resetPassword">
 			<result>reset</result>
 		</action>

@@ -16,4 +16,4 @@ CREATE TABLE subscription(id int AUTO_INCREMENT PRIMARY KEY, mailing boolean,mod
 CREATE TABLE users(id int AUTO_INCREMENT PRIMARY KEY, firstName varchar(100) not null,lastName varchar(100) not null, profession varchar(100) not null,email varchar(100) not null, password varchar(100) not null,lang varchar(2) default "en");
 
 CREATE TABLE accounts(id int AUTO_INCREMENT PRIMARY KEY, 
-main boolean,activated boolean,trial boolean,role varchar(100) not null, structure_id int not null, user_id int not null,FOREIGN KEY(user_id) REFERENCES users(id),createdOn TIMESTAMP DEFAULT NOW(),createdBy int);
+main boolean,activated boolean,activation_code varchar(300),trial boolean,role varchar(100) not null, structure_id int not null, user_id int not null,FOREIGN KEY(user_id) REFERENCES users(id),createdOn TIMESTAMP DEFAULT NOW(),createdBy int);
