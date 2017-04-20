@@ -55,11 +55,12 @@ class ModuleDao extends AbstractDao {
 		          SQL = """\
 	                insert into subscriptions(mailing, modules,structure_id) VALUES(${registration.mailing},"${registration.subscription}",${structure_id});
 	              """
-	              stmt.executeUpdate(SQL)
+	              stmt.addBatch(SQL)
 		          SQL = """\
 	                insert into accounts(main,activated,activation_code,trial,role,user_id,structure_id,createdBy) VALUES(true,false,"${registration.activationCode}",true,"manager",${user_id},${structure_id},${user_id});
 	              """
-	              stmt.executeUpdate(SQL)
+	              stmt.addBatch(SQL)
+	              stmt.executeBatch()
 		      }
 		      createDatabase(registration)
 	      }
