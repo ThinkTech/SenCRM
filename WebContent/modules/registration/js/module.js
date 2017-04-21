@@ -39,7 +39,7 @@ app.ready(function(){
 			});
 		});
 		$("input,a,select").attr("disabled","disabled");
-		$("body").css("opacity","0.6");
+		$("body").css("opacity","0.5");
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		return false;
 	});

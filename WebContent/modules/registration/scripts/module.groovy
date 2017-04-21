@@ -133,14 +133,12 @@ class Registration {
 			} 
          }
         }
-        println SQL
         SQL.split(";")
     }
     
     def getModules() {
         def modules = []
-        def ids = subscription.split(",")
-        for(def id in ids) {
+        for(def id in subscription.split(",")) {
          def module = moduleManager.getModuleById(id.trim()) 
          if(module)modules << module 
         }
@@ -159,7 +157,6 @@ class ModuleAction extends ActionSupport {
 	  def captcha = "fake"
 	  if(captcha) {
 	      registration.activationCode = UUID.randomUUID().toString() + "-" + UUID.randomUUID().toString()
-	      println registration.subscription
 	      if(registration.hosting.equals("private")) {
 	          def database_name = account.structure.name.replaceAll("\\s","_")
 	          account.structure.databaseInfo = new DatabaseInfo()
@@ -249,9 +246,7 @@ class ModuleAction extends ActionSupport {
        environmentService.setServerUrl(HOSTER_URL + "/1.0/")
        def authenticationResponse = authenticationService.signin(USER_EMAIL, USER_PASSWORD);
        if(authenticationResponse.isOK()) {
-           def session = authenticationResponse.getSession()
-           def response = environmentService.deleteEnv(ENV_NAME, session,"mirhosting");
-           println response
+           environmentService.deleteEnv(ENV_NAME, authenticationResponse.getSession(),"mirhosting");
        }
        }catch(e) {
            println e
