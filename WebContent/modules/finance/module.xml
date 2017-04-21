@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
-    <id>mod_production</id>
-	<name>production</name>
+    <id>mod_finance</id>
+	<name>finance</name>
 	<roles>manager</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>Module for managing your production</description>
-	<details>The production module let you manage your products
-	and how they are created from the beginning to the end.</details>
+	<description>Module for managing your finance</description>
+	<details>The Finance module gathers financial data and generates reports such as ledgers, trail balance data, overall balance sheets and quarterly financial statements.</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>

@@ -3,7 +3,6 @@
     <id>mod_collaboration</id>
 	<name>collaboration</name>
 	<roles>manager,customer,partner</roles>
-	<administrable>false</administrable>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for collaborating with your customers and partners</description>

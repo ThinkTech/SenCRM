@@ -3,7 +3,6 @@
     <id>mod_hrm</id>
 	<name>hrm</name>
 	<roles>manager</roles>
-	<administrable>false</administrable>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing your human resources</description>

@@ -3,7 +3,6 @@
     <id>mod_marketing</id>
 	<name>marketing</name>
 	<roles>manager</roles>
-	<administrable>false</administrable>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing your marketing</description>
