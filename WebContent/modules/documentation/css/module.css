@@ -1,16 +1,17 @@
 .center {
 	width: 70%;
     margin : auto;
-    clear : both;
+    clear : right;
 }
 
-.center h1 {
+.center > h1 {
 	font-size: 2em;
     padding: 0px;
     font-weight : bold;
     text-align : center;
-    margin-top : 20px;
     margin-bottom : 20px;
+    padding-top:20px;
+    white-space: nowrap;
 }
 
 .center p {
@@ -18,4 +19,35 @@
 	text-align : center;
 	padding : 20px;
 	margin-top : 80px;
+}
+
+
+/*--------------------*/
+/* Responsive Style */
+/*--------------------*/
+
+
+@media(max-width:1199px ){
+}
+
+@media(max-width:1024px ){
+}
+  
+@media(max-width:991px ){
+}
+
+@media(max-width:767px ){
+}
+@media(max-width:640px){
+}
+
+ 
+@media(max-width:480px ){
+    .center > h1 {font-size:1.5em}
+}
+@media(max-width:360px ){
+	
+}
+@media(max-width:320px ){
+	
 }
