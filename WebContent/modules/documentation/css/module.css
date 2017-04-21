@@ -1,0 +1,21 @@
+.center {
+	width: 70%;
+    margin : auto;
+    clear : both;
+}
+
+.center h1 {
+	font-size: 2em;
+    padding: 0px;
+    font-weight : bold;
+    text-align : center;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.center p {
+	color : red;
+	text-align : center;
+	padding : 20px;
+	margin-top : 80px;
+}
