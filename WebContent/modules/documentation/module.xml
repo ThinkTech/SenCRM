@@ -3,7 +3,6 @@
 	<name>Documentation</name>
 	<type>front-end</type>
 	<title>SenCRM</title>
-	<main>true</main>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing the documentation</description>

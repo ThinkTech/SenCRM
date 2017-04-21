@@ -178,13 +178,16 @@
 @media(max-width:767px ){
 	.center {width: 95%;}
 	.video {width:91%}
+	.rslides {height:190px}
 }
 @media(max-width:640px){
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
+	.rslides {height:210px}
 }
 @media(max-width:360px ){
+	.rslides {height:250px}
 }
 @media(max-width:320px ){
 }
