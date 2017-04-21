@@ -102,8 +102,7 @@
 	font-size: 19px;
 }
 
-
-.ac-container label:hover:after,
+.ac-container label:after,.ac-container label:hover:after,
 .ac-container input:checked + label:hover:after{
 	content: '';
 	position: absolute;
