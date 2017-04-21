@@ -931,7 +931,7 @@ ul.tabs li h2 {
 	.topmenu {margin-left:2px;margin-top:8px}
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
 	.details {width:100%;}
-	.buttons {position:relative;margin-top:0px}
+	.buttons {position:relative;margin-top:0px;right:0px}
 }
 @media(max-width:640px){
 	.logo {display : none}
