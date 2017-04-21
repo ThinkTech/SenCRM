@@ -603,7 +603,8 @@ input[type=submit] {
 	background: #fcfdff;
 	border: 1px solid #06d0d8;
 	width: 300px;
-	height: 140px;
+	min-height: 140px;
+	height : auto;
 	display: block;
 	margin: auto;
 	z-index: 999999999999;
@@ -620,7 +621,7 @@ input[type=submit] {
 	color: #F8F8F8;
 	padding: 3px;
     padding-left: 28px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 #confirm-dialog-container span:nth-child(2), #alert-dialog-container span:nth-child(2) {
@@ -630,7 +631,6 @@ input[type=submit] {
 }
 
 #confirm-dialog-container a, #alert-dialog-container a {
-	display: block;
 	font-size: 75%;
 	cursor: pointer;
 	background: #06d0d8;
@@ -638,10 +638,18 @@ input[type=submit] {
 	padding: 6px;
 	display: inline-block;
 	width: 70px;
-	float: right;
 	margin-right: 5px;
 	height : 31px;
+	margin-left : 200px;
 }
+
+#confirm-dialog-container a#confirm-dialog-ok {
+	margin-left : 130px;
+} 
+
+#confirm-dialog-container a#confirm-dialog-cancel {
+	margin-left : 0px;
+} 
 
 #selection {
 	text-align: center;

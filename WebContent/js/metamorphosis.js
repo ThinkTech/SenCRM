@@ -197,8 +197,8 @@ page.init = function() {
 	$("body").append('<div id="confirm-dialog-container">'+
 			'<div><span>Confirmation</span>'+
 			'<span class="confirmation-dialog-title"></span>'+
-			'<a id="confirm-dialog-cancel" tabindex="2">Cancel</a>'+
-			'<a id="confirm-dialog-ok" tabindex="1">OK</a></div></div>');
+			'<a id="confirm-dialog-ok" tabindex="1">OK</a>'+
+			'<a id="confirm-dialog-cancel" tabindex="2">Cancel</a></div></div>');
 	
 	$("#confirm-dialog-cancel").click(function() { 
 		$("#confirm-dialog-container").hide();

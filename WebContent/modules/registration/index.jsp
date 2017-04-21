@@ -152,6 +152,7 @@
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
 		   <span class="price"  title="${price} ${initParam.app_currency}/Month">${price} ${initParam.app_currency}/Month</span>
+		   <span class="info fa fa-info"  data-info="${details}" title="info">&nbsp;</span>
 		</s:iterator>
 	</fieldset>
 	

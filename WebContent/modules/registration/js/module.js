@@ -90,6 +90,10 @@ app.ready(function(){
 		$(this).html($(this).html().formatDigits());
 	});
 	$("#amount").html(amount.toString().formatDigits());
+	$("span.info").click(function(){
+		const info = $(this).attr("data-info");
+		alert(info);
+	});
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
