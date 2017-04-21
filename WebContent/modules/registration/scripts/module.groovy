@@ -298,7 +298,7 @@ class ModuleAction extends ActionSupport {
 		    }
 		    div(style : "width:90%;margin:auto;margin-top : 30px;margin-bottom:30px") {
 		      p("Thanks for signing up")
-		      p("Please confirm your email address to get access to $app to use the modules to which you have subscribed.")
+		      p("Please confirm your email address to get access to <a href='$url'>$app</a> to use the modules to which you have subscribed.")
 		      ul(style : "font-weight:bold") {
 		        for(def module in registration.modules) {
 		          li("$module.name")
