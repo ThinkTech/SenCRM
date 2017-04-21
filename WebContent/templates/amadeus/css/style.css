@@ -173,6 +173,10 @@ div.app_title a {
 	background : #cfbfa8;
 }
 
+#form input[type="radio"]{
+	background : transparent;
+}
+
 .w3_agile_login input[type="email"],.w3_agile_login input[type="password"],.agile_its_registration input[type="text"],.agile_its_registration input[type="password"],.agile_its_registration input[type="email"]{
     padding: 0.7em 1em;
     margin: 1em 0em 1em 0;
