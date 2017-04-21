@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <id>mod_production</id>
+	<name>production</name>
+	<roles>manager</roles>
+	<administrable>false</administrable>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>Module for managing your production</description>
+	<details>The production module let you manage your products
+	and how they are created from the beginning to the end.</details>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<price>10</price>
+</module>
