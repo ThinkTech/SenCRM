@@ -63,7 +63,7 @@
     padding: 5px;
     padding-top : 10px;
     font-size: 70%;
-    width : 40%;
+    width : 35%;
     height : 34px;
     vertical-align : top;
     white-space:nowrap;
@@ -118,14 +118,11 @@
 }
 
 #form .info {
-	position: absolute;
-    margin-top: 12px;
+	vertical-align: text-top;
+    margin-top: -11px;
     cursor : pointer;
 }
 
-#form .info:last-of-type {
-    margin-left: 5px;
-}
 
 .gc-reset{
 transform:scale(0.95) !important;
@@ -182,7 +179,7 @@ transform-origin:0 0 !important;
 	#form input:not([type="submit"]), #form select {width : 48%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:0%}
     .captcha{max-width:286px;width:286px;overflow:hidden}
-    .registration .price {width:30%}
+    .registration .price {width:25%}
 }
 @media(max-width:320px ){
 	.captcha{max-width:286px;width:286px;overflow:hidden}
