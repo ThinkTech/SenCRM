@@ -161,9 +161,11 @@
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
+		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control." title="info">&nbsp;</span>
 	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="price" title="20 ${initParam.app_currency}/Month">20 ${initParam.app_currency}/Month</span>
+		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control." title="info">&nbsp;</span>
 	</fieldset>
 	
 	<fieldset>
