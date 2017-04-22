@@ -1,32 +1,43 @@
 app.ready(function(){
+	app.ready(function(){
+		head.load("modules/registration/js/jquery.easyWizard.js", function() { 
+			$('#form').easyWizard({
+				    prevButton: "Back",
+				    nextButton: "Next",
+				    submitButtonText: "Create",
+				    before : function(wizardObj,currentStep,nextStep) {
+				    	var valid = true;
+				        $('input[required]',currentStep).each(function(index,element) {
+				        	const val = $(element).val();
+							if(val.trim() == '') {
+								$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
+								alert("this field is required",function(){
+									$(element).focus();
+								});
+							    return valid = false;
+							}
+				        });
+				        const password = $("#password",currentStep);
+						const confirm = $("#confirm",currentStep);
+						if(password.length && password.val() != confirm.val()) {
+							$("html, body").animate({ scrollTop: password.offset().top }, 500);
+							alert("the two passwords are not identicals",function(){
+								password.focus();
+							});
+							valid = false;
+						}
+				        return valid;
+				    },
+				    beforeSubmit: function(wizardObj) {
+				    	if(!grecaptcha.getResponse()) {
+						  alert("you must check the captcha");
+						  return false;
+					    }
+				    }
+			}).fadeTo(1000,1);
+		 });
+	});
 	$("form").on("submit",function(event){
-		const password = $("#password");
-		const confirm = $("#confirm");
-		if(password.val() != confirm.val()) {
-			$("html, body").animate({ scrollTop: password.offset().top }, 500);
-			alert("the two passwords are not identicals",function(){
-				password.focus();
-			});
-			return false;
-		}
-		var valid = true;
-		$("input[required]").each(function(index,element){
-			const val = $(element).val();
-			if(val.trim() == '') {
-				$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
-				alert("this field is required",function(){
-					$(element).focus();
-				});
-				event.preventDefault() ;
-			    event.stopPropagation();
-			    return valid = false;
-			}
-		});
-		if(!valid) return false;
-		/*if(!grecaptcha.getResponse()) {
-			alert("you must check the captcha");
-			return false;
-		}*/
 		var url = $(this).attr("action");
 		var data = $(this).serialize();
 		app.post(url,data, function(response) {

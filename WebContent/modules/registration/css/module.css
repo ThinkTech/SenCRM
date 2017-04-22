@@ -101,6 +101,10 @@
 	display : block;
 }
 
+#form {
+	opacity : 0;
+}
+
 #form fieldset {
 	margin-bottom : 5px;
 	padding-bottom : 15px;
@@ -129,6 +133,37 @@
 	vertical-align: text-top;
     margin-top: -11px;
     cursor : pointer;
+}
+
+.easyWizardSteps {list-style:none;width:auto;margin:0;padding:0;text-align:center;margin-bottom:20px}
+.easyWizardSteps li {font-size:18px;display:inline-block;padding:10px;color:#B0B1B3;margin-right:0px;}
+.easyWizardSteps li span {font-size:24px}
+.easyWizardSteps li.current {color:#000}
+.easyWizardButtons {overflow:hidden;padding:10px;}
+.easyWizardButtons button, .easyWizardButtons .submit {cursor:pointer}
+.easyWizardButtons .prev {
+	float:left;
+	cursor: pointer;
+	width : 80px;
+	border-radius : 2px;
+	margin-top : 15px;
+	margin-bottom : 10px;
+	border : 1px solid #06d0d8;
+	background : #06d0d8;
+	color : white;
+	height : 34px;
+}
+.easyWizardButtons .next, .easyWizardButtons .submit {
+float:right;
+cursor: pointer;
+	width : 80px;
+	border-radius : 2px;
+	margin-top : 15px;
+	margin-bottom : 10px;
+	border : 1px solid #06d0d8;
+	background : #06d0d8;
+	color : white;
+	height : 34px;
 }
 
 .captcha {

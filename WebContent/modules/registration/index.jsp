@@ -6,8 +6,8 @@
 </div>
 <div class="registration">
 <h1 class="text-center"><i class="fa fa-user"></i>Create your account</h1>
-<form id="form" action="registration/register" method="post"> 
-   
+<form id="form" action="registration/register" method="post" class="form-horizontal"> 
+   <section class="step" data-step-title="Profile">
 	 <fieldset>
 		<h1><i class="fa fa-user"></i>Manager</h1>
 		
@@ -35,6 +35,10 @@
 		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
 		
 	</fieldset>
+	
+	</section>
+	
+	<section class="step" data-step-title="Structure">
 	
 	<fieldset>
 		<h1><i class="fa fa-building"></i>Structure</h1>
@@ -146,6 +150,9 @@
 		
 	</fieldset>
 	
+	</section>
+	
+	<section class="step" data-step-title="Subscription">
 	
 	<fieldset>
 	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
@@ -156,6 +163,7 @@
 		   <span class="info fa fa-info"  data-info="${details}" title="information">&nbsp;</span>
 		</s:iterator>
 	</fieldset>
+
 	
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
@@ -175,6 +183,10 @@
 		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/Month</span>
 	</fieldset>
 	
+	</section>
+	
+	<section class="step" data-step-title="Confirmation">
+	
 	<div>
 	   <p>
 	      <input value="true" name="registration.mailing" type="checkbox" checked/> 
@@ -191,7 +203,7 @@
 	<div class="captcha">
      <div class="g-recaptcha" data-sitekey="6LfcIBwUAAAAAMpRV6hzY9LHZJWbGyO4k668VXP1"></div>
     </div>    	
-	<input type="submit" title="Create Account"  value="Create"/>
+	</section>
 </form>
 
 </div>
