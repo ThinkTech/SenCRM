@@ -135,7 +135,7 @@
     cursor : pointer;
 }
 
-.easyWizardSteps {list-style:none;width:auto;margin:0;padding:0;text-align:center;margin-bottom:20px}
+.easyWizardSteps {list-style:none;width:auto;margin:0;padding:0;text-align:center;}
 .easyWizardSteps li {font-size:18px;display:inline-block;padding:10px;color:#B0B1B3;margin-right:0px;}
 .easyWizardSteps li span {font-size:24px}
 .easyWizardSteps li.current {color:#000}
@@ -168,6 +168,7 @@ cursor: pointer;
 
 .captcha {
 	margin-top : 20px;
+	margin-left : 26px;
 }
 
 .gc-reset{
@@ -201,6 +202,7 @@ transform-origin:0 0 !important;
 	h4 {background-position-y : 6px}
 	.registration {width : 80%;}
 	.registration p {width : 99%}
+	.captcha {margin-left:0px}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
