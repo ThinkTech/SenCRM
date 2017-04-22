@@ -6,5 +6,12 @@
 </div>
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
-   <p>under construction</p>
+   <div class="center bgcolor">
+     <h2><i class="fa fa-user"></i>Setup</h2>
+     <ol>
+       <li>Signing up for an account</li>
+       <li>Verifying your email address</li>
+       <li>Signing in to ${app_name}</li>
+     </ol>
+   </div>
 </div>

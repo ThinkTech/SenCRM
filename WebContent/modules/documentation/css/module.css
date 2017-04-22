@@ -14,13 +14,13 @@
     white-space: nowrap;
 }
 
-.center p {
-	color : red;
-	text-align : center;
-	padding : 20px;
-	margin-top : 80px;
+.bgcolor {
+	padding : 10px;
 }
 
+.bgcolor ol {
+	margin-left : 45px;
+}
 
 /*--------------------*/
 /* Responsive Style */
