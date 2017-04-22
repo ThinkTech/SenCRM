@@ -153,8 +153,7 @@ class ModuleAction extends ActionSupport {
     def registration = new Registration(user : user, account : account,moduleManager : moduleManager)
     
 	def register() {
-	  /*def captcha = request.getParameter("g-recaptcha-response")*/
-	  def captcha = "fake"
+	  def captcha = request.getParameter("g-recaptcha-response")
 	  if(captcha) {
 	      registration.activationCode = UUID.randomUUID().toString() + "-" + UUID.randomUUID().toString()
 	      if(registration.hosting.equals("private")) {
@@ -162,8 +161,8 @@ class ModuleAction extends ActionSupport {
 	          account.structure.databaseInfo = new DatabaseInfo()
 	          account.structure.databaseInfo.name = database_name
 	          account.structure.databaseInfo.user = "root"
-	          account.structure.databaseInfo.password = "passer"
-	          createDatabaseServer(account.structure,{
+	          account.structure.databaseInfo.password = user.password
+	          createDatabaseServer(registration,{
 	             createAccount(registration)
 	          })
 	      }else {
@@ -174,11 +173,14 @@ class ModuleAction extends ActionSupport {
 	      	response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 	      }else {
 	        if(registration.hosting.equals("private")) {
-	           deleteDatabaseServer(account.structure) 
+	           deleteDatabaseServer(registration) 
 	        }
 	        response.setStatus(404)
 		    response.writer.write(groovy.json.JsonOutput.toJson([message: "error during the registration"]))
 	      }
+	  }else {
+	     response.setStatus(404)
+		 response.writer.write(groovy.json.JsonOutput.toJson([message: "error during the registration"]))
 	  }
 	}
 	
@@ -193,12 +195,13 @@ class ModuleAction extends ActionSupport {
 		 })
 	}
 	
-	def createDatabaseServer(structure,callback) {
+	def createDatabaseServer(registration,callback) {
 	   try {
 	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
        def HOSTER_URL = "https://app.mircloud.host"; // your hosting provider’s URL, see http://docs.jelastic.com/en/jelastic-hoster-info
        def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
        def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
+       def structure = registration.account.structure
        def ENV_NAME = structure.name.replaceAll("\\s","-") + "-" + structure.address.country + "-database"
        def  authenticationService = new Authentication(PLATFORM_APPID)
        authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
@@ -232,13 +235,13 @@ class ModuleAction extends ActionSupport {
         
 	}
 	
-	
-	def deleteDatabaseServer(structure) {
+	def deleteDatabaseServer(registration) {
 	   try {
 	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
        def HOSTER_URL = "https://app.mircloud.host"; // your hosting provider’s URL, see http://docs.jelastic.com/en/jelastic-hoster-info
        def USER_EMAIL = "dev@thinktech.sn"; // your Jelastic account’s email
        def USER_PASSWORD = "mirhosting"; // your Jelastic account’s password
+       def structure = registration.account.structure
        def ENV_NAME = structure.name.replaceAll("\\s","-") + "-" + structure.address.country + "-database"
        def  authenticationService = new Authentication(PLATFORM_APPID)
        authenticationService.setServerUrl(HOSTER_URL + "/1.0/")
