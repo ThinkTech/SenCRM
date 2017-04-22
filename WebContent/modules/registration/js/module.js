@@ -2,6 +2,7 @@ app.ready(function(){
 	var form = $("form");
 	if(form.length) {
 	 app.ready(function(){
+		page.wait();
 		head.load("modules/registration/js/jquery.easyWizard.js", function() { 
 			$('#form').easyWizard({
 				    prevButton: "Back",
