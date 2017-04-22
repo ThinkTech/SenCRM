@@ -35,6 +35,7 @@ app.ready(function(){
 					    }
 				    }
 			}).fadeTo(1000,1);
+			$("input:first").focus();
 		 });
 	});
 	$("form").on("submit",function(event){
@@ -108,5 +109,4 @@ app.ready(function(){
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
-	$("input:first").focus();
 });
