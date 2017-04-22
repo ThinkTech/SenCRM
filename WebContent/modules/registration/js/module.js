@@ -9,27 +9,49 @@ app.ready(function(){
 				    nextButton: "Next",
 				    submitButtonText: "Create",
 				    before : function(wizardObj,currentStep,nextStep) {
-				    	var valid = true;
-				        $('input[required]',currentStep).each(function(index,element) {
-				        	const val = $(element).val();
-							if(val.trim() == '') {
-								$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
-								alert("this field is required",function(){
-									$(element).focus();
+				    	if(nextStep.index() > currentStep.index()) {
+					    	var valid = true;
+					        $('input[required]',currentStep).each(function(index,element) {
+					        	const val = $(element).val();
+								if(val.trim() == '') {
+									$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
+									alert("this field is required",function(){
+										$(element).focus();
+									});
+								    return valid = false;
+								}
+					        });
+					        if(!valid) return valid;
+					        const email = $("input[type=email]",currentStep);
+					        if(email.length) {
+					        	var re = /\S+@\S+\.\S+/;
+						        valid = re.test(email.val());
+						        if(!valid) {
+						        	alert("this email is invalid",function(){
+										$(email).focus();
+									});
+						        }
+					        }
+					        if(!valid) return valid;
+					        const password = $("#password",currentStep);
+							const confirm = $("#confirm",currentStep);
+							if(password.length && password.val() != confirm.val()) {
+								$("html, body").animate({ scrollTop: password.offset().top }, 500);
+								alert("the two passwords are not identicals",function(){
+									password.focus();
 								});
-							    return valid = false;
+								valid = false;
 							}
-				        });
-				        const password = $("#password",currentStep);
-						const confirm = $("#confirm",currentStep);
-						if(password.length && password.val() != confirm.val()) {
-							$("html, body").animate({ scrollTop: password.offset().top }, 500);
-							alert("the two passwords are not identicals",function(){
-								password.focus();
-							});
-							valid = false;
-						}
-				        return valid;
+							const value = password.length ? password.val() : null;
+							if(value && (value.length < 8 || value.length >= 100)) {
+								$("html, body").animate({ scrollTop: password.offset().top }, 500);
+								alert("Your password must be between 8 and 100 characters",function(){
+									password.focus();
+								});
+								valid = false;
+							}
+					        return valid;
+				    	}
 				    },
 				    after : function(wizardObj,prevStep,currentStep) {
 				    	setTimeout(function(){ currentStep.find("input:first").focus(); }, 1000);
