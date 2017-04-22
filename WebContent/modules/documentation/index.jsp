@@ -14,4 +14,11 @@
        <li>Signing in to ${app_name}</li>
      </ol>
    </div>
+   <div class="center bgcolor">
+     <h2><i class="fa fa-user"></i>Site Policy</h2>
+     <ol>
+       <li>${app_name} Terms of Service</li>
+       <li>${app_name} Privacy Policy</li>
+     </ol>
+   </div>
 </div>
