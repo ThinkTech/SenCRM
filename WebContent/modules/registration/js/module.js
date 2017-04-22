@@ -4,7 +4,7 @@ app.ready(function(){
 	 app.ready(function(){
 		page.wait();
 		head.load("modules/registration/js/jquery.easyWizard.js", function() { 
-			$('#form').easyWizard({
+			form.easyWizard({
 				    prevButton: "Back",
 				    nextButton: "Next",
 				    submitButtonText: "Create",
