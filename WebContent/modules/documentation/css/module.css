@@ -14,6 +14,10 @@
     white-space: nowrap;
 }
 
+.center h2 {
+	text-transform : capitalize;
+}
+
 .bgcolor {
 	padding : 10px;
 	margin-bottom : 10px;
@@ -35,16 +39,20 @@
 }
   
 @media(max-width:991px ){
+	.center .center {width:100%}
 }
 
 @media(max-width:767px ){
 }
 @media(max-width:640px){
+	
 }
 
  
 @media(max-width:480px ){
     .center > h1 {font-size:1.5em}
+    .center {width:90%}
+    .center .center {width:100%}
 }
 @media(max-width:360px ){
 	

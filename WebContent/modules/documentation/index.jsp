@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
     <a href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
     <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
@@ -14,8 +15,18 @@
        <li>Signing in to ${app_name}</li>
      </ol>
    </div>
+   <s:iterator value="moduleManager.backendModules">
+    <div class="center bgcolor">
+     <h2><i class="fa fa-puzzle-piece"></i>Module ${name}</h2>
+     <ol>
+       <li>item 1</li>
+       <li>item 2</li>
+       <li>item 3</li>
+     </ol>
+   </div>
+   </s:iterator>
    <div class="center bgcolor">
-     <h2><i class="fa fa-user"></i>Site Policy</h2>
+     <h2><i class="fa fa-sticky-note-o"></i>Site Policy</h2>
      <ol>
        <li>${app_name} Terms of Service</li>
        <li>${app_name} Privacy Policy</li>
