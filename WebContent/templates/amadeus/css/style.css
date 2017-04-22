@@ -85,25 +85,31 @@ label{
 }
 
 .text-right {
-	background:#000;
-	color : #dcffff;
+	background: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 input:focus,select:focus,a:focus { 
 	border : 1px solid rgb(234, 133, 17);
 }
 
+
 .bg {
-	background-color: #fffffd;
+	background-color: #edf1f2;
+	background-image: url(../images/background.jpg);
+	background-repeat :  no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .bgcolor {
-	background-color: #fffffd;
-	border : 1px solid #06d0d8;
+	background-color: #edf1f2;
+	border : 1px solid #222;
 }
 
 .module {
-	background : #e9e4e8;
+	background : #edf1f2;
 }
 
 .success {
@@ -166,7 +172,7 @@ div.app_title a {
 /* form */
 
 #form input:not([type="submit"]), #form select {
-	background : #e9e4e8;
+	background : #fff;
 }
 
 #form input[type="radio"]{

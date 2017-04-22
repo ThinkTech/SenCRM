@@ -152,7 +152,7 @@
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price"  title="${price} ${initParam.app_currency}/Month">${price} ${initParam.app_currency}/Month</span>
+		   <span class="price bgcolor"  title="${price} ${initParam.app_currency}/Month">${price} ${initParam.app_currency}/Month</span>
 		   <span class="info fa fa-info"  data-info="${details}" title="information">&nbsp;</span>
 		</s:iterator>
 	</fieldset>
@@ -161,18 +161,18 @@
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
-		 <span class="price"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
+		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control." title="information">&nbsp;</span>
 	     <label title="Private" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio"  data-price="20" value="private" name="registration.hosting"/> 
-		 <span class="price" title="20 ${initParam.app_currency}/Month">20 ${initParam.app_currency}/Month</span>
+		 <span class="price bgcolor" title="20 ${initParam.app_currency}/Month">20 ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control." title="information">&nbsp;</span>
 	</fieldset>
 	
 	<fieldset>
 	  <h1><i class="fa fa-money"></i>Pricing</h1>
 	     <label title="Total" class="text-right"><i class="fa fa-money"></i>Amount : </label>
-		 <span  class="price"><span id="amount"></span> ${initParam.app_currency}/Month</span>
+		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/Month</span>
 	</fieldset>
 	
 	<div>
@@ -182,7 +182,7 @@
 	   </p>
 	</div>
 	<div>
-	  <p>
+	  <p class="bgcolor">
 	   By clicking on the Create button below, you understand and agree that the use of ${app_name} is subject to these <a href="registration/terms" target="_blank">Terms of Service</a> 
 	   and this <a href="registration/privacy" target="_blank">Privacy Policy</a>, including the fact that ThinkTech may transfer your personal information collected in connection with your 
 	   registration to its affiliates globally and to third party entities that provide services to ThinkTech.

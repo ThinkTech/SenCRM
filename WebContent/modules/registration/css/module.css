@@ -61,14 +61,20 @@
 
 .registration .price {
     display: inline-block;
-    color: #1c5206;
+    color: #21560a;
     padding: 5px;
-    padding-top : 10px;
+    padding-top: 6px;
     font-size: 70%;
-    width : 35%;
-    height : 34px;
-    vertical-align : top;
-    white-space:nowrap;
+    width: 35%;
+    height: 34px;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 3px;
+}
+
+.registration .price:last-of-type {
+	 margin-top: 1px;
+    height: 35px;
 }
 
 .success {
@@ -125,6 +131,9 @@
     cursor : pointer;
 }
 
+.captcha {
+	margin-top : 20px;
+}
 
 .gc-reset{
 transform:scale(0.95) !important;
