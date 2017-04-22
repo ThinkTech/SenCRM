@@ -30,6 +30,9 @@ app.ready(function(){
 						}
 				        return valid;
 				    },
+				    after : function(wizardObj,prevStep,currentStep) {
+				    	setTimeout(function(){ currentStep.find("input:first").focus(); }, 1000);
+				    },
 				    beforeSubmit: function(wizardObj) {
 				    	if(!grecaptcha.getResponse()) {
 						  alert("you must check the captcha");
