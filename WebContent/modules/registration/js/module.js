@@ -1,5 +1,7 @@
 app.ready(function(){
-	app.ready(function(){
+	var form = $("form");
+	if(form.length) {
+	 app.ready(function(){
 		head.load("modules/registration/js/jquery.easyWizard.js", function() { 
 			$('#form').easyWizard({
 				    prevButton: "Back",
@@ -34,11 +36,11 @@ app.ready(function(){
 						  return false;
 					    }
 				    }
-			}).fadeTo(1000,1);
+			}).fadeTo(50,1);
 			$("input:first").focus();
 		 });
 	});
-	$("form").on("submit",function(event){
+	form.on("submit",function(event){
 		var url = $(this).attr("action");
 		var data = $(this).serialize();
 		app.post(url,data, function(response) {
@@ -109,4 +111,5 @@ app.ready(function(){
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
+	}
 });
