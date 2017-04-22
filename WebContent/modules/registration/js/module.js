@@ -1,4 +1,4 @@
-app.ready(function(){
+/*app.ready(function(){
 	var form = $("form");
 	if(form.length) {
 	 app.ready(function(){
@@ -138,4 +138,4 @@ app.ready(function(){
 		  app.getCountries("en",response.country);
 	}, "jsonp");
 	}
-});
+});*/

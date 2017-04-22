@@ -713,7 +713,7 @@ fieldset .details {
 	position: absolute;
 	top: 0;
 	text-align: center;
-	padding-top: 14.5%;
+	padding-top: 20%;
 }
 
 #offline span {
@@ -721,7 +721,7 @@ fieldset .details {
 	vertical-align: middle;
 	background: #fff;
 	border-radius: 15px;
-	border: 1px solid rgb(86, 182, 255);
+	border: 1px solid #06d0d8;
 	padding: 10px;
 }
 
