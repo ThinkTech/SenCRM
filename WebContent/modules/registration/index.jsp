@@ -173,18 +173,18 @@
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control." title="information">&nbsp;</span>
 	     <label title="Private Server(s)" class="text-right"><i class="fa fa-database"></i>Private Server</label>
 		 <input type="radio"  data-price="20" value="private" name="registration.hosting"/> 
-		 <span class="price bgcolor" title="20 ${initParam.app_currency}/Month">20 ${initParam.app_currency}/Month</span>
+		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/Month"><span>20</span> ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control." title="information">&nbsp;</span>
 		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
 		 <div id="topology" class="settings">
 		     <fieldset class="bgcolor">
 		      <h2><i class="fa fa-wrench"></i>Topology</h2>
 		      <label title="Horizontal Scaling" class="text-right"><i class="fa fa-database"></i>Node(s)</label>
-		      <input  title="Node(s)" name="registration.nodes"  type="number" value="1"/>
+		      <input  title="Node(s)" name="registration.nodes" min="1"  data-action="setNodes" type="number" value="1"/>
 		      <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Reserved Cloudlet(s)</label>
-		      <input  title="Reserved Cloudlet(s)" name="registration.fixedCloudlets"  type="number" value="2"/>
+		      <input  title="Reserved Cloudlet(s)" min="0"  data-action="setFixedCloudlets" name="registration.fixedCloudlets"  type="number" value="2"/>
 		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlet(s)</label>
-		      <input  title="Flexible Cloudlet(s)" name="registration.flexibleCloudlets"  type="number" value="2"/>
+		      <input  title="Flexible Cloudlet(s)" min="2" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="2"/>
 		      </fieldset>
 		 </div>
 	</fieldset>

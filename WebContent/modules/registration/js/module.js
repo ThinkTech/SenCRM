@@ -1,3 +1,17 @@
+const setFlexibleCloudlets = function(value) {
+};
+
+const setFixedCloudlets = function(value) {
+};
+
+const setNodes = function(value) {
+	const radio = $("input[type='radio'][value='private']");
+	const price = parseInt(radio.attr("data-price"));
+	const amount = 20 * parseInt(value);
+	radio.attr("data-price",amount)
+	$("span.private").find("span").html(amount);
+};
+
 app.ready(function(){
 	var form = $("form");
 	if(form.length) {
@@ -140,7 +154,18 @@ app.ready(function(){
 		const left = event.pageX;
 		const top =  $(this).position().top +20;
 		settings.css({top : top, left : 50}).toggle();
+		if(!settings.is(":hidden")){
+			$("input:first",settings).focus();
+			$("html, body").animate({ scrollTop: top }, 500);
+		}
 		return false;
+	});
+	$(".settings input").on("change",function(event){
+		const val = parseInt($(this).val());
+		if(val>=0) {
+			const action = $(this).attr("data-action")+"("+val+");";
+			eval(action);
+		}
 	});
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
