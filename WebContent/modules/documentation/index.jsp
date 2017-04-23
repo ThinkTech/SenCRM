@@ -26,6 +26,21 @@
    </div>
    </s:iterator>
    <div class="center bgcolor">
+     <h2><i class="fa fa-code"></i>Developers</h2>
+     <ol>
+        <li>item 1</li>
+       <li>item 2</li>
+       <li>item 3</li>
+     </ol>
+   </div>
+   <div class="center bgcolor">
+     <h2><i class="fa fa-handshake-o"></i>Programs</h2>
+     <ol>
+        <li>Become a partner</li>
+       <li>Become a reseller</li>
+     </ol>
+   </div>
+   <div class="center bgcolor">
      <h2><i class="fa fa-sticky-note-o"></i>Site Policy</h2>
      <ol>
        <li>${app_name} Terms of Service</li>
