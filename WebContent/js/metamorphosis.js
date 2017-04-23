@@ -350,16 +350,14 @@ app.getCountries = function(lang,selected) {
 
 app.ready(function() {
 	page.init();
-});
-
-window.addEventListener('offline', function(){
-	$("<div id='offline'><span>You are currently offline</span></div>").appendTo($("body"));
-	page.wait();
-});
-
-window.addEventListener('online', function(){
-	$("div#offline").remove();
-	page.release();
+	window.addEventListener('offline', function(){
+		$("<div id='offline'><span>You are currently offline</span></div>").appendTo($("body"));
+		page.wait();
+	});
+	window.addEventListener('online', function(){
+		$("div#offline").remove();
+		page.release();
+	});
 });
 
 String.prototype.linkify = function() {
