@@ -102,13 +102,12 @@
 }
 
 #form {
-	opacity : 1;
+	opacity : 0;
 }
 
 #form fieldset {
 	margin-bottom : 5px;
 	padding-bottom : 15px;
-	background : transparent;
 }
 
 #form fieldset label {
@@ -129,10 +128,38 @@
 	width : 35px;
 }
 
-#form .info, #form .settings {
+#form .info, #form .wrench {
 	vertical-align: text-top;
     margin-top: -11px;
     cursor : pointer;
+}
+
+#form .settings {
+	display : none;
+	position : absolute;
+	padding : 10px;
+	z-index : 99;
+}
+
+#form .settings h2 {
+	white-space: nowrap;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#form .settings fieldset {
+	width : 90%;
+	padding-bottom : 20px;
+}
+
+#form .settings fieldset label {
+	width : 70%;
+}
+
+#form .settings fieldset input {
+	width : 20%;
 }
 
 .easyWizardSteps {list-style:none;width:auto;margin:0;padding:0;text-align:center;}
@@ -219,6 +246,7 @@ transform-origin:0 0 !important;
 	#form input:not([type="submit"]), #form select {width : 55%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
     .registration > h1 {font-size:1.5em;}
+    #form .settings fieldset label {font-size: 60%;padding-top: 10px;}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 50%;}

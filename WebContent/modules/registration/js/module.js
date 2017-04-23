@@ -1,4 +1,4 @@
-/*app.ready(function(){
+app.ready(function(){
 	var form = $("form");
 	if(form.length) {
 	 app.ready(function(){
@@ -134,8 +134,16 @@
 		const info = $(this).attr("data-info");
 		alert(info);
 	});
+	$("span.wrench").click(function(event){
+		const id = $(this).attr("data-element");
+		const settings = $("#"+id);
+		const left = event.pageX;
+		const top =  $(this).position().top +20;
+		settings.css({top : top, left : 50}).toggle();
+		return false;
+	});
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
 	}
-});*/
+});

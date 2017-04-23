@@ -114,6 +114,9 @@ class Registration {
     String subscription
     boolean mailing
     String hosting
+    def nodes
+    def fixedCloudlets
+    def flexibleCloudlets
     def database_name
     def stmt 
     def activationCode
