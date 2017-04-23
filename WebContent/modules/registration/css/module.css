@@ -114,11 +114,11 @@
 	height : 35px;
 	font-size: 84%;
     padding-top: 5px;
-    width : 29%;
+    width : 34%;
 }
 
 #form input:not([type="submit"]), #form select {
-	width : 69%;
+	width : 64%;
 	height : 35px;
 	border : 1px solid;
 }
