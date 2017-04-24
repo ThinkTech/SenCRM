@@ -75,7 +75,8 @@ app.ready(function(){
 						  return false;
 					    }
 				    }
-			}).fadeTo(50,1);
+			});
+			$("section",form).css("opacity","1");
 			$("input:first").focus();
 		 });
 	});
