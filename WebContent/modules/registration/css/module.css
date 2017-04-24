@@ -135,10 +135,13 @@
     cursor : pointer;
 }
 
+#form .settings .info{
+	margin-top: 5px;
+}
+
 #form .settings {
 	display : none;
 	position : absolute;
-	padding : 10px;
 	z-index : 99;
 }
 

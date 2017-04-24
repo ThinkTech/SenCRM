@@ -182,10 +182,14 @@
 		      <h2><i class="fa fa-wrench"></i>Topology</h2>
 		      <label title="Horizontal Scaling" class="text-right"><i class="fa fa-database"></i>Node(s)</label>
 		      <input  title="Node(s)" name="registration.nodes" min="1"  data-action="setNodes" type="number" value="1"/>
+		       <span class="info fa fa-info"  data-info="According to the size of your structure, you can set the maximum allowed amount of nodes." title="information">&nbsp;</span>
 		      <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Reserved Cloudlet(s)</label>
 		      <input  title="Reserved Cloudlet(s)" min="0"  data-action="setFixedCloudlets" name="registration.fixedCloudlets"  type="number" value="0"/>
+		       <span class="info fa fa-info"  data-info="Reserved cloudlets are used to define the amount of resources you expect your structure will certainly consume and you pay for them irrespective of actual usage. However, they are charged with lower price compared with dynamic ones." title="information">&nbsp;</span>
 		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlet(s)</label>
 		      <input  title="Flexible Cloudlet(s)" min="2" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="2"/>
+		       <span class="info fa fa-info"  data-info="Dynamic cloudlets defines the amount of resources your structure can access, based on necessity. You pay for them only in the case of real consumption." title="information">&nbsp;</span>
+		       <h6>1 cloudlet = 128 MiB + 400 MHz</h6>
 		      </fieldset>
 		 </div>
 	</fieldset>
