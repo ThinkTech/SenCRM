@@ -183,7 +183,7 @@
 		      <label title="Horizontal Scaling" class="text-right"><i class="fa fa-database"></i>Node(s)</label>
 		      <input  title="Node(s)" name="registration.nodes" min="1"  data-action="setNodes" type="number" value="1"/>
 		      <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Reserved Cloudlet(s)</label>
-		      <input  title="Reserved Cloudlet(s)" min="0"  data-action="setFixedCloudlets" name="registration.fixedCloudlets"  type="number" value="2"/>
+		      <input  title="Reserved Cloudlet(s)" min="0"  data-action="setFixedCloudlets" name="registration.fixedCloudlets"  type="number" value="0"/>
 		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlet(s)</label>
 		      <input  title="Flexible Cloudlet(s)" min="2" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="2"/>
 		      </fieldset>

@@ -114,9 +114,9 @@ class Registration {
     String subscription
     boolean mailing
     String hosting
-    def nodes
-    def fixedCloudlets
-    def flexibleCloudlets
+    int nodes
+    int fixedCloudlets
+    int flexibleCloudlets
     def database_name
     def stmt 
     def activationCode
@@ -216,13 +216,18 @@ class ModuleAction extends ActionSupport {
            JSONObject env = new JSONObject()
                 .put("ishaenabled", false)
                 .put("shortdomain", ENV_NAME)
-           def mysqlNode = new JSONObject()
+           def mysqlNode
+           def nodes = new JSONArray()
+           for(def i = 0;i<registration.nodes;i++) {
+               mysqlNode = new JSONObject()
                 .put("nodeType", "mysql5")
                 .put("extip", false)
-                .put("fixedCloudlets", 0)
-                .put("flexibleCloudlets", 2)
-           def nodes = new JSONArray().put(mysqlNode)
+                .put("fixedCloudlets", registration.fixedCloudlets)
+                .put("flexibleCloudlets", registration.flexibleCloudlets)
+              nodes.put(mysqlNode)
+           }
            def response = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
+           println response
            def jsonResponse = response.toJSON()
            nodes = jsonResponse.get("response").get("nodes")
            def nodeid = nodes.get(0).get("id")
