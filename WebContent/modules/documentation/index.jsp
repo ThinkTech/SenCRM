@@ -13,6 +13,7 @@
        <li>Signing up for an account</li>
        <li>Verifying your email address</li>
        <li>Signing in to ${app_name}</li>
+       <li>Managing your account</li>
      </ol>
    </div>
    <s:iterator value="moduleManager.backendModules">
