@@ -216,19 +216,13 @@ class ModuleAction extends ActionSupport {
            JSONObject env = new JSONObject()
                 .put("ishaenabled", false)
                 .put("shortdomain", ENV_NAME)
-           def mysqlNode
-           def nodes = new JSONArray()
-           for(def i = 0;i<registration.nodes;i++) {
-               mysqlNode = new JSONObject()
+           def mysqlNode = new JSONObject()
                 .put("nodeType", "mysql5")
                 .put("extip", false)
-                .put("fixedCloudlets", registration.fixedCloudlets)
+                .put("count", registration.nodes)
                 .put("flexibleCloudlets", registration.flexibleCloudlets)
-              nodes.put(mysqlNode)
-           }
-           def response = environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString());
-           println response
-           def jsonResponse = response.toJSON()
+           def nodes = new JSONArray().put(mysqlNode)
+           def jsonResponse =  environmentService.createEnvironment(PLATFORM_APPID, session, "createenv", env.toString(), nodes.toString()).toJSON()
            nodes = jsonResponse.get("response").get("nodes")
            def nodeid = nodes.get(0).get("id")
            structure.databaseInfo.port = nodes.get(0).get("port")
