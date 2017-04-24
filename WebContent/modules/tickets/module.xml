@@ -6,7 +6,7 @@
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing your support tickets</description>
-	<details>The support module provides a ticketing system for resolving any product related issue, offering complete email integration.
+	<details>The support module provides a ticketing system for resolving any product or service related issue, offering complete email integration.
 	Tickets can be assigned to users and they can view all tickets assigned to them.
 	</details>
 	<creationDate>2016-09-01</creationDate>
