@@ -5,11 +5,10 @@ const setFixedCloudlets = function(value) {
 };
 
 const setNodes = function(value) {
-	const radio = $("input[type='radio'][value='private']");
-	const price = parseInt(radio.attr("data-price"));
-	const amount = 20 * parseInt(value);
-	radio.attr("data-price",amount)
-	$("span.private").find("span").html(amount);
+	var radio = $("input[type='radio'][value='private']");
+	var price = 20 * parseInt(value);
+	radio.attr("data-price",price);
+	$("span.private").find("span").html(price);
 };
 
 app.ready(function(){
@@ -104,51 +103,40 @@ app.ready(function(){
 			$(element).attr("checked","true").on('change', function() {
 			    this.checked=!this.checked?!alert('this option is mandatory'):true;
 			});
-			const price = parseInt($(this).attr("data-price"));
-			amount += price;
 		}else {
 			$(element).on('change', function() {
-				const price = parseInt($(this).attr("data-price"));
-			    amount = this.checked ? amount + price : amount - price;
-			    $("#amount").html(amount.toString().formatDigits());
+				amount = 0;
+				$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
+					var price = parseInt($(element).attr("data-price"));
+					amount+=price;
+					$("#amount").html(amount.toString().formatDigits());
+				});
 			});
 		}
-		
 	});
-	var previousRadio;
-	$("input[type=radio]").each(function(index,element){
-		const checked = $(element).attr("checked");
-		if(checked) {
-			const price = parseInt($(this).attr("data-price"));
-			amount += price;
-			previousRadio = $(this);
-		}
-		$(element).on('change', function() {
-			if(!previousRadio) {
-			  const price = parseInt($(this).attr("data-price"));
-		      amount = amount + price;
-		      $("#amount").html(amount.toString().formatDigits());
-		      previousRadio = $(this);
-			}else {
-				var price = parseInt(previousRadio.attr("data-price"));
-			    amount = amount - price;
-			    price = parseInt($(this).attr("data-price"));
-			    amount = amount + price;
-			    $("#amount").html(amount.toString().formatDigits());
-			    previousRadio = $(this);
-			}
+	$("input[type=radio]").on('change', function() {
+		amount = 0;
+		$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
+			var price = parseInt($(element).attr("data-price"));
+			amount+=price;
+			$("#amount").html(amount.toString().formatDigits());
 		});
-		
-	});
+    });
 	$("span.price").each(function(index,element){
 		$(this).html($(this).html().formatDigits());
 	});
-	$("#amount").html(amount.toString().formatDigits());
+	$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
+		var price = parseInt($(element).attr("data-price"));
+		amount+=price;
+		$("#amount").html(amount.toString().formatDigits());
+	});
 	$("span.info").click(function(){
 		const info = $(this).attr("data-info");
 		alert(info);
 	});
 	$("span.wrench").click(function(event){
+		const radio = $("input[type='radio'][value='private']");
+		radio.attr('checked', true).trigger('change');
 		const id = $(this).attr("data-element");
 		const settings = $("#"+id);
 		const left = event.pageX;
