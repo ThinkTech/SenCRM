@@ -124,10 +124,11 @@
 		
 		<label class="required text-right">State :</label>
 		<select title="State" name="account.structure.state">
-		 	<option value="1">rising</option>
-		 	<option value="2">growing</option>
-		 	<option value="3">strong</option>
-		 	<option value="4">struggling</option>
+		    <option value="1">seed</option>
+		 	<option value="2">rising</option>
+		 	<option value="3">growing</option>
+		 	<option value="4">strong</option>
+		 	<option value="5">struggling</option>
 		</select>
 		
 		<label class="required text-right">Target :</label>
