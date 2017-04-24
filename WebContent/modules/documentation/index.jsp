@@ -14,6 +14,8 @@
        <li>Verifying your email address</li>
        <li>Signing in to ${app_name}</li>
        <li>Managing your account</li>
+       <li>Managing your subscription</li>
+       <li>Deleting your account</li>
      </ol>
    </div>
    <s:iterator value="moduleManager.backendModules">
