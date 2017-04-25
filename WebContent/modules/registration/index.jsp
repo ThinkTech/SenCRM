@@ -134,9 +134,10 @@
 		<label class="required text-right">Target :</label>
 		<select title="Target" name="account.structure.target">
 		 	<option value="1">Companies</option>
-		 	<option value="2">Governments</option>
-		 	<option value="3">Communities</option>
-		 	<option value="4">all</option>
+		 	<option value="2">Organizations</option>
+		 	<option value="3">Governments</option>
+		 	<option value="4">Communities</option>
+		 	<option value="5">all</option>
 		</select>
 		
 		<label class="required text-right"><i class="fa fa-globe"></i>Country :</label>
