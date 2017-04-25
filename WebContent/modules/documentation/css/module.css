@@ -16,6 +16,8 @@
 
 .center h2 {
 	text-transform : capitalize;
+	height : 45px;
+	padding-left : 10px;
 }
 
 .bgcolor {

@@ -8,7 +8,7 @@
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
    <div class="center bgcolor">
-     <h2><i class="fa fa-user"></i>Setup</h2>
+     <h2 class="title"><i class="fa fa-user"></i>Setup</h2>
      <ol>
        <li>Signing up for an account</li>
        <li>Confirming your registration</li>
@@ -20,7 +20,7 @@
    </div>
    <s:iterator value="moduleManager.backendModules">
     <div class="center bgcolor">
-     <h2><i class="fa fa-puzzle-piece"></i>Module ${name}</h2>
+     <h2 class="title"><i class="fa fa-puzzle-piece"></i>Module ${name}</h2>
      <ol>
        <li>item 1</li>
        <li>item 2</li>
@@ -29,7 +29,7 @@
    </div>
    </s:iterator>
    <div class="center bgcolor">
-     <h2><i class="fa fa-code"></i>Developers</h2>
+     <h2 class="title"><i class="fa fa-code"></i>Developers</h2>
      <ol>
         <li>item 1</li>
        <li>item 2</li>
@@ -37,14 +37,14 @@
      </ol>
    </div>
    <div class="center bgcolor">
-     <h2><i class="fa fa-handshake-o"></i>Programs</h2>
+     <h2 class="title"><i class="fa fa-handshake-o"></i>Programs</h2>
      <ol>
         <li>Become a partner</li>
        <li>Become a reseller</li>
      </ol>
    </div>
    <div class="center bgcolor">
-     <h2><i class="fa fa-sticky-note-o"></i>Site Policy</h2>
+     <h2 class="title"><i class="fa fa-sticky-note-o"></i>Site Policy</h2>
      <ol>
        <li>${app_name} Terms of Service</li>
        <li>${app_name} Privacy Policy</li>
