@@ -25,7 +25,7 @@
   </li>
   <li>
     <div class="center">
-       <h1>Fast, Dynamic & Scalable</h1>
+       <h1>Dynamic, Fast & Scalable</h1>
               <p>
 				 A modern, integrated <b>CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
 			  </p>
