@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
     <id>mod_hrm</id>
-	<name>hrm</name>
+	<name>Human Resources</name>
 	<roles>manager</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing your human resources</description>
-	<details>The hrm module let you manage your human resources in an efficient way. 
+	<details>The human resources module let you manage your employees in an efficient way. 
 	It is designed to maximize employee performance to meet your strategic objectives.</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>

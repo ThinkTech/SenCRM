@@ -57,7 +57,7 @@
 		</select>
 		
 		<label class="required text-right">Business :</label>
-		<select title="Business" name="account.structure.business">
+		<select title="Primary Business" name="account.structure.business">
 		    <option value="1">Accommodations</option>
 		    <option value="2">Accounting</option>
 		 	<option value="3">Advertising</option>
