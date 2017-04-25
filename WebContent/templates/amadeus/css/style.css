@@ -136,7 +136,6 @@ h1.agile_head {
 div.app_title {
     letter-spacing: 2px;
     margin-left : 20px;
-    margin-top : 10px;
     width : 210px;
 }
 
@@ -152,7 +151,7 @@ div.app_title a:focus {
 
 div.app_title img {
 	position : absolute;
-	top : 12px;
+	top : 5px;
 }
 
 div.app_title a {
