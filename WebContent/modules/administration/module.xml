@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <id>mod_administration</id>
+	<name>administration</name>
+	<roles>manager</roles>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>Module for administering your structure</description>
+	<details>This is the module through which policies are made and communicated. The administrative staff oversee tasks that relate to the company, but not any specific department, such as negotiating and paying rent, ordering office supplies and handling business licenses, permits.</details>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<price>10</price>
+</module>
