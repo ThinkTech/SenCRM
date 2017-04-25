@@ -137,6 +137,7 @@ div.app_title {
     letter-spacing: 2px;
     margin-left : 20px;
     width : 210px;
+    margin-top : 5px;
 }
 
 div.app_title a,div.app_title a:visited {
@@ -151,7 +152,7 @@ div.app_title a:focus {
 
 div.app_title img {
 	position : absolute;
-	top : 5px;
+	top : 7px;
 }
 
 div.app_title a {
