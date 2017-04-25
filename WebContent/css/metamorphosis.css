@@ -95,6 +95,10 @@ input {
 	padding-left: 2px;
 }
 
+#form input:not([type="submit"]).error {
+    border: 1.7px solid red;
+}
+
 .scrollToTop{
   background-color: #06d0d8;
   color: #fff;

@@ -92,7 +92,6 @@ class ModuleDao extends AbstractDao {
 	        select a.main,s.id,s.name,s.country,sub.hosting, sub.modules from accounts a, structures s, subscriptions sub
 	        where a.activated = false and a.activation_code = '$code' and a.structure_id = s.id;
 	      """    
-	      println SQL
 	      def rs = stmt.executeQuery(SQL)
 	      if(rs.next()) {
 	       def main = rs.getBoolean("main")

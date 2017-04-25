@@ -24,12 +24,12 @@ app.ready(function(){
 				    before : function(wizardObj,currentStep,nextStep) {
 				    	if(nextStep.index() > currentStep.index()) {
 					    	var valid = true;
-					        $('input[required]',currentStep).each(function(index,element) {
+					        $('input[required]',currentStep).removeClass("error").each(function(index,element) {
 					        	const val = $(element).val();
 								if(val.trim() == '') {
 									$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
 									alert("this field is required",function(){
-										$(element).focus();
+										$(element).addClass("error").focus();
 									});
 								    return valid = false;
 								}
@@ -41,7 +41,7 @@ app.ready(function(){
 						        valid = re.test(email.val());
 						        if(!valid) {
 						        	alert("this email is invalid",function(){
-										$(email).focus();
+										$(email).addClass("error").focus();
 									});
 						        }
 					        }
@@ -51,7 +51,7 @@ app.ready(function(){
 							if(password.length && password.val() != confirm.val()) {
 								$("html, body").animate({ scrollTop: password.offset().top }, 500);
 								alert("the two passwords are not identicals",function(){
-									password.focus();
+									password.addClass("error").focus();
 								});
 								valid = false;
 							}
@@ -59,7 +59,7 @@ app.ready(function(){
 							if(value && (value.length < 8 || value.length >= 100)) {
 								$("html, body").animate({ scrollTop: password.offset().top }, 500);
 								alert("Your password must be between 8 and 100 characters",function(){
-									password.focus();
+									password.addClass("error").focus();
 								});
 								valid = false;
 							}
@@ -67,7 +67,11 @@ app.ready(function(){
 				    	}
 				    },
 				    after : function(wizardObj,prevStep,currentStep) {
-				    	setTimeout(function(){ currentStep.find("input:first").focus(); }, 1000);
+				    	setTimeout(function(){ 
+				    		var input = currentStep.find("input.error");
+				    		input = input.length ? input : currentStep.find("input:first");
+				    		input.focus(); 
+				    		}, 1000);
 				    },
 				    beforeSubmit: function(wizardObj) {
 				    	if(!grecaptcha.getResponse()) {
