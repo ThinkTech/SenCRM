@@ -138,6 +138,7 @@
 	font-size: 14px;
 	padding-top: 4px;
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	padding-top : 0px;
 }
 .ac-container input:checked ~ article{
 	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
