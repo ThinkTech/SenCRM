@@ -17,43 +17,56 @@ import org.json.JSONObject
 
 class ModuleDao extends AbstractDao {
 
+    def verifyEmail(email) {
+       def valid = true
+       try {
+         def connection = getConnection()
+         def stmt = connection.createStatement()
+         def SQL = """\
+	        select id from users 
+	        where owner = true and email = '${email}';
+	        """    
+	     println SQL
+	     def rs = stmt.executeQuery(SQL)
+	     if(rs.next()) {
+	       println "this user is already registred as an owner"
+	       valid = false
+	     }
+	     rs.close()
+	     stmt.close()
+	     connection.close()
+       }catch(e){
+         println e
+       }
+       valid 
+    }
+    
+
     def saveAccount(registration,callback) {
        try {
           def connection = getConnection()
           connection.setAutoCommit(false)
           def stmt = connection.createStatement()
           def SQL = """\
-             insert INTO users(firstName,lastName,profession,email,password,lang) 
-             VALUES("${registration.user.firstName}","${registration.user.lastName}","${registration.user.profession}","${registration.user.email}","${registration.user.password}","${registration.user.lang}");
+             insert INTO users(firstName,lastName,profession,email,password,lang,owner) 
+             VALUES("${registration.user.firstName}","${registration.user.lastName}","${registration.user.profession}","${registration.user.email}","${registration.user.password}","${registration.user.lang}",true);
           """
 	      stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
 	      def generatedKeys = stmt.getGeneratedKeys()
 	      if(generatedKeys.next()) {
 	          def user_id = generatedKeys.getLong(1)
-	          if(!registration.account.structure.databaseInfo) {
-	            registration.database_name =  "database_"+user_id
-	            registration.stmt = stmt
-	            SQL = """\
-                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_name,createdBy) 
+	          SQL = """\
+                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,createdBy) 
                  values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
                  "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
-                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${registration.database_name}",${user_id});              
+                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}",${user_id});              
                 """
-              }else {
-	            SQL = """\
-                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,database_host,database_name,database_port,database_user,database_password,createdBy) 
-                 values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
-                 "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
-                 "${registration.account.structure.address.city}","${registration.account.structure.address.location}","${registration.account.structure.databaseInfo.host}","${registration.account.structure.databaseInfo.name}",
-                 "${registration.account.structure.databaseInfo.port}","${registration.account.structure.databaseInfo.user}","${registration.account.structure.databaseInfo.password}",${user_id});              
-                """
-              }
               stmt.executeUpdate(SQL,java.sql.Statement.RETURN_GENERATED_KEYS)
               generatedKeys = stmt.getGeneratedKeys()
 		      if(generatedKeys.next()) {
 		          def structure_id = generatedKeys.getLong(1)
 		          SQL = """\
-	                insert into subscriptions(mailing, modules,structure_id) VALUES(${registration.mailing},"${registration.subscription}",${structure_id});
+	                insert into subscriptions(mailing, hosting, modules,structure_id) VALUES(${registration.mailing},"${registration.hosting}","${registration.subscription}",${structure_id});
 	              """
 	              stmt.addBatch(SQL)
 		          SQL = """\
@@ -62,7 +75,6 @@ class ModuleDao extends AbstractDao {
 	              stmt.addBatch(SQL)
 	              stmt.executeBatch()
 		      }
-		      createDatabase(registration)
 	      }
 	      connection.commit()
 	      stmt.close()
@@ -117,8 +129,6 @@ class Registration {
     int nodes
     int fixedCloudlets
     int flexibleCloudlets
-    def database_name
-    def stmt 
     def activationCode
     def complete 
     
@@ -156,28 +166,15 @@ class ModuleAction extends ActionSupport {
     def registration = new Registration(user : user, account : account,moduleManager : moduleManager)
     
 	def register() {
+	  def dao = new ModuleDao()
 	  def captcha = request.getParameter("g-recaptcha-response")
-	  if(captcha) {
+	  if(captcha && dao.verifyEmail(registration.user.email)) {
 	      registration.activationCode = UUID.randomUUID().toString() + "-" + UUID.randomUUID().toString()
-	      if(registration.hosting.equals("private")) {
-	          def database_name = account.structure.name.replaceAll("\\s","_")
-	          account.structure.databaseInfo = new DatabaseInfo()
-	          account.structure.databaseInfo.name = database_name
-	          account.structure.databaseInfo.user = "root"
-	          account.structure.databaseInfo.password = user.password
-	          createDatabaseServer(registration,{
-	             createAccount(registration)
-	          })
-	      }else {
-	          createAccount(registration)
-	      }
+	      createAccount(registration)
 	      if(registration.complete) {
 	      	def url = request.contextPath+"/"+module.url+"/success"
 	      	response.writer.write(groovy.json.JsonOutput.toJson([url: url]))
 	      }else {
-	        if(registration.hosting.equals("private")) {
-	           deleteDatabaseServer(registration) 
-	        }
 	        response.setStatus(404)
 		    response.writer.write(groovy.json.JsonOutput.toJson([message: "error during the registration"]))
 	      }
@@ -309,7 +306,11 @@ class ModuleAction extends ActionSupport {
 		          li("$module.name")
 		        }
 		      }
-		      p("You can update your subscription at any time once logged to your account.")
+		      if(registration.hosting.equals("private")) {
+		      	p("Your private database server will be created after confirmation and you can update your subscription at any time once logged to your account.")
+		      }else {
+		         p("You can update your subscription at any time once logged to your account.")
+		      }
 		    }
 		    div(style : "text-align:center") {
 		       a(href : "$url/registration/account/confirm?activation_code=$registration.activationCode",style : "font-size:16px;width:180px;margin:auto;text-decoration:none;background: #06d0d8;display:block;padding:10px;border-radius:2px;border:1px solid #eee;color:#fff;") {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
     <id>mod_hrm</id>
-	<name>Human Resources</name>
+	<name>human resources</name>
 	<roles>manager</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>

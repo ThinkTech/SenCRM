@@ -11,7 +11,7 @@ public abstract class AbstractDao {
 
 	protected Connection getConnection() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");  
-		return DriverManager.getConnection("jdbc:mysql://mysql29936-thinktech-database.mircloud.host/general","root","ntDPcqpzbJ");
+		return DriverManager.getConnection("jdbc:mysql://localhost/general","root","thinktech");
 	}
 	
 	protected Connection getConnection(User user) throws Exception {
