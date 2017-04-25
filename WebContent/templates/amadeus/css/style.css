@@ -152,6 +152,7 @@ div.app_title a:focus {
 
 div.app_title img {
 	position : absolute;
+	top : 12px;
 }
 
 div.app_title a {
