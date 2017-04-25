@@ -11,7 +11,7 @@
      <h2><i class="fa fa-user"></i>Setup</h2>
      <ol>
        <li>Signing up for an account</li>
-       <li>Verifying your email address</li>
+       <li>Confirming your registration</li>
        <li>Signing in to ${app_name}</li>
        <li>Managing your account</li>
        <li>Managing your subscription</li>
