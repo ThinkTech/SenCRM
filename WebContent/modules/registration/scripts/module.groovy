@@ -26,7 +26,6 @@ class ModuleDao extends AbstractDao {
 	        select id from users 
 	        where owner = true and email = '${email}';
 	        """    
-	     println SQL
 	     def rs = stmt.executeQuery(SQL)
 	     if(rs.next()) {
 	       println "this user is already registred as an owner"
@@ -85,10 +84,53 @@ class ModuleDao extends AbstractDao {
 	   }
     }
     
+    def activateAccount(code,callback) {
+       try {
+          def connection = getConnection()
+          def stmt = connection.createStatement()
+          def SQL = """\
+	        select a.main,s.id,s.name,s.country,sub.hosting, sub.modules from accounts a, structures s, subscriptions sub
+	        where a.activated = false and a.activation_code = '$code' and a.structure_id = s.id;
+	      """    
+	      println SQL
+	      def rs = stmt.executeQuery(SQL)
+	      if(rs.next()) {
+	       def main = rs.getBoolean("main")
+	       if(main) {
+	         def account = new Account()
+	         def registration = new Registration(account : account)
+	         println "getting the hosting info to create the database and the tables"
+	         account.structure.id =  rs.getLong("id")
+	         account.structure.name =  rs.getString("name")
+	         account.structure.address.country =  rs.getString("country")
+	         registration.hosting = rs.getString("hosting")
+	         registration.subscription = rs.getString("modules")
+	         callback(registration)
+	       }
+	       SQL = """\
+             update accounts set activated = true where activation_code = '$code';
+           """
+	       stmt.executeUpdate(SQL)
+	     }
+         rs.close()
+	     stmt.close()
+	     connection.close()
+	   }catch(e) {
+	     println e
+	   }
+       
+    }
+    
     def createDatabase(registration) {
         if(!registration.account.structure.databaseInfo) {
-		    for(def sql in registration.getSQL(registration.database_name)) registration.stmt.addBatch(sql)
-		    registration.stmt.executeBatch()
+            def connection = getConnection()
+            connection.setAutoCommit(false)
+            def stmt = connection.createStatement()
+		    for(def sql in registration.getSQL(registration.database_name)) stmt.addBatch(sql)
+		    stmt.executeBatch()
+            connection.commit()
+            stmt.close()
+            connection.close()
 		}else {
 	         def connection = getConnection(registration.account.structure)
              connection.setAutoCommit(false)
@@ -101,21 +143,6 @@ class ModuleDao extends AbstractDao {
 		}
     }
     
-    def activateAccount(code) {
-       try {
-          def connection = getConnection()
-          def stmt = connection.createStatement()
-          def SQL = """\
-             update accounts set activated = true where activation_code = '$code';
-          """
-	      stmt.executeUpdate(SQL)
-	      stmt.close()
-	      connection.close()
-	   }catch(e) {
-	     println e
-	   }
-       
-    }
     
 }
 
@@ -125,6 +152,7 @@ class Registration {
     def moduleManager
     String subscription
     boolean mailing
+    String database_name
     String hosting
     int nodes
     int fixedCloudlets
@@ -195,6 +223,40 @@ class ModuleAction extends ActionSupport {
 		 })
 	}
 	
+	def confirm() {
+	    def code = request.getParameter("activation_code")
+	    if(code) {
+	       def dao = new ModuleDao()
+	       dao.activateAccount(code,{ registration ->
+	          registration.moduleManager = moduleManager 
+	          if(registration.hosting.equals("colocation")) {
+	       	  	registration.database_name = "database_"+registration.account.structure.id
+	       	  	dao.createDatabase(registration)
+	       	  }else {
+	       	    println "creating the database server here"
+	       	    def database_name = registration.account.structure.name.replaceAll("\\s","_")
+	          	registration.account.structure.databaseInfo = new DatabaseInfo()
+	          	registration.nodes = 1
+	          	registration.flexibleCloudlets = 4
+	            registration.account.structure.databaseInfo.name = database_name
+	            registration.account.structure.databaseInfo.user = "root"
+	            String alphabet = (('A'..'N')+('P'..'Z')+('a'..'k')+('m'..'z')+('2'..'9')).join() 
+				int n = 15
+				def password = new Random().with {
+                     (1..n).collect { alphabet[ nextInt( alphabet.length() ) ] }.join()
+                }
+                println password
+	            registration.account.structure.databaseInfo.password = password
+	       	    createDatabaseServer(registration,{
+	       	       dao.createDatabase(registration)
+	       	    })
+	       	  }
+	       	  
+	       })
+	    }
+	    SUCCESS
+	}
+	
 	def createDatabaseServer(registration,callback) {
 	   try {
 	   def PLATFORM_APPID = "1dd8d191d38fff45e62564fcf67fdcd6";
@@ -254,15 +316,6 @@ class ModuleAction extends ActionSupport {
            println e
        }
         
-	}
-	
-	def confirm() {
-	    def code = request.getParameter("activation_code")
-	    if(code) {
-	       def dao = new ModuleDao()
-	       dao.activateAccount(code)
-	    }
-	    SUCCESS
 	}
 	
 	def resetPassword() {
