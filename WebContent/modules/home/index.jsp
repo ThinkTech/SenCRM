@@ -5,6 +5,11 @@
     <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
     <a href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
 </div>
+<div class="aside">
+  <a class="title">News</a>
+  <a class="title">Blog</a>
+  <a class="title">FAQ</a>
+</div>
 <div>
 <ul class="rslides">
   <li>

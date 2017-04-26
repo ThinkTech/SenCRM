@@ -90,6 +90,11 @@ label{
     border: 1px solid #fff;
 }
 
+a.title:hover {
+	background : #fff;
+	color : #222;
+}
+
 input:focus,select:focus,a:focus { 
 	border : 1px solid rgb(234, 133, 17);
 }
