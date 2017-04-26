@@ -60,6 +60,7 @@
     width : 90%;
     margin : auto;
     min-height : 50px;
+    padding-top : 10px;
 }
 
 .module > div {
@@ -165,7 +166,8 @@
 
 
 @media(max-width:1199px ){
-	.center {width: 70%;}
+	.center {width: 75%;}
+	.rslides {height:140px}
 }
 
 @media(max-width:1024px ){
@@ -175,20 +177,22 @@
 @media(max-width:991px ){
 	.center {width: 90%;}
 	.video {width:81%}
+	.rslides {height:140px}
 }
 @media(max-width:767px ){
 	.center {width: 95%;}
 	.video {width:91%}
-	.rslides {height:190px}
+	.rslides {height:150px}
 }
 @media(max-width:640px){
+	.rslides {height:190px}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
-	.rslides {height:210px}
+	.rslides {height:220px}
 }
 @media(max-width:360px ){
-	.rslides {height:250px}
+	.rslides {height:270px}
 }
 @media(max-width:320px ){
 }
