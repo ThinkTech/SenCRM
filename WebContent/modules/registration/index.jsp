@@ -11,38 +11,38 @@
 	 <fieldset>
 		<h1><i class="fa fa-user"></i>Manager</h1>
 		
-		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
+		<label title="First Name" class="required text-right"><i class="fa fa-user"></i>First Name : </label>
 		<input required title="First Name" name="user.firstName" maxlength="100"  type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your first name." title="information">&nbsp;</span>
 	     
-		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
+		<label title="Last Name" class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input required title="Last Name" name="user.lastName" maxlength="100" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your last name." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
+		<label title="Profession" class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
 		<input required title="Profession" name="user.profession" maxlength="100" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your profession." title="information">&nbsp;</span>
 	    
 	    
-	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
+	    <label title="Email" class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input required title="Email" name="user.email" maxlength="100" type="email"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your email address." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
+		<label title="Language" class="required text-right"><i class="fa fa-language"></i>Language :</label>
 		<select title="Language" name="user.lang">
 		        <option value="en">English</option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your language." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
+		<label title="Password" class="required text-right"><i class="fa fa-key"></i>Password :</label>
 		<input required id="password" title="Password" name="user.password" maxlength="100" type="password"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your password which must be between 8 and 100 characters." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
+		<label title="Confirm" class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
 		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must retype your password." title="information">&nbsp;</span>
 	    
@@ -56,17 +56,17 @@
 	<fieldset>
 		<h1><i class="fa fa-building"></i>Structure</h1>
 		
-		<label class="required text-right">Name : </label>
+		<label title="Name" class="required text-right">Name : </label>
 		<input maxlength="100" required title="Name" name="account.structure.name" maxlength="100"  type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the name of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="text-right">Acronym : </label>
+		<label title="Acronym" class="text-right">Acronym : </label>
 		<input title="Acronym" name="account.structure.acronym" maxlength="30" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the acronym of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right">Type :</label>
+		<label title="Type" class="required text-right">Type :</label>
 		<select title="Type" name="account.structure.type">
 		 	<option value="1">Company</option>
 		 	<option value="2">Organization</option>
@@ -75,7 +75,7 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the type of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right">Primary Business :</label>
+		<label title="Primary Business" class="required text-right">Primary Business :</label>
 		<select title="Primary Business" name="account.structure.business">
 		    <option value="1">Accommodations</option>
 		    <option value="2">Accounting</option>
@@ -136,7 +136,7 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your primary business." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right">Size :</label>
+		<label title="Size" class="required text-right">Size :</label>
 		<select title="Size" name="account.structure.size">
 		 	<option value="1">small</option>
 		 	<option value="2">medium</option>
@@ -145,7 +145,7 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the size of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right">State :</label>
+		<label title="State" class="required text-right">State :</label>
 		<select title="State" name="account.structure.state">
 		    <option value="1">seed</option>
 		 	<option value="2">rising</option>
@@ -156,7 +156,7 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the state of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right">Target :</label>
+		<label title="Target" class="required text-right">Target :</label>
 		<select title="Target" name="account.structure.target">
 		 	<option value="1">Companies</option>
 		 	<option value="2">Organizations</option>
@@ -167,18 +167,18 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the target(s) of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-globe"></i>Country :</label>
+		<label title="Country" class="required text-right"><i class="fa fa-globe"></i>Country :</label>
 		<select class="country" required title="Country" name="account.structure.address.country">
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the country of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="required text-right"><i class="fa fa-globe"></i>City :</label>
+		<label title="City" class="required text-right"><i class="fa fa-globe"></i>City :</label>
 		<input  required title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label class="text-right"><i class="fa fa-globe"></i>Address :</label>
+		<label title="Address" class="text-right"><i class="fa fa-globe"></i>Address :</label>
 		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure." title="information">&nbsp;</span>
 	    
@@ -203,11 +203,11 @@
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
-		 <input type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
+		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is small." title="information">&nbsp;</span>
-	     <label title="Private Server(s)" class="text-right"><i class="fa fa-database"></i>Private Server</label>
-		 <input type="radio"  data-price="20" value="private" name="registration.hosting"/> 
+	     <label title="Private Server" class="text-right"><i class="fa fa-database"></i>Private Server</label>
+		 <input title="Private Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/Month"><span>20</span> ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology." title="information">&nbsp;</span>
 		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
@@ -227,7 +227,7 @@
 	
 	<fieldset>
 	  <h1><i class="fa fa-money"></i>Pricing</h1>
-	     <label title="Total" class="text-right"><i class="fa fa-money"></i>Amount : </label>
+	     <label title="Amount" class="text-right"><i class="fa fa-money"></i>Amount : </label>
 		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/Month</span>
 	</fieldset>
 	
@@ -237,8 +237,8 @@
 	
 	<div>
 	   <p>
-	      <input value="true" name="registration.mailing" type="checkbox" checked/> 
-		  <span>Yes, send me emails on ThinkTech Products, Services and Events.</span> 
+	      <input title="Mailing list subscription" value="true" name="registration.mailing" type="checkbox" checked/> 
+		  <span title="Mailing list subscription">Yes, send me emails on ThinkTech Products, Services and Events.</span> 
 	   </p>
 	</div>
 	<div>
