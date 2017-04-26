@@ -55,8 +55,8 @@ class ModuleDao extends AbstractDao {
 	      if(generatedKeys.next()) {
 	          def user_id = generatedKeys.getLong(1)
 	          SQL = """\
-                 insert into structures(name,sigle,typeof,business,size,state,target,country,city,location,createdBy) 
-                 values('${registration.account.structure.name}','${registration.account.structure.sigle}',"${registration.account.structure.type}","${registration.account.structure.business}",
+                 insert into structures(name,acronym,typeof,business,size,state,target,country,city,location,createdBy) 
+                 values('${registration.account.structure.name}','${registration.account.structure.acronym}',"${registration.account.structure.type}","${registration.account.structure.business}",
                  "${registration.account.structure.size}","${registration.account.structure.state}","${registration.account.structure.target}","${registration.account.structure.address.country}",
                  "${registration.account.structure.address.city}","${registration.account.structure.address.location}",${user_id});              
                 """
