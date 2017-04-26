@@ -107,12 +107,12 @@ input {
   color: #fff;
 }
 
-/*scrol to top*/
+/*scroll to top*/
 
 .scrollToTop {
   bottom: 35px;
   display: none;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   height: 50px;
   position: fixed;
@@ -120,7 +120,7 @@ input {
   text-align: center;
   text-decoration: none;
   width: 50px;
-  z-index: 9;
+  z-index: 999999999;
   border:1px solid;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -963,6 +963,7 @@ Embed code cb87d958ba
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
 	.details {width:100%;}
 	.buttons {position:relative;margin-top:0px;right:0px}
+	.scrollToTop {right:45%}
 }
 @media(max-width:640px){
 	.logo {display : none}
