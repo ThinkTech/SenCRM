@@ -55,7 +55,7 @@
 <div id="testimonial">
 		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
-			<a href="#">John Doe - Founder of LiveBusiness</a>
+			<a href="#">John Doe - CEO of LiveBusiness</a>
 		</div>
 	</div>
 </div>
