@@ -13,27 +13,40 @@
 		
 		<label class="required text-right"><i class="fa fa-user"></i>First Name : </label>
 		<input required title="First Name" name="user.firstName" maxlength="100"  type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your first name." title="information">&nbsp;</span>
+	     
 		<label class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input required title="Last Name" name="user.lastName" maxlength="100" type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your last name." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
 		<input required title="Profession" name="user.profession" maxlength="100" type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your profession." title="information">&nbsp;</span>
+	    
+	    
 	    <label class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input required title="Email" name="user.email" maxlength="100" type="email"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your email address." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-language"></i>Language :</label>
 		<select title="Language" name="user.lang">
 		        <option value="en">English</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your language." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-key"></i>Password :</label>
 		<input required id="password" title="Password" name="user.password" maxlength="100" type="password"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your password which must be between 8 and 100 characters." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
 		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must retype your password." title="information">&nbsp;</span>
+	    
+	    
 	</fieldset>
 	
 	</section>
@@ -45,17 +58,23 @@
 		
 		<label class="required text-right">Name : </label>
 		<input maxlength="100" required title="Name" name="account.structure.name" maxlength="100"  type="text"/>
-		
-		<label class="text-right">Sigle : </label>
-		<input title="Sigle" name="account.structure.sigle" maxlength="30" type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the name of your structure." title="information">&nbsp;</span>
+	    
+	    
+		<label class="text-right">Acronym : </label>
+		<input title="Acronym" name="account.structure.sigle" maxlength="30" type="text"/>
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the acronym of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right">Type :</label>
 		<select title="Type" name="account.structure.type">
 		 	<option value="1">Company</option>
 		 	<option value="2">Organization</option>
 		 	<option value="3">Government</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the type of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right">Primary Business :</label>
 		<select title="Primary Business" name="account.structure.business">
 		    <option value="1">Accommodations</option>
@@ -114,14 +133,18 @@
 		 	<option value="54">Web Services</option>
 		 	<option value="55">Other</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your primary business." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right">Size :</label>
 		<select title="Size" name="account.structure.size">
 		 	<option value="1">small</option>
 		 	<option value="2">medium</option>
 		 	<option value="3">big</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the size of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right">State :</label>
 		<select title="State" name="account.structure.state">
 		    <option value="1">seed</option>
@@ -130,7 +153,9 @@
 		 	<option value="4">strong</option>
 		 	<option value="5">struggling</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the state of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right">Target :</label>
 		<select title="Target" name="account.structure.target">
 		 	<option value="1">Companies</option>
@@ -139,17 +164,25 @@
 		 	<option value="4">Communities</option>
 		 	<option value="5">all</option>
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the target(s) of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-globe"></i>Country :</label>
 		<select class="country" required title="Country" name="account.structure.address.country">
 		</select>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the country of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="required text-right"><i class="fa fa-globe"></i>City :</label>
 		<input  required title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
+	    
+	    
 		<label class="text-right"><i class="fa fa-globe"></i>Address :</label>
 		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
-		
+		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure." title="information">&nbsp;</span>
+	    
+	    
 	</fieldset>
 	
 	</section>
