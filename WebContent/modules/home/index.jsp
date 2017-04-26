@@ -11,7 +11,7 @@
   <div class="center">
         <h1>Welcome To ${app_name}</h1>
               <p>
-				We offer a modular and extensible Cloud-based <b>CRM Solution</b> to deliver a seamless experience across management, manufacturing, marketing, sales, commerce, service, and social.
+				We offer a modular and extensible Cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, marketing, sales, commerce, service, and social.
 			 </p>
   </div>
   </li>
