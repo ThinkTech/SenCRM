@@ -112,6 +112,11 @@
 
 #testimonial{vertical-align:top;display:inline-block;width:35%;margin:0 auto;}
 #testimonial p.content{font-size : 70%;font-style:italic;line-height:24px;padding:0px;position:relative;overflow:hidden;}
+#testimonial p.content:before, #testimonial p.content:after {
+    content: '"';
+    font-weight : bold;
+    font-size : 120%;
+}
 #testimonial .sign{text-align:right;float:right;margin-top:-5px}
 #testimonial .sign a{color:#222;font-size:70%;text-decoration:none;}
 

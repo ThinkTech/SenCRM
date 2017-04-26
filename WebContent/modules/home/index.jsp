@@ -53,7 +53,7 @@
   </div>
 </div>
 <div id="testimonial">
-		<p class="content"><span class="laquo">&nbsp;</span>SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.<span class="raquo">&nbsp;</span></p>
+		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
 			<a href="#">John Doe - Founder of LiveBusiness</a>
 		</div>
