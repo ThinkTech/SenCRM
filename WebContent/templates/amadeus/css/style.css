@@ -95,7 +95,7 @@ a.title:hover {
 	color : #222;
 }
 
-input:focus,select:focus,a:focus { 
+#form input:not([type="submit"]):focus, #form select:focus,a:focus { 
 	border : 1px solid rgb(234, 133, 17);
 }
 

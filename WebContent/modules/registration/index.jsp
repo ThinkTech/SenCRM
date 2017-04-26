@@ -63,7 +63,7 @@
 	    
 		<label title="Acronym" class="text-right">Acronym : </label>
 		<input title="Acronym" name="account.structure.acronym" maxlength="30" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the acronym of your structure." title="information">&nbsp;</span>
+		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the acronym of your structure." title="information">&nbsp;</span>
 	    
 	    
 		<label title="Type" class="required text-right">Type :</label>
