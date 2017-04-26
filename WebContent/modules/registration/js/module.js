@@ -130,11 +130,6 @@ app.ready(function(){
 	$("span.price").each(function(index,element){
 		$(this).html($(this).html().formatDigits());
 	});
-	$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
-		var price = parseInt($(element).attr("data-price"));
-		amount+=price;
-		$("#amount").html(amount.toString().formatDigits());
-	});
 	$("span.info").click(function(){
 		const info = $(this).attr("data-info");
 		alert(info);
@@ -159,6 +154,20 @@ app.ready(function(){
 			const action = $(this).attr("data-action")+"("+val+");";
 			eval(action);
 		}
+	});
+	$("select[name='account.structure.size']").on("change",function(event){
+		const val = parseInt($(this).val());
+		if(val==2 || val==3) {
+			$("input[type='radio'][value='colocation']").attr("disabled","disabled");
+			$("input[type='radio'][value='private']").attr("checked","checked").click();
+		}else {
+			$("input[type='radio'][value='colocation']").removeAttr("disabled");
+		}
+	}).val("2").trigger("change");
+	$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
+		var price = parseInt($(element).attr("data-price"));
+		amount+=price;
+		$("#amount").html(amount.toString().formatDigits());
 	});
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);

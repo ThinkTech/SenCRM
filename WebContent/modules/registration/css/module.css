@@ -254,8 +254,10 @@ transform-origin:0 0 !important;
 	#form fieldset label {width : 44%;}
 	#form input:not([type="submit"]), #form select {width : 51%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
-    .registration > h1 {font-size:1.5em;}
+    .registration > h1 {font-size:1.5em;padding-top:15px}
     #form .settings fieldset label {font-size: 60%;padding-top: 10px;}
+    .easyWizardSteps {margin-top:-20px}
+    .easyWizardSteps li {padding-bottom:0px}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 48%;font-size: 75%;padding-top: 7px;}
