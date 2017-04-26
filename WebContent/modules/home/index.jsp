@@ -31,6 +31,14 @@
 			  </p>
     </div>
   </li>
+   <li>
+    <div class="center">
+       <h1>PC, Mobile & Tablet Friendly</h1>
+              <p>
+				 <b>SenCRM</b> is tailored to be responsive to maximize the user experience and you can use it everywhere and with any device. All you need is an internet connection and a compliant browser.
+			  </p>
+    </div>
+  </li>
 </ul>
 </div>
 <div class="video">
