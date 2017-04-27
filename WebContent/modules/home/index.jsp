@@ -52,12 +52,26 @@
      <iframe id="player" src="https://www.youtube.com/embed/xn0vCV_fxNM"  frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
-<div id="testimonial">
+<div class="testimonials">
+    <div class="testimonial">
 		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
 			<a href="#">John Doe - CEO of LiveBusiness</a>
 		</div>
 	</div>
+	<div class="testimonial">
+		<p class="content">I recommend SenCRM to every business due to the amount of time saved. The product is elegant and powerful and it does cover all of my needs.</p>
+		<div class="sign">
+			<a href="#">Marsha Wright - CEO of TechOnFire</a>
+		</div>
+	</div>
+	<div class="testimonial">
+		<p class="content">Rethinking how nowadays, we manage our business was crucial to my adoption of SenCRM and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
+		<div class="sign">
+			<a href="#">Mansour Fall - CEO of ThinkBig</a>
+		</div>
+	</div>
+</div>
 </div>
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
