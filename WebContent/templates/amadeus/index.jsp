@@ -27,6 +27,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <!-- scroll to top  -->   
    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
+   <div class="search">
+      <input type="text" placeholder="Search..."/>
+   </div>
    <tiles:insertAttribute name="content"/>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
