@@ -59,6 +59,10 @@ h1,h2,h3,h4,h5,h6{
 	-ms-transition:0.5s all;
 }	
 
+h1 {
+	text-shadow: 1px 1px 5px #fff;
+}
+
 h1.header {
 	font-size: 2em;
     white-space: nowrap;
@@ -165,6 +169,7 @@ div.app_title a {
 	display : block;
 	margin-left:50px;
 	font-family : tahoma;
+	text-shadow: 1px 1px 1px #fff;
 }
 
 div.search {
