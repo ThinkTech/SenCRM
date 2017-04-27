@@ -37,6 +37,7 @@
 .aside {
 	position : absolute;
 	padding : 14px;
+	padding-left : 8px;
 	text-align : center;
 	margin-top : 0px;
 	padding-top : 15px;
