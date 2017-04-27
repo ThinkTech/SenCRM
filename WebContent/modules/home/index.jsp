@@ -66,7 +66,7 @@
 		</div>
 	</div>
 	<div class="testimonial">
-		<p class="content">Rethinking how nowadays, we manage our business was crucial to my adoption of SenCRM and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
+		<p class="content">Rethinking how nowadays, we manage our businesses was crucial to my adoption of SenCRM and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
 		<div class="sign">
 			<a href="#">Mansour Fall - CEO of ThinkBig</a>
 		</div>
