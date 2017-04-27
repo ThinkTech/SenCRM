@@ -49,6 +49,14 @@
 			  </p>
     </div>
   </li>
+  <li>
+    <div class="center">
+       <h1>Secure, Powerful & Reliable</h1>
+              <p>
+				  With our dedicated servers, you can be assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.
+			  </p>
+    </div>
+  </li>
 </ul>
 </div>
 <div class="block">
