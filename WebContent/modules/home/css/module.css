@@ -53,6 +53,15 @@
 	cursor : pointer;
 }
 
+.aside .socials {
+	margin-left : 7px;
+}
+.aside > .socials > a {
+	display : inline-block;
+	padding : 0px;
+	font-size : 100%;
+}
+
 .center {
 	width: 77.5%;
     margin : auto;
@@ -213,13 +222,13 @@
 	.block {width : 81%}
 	.aside {padding-left : 20px}
 	.aside a {font-size : 70%;padding:12px}
+	.aside {padding-left:2px;clear:both;position : relative;width:auto}
+	.aside a {display:inline-block}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
 	.rslides {width:100%;height:160px}
 	.block {width : 99%}
-	.aside {padding-left:2px;clear:both;position : relative;width:auto}
-	.aside a {display:inline-block}
 }
 @media(max-width:640px){
 	.rslides {height:170px}

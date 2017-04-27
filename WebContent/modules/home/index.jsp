@@ -9,6 +9,11 @@
   <a class="title">News</a>
   <a class="title">Blog</a>
   <a class="title">FAQ</a>
+  <div class="socials">
+    <a><i class="fa fa-facebook"></i></a>
+    <a><i class="fa fa-twitter"></i></a>
+    <a><i class="fa fa-youtube"></i></a>
+  </div>
 </div>
 <div>
 <ul class="rslides">
