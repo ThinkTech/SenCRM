@@ -359,7 +359,7 @@ class ModuleAction extends ActionSupport {
 		        }
 		      }
 		      if(registration.hosting.equals("private")) {
-		      	p("Your private database server will be created after confirmation and you can update your subscription at any time once logged to your account.")
+		      	p("Your dedicated database server will be created after confirmation and you can update your subscription at any time once logged to your account.")
 		      }else {
 		         p("You can update your subscription at any time once logged to your account.")
 		      }

@@ -206,8 +206,8 @@
 		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/Month">10 ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is small." title="information">&nbsp;</span>
-	     <label title="Private Server" class="text-right"><i class="fa fa-database"></i>Private Server</label>
-		 <input title="Private Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
+	     <label title="Dedicated Server" class="text-right"><i class="fa fa-database"></i>Dedicated Server</label>
+		 <input title="Dedicated Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/Month"><span>20</span> ${initParam.app_currency}/Month</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology." title="information">&nbsp;</span>
 		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
