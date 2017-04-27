@@ -60,7 +60,7 @@
 		</div>
 	</div>
 	<div class="testimonial">
-		<p class="content">I recommend SenCRM to every business due to the amount of time saved. The product is elegant and powerful and it does cover all of my needs.</p>
+		<p class="content">I recommend SenCRM to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
 		<div class="sign">
 			<a href="#">Marsha Wright - CEO of TechOnFire</a>
 		</div>
