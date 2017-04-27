@@ -69,19 +69,19 @@
     <div class="testimonial">
 		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
-			<a href="#">John Doe - CEO of LiveBusiness</a>
+			<a href="#"><b>John Doe - CEO of LiveBusiness</b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">I recommend SenCRM to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
 		<div class="sign">
-			<a href="#">Marsha Wright - CEO of TechOnFire</a>
+			<a href="#"><b>Marsha Wright - CEO of TechOnFire</b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">Rethinking how nowadays, we manage our businesses was crucial to my adoption of SenCRM and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
 		<div class="sign">
-			<a href="#">Mansour Fall - CEO of ThinkBig</a>
+			<a href="#"><b>Mansour Fall - CEO of ThinkBig</b></a>
 		</div>
 	</div>
 </div>
