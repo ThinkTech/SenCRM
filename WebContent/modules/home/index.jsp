@@ -37,7 +37,7 @@
     <div class="center">
        <h1>Dynamic, Fast & Scalable</h1>
               <p>
-				 A modern, integrated <b>CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
+				 A modern, <b>integrated CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
 			  </p>
     </div>
   </li>
@@ -53,7 +53,7 @@
     <div class="center">
        <h1>Secure, Powerful & Reliable</h1>
               <p>
-				  With our dedicated servers, you can be assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.
+				  With <b>our dedicated servers</b>, you can be well assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.
 			  </p>
     </div>
   </li>
