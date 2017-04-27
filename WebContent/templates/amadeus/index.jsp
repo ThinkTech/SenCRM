@@ -28,6 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
    <div class="search">
+      <i class="fa fa-search"></i>
       <input type="text" placeholder="Search..."/>
    </div>
    <tiles:insertAttribute name="content"/>
