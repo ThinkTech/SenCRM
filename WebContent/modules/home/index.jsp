@@ -6,9 +6,9 @@
     <a href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
 </div>
 <div class="aside">
-  <a class="title">News</a>
-  <a class="title">Blog</a>
-  <a class="title">FAQ</a>
+  <a class="title"><i class="fa fa-newspaper-o"></i>News</a>
+  <a class="title"><i class="fa fa-rss"></i>Blog</a>
+  <a class="title"><i class="fa fa-question-circle"></i>FAQ</a>
   <div class="socials">
     <a><i class="fa fa-facebook"></i></a>
     <a><i class="fa fa-twitter"></i></a>
@@ -19,7 +19,7 @@
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1>Welcome To ${app_name}</h1>
+        <h1><i class="fa fa-user"></i>Welcome To ${app_name}</h1>
               <p>
 				We offer a modular and extensible Cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, business intelligence, marketing, sales, commerce and social.
 			 </p>
@@ -27,7 +27,7 @@
   </li>
   <li>
   <div class="center">
-     <h1>Beautiful, Clear & Flexible</h1>
+     <h1><i class="fa fa-adjust"></i>Beautiful, Clear & Flexible</h1>
               <p>
  				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster.
  				</p>
@@ -35,7 +35,7 @@
   </li>
   <li>
     <div class="center">
-       <h1>Dynamic, Fast & Scalable</h1>
+       <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
               <p>
 				 A modern, <b>integrated CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
 			  </p>
@@ -43,7 +43,7 @@
   </li>
    <li>
     <div class="center">
-       <h1>PC, Mobile & Tablet Friendly</h1>
+       <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
               <p>
 				 <b>SenCRM</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.
 			  </p>
@@ -51,7 +51,7 @@
   </li>
   <li>
     <div class="center">
-       <h1>Secure, Powerful & Reliable</h1>
+       <h1><i class="fa fa-key"></i>Secure, Powerful & Reliable</h1>
               <p>
 				  With <b>our dedicated servers</b>, you can be well assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.
 			  </p>
@@ -69,19 +69,19 @@
     <div class="testimonial">
 		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
-			<a href="#"><b>John Doe - CEO of LiveBusiness</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>John Doe - CEO of LiveBusiness</b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">I recommend SenCRM to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
 		<div class="sign">
-			<a href="#"><b>Marsha Wright - CEO of TechOnFire</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>Marsha Wright - CEO of TechOnFire</b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">Rethinking how nowadays, we manage our businesses was crucial to my adoption of SenCRM and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
 		<div class="sign">
-			<a href="#"><b>Mansour Fall - CEO of ThinkBig</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>Mansour Fall - CEO of ThinkBig</b></a>
 		</div>
 	</div>
 </div>
