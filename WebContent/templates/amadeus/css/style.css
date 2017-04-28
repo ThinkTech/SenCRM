@@ -257,7 +257,7 @@ div.search i {
 }
 .w3_agile_login p , .agile_its_registration  p{
 	font-size: 1em;
-	color: #dcffff;
+	color: #fff;
 }
 .w3_agile_login input[type="submit"] {
 	width:98.5%;
@@ -283,11 +283,11 @@ div.search i {
 }
 
 .login_w3ls a {
-	color: #dcffff;
+	color: #fff;
 	font-size: 0.8em;
 }
 .login_w3ls a:hover {
-	color: #fff;
+	color: #06d0d8;
 }
 
 #error-message {
