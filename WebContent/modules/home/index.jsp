@@ -60,6 +60,7 @@
 </ul>
 </div>
 <div class="pager-placeholder">
+<span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
 <div class="block">
 <div class="video">
@@ -68,6 +69,7 @@
   </div>
 </div>
 <div class="testimonials">
+<span class="voice fa fa-microphone" title="information">&nbsp;</span>
     <div class="testimonial">
 		<p class="content">SenCRM brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
@@ -99,7 +101,7 @@
 	<article class="ac-small module">
 	    <div>
 	 	<img src="modules/${folder.name}/images/icon-32.png"/>
-	 	<span>${description}</span>
+	 	<span>${description}<span class="voice fa fa-microphone" title="information">&nbsp;</span></span>
   		</div>
 		<p>${details}</p>
 	</article>
