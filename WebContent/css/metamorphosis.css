@@ -962,7 +962,7 @@ Embed code cb87d958ba
 	.topmenu {margin-left:2px;margin-top:8px}
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
 	.details {width:100%;}
-	.buttons {position:relative;margin-top:0px;right:0px}
+	.buttons {position:relative;margin-top:-10px;right:0px;top:0px}
 	.scrollToTop {right:45%}
 }
 @media(max-width:640px){
