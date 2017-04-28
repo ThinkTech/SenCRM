@@ -205,6 +205,6 @@ app.ready(function(){
 	if ('speechSynthesis' in window) {
 		speechSynthesis.getVoices();
 	} else {
-	    // Ah man, speech synthesis isn't supported.
+		$("span.voice").hide();
 	}
 });
