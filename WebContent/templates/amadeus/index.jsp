@@ -31,6 +31,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <i class="fa fa-search"></i>
       <input type="text" placeholder="Search..."/>
    </div>
+   <div class="aside">
+  <a class="title"><i class="fa fa-newspaper-o"></i>News</a>
+  <a class="title"><i class="fa fa-rss"></i>Blog</a>
+  <a class="title"><i class="fa fa-question-circle"></i>FAQ</a>
+  <div class="socials">
+    <a><i class="fa fa-facebook"></i></a>
+    <a><i class="fa fa-twitter"></i></a>
+    <a><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
    <tiles:insertAttribute name="content"/>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>

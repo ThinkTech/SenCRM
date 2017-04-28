@@ -8,12 +8,13 @@ app.ready(function(){
 			  pause: true,          // Boolean: Pause on hover, true or false
 		});
 	 });
-	const length = $(".testimonial").length;
+	const testimonials = $(".testimonial");
+	const length = testimonials.length;
 	var index = 0;
 	setInterval(function(){
 		index = index +1;
 		if(index >= length) index = 0;
-		$(".testimonial").hide();
-		$(".testimonial").eq(index).fadeIn(500);
+		testimonials.hide();
+		$(".testimonial").eq(index).fadeIn(600);
 	},9000);
 });

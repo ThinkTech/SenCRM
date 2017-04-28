@@ -1,3 +1,8 @@
+<div class="buttons">
+    <a href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
+    <a href="documentation" class="button"><i class="fa fa-book"></i>Documentation</a>
+    <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+</div>
 <h1 class="header"><i class="fa fa-user"></i>Identification</h1>
    <div class="w3layouts_main wrap">
     <!--Horizontal Tab-->

@@ -5,16 +5,6 @@
     <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
     <a href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
 </div>
-<div class="aside">
-  <a class="title"><i class="fa fa-newspaper-o"></i>News</a>
-  <a class="title"><i class="fa fa-rss"></i>Blog</a>
-  <a class="title"><i class="fa fa-question-circle"></i>FAQ</a>
-  <div class="socials">
-    <a><i class="fa fa-facebook"></i></a>
-    <a><i class="fa fa-twitter"></i></a>
-    <a><i class="fa fa-youtube"></i></a>
-  </div>
-</div>
 <div>
 <ul class="rslides">
   <li>
