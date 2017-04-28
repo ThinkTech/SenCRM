@@ -19,7 +19,8 @@
   <div class="center">
      <h1><i class="fa fa-adjust"></i>Beautiful, Clear & Flexible</h1>
               <p>
- 				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster.
+ 				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster,
+ 				to convert the market understanding into tools and tactics.
  				</p>
   </div>
   </li>
@@ -27,7 +28,8 @@
     <div class="center">
        <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
               <p>
-				 A modern, <b>integrated CRM</b> leverages a multichannel environment to provide better service at a reduced cost for an efficient business.
+				 A modern, <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
+				 to build relationships and develop leads.
 			  </p>
     </div>
   </li>
@@ -51,7 +53,7 @@
     <div class="center">
        <h1><i class="fa fa-server"></i>Jelastic based SaaS</h1>
               <p>
-				  You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used to measure your traffic and resource consumption.
+				  You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used for measure.
 			  </p>
     </div>
   </li>
