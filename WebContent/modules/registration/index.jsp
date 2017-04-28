@@ -218,9 +218,10 @@
 		      <input  title="Nodes" name="registration.nodes" min="1" max="30" data-action="setNodes" type="number" value="1"/>
 		       <span class="info fa fa-info"  data-info="According to the size of your structure, you can set the maximum allowed amount of nodes." title="information">&nbsp;</span>
 		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlets</label>
-		      <input  title="Dynamic Cloudlets" min="1" max="70" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="8"/>
+		      <input  title="Dynamic Cloudlets" min="1" max="70" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="4"/>
 		       <span class="info fa fa-info"  data-info="Dynamic cloudlets defines the amount of resources your structure can access, based on necessity. You pay for them only in the case of real consumption." title="information">&nbsp;</span>
-		       <h6>1 cloudlet = 128 MiB + 400 MHz</h6>
+		       <h6><span>1 cloudlet = </span>&nbsp;128 MiB + 400 MHz</h6>
+		       <h6><span>Power = </span>&nbsp;<span class="power">128 MiB + 400 MHz</span></h6>
 		      </fieldset>
 		 </div>
 	</fieldset>

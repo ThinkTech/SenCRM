@@ -163,6 +163,20 @@
     font-weight: bold;
 }
 
+#form .settings h6 span:first-of-type {
+	display : inline-block;
+	width : 60px;
+	text-align : right;
+}
+
+#form .settings h6 span.power{
+	display : inline-block;
+}
+
+#form .settings h6:last-of-type{
+	color : red;
+}
+
 #form .settings fieldset {
 	width : 90%;
 	padding-bottom : 20px;

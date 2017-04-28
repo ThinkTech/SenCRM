@@ -1,4 +1,8 @@
 const setFlexibleCloudlets = function(value) {
+	const nodes = parseInt($("input[name='registration.nodes']").val());
+    const memory = nodes * value * 128;
+    const power = nodes * value * 400;
+    $(".settings .power").html(getSize(memory) + " + "+getPower(power));
 };
 
 const setFixedCloudlets = function(value) {
@@ -6,10 +10,24 @@ const setFixedCloudlets = function(value) {
 
 const setNodes = function(value) {
 	var radio = $("input[type='radio'][value='private']");
-	var price = 20 * parseInt(value);
+	var price = 20 * value;
 	radio.attr("data-price",price);
 	$("span.private").find("span").html(price);
+	const cloudlets = parseInt($("input[name='registration.flexibleCloudlets']").val());
+    const memory = value * cloudlets * 128;
+    const power = value * cloudlets * 400;
+    $(".settings .power").html(getSize(memory) + " + "+getPower(power));
 };
+
+const getSize = function(value) {
+	 var i = Math.floor(Math.log(value) / Math.log(1024));
+	 return (value / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['MiB', 'GiB', 'TiB'][i];
+}
+
+const getPower = function(value) {
+    var i = Math.floor(Math.log(value) / Math.log(1000));
+    return (value / Math.pow(1000, i)).toFixed(2) * 1 + ' ' + ['MHz', 'GHz', 'THz'][i];
+}
 
 app.ready(function(){
 	var form = $("form");
@@ -145,6 +163,7 @@ app.ready(function(){
 		if(!settings.is(":hidden")){
 			$("input:first",settings).focus();
 			$("html, body").animate({ scrollTop: top }, 500);
+			$(".settings input:first").trigger("change");
 		}
 		return false;
 	});
