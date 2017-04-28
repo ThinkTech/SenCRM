@@ -115,19 +115,11 @@
 <p>
 <h2>${app_name} is tested with the following browser</h2>
     <ul class="list">
-      <li>Internet Explorer 6,7,8,9</li>
-      <li>Firefox 3,6,8,11</li>
-      <li>Safari 5,5.1</li>
-      <li>Chrome 15,20</li>
-      <li>Opera 11,11.6</li>
-      <li>iOS Safari</li>
-      <li>Symbian 3 Webkit</li>
-      <li>Opera Mobile 10.1</li>
-      <li>Opera Mini for iOS</li>
-      <li>IE7, IE9 Mobile</li>
-      <li>Firefox Mobile</li>
-      <li>Android 2.3+</li>
-      <li>Kindle browser</li>
+      <li>Chrome 54,55,56</li>
+      <li>Firefox 49,50,51</li>
+      <li>IE 9,10,11</li>
+      <li>Opera 41,42,43</li>
+      <li>Edge 12,13,14</li>
     </ul>
 </p>
 </div>
