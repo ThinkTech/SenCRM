@@ -237,6 +237,8 @@ transform-origin:0 0 !important;
 @media(max-width:991px ){
 	.success {width : 50%;}
 	.registration {width : 67%;}
+	.aside {display : none}
+	div.search {display : none}
 }
 
 @media(max-width:767px ){
@@ -244,6 +246,7 @@ transform-origin:0 0 !important;
 	.registration {width : 80%;}
 	.registration p {width : 99%}
 	.captcha {margin-left:0px}
+	.buttons {display : none}
 }
 @media(max-width:640px){
 	.success {width : 90%;}

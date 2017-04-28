@@ -20,3 +20,4 @@
         </div>
 		 <!-- //Horizontal Tab -->
 </div>
+<link href="templates/amadeus/css/responsive.css" rel="stylesheet" type="text/css" media="all" />

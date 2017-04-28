@@ -1,0 +1,7 @@
+@media(max-width:767px ){
+	.buttons {display : none}
+}
+@media(max-width:991px ){
+	.aside {display : none}
+	div.search {display : none}
+}
