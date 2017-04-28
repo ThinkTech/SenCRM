@@ -57,6 +57,8 @@
   </li>
 </ul>
 </div>
+<div class="pager-placeholder">
+</div>
 <div class="block">
 <div class="video">
   <div class="video-container">

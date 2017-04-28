@@ -38,6 +38,7 @@
 	text-align : center;
 	margin-top : -15px;
 	margin-bottom : 15px;
+	height : 20px;
 }
 
 .rslides_tabs li {
@@ -63,6 +64,10 @@
 
 .rslides_tabs li a:focus {
 	border : none;
+}
+
+.pager-placeholder {
+	height : 40px;
 }
 
 .center {

@@ -7,6 +7,7 @@ app.ready(function(){
 			  pager: true,           // Boolean: Show pager, true or false
 			  pause: true,          // Boolean: Pause on hover, true or false
 		});
+		$(".pager-placeholder").css("height","20px");
 	 });
 	const testimonials = $(".testimonial");
 	const length = testimonials.length;
