@@ -152,6 +152,16 @@ app.ready(function(){
 		const info = $(this).attr("data-info");
 		alert(info);
 	});
+	$("span.voice").click(function(){
+		const info = $(this).attr("data-info");
+		var msg = new SpeechSynthesisUtterance();
+		msg.text = info;
+		var voices = speechSynthesis.getVoices();
+		msg.voice = voices[4];
+		msg.rate = 0.8;
+		msg.pitch = 0.65;
+		window.speechSynthesis.speak(msg);
+	});
 	$("span.wrench").click(function(event){
 		const radio = $("input[type='radio'][value='private']");
 		radio.attr('checked', true).trigger('change');
@@ -191,5 +201,10 @@ app.ready(function(){
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
+	}
+	if ('speechSynthesis' in window) {
+		speechSynthesis.getVoices();
+	} else {
+	    // Ah man, speech synthesis isn't supported.
 	}
 });

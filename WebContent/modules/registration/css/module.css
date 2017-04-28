@@ -141,6 +141,10 @@
     cursor : pointer;
 }
 
+#form .wrench {
+	margin-left : 15px;
+}
+
 #form .settings .info{
 	margin-top: 5px;
 }
@@ -148,6 +152,25 @@
 #form .info.adjust {
 	margin-top: 5px;
 }
+
+#form .voice {
+	vertical-align: text-top;
+    margin-top: 11px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#form .settings .voice {
+	vertical-align: text-top;
+    margin-top: 11px;
+    cursor: pointer;
+    position: absolute;
+    margin-left : 0px;
+}
+
+#form fieldset .voice:last-of-type {
+	margin-left : 5px;
+} 
 
 #form .settings {
 	display : none;
@@ -183,7 +206,7 @@
 }
 
 #form .settings fieldset label {
-	width : 70%;
+	width : 60%;
 }
 
 #form .settings fieldset input {
@@ -268,30 +291,35 @@ transform-origin:0 0 !important;
 	#form fieldset label {width : 42%;}
 	#form input:not([type="submit"]), #form select {width : 51%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
+    .registration > h1 {font-size:1.5em;padding-top:20px}
+    #form .voice {margin-left : -5px}
+    #form fieldset .voice:last-of-type {margin-left : 0px}
 }
 
  
 @media(max-width:480px ){
 	.registration {width : 95%;}
-	#form fieldset label {width : 44%;}
+	#form fieldset label {width : 42%;}
 	#form input:not([type="submit"]), #form select {width : 48%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:2%}
     .registration > h1 {font-size:1.5em;padding-top:15px}
     #form .settings fieldset label {font-size: 60%;padding-top: 10px;}
     .easyWizardSteps {margin-top:-20px}
     .easyWizardSteps li {padding-bottom:0px}
+	#form .settings .voice:last-of-type {margin-left : 5px}
+	#form .wrench {margin-left : 6px;}
 }
 @media(max-width:360px ){
-	#form fieldset label {width : 48%;font-size: 75%;padding-top: 7px;}
+	#form fieldset label {width : 45%;font-size: 75%;padding-top: 7px;}
 	#form input:not([type="submit"]), #form select {width : 43%;}
     #form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:0%}
     .captcha{max-width:286px;width:286px;overflow:hidden}
-    .registration .price {width:25%}
+    .registration .price {width:24%}
     #form fieldset {padding-left : 2px;padding-right : 0px;}
 }
 @media(max-width:320px ){
 	.captcha{max-width:286px;width:286px;overflow:hidden}
-	#form fieldset label {width: 45%;font-size: 60%;padding-top: 9px;}
+	#form fieldset label {width: 43%;font-size: 60%;padding-top: 9px;}
 	#form input:not([type="submit"]), #form select {width : 43%;}
 	#form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:0%}
 }
