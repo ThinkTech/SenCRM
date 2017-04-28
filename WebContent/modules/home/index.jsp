@@ -51,7 +51,7 @@
     <div class="center">
        <h1><i class="fa fa-server"></i>Jelastic based SaaS</h1>
               <p>
-				  You can manually provision your resources for your <b>cloud database</b>. A cloudlet which is 128 MiB of memory and 400 MHz processor is used to measure your traffic and resource consumption.
+				  You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used to measure your traffic and resource consumption.
 			  </p>
     </div>
   </li>
