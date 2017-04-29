@@ -77,23 +77,22 @@
   </div>
 </div>
 <div class="testimonials">
-<span class="voice fa fa-microphone" title="information">&nbsp;</span>
     <div class="testimonial">
 		<p class="content">${app_name} brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>John Doe - CEO of LiveBusiness</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>John Doe - CEO of LiveBusiness<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">I recommend ${app_name} to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>Marsha Wright - CEO of TechOnFire</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>Marsha Wright - CEO of TechOnFire<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
 		<p class="content">Rethinking how nowadays, we manage our businesses was crucial to my adoption of ${app_name} and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>Mansour Fall - CEO of ThinkBig</b></a>
+			<a href="#"><i class="fa fa-user"></i><b>Mansour Fall - CEO of ThinkBig<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 </div>

@@ -68,12 +68,12 @@
 
 .pager-placeholder {
 	height : 40px;
-	padding-left : 80%;
+	padding-left : 76.4%;
 }
 
 .pager-placeholder .voice {
 	position : absolute;
-	margin-top : -40px;
+	margin-top : -60px;
 	z-index : 9999999999;
 }
 
@@ -152,6 +152,9 @@
 .ac-container{
 	text-align: left;
 	margin-top : 5px;
+}
+.testimonial .voice {
+	margin-left : 5px;
 }
 .ac-container label{
 	padding: 0px;
