@@ -70,6 +70,7 @@
 <div class="pager-placeholder">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
+<a class="button wizard"><i class="fa fa-user"></i>Try it Now<i class="fa fa-play"></i></a>
 <div class="block">
 <div class="video">
   <div class="video-container">

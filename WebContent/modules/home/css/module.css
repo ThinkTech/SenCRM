@@ -81,6 +81,21 @@
     cursor: pointer;
 }
 
+.button.wizard {
+	float : none;
+	position : absolute;
+	display : block;
+	width : 135px;
+	margin-top: -54px;
+	margin-left: 20%;
+	margin-bottom: 0px;
+	border-radius : 5px;
+}
+
+.button.wizard .fa-play {
+	margin-left : 8px;
+}
+
 .center {
 	width: 77.5%;
     margin : auto;
@@ -239,17 +254,20 @@
 
 @media(max-width:1199px ){
 	.rslides {width:92%;height:150px}
+	.button.wizard {margin-top: -54px;margin-left: 20%;margin-bottom: 0px;}
 }
 
 @media(max-width:1024px ){
 	.center {width: 80%;}
 	.block {width : 64%}
+	.button.wizard {margin-top: -54px;margin-left: 17.9%;margin-bottom: 0px;}
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
 	.center h1 {line-height : 0px;}
 	.rslides {width:100%;height:150px;margin-top:-10px}
 	.block {width : 81%}
+	 .button.wizard {position:relative;margin: auto;margin-bottom: 21px;}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
