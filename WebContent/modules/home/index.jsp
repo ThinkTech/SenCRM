@@ -19,7 +19,7 @@
   <div class="center">
      <h1><i class="fa fa-adjust"></i>Beautiful, Clear & Flexible</h1>
               <p>
- 				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information they need to make sales faster,
+ 				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information needed to make sales faster,
  				to convert the market understanding into tools and tactics.
  				</p>
   </div>
