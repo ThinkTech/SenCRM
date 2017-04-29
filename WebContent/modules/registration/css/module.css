@@ -72,6 +72,12 @@
     margin-top: 3px;
 }
 
+.registration .price span {
+	width : 20px;
+	display : inline-block;
+	text-align : right;
+}
+
 .registration .price:last-of-type {
 	 margin-top: 1px;
     height: 35px;

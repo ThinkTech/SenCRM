@@ -212,7 +212,7 @@
 	   <s:iterator value="moduleManager.backendModules">
 		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
 		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price bgcolor"  title="${price} ${initParam.app_currency}/Mo">${price} ${initParam.app_currency}/Mo</span>
+		   <span class="price bgcolor"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
 		   <span class="info fa fa-info"  data-info="${details}" title="information">&nbsp;</span>
 		   <span class="voice fa fa-microphone"  data-info="${details}" title="information">&nbsp;</span>
 		</s:iterator>
@@ -223,12 +223,12 @@
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
-		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/Mo">10 ${initParam.app_currency}/Mo</span>
+		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/mo"><span>10</span> ${initParam.app_currency}/mo</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is small." title="information">&nbsp;</span>
 		 <span class="voice fa fa-microphone"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is small." title="information">&nbsp;</span>
 	     <label title="Dedicated Server" class="text-right"><i class="fa fa-database"></i>Dedicated Server</label>
 		 <input title="Dedicated Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
-		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/Mo"><span>20</span> ${initParam.app_currency}/Mo</span>
+		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/mo"><span>20</span> ${initParam.app_currency}/mo</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology." title="information">&nbsp;</span>
 		 <span class="voice fa fa-microphone"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology." title="information">&nbsp;</span>
 		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
@@ -252,7 +252,7 @@
 	<fieldset>
 	  <h1><i class="fa fa-money"></i>Pricing</h1>
 	     <label title="Amount" class="text-right"><i class="fa fa-money"></i>Amount : </label>
-		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/Mo</span>
+		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/mo</span>
 	</fieldset>
 	
 	</section>
