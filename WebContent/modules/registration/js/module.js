@@ -158,6 +158,7 @@ app.ready(function(){
 		msg.text = info;
 		var voices = speechSynthesis.getVoices();
 		msg.voice = voices[4];
+		msg.lang = 'en-US';
 		msg.rate = 0.8;
 		msg.pitch = 0.65;
 		window.speechSynthesis.speak(msg);

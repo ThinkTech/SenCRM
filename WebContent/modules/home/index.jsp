@@ -37,7 +37,7 @@
     <div class="center">
        <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
               <p>
-				 <b>SenCRM</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.
+				 <b>${app_name}</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.
 			  </p>
     </div>
   </li>
@@ -45,7 +45,7 @@
     <div class="center">
        <h1><i class="fa fa-code"></i>Modern & Fully Customizable</h1>
               <p>
-				 <b>Templates</b> allow you to change the look and feel of <b>SenCRM</b> to fit that of your structure. You can use those contributed by our community of web designers or you can create and upload your own.
+				 <b>Templates</b> allow you to change the look and feel of <b>${app_name}</b> to fit that of your structure. You can use those contributed by our community of web designers or you can create and upload your own.
 			  </p>
     </div>
   </li>
