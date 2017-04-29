@@ -28,7 +28,7 @@
     <div class="center">
        <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
               <p>
-				 A modern, <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
+				 An <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
 				 to build relationships and develop leads.
 			  </p>
     </div>
@@ -38,6 +38,14 @@
        <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
               <p>
 				 <b>SenCRM</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.
+			  </p>
+    </div>
+  </li>
+  <li>
+    <div class="center">
+       <h1><i class="fa fa-code"></i>Modern & Fully Customizable</h1>
+              <p>
+				 <b>Templates</b> allow you to change the look and feel of <b>SenCRM</b> to fit that of your structure. You can use those contributed by our community of web designers or you can create and upload your own.
 			  </p>
     </div>
   </li>
