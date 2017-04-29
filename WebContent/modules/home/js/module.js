@@ -47,6 +47,7 @@ app.ready(function(){
 		var text = "";
 		testimonials.each(function(index,element){
 			text += $("p",element).html();
+			text += $(".sign a",element).text();
 		});
 		speak(text);
 	});
