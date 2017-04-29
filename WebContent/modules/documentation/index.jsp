@@ -37,6 +37,14 @@
      </ol>
    </div>
    <div class="center bgcolor">
+     <h2 class="title"><i class="fa fa-code"></i>Designers</h2>
+     <ol>
+        <li>item 1</li>
+       <li>item 2</li>
+       <li>item 3</li>
+     </ol>
+   </div>
+   <div class="center bgcolor">
      <h2 class="title"><i class="fa fa-handshake-o"></i>Programs</h2>
      <ol>
         <li>Become a partner</li>
