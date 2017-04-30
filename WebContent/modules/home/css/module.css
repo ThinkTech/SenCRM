@@ -71,6 +71,12 @@
 	border : none;
 }
 
+.rslides p span:before, .rslides p span:after {
+    content: ' " ';
+    font-weight : bold;
+    font-size : 100%;
+}
+
 .pager-placeholder {
 	height : 40px;
 	padding-left : 76.4%;
