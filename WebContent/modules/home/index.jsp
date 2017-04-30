@@ -12,6 +12,10 @@
         <h1><i class="fa fa-user"></i>Welcome To ${app_name}</h1>
               <p>
 				We offer a modular and extensible cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, business intelligence, marketing, sales, commerce and social.
+				<div class="images">
+				     <img src="${images}/help-support-headset-bubble.png"/>
+				     <img src="${images}/customer.png"/>
+				  </div>
 			 </p>
   </div>
   </li>
@@ -21,6 +25,10 @@
               <p>
  				Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information needed to make sales faster,
  				to convert the market understanding into tools and tactics.
+ 				<div class="images">
+				     <img src="${images}/marketing-1.png"/>
+				     <img src="${images}/marketing-2.png"/>
+				  </div>
  				</p>
   </div>
   </li>
@@ -30,6 +38,10 @@
               <p>
 				 An <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
 				 to build relationships and develop leads.
+				 <div class="images">
+				     <img src="${images}/dynamic-2.png"/>
+				     <img src="${images}/dynamic-1.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
@@ -38,6 +50,10 @@
        <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
               <p>
 				 <b>${app_name}</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.
+				 <div class="images">
+				     <img src="${images}/computer.png"/>
+				     <img src="${images}/mobile.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
@@ -46,6 +62,10 @@
        <h1><i class="fa fa-code"></i>Modern & Fully Customizable</h1>
               <p>
 				 <b>Templates</b> allow you to change the look and feel of <b>${app_name}</b> to fit that of your structure. You can use those contributed by our community of web designers or you can create and upload your own.
+				 <div class="images">
+				     <img src="${images}/theme-1.png"/>
+				     <img src="${images}/theme-2.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
@@ -54,6 +74,10 @@
        <h1><i class="fa fa-key"></i>Secure, Powerful & Reliable</h1>
               <p>
 				  With <b>our dedicated servers</b>, you can be well assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.
+				  <div class="images">
+				     <img src="${images}/server-2.png"/>
+				     <img src="${images}/server-1.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
@@ -62,6 +86,10 @@
        <h1><i class="fa fa-server"></i>Jelastic based SaaS</h1>
               <p>
 				  You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used for measure.
+				  <div class="images">
+				     <img src="${images}/mysql.png"/>
+				     <img src="${images}/jelastic-illustration-balancer.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
@@ -70,6 +98,10 @@
        <h1><i class="fa fa-drivers-license"></i>Get Started</h1>
               <p>
 				  By creating your account, you are just four steps to take your business to the next level and to leverage an ecosystem of services well-designed for your success and your growth.
+				  <div class="images">
+				     <img src="${images}/start-1.png"/>
+				     <img src="${images}/start-2.png"/>
+				  </div>
 			  </p>
     </div>
   </li>
