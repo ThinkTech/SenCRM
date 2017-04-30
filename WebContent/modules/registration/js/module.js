@@ -148,11 +148,11 @@ app.ready(function(){
 	$("span.price").each(function(index,element){
 		$(this).html($(this).html().formatDigits());
 	});
-	$("span.info").click(function(){
+	$(".info").click(function(){
 		const info = $(this).attr("data-info");
 		alert(info);
 	});
-	$("span.voice").click(function(){
+	$(".voice").click(function(){
 		const info = $(this).attr("data-info");
 		var msg = new SpeechSynthesisUtterance();
 		msg.text = info;
@@ -216,6 +216,6 @@ app.ready(function(){
 	if ('speechSynthesis' in window) {
 		speechSynthesis.getVoices();
 	} else {
-		$("span.voice").hide();
+		$(".voice").hide();
 	}
 });

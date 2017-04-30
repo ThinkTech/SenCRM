@@ -59,6 +59,12 @@
     padding-top: 10px;
 }
 
+#form p span .voice {
+	position : relative;
+	margin-top : 4px;
+	margin-left : -5px;
+}
+
 .registration .price {
     display: inline-block;
     color: #21560a;
