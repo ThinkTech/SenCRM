@@ -25,7 +25,7 @@ app.ready(function(){
 			  speed: 400,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 8000,          // Integer: Time between slide transitions, in milliseconds
 			  pager: true,           // Boolean: Show pager, true or false
-			  pause: true,          // Boolean: Pause on hover, true or false
+			  pause: true          // Boolean: Pause on hover, true or false
 		});
 		$(".pager-placeholder").css("height","20px");
 	 });
