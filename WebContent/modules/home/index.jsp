@@ -65,6 +65,14 @@
 			  </p>
     </div>
   </li>
+  <li>
+    <div class="center">
+       <h1><i class="fa fa-drivers-license"></i>Get Started</h1>
+              <p>
+				  By creating your account, you are just four steps to take your business to the next level and to leverage an ecosystem of services well-designed for your success and your growth.
+			  </p>
+    </div>
+  </li>
 </ul>
 </div>
 <div class="pager-placeholder">
