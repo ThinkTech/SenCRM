@@ -205,6 +205,10 @@ div.search i {
 	z-index : 9999;
 }
 
+.aside.right {
+	right : 10px;
+}
+
 .aside a {
 	border-radius : 100%;
 	display: block;
@@ -358,7 +362,8 @@ div.search i {
      div.search {display : block;}
 	div.search input {width : 70%;}
 	div.search i {margin-left : 6%}
-	.aside {padding-left : 20px}
+	.aside {padding-left : 20px;}
+	.aside.right {padding-top:0px;margin-top:-15px}
 	.aside a {font-size : 70%;padding:12px}
 	.aside {padding-left:2px;clear:both;position : relative;width:auto}
 	.aside a {display:inline-block}

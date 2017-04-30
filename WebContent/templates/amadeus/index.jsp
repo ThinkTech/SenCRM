@@ -32,15 +32,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <input type="text" placeholder="Search..."/>
    </div>
    <div class="aside">
-  <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
-  <a title="Blog" class="title"><i class="fa fa-rss"></i>Blog</a>
-  <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
-  <div class="socials">
-    <a title="facebook"><i class="fa fa-facebook"></i></a>
-    <a title="twitter"><i class="fa fa-twitter"></i></a>
-    <a title="youtube"><i class="fa fa-youtube"></i></a>
-  </div>
-</div>
+	    <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
+	    <a title="Blog" class="title"><i class="fa fa-rss"></i>Blog</a>
+	    <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
+	    <div class="socials">
+	     <a title="facebook"><i class="fa fa-facebook"></i></a>
+	     <a title="twitter"><i class="fa fa-twitter"></i></a>
+	     <a title="youtube"><i class="fa fa-youtube"></i></a>
+	    </div>
+    </div>
+    <div class="aside right">
+        <a title="Pricing" class="title"><i class="fa fa-money"></i>Pricing</a>
+	    <a title="Community" class="title"><i class="fa fa-handshake-o"></i>Community</a>
+	    <a title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
+    </div>
    <tiles:insertAttribute name="content"/>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
