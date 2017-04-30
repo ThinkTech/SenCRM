@@ -888,7 +888,20 @@ ul.tabs li h2 {
 	margin-top: 10px;
 }
 
-
+.info[data-info]:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(data-info);
+    right: 12%;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 240px;
+    line-height : 1.3em;
+    font-size : 90%;
+}
 
 
 /*!

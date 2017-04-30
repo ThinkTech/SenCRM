@@ -32,13 +32,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <input type="text" placeholder="Search..."/>
    </div>
    <div class="aside">
-  <a class="title"><i class="fa fa-newspaper-o"></i>News</a>
-  <a class="title"><i class="fa fa-rss"></i>Blog</a>
-  <a class="title"><i class="fa fa-question-circle"></i>FAQ</a>
+  <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
+  <a title="Blog" class="title"><i class="fa fa-rss"></i>Blog</a>
+  <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
   <div class="socials">
-    <a><i class="fa fa-facebook"></i></a>
-    <a><i class="fa fa-twitter"></i></a>
-    <a><i class="fa fa-youtube"></i></a>
+    <a title="facebook"><i class="fa fa-facebook"></i></a>
+    <a title="twitter"><i class="fa fa-twitter"></i></a>
+    <a title="youtube"><i class="fa fa-youtube"></i></a>
   </div>
 </div>
    <tiles:insertAttribute name="content"/>

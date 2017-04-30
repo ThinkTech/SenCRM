@@ -1,8 +1,8 @@
 <div class="buttons">
-    <a href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
-    <a href="documentation" class="button"><i class="fa fa-book"></i>Documentation</a>
-    <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
-    <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+    <a title="Support" href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
+    <a title="Documentation" href="documentation" class="button"><i class="fa fa-book"></i>Documentation</a>
+    <a title="Registration" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
+    <a title="Back" href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>
 <h1 class="header"><i class="fa fa-user"></i>Change Password</h1>
    <div class="w3layouts_main wrap">

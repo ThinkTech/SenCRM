@@ -1,9 +1,9 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
-    <a href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
-    <a href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
-    <a href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
-    <a href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
+    <a title="Support" href="http://support.thinktech.sn/login" target="_blank"  class="button"><i class="fa fa-ticket"></i>Support</a>
+    <a title="Documentation" href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
+    <a title="Sign up" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
+    <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
 </div>
 <div>
 <ul class="rslides">
@@ -70,7 +70,7 @@
 <div class="pager-placeholder">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
-<a class="button wizard"><i class="fa fa-user"></i>Try it Now<i class="fa fa-play"></i></a>
+<a title="Try it Now" class="button wizard"><i class="fa fa-user"></i>Try it Now<i class="fa fa-play"></i></a>
 <div class="block">
 <div class="video">
   <div class="video-container">
