@@ -4,11 +4,12 @@
   position: relative;
   list-style: none;
   overflow: hidden;
-  width: 82.2%;
-  padding: 0;
+  padding: 80px 8px;
   margin: 0;
-  height : 340px;
+  height : 600px;
   margin: auto;
+  background : #ccc;
+  margin-top : 10px;
   }
 
 .rslides li {
@@ -28,8 +29,10 @@
 
 .rslides .images {
 	 width : 85%;
-	 padding-left:15%;
+	 padding-left:20%;
 	margin : auto;
+	margin-top : 20px;
+	height : 210px;
 }
 .rslides .images img {
   display: inline-block;
@@ -42,8 +45,8 @@
 
 .rslides_tabs {
 	text-align : center;
-	margin-bottom : 15px;
 	height : 20px;
+	margin-top : 10px;
 }
 
 .rslides_tabs li {
@@ -78,7 +81,6 @@
 }
 
 .pager-placeholder {
-	height : 40px;
 	padding-left : 76.4%;
 }
 
@@ -97,10 +99,11 @@
 	position : absolute;
 	display : block;
 	width : 135px;
-	margin-top: -54px;
-	margin-left: 20%;
+	margin-top: -120px;
+	margin-left: 47%;
 	margin-bottom: 0px;
 	border-radius : 5px;
+	display : none;
 }
 
 .button.wizard .fa-play {
@@ -120,6 +123,7 @@
     text-align : center;
     line-height: 40px;
     text-transform : none;
+    margin-bottom : 30px;
 }
 
 .center ul {
@@ -128,12 +132,9 @@
 }
 
 .center p {
-    padding: 20px;
     text-align: justify;
     width : 90%;
     margin : auto;
-    min-height : 50px;
-    padding-top : 10px;
 }
 
 .module > div {
@@ -264,52 +265,49 @@
 
 
 @media(max-width:1199px ){
-	.button.wizard {margin-top: -54px;margin-left: 20%;margin-bottom: 0px;}
-	.rslides {height:360px}
-	.rslides .images {width : 85%;padding-left:10%}
+	.rslides {height:470px;padding : 20px 5px}
+	.rslides .images {width : 85%;padding-left:15%}
 }
 
 @media(max-width:1024px ){
-	.rslides {height:300px}
+	.rslides {height:420px;padding : 20px 5px}
 	.center {width: 80%;}
 	.block {width : 64%}
-	.button.wizard {margin-top: -54px;margin-left: 17.9%;margin-bottom: 0px;}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
 	.center h1 {line-height : 0px;}
-	.rslides {width:100%;height:300px;margin-top:-10px}
+	.rslides {width:100%;height:410px;padding : 20px 5px}
 	.block {width : 81%}
-	 .button.wizard {position:relative;margin: auto;margin-bottom: 21px;}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
-	.rslides {width:100%;height:300px;margin-top:0px}
+	.rslides {width:100%;height:420px;margin-top:0px;padding : 30px 5px}
 	.block {width : 99%}
 	.center h1 {line-height : 0px;}
 	.rslides .images {width : 85%;padding-left:20%}
 	 .rslides .images img {height : 128px;width:128px}
 }
 @media(max-width:640px){
-	.rslides {height:350px}
+	.rslides {height:440px;padding : 20px 5px}
 	.video,.testimonials {display:block;width:98%;}
 	.testimonials {margin-top : 10px;padding-bottom:15px}
 	.center {width: 99.5%;}
-	 .center h1 {line-height : 40px;}
+	 .center h1 {line-height : 40px;margin-bottom:15px}
 	 .rslides .images {width : 85%;padding-left:10%}
 	 .rslides .images img {height : 128px;width:128px}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
-	.rslides {height:270px}
+	.rslides {height:350px}
 	.rslides .images {display : none}
 }
 @media(max-width:360px ){
-	.rslides {height:300px}
+	.rslides {height:390px;padding : 10px 5px}
 	.pager-placeholder .voice {margin-left:25px}
 }
 @media(max-width:320px ){

@@ -62,4 +62,5 @@ app.ready(function(){
 		var text = $(this).parent().parent().parent().find("p").html();
 		speak(text);
 	});
+	$(".button.wizard").fadeIn(2000);
 });

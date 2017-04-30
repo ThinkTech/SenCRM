@@ -27,6 +27,7 @@ img{max-width:100%;}
 body {
 	margin:0;
 	font-size: 100%;
+	overflow-x : hidden;
 }
 .text-center {
 	text-align: center;
@@ -105,11 +106,7 @@ a.title:hover {
 
 
 .bg {
-	background-color: #edf1f2;
-	background-image: url(../images/background.jpg);
-	background-repeat :  no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	background-color: #fff;
 }
 
 .bgcolor {
@@ -161,7 +158,7 @@ div.app_title a:focus {
 
 div.app_title img {
 	position : absolute;
-	top : 11px;
+	top : 5px;
 }
 
 div.app_title a {
@@ -196,17 +193,19 @@ div.search i {
 }
 
 .aside {
-	position : absolute;
+	position : fixed;
 	padding : 14px;
 	padding-left : 8px;
 	text-align : center;
 	margin-top : 0px;
 	padding-top : 15px;
 	z-index : 9999;
+	top: 33%;
 }
 
 .aside.right {
 	right : 10px;
+    right: 10px;
 }
 
 .aside a {
@@ -365,7 +364,7 @@ div.search i {
 	.aside {padding-left : 20px;}
 	.aside.right {padding-top:0px;margin-top:-15px}
 	.aside a {font-size : 70%;padding:12px}
-	.aside {padding-left:2px;clear:both;position : relative;width:auto}
+	.aside {padding-left:2px;clear:both;position : initial;width:auto}
 	.aside a {display:inline-block}
 }
 @media screen and (max-width: 800px){
