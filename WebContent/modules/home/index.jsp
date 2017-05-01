@@ -5,7 +5,7 @@
     <a title="Sign up" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
     <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
 </div>
-<div>
+<div class="content">
 <ul class="rslides">
   <li>
   <div class="center">
@@ -107,7 +107,7 @@
   </li>
 </ul>
 </div>
-<div class="pager-placeholder">
+<div class="slider-audio">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
 <a title="Try it Now" class="button wizard">Try it Now<i class="fa fa-play"></i></a>
@@ -119,19 +119,19 @@
 </div>
 <div class="testimonials">
     <div class="testimonial">
-		<p class="content">${app_name} brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
+		<p>${app_name} brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
 		<div class="sign">
 			<a href="#"><i class="fa fa-user"></i><b>John Doe - CEO of LiveBusiness<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
-		<p class="content">I recommend ${app_name} to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
+		<p>I recommend ${app_name} to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
 		<div class="sign">
 			<a href="#"><i class="fa fa-user"></i><b>Marsha Wright - CEO of TechOnFire<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
-		<p class="content">Rethinking how nowadays, we manage our businesses was crucial to my adoption of ${app_name} and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
+		<p>Rethinking how nowadays, we manage our businesses was crucial to my adoption of ${app_name} and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
 		<div class="sign">
 			<a href="#"><i class="fa fa-user"></i><b>Mansour Fall - CEO of ThinkBig<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
@@ -146,7 +146,10 @@
 	<img src="modules/${folder.name}/images/icon-32.png"/>
 	<label>${name}<span class="voice fa fa-microphone" title="information">&nbsp;</span></label>
 	<p>${details}</p>
+	<div>
 	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
+	<span class="subscribe"  title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i>Purchase</span>
+	</div>
 </div>
 </s:iterator>
 </div>

@@ -37,15 +37,11 @@ app.ready(function(){
 					  item = items[Math.floor(Math.random()*items.length)];
 					  $(element).addClass("animated "+item);
 				  });
-			  },
-			  after : function() {
-				  
 			  }
 		});
 		$(".rslides p,.rslides h1").addClass("animated "+items[0]);
 		$(".rslides img").addClass("animated "+items[0]);
 		$(".button,a").addClass("animated jello");
-		$(".pager-placeholder").css("height","20px");
 		page.release();
 	 });
 	const testimonials = $(".testimonial");

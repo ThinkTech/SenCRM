@@ -5,6 +5,7 @@
     <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
     <a title="Back" href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>
+<div class="content">
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
    <div class="center bgcolor">
@@ -58,4 +59,5 @@
        <li>${app_name} Privacy Policy</li>
      </ol>
    </div>
+</div>
 </div>

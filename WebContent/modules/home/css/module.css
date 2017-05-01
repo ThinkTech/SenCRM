@@ -9,7 +9,6 @@
   height : 600px;
   margin: auto;
   background : #ccc;
-  margin-top : 10px;
   }
 
 .rslides li {
@@ -45,8 +44,7 @@
 
 .rslides_tabs {
 	text-align : center;
-	height : 20px;
-	margin-top : 10px;
+	height : 30px;
 }
 
 .rslides_tabs li {
@@ -80,14 +78,12 @@
     font-size : 100%;
 }
 
-.pager-placeholder {
+.slider-audio {
 	padding-left : 76.4%;
 }
 
-.pager-placeholder .voice {
-	position : absolute;
-	margin-top : -60px;
-	z-index : 9999999999;
+.slider-audio .voice {
+	position : relative;
 }
 
 .voice {
@@ -99,11 +95,12 @@
 	position : absolute;
 	display : block;
 	width : 135px;
-	margin-top: -120px;
+	margin-top: -190px;
 	margin-left: 47%;
 	margin-bottom: 0px;
 	border-radius : 5px;
 	display : none;
+	background : #06d0d8;
 }
 
 .button.wizard .fa-play {
@@ -176,8 +173,12 @@
 	height : 140px;
 }
 
+.module > div {
+	text-align : center;
+}
+
 .module .price {
-    display: block;
+    display: inline-block;
     color: #21560a;
     padding: 5px;
     padding-top: 6px;
@@ -189,7 +190,23 @@
     white-space: nowrap;
     text-align: center;
     margin: auto;
-    background: #ccc;
+}
+
+.module .subscribe {
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    padding-top: 6px;
+    font-size: 70%;
+    border: 1px solid;
+    width: 90px;
+    height: 34px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    background: #06d0d8;
+    cursor : pointer;
 }
 
 
@@ -204,8 +221,8 @@
 .video-container{background-color : #000;border:1px solid;position:relative;padding-bottom:56%;height:0;overflow:hidden}.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
 
 .testimonials{vertical-align:top;display:inline-block;width:35%;margin:0 auto;}
-.testimonial p.content{font-size : 70%;font-style:italic;line-height:24px;padding:0px;position:relative;overflow:hidden;}
-.testimonial p.content:before, .testimonial p.content:after {
+.testimonial p{font-size : 70%;font-style:italic;line-height:24px;padding:0px;position:relative;overflow:hidden;}
+.testimonial p:before, .testimonial p:after {
     content: '"';
     font-weight : bold;
     font-size : 120%;
@@ -225,11 +242,12 @@
 
 
 @media(max-width:1199px ){
-	.rslides {height:470px;padding : 20px 5px}
-	.rslides .images {width : 85%;padding-left:15%}
-	.rslides .images img {width:200px}
+	.rslides {height:450px;padding : 20px 5px}
+	.rslides .images {width : 85%;padding-left:25%}
+	 .rslides .images img {height : 128px;width:128px}
 	.module {height : 300px }
 	.module p {height : 180px}
+	.button.wizard{margin-top : -160px}
 }
 
 @media(max-width:1024px ){
@@ -247,6 +265,7 @@
 	.block {width : 81%}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
+	 .button.wizard{margin-top : -160px}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
@@ -269,17 +288,18 @@
 	 .rslides .images img {height : 128px;width:128px}
 	 .module { width : 95%;margin-left : auto;margin-right : auto;height : 230px }
 	 .module p {height : 120px}
+	 .button.wizard{margin-top : -140px}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
 	 .rslides h1 {margin-bottom :15px}
-	 .button.wizard{margin-top : -130px}
+	 .button.wizard{margin-top : -200px}
 	.rslides {height:350px}
 	.rslides .images {display : none}
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
-	.pager-placeholder .voice {margin-left:25px}
+	.button.wizard{margin-top : -150px}
 }
 @media(max-width:320px ){
 }

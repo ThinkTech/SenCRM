@@ -5,6 +5,7 @@
     <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
     <a title="Back" href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>
+<div class="content">
 <div class="registration">
 <h1 class="text-center"><i class="fa fa-user"></i>Create your account</h1>
 <form id="form" action="registration/register" method="post" class="form-horizontal"> 
@@ -282,6 +283,6 @@
     </div>    	
 	</section>
 </form>
-
+</div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>

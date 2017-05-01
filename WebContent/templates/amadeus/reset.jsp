@@ -4,6 +4,7 @@
     <a title="Registration" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
     <a title="Back" href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>
+<div class="content">
 <h1 class="header"><i class="fa fa-user"></i>Reset Password</h1>
    <div class="w3layouts_main wrap">
     <!--Horizontal Tab-->
@@ -20,5 +21,6 @@
             </div>
         </div>
 		 <!-- //Horizontal Tab -->
+</div>
 </div>
 <link href="templates/amadeus/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
