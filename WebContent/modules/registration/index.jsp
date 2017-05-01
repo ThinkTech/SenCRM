@@ -24,8 +24,8 @@
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your last name." title="information">&nbsp;</span>
 	    
 	    
-		<label title="Profession" class="required text-right"><i class="fa fa-id-card"></i>Profession : </label>
-		<input required title="Profession" name="user.profession" maxlength="100" type="text"/>
+		<label title="Profession" class="text-right"><i class="fa fa-id-card"></i>Profession : </label>
+		<input title="Profession" name="user.profession" maxlength="100" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your profession.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your profession." title="information">&nbsp;</span>
 	    

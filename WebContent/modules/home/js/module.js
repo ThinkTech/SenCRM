@@ -77,5 +77,8 @@ app.ready(function(){
 		var text = $(this).parent().parent().find("p").html();
 		speak(text);
 	});
-	$(".button.wizard").fadeIn(2000);
+	$(".button.wizard").fadeIn(2000).click(function(){
+		const div = $(".modules");
+		$("html, body").animate({ scrollTop: div.offset().top }, 500);
+	});
 });

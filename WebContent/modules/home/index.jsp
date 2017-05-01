@@ -138,7 +138,7 @@
 	</div>
 </div>
 </div>
-<div class=" modules">
+<div class="modules">
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
 <s:iterator value="moduleManager.backendModules">
