@@ -142,7 +142,7 @@ h1.agile_head {
 div.app_title {
     margin-left : 20px;
     width : 210px;
-    margin-top : 5px;
+    margin-top : 0px;
     display : inline-block;
 }
 
@@ -171,7 +171,7 @@ div.app_title a {
 div.search {
 	display : inline-block;
 	vertical-align: top;
-    margin-top: 13px;
+    margin-top: 11.4px;
 }
 
 div.search input {
@@ -228,7 +228,7 @@ div.search i {
 
 .button {
 	border : none;
-	font-size : 85%;
+	font-size : 80%;
 }
 
 #wait {padding-top : 17%;padding-left : 46%}

@@ -30,13 +30,19 @@ app.ready(function(){
 			  pager: true,           // Boolean: Show pager, true or false
 			  pause: true,          // Boolean: Pause on hover, true or false
 			  before : function() {
-				  const item =  items[Math.floor(Math.random()*items.length)];
-				  $(".rslides img,.rslides p,.rslides h1").addClass("animated "+item);
+				  $(".rslides img:visible,.rslides p:visible,.rslides h1:visible").removeAttr('class');
+				  var item =  items[Math.floor(Math.random()*items.length)];
+				  $(".rslides p:visible,.rslides h1:visible").addClass("animated "+item);
+				  $(".rslides img:visible").each(function(index,element){
+					  item = items[Math.floor(Math.random()*items.length)];
+					  $(element).addClass("animated "+item);
+				  });
 			  },
 			  after : function() {
-				  $(".rslides img,.rslides p,.rslides h1").removeAttr('class'); 
+				  
 			  }
 		});
+		$(".rslides p,.rslides h1").addClass("animated "+items[0]);
 		$(".rslides img").addClass("animated "+items[0]);
 		$(".button,a").addClass("animated jello");
 		$(".pager-placeholder").css("height","20px");

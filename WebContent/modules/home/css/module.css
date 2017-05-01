@@ -9,7 +9,7 @@
   height : 600px;
   margin: auto;
   background : #ccc;
-  margin-top : 2px;
+  margin-top : 10px;
   }
 
 .rslides li {
@@ -29,7 +29,7 @@
 
 .rslides .images {
 	 width : 85%;
-	 padding-left:20%;
+	 padding-left:15%;
 	margin : auto;
 	margin-top : 20px;
 	height : 210px;
@@ -38,7 +38,7 @@
   display: inline-block;
   height: 200px;
   float: left;
-  width: 200px;
+  width: 250px;
   margin-right : 40px;
   border: 0;
 }
@@ -173,11 +173,25 @@
 
 .module p {
 	font-size : 70%;
+	height : 140px;
 }
 
-.module span {
-
+.module .price {
+    display: block;
+    color: #21560a;
+    padding: 5px;
+    padding-top: 6px;
+    font-size: 70%;
+    border: 1px solid;
+    width: 90px;
+    height: 34px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    background: #ccc;
 }
+
 
 .block {
 	width : 60%;
@@ -196,10 +210,12 @@
     font-weight : bold;
     font-size : 120%;
 }
+.testimonial span.voice {margin-left : 5px}
 .testimonial .sign{text-align:right;float:right;}
 .testimonial .sign a{color:#222;font-size:70%;text-decoration:none;}
 .testimonials .testimonial {display : none;}
 .testimonials .testimonial:first-of-type {display : block;}
+
 
 .browser {margin-top : 50px;}
 
@@ -211,6 +227,9 @@
 @media(max-width:1199px ){
 	.rslides {height:470px;padding : 20px 5px}
 	.rslides .images {width : 85%;padding-left:15%}
+	.rslides .images img {width:200px}
+	.module {height : 300px }
+	.module p {height : 180px}
 }
 
 @media(max-width:1024px ){
@@ -219,7 +238,8 @@
 	.block {width : 64%}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
-	  .module { width : 49%;margin-left : auto;margin-right : auto;height : 190px }
+	  .module { width : 49%;margin-left : auto;margin-right : auto;height : 250px }
+	  .module p {height : 150px}
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
@@ -237,6 +257,7 @@
 	 .center h1 {font-size : 2em}
 	 .module { width : 49%;margin-left : auto;margin-right : auto;height : 240px }
 	 .modules {padding : 5px;}
+	 .module p {height : 120px}
 	 .modules h1 {margin-top : 40px;}
 }
 @media(max-width:640px){
@@ -246,7 +267,8 @@
 	.center {width: 99.5%;}
 	 .rslides .images {width : 85%;padding-left:10%}
 	 .rslides .images img {height : 128px;width:128px}
-	 .module { width : 95%;margin-left : auto;margin-right : auto;height : 190px }
+	 .module { width : 95%;margin-left : auto;margin-right : auto;height : 230px }
+	 .module p {height : 120px}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}

@@ -88,7 +88,7 @@
 				  <span>You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used for measure.</span>
 				  <div class="images">
 				     <img src="${images}/mysql.png"/>
-				     <img src="${images}/jelastic-illustration-balancer.png"/>
+				     <img src="${images}/cloudlet.png"/>
 				  </div>
 			  </p>
     </div>
@@ -146,6 +146,7 @@
 	<img src="modules/${folder.name}/images/icon-32.png"/>
 	<label>${name}<span class="voice fa fa-microphone" title="information">&nbsp;</span></label>
 	<p>${details}</p>
+	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
 </div>
 </s:iterator>
 </div>
