@@ -110,7 +110,7 @@
 <div class="slider-audio">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
-<a title="Try it Now" class="button wizard">Try it Now<i class="fa fa-play"></i></a>
+<a title="Try it Now" class="button wizard">TRY IT NOW<i class="fa fa-play"></i></a>
 <div class="block">
 <div class="video">
   <div class="video-container">
