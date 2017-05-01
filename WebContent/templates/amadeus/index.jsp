@@ -42,7 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    </div>
     </div>
     <div class="aside right">
-        <a title="Support" href="https://support.thinktech.sn/login" class="title"><i class="fa fa-ticket"></i>Support</a>
+        <a title="Support" href="http://support.thinktech.sn/login" class="title"><i class="fa fa-ticket"></i>Support</a>
 	    <a title="Community" class="title"><i class="fa fa-handshake-o"></i>Community</a>
 	    <a title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
     </div>

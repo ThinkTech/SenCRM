@@ -19,15 +19,28 @@ var speak = function(text) {
 	};
 };
 app.ready(function(){
-	head.load("modules/home/js/responsiveslides.min.js", function() { 
+	page.wait();
+	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", function() {
+		const items = ['lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
+		               ,'jackInTheBox','flash','swing','fadeInUpBig'];
 		$(".rslides").responsiveSlides({
 			  auto: true,             // Boolean: Animate automatically, true or false
 			  speed: 400,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 8000,          // Integer: Time between slide transitions, in milliseconds
 			  pager: true,           // Boolean: Show pager, true or false
-			  pause: true          // Boolean: Pause on hover, true or false
+			  pause: true,          // Boolean: Pause on hover, true or false
+			  before : function() {
+				  const item =  items[Math.floor(Math.random()*items.length)];
+				  $(".rslides img,.rslides p,.rslides h1").addClass("animated "+item);
+			  },
+			  after : function() {
+				  $(".rslides img,.rslides p,.rslides h1").removeAttr('class'); 
+			  }
 		});
+		$(".rslides img").addClass("animated "+items[0]);
+		$(".button").addClass("animated jello");
 		$(".pager-placeholder").css("height","20px");
+		page.release();
 	 });
 	const testimonials = $(".testimonial");
 	const length = testimonials.length;
