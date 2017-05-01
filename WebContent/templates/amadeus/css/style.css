@@ -104,9 +104,12 @@ a.title:hover {
 	border : 1px solid rgb(234, 133, 17);
 }
 
-
+header {
+	background : #fff;
+	height : 60px;
+}
 .bg {
-	background-color: #fff;
+	background-color : #efeeee;
 }
 
 .bgcolor {
@@ -124,7 +127,6 @@ a.title:hover {
 
 .content {
 	background : #ccc;
-	 margin-top : 10px;
 	 min-height : 500px;
 	 padding-top : 10px;
 	 padding-bottom : 30px;
@@ -377,6 +379,7 @@ div.search i {
 	.aside a {font-size : 70%;padding:12px}
 	.aside {padding-left:2px;clear:both;position : initial;width:auto}
 	.aside a {display:inline-block}
+	header {height : 120px}
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {

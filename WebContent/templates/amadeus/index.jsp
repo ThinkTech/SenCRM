@@ -26,11 +26,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body class="bg agileinfo">
  <!-- scroll to top  -->   
    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+   <header>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
    <div class="search">
       <i class="fa fa-search"></i>
       <input type="text" placeholder="Search..."/>
    </div>
+   </header>
    <div class="aside">
 	    <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
 	    <a title="Blog" class="title"><i class="fa fa-rss"></i>Blog</a>
