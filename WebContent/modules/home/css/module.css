@@ -137,10 +137,20 @@
     margin : auto;
 }
 
-.module > div {
-	margin : 20px;
-	margin-top : 10px;
-	margin-bottom : 0px;
+.modules {
+	padding : 50px;
+	background : #ccc;
+	margin-top: 90px;
+}
+
+.module {
+	width : 32%;
+	display : inline-block;
+	border : 1px solid;
+	vertical-align : top;
+	height : 250px;
+	margin-top : 15px;
+	padding : 15px 5px;
 }
 
 .module img {
@@ -149,16 +159,30 @@
 	height : 32px;
 }
 
+.module label {
+	display: inline-block;
+    font-size: 1em;
+    vertical-align: top;
+    color: inherit;
+    text-transform : capitalize;
+}
+
+.module label span {
+	margin-left : 5px;
+}
+
+.module p {
+	font-size : 70%;
+}
+
 .module span {
-	display : inline-block;
-	vertical-align : top;
-	padding : 2px;
-	width : 90%;
+
 }
 
 .block {
 	width : 60%;
 	margin : auto;
+	margin-top : 50px;
 }
 
 .video {vertical-align:top;display:inline-block;width:60%;margin:auto}
@@ -176,88 +200,8 @@
 .testimonial .sign a{color:#222;font-size:70%;text-decoration:none;}
 .testimonials .testimonial {display : none;}
 .testimonials .testimonial:first-of-type {display : block;}
-.ac-container{
-	text-align: left;
-	margin-top : 5px;
-}
-.testimonial .voice {
-	margin-left : 5px;
-}
-.ac-container label{
-	padding: 0px;
-	padding-right : 45px;
-	position: relative;
-	z-index: 20;
-	display: block;
-	height: 35px;
-	cursor: pointer;
-	line-height: 35px;
-	font-size: 19px;
-	text-transform: capitalize;
-}
 
-.ac-container label:after,.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after{
-	content: '';
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	right: 13px;
-	top: 7px;
-	background: transparent url(../images/arrow_down.png) no-repeat center center;	
-}
-.ac-container input:checked + label:hover:after{
-	background-image: url(../images/arrow_up.png);
-}
-.ac-container input{
-	display: none;
-}
-.ac-container article{
-	margin-top: -1px;
-	overflow: hidden;
-	height: 0px;
-	position: relative;
-	z-index: 10;
-	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-}
-
-.ac-container article .voice {
-	position : absolute;
-	margin-left: 5px;
-    margin-top: 3px;
-}
-
-.ac-container article p{
-	font-style: italic;
-	color: #777;
-	line-height: 23px;
-	font-size: 14px;
-	padding-top: 4px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	padding-top : 0px;
-}
-.ac-container input:checked ~ article{
-	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-.ac-container input:checked ~ article.ac-small{
-	height: auto;
-}
-.ac-container input:checked ~ article.ac-medium{
-	height: auto;
-}
-.ac-container input:checked ~ article.ac-large{
-	height: auto;
-}
-
+.browser {margin-top : 50px;}
 
 /*--------------------*/
 /* Responsive Style */
@@ -275,10 +219,10 @@
 	.block {width : 64%}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
+	  .module { width : 49%;margin-left : auto;margin-right : auto;height : 190px }
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
-	.center h1 {line-height : 0px;}
 	.rslides {width:100%;height:410px;padding : 20px 5px}
 	.block {width : 81%}
 	 .rslides .images {width : 85%;padding-left:25%}
@@ -288,22 +232,26 @@
 	.center {width: 90%;margin-left:2px}
 	.rslides {width:100%;height:420px;margin-top:0px;padding : 30px 5px}
 	.block {width : 99%}
-	.center h1 {line-height : 0px;}
 	.rslides .images {width : 85%;padding-left:20%}
 	 .rslides .images img {height : 128px;width:128px}
 	 .center h1 {font-size : 2em}
+	 .module { width : 49%;margin-left : auto;margin-right : auto;height : 240px }
+	 .modules {padding : 5px;}
+	 .modules h1 {margin-top : 40px;}
 }
 @media(max-width:640px){
 	.rslides {height:440px;padding : 20px 5px}
 	.video,.testimonials {display:block;width:98%;}
 	.testimonials {margin-top : 10px;padding-bottom:15px}
 	.center {width: 99.5%;}
-	 .center h1 {line-height : 40px;margin-bottom:15px}
 	 .rslides .images {width : 85%;padding-left:10%}
 	 .rslides .images img {height : 128px;width:128px}
+	 .module { width : 95%;margin-left : auto;margin-right : auto;height : 190px }
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
+	 .rslides h1 {margin-bottom :15px}
+	 .button.wizard{margin-top : -130px}
 	.rslides {height:350px}
 	.rslides .images {display : none}
 }

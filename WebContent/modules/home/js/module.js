@@ -71,8 +71,8 @@ app.ready(function(){
 		});
 		speak(text);
 	});
-	$("article span.voice").click(function(){
-		var text = $(this).parent().parent().parent().find("p").html();
+	$(".module span.voice").click(function(){
+		var text = $(this).parent().parent().find("p").html();
 		speak(text);
 	});
 	$(".button.wizard").fadeIn(2000);

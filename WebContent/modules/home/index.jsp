@@ -138,30 +138,20 @@
 	</div>
 </div>
 </div>
+<div class=" modules">
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
-
-<section class="ac-container center">
 <s:iterator value="moduleManager.backendModules">
-<div>
-	<input id="${id}" name="${id}" type="checkbox" />
-	<label class="text-right" for="${id}"><i class="fa fa-puzzle-piece"></i>${name}</label>
-	<article class="ac-small module">
-	    <div>
-	 	<img src="modules/${folder.name}/images/icon-32.png"/>
-	 	<span>${description}<span class="voice fa fa-microphone" title="information">&nbsp;</span></span>
-  		</div>
-		<p>${details}</p>
-	</article>
+<div class="module bgcolor">
+	<img src="modules/${folder.name}/images/icon-32.png"/>
+	<label>${name}<span class="voice fa fa-microphone" title="information">&nbsp;</span></label>
+	<p>${details}</p>
 </div>
 </s:iterator>
-				
-</section>
-
-
+</div>
 </div>
 <div class="center">
-<div class="center">
+<div class="center browser">
 <p>
 <h2>${app_name} is tested with the following browser</h2>
     <ul class="list">
