@@ -14,7 +14,7 @@
   
   <context-param>
      <param-name>app_description</param-name>
-     <param-value>Customer Relation Management Software as a Service for managing your structure.</param-value>
+     <param-value>Customer Relationship Management Software as a Service for managing your structure.</param-value>
   </context-param>
   
   <context-param>
