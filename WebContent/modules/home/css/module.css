@@ -101,6 +101,7 @@
 	border-radius : 5px;
 	display : none;
 	background : #06d0d8;
+	z-index : 99999;
 }
 
 .button.wizard .fa-play {
