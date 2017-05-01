@@ -21,7 +21,7 @@ var speak = function(text) {
 app.ready(function(){
 	page.wait();
 	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", function() {
-		const items = ['lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
+		const items = ['rotateIn','flipInX','lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
 		               ,'jackInTheBox','flash','swing','fadeInUpBig'];
 		$(".rslides").responsiveSlides({
 			  auto: true,             // Boolean: Animate automatically, true or false
@@ -38,7 +38,7 @@ app.ready(function(){
 			  }
 		});
 		$(".rslides img").addClass("animated "+items[0]);
-		$(".button").addClass("animated jello");
+		$(".button,a").addClass("animated jello");
 		$(".pager-placeholder").css("height","20px");
 		page.release();
 	 });
