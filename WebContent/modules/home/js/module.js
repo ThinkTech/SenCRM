@@ -66,17 +66,17 @@ app.ready(function(){
 		const div = $(".modules");
 		$("html, body").animate({ scrollTop: div.offset().top }, 500);
 	});
+	var clicked = false;
 	$(window).scroll(function(){
-		  this.clicked = false;
 		  const div = $(".modules");
 		  if($(this).scrollTop() >= div.offset().top-50) {
 		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 		  }
 		  const button = $("div.wizard .signup");
 		  if($(this).scrollTop() >= button.offset().top-300) {
-			if(!this.clicked) {
+			if(!clicked) {
 				button.click();
-				this.clicked = true;
+				clicked = true;
 			}
 		  }
 	});
