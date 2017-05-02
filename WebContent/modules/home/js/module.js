@@ -70,11 +70,15 @@ app.ready(function(){
 		  if($(this).scrollTop() >= div.offset().top-50) {
 		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 		  }
+		  const button = $("div.wizard .signup");
+		  if($(this).scrollTop() >= button.offset().top-200) {
+			button.click();
+		  }
 	});
 	$("div.registration input,div.registration select").attr("disabled","disabled");
 	$("div.wizard .signup").click(function(){
 		head.load( "modules/registration/css/module.css","modules/registration/js/module.js",function() {
-			$("div.registration").css("opacity",1).addClass("animated jackInTheBox");
+			$("div.registration").css("opacity","0.3").addClass("animated fadeIn jackInTheBox");
 			$("div.registration input,div.registration select").removeAttr("disabled");
 			$("div.registration input:first").focus();
 		});
