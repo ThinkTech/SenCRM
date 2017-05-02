@@ -47,6 +47,7 @@ app.ready(function(){
 			text += $(".sign a",element).text();
 		});
 		page.speak(text);
+		return false;
 	});
 	$(".slider-audio span.voice").click(function(){
 		var text = "";
