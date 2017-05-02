@@ -190,8 +190,8 @@
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the country of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label title="City" class="required text-right"><i class="fa fa-globe"></i>City :</label>
-		<input  required title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
+		<label title="City" class="text-right"><i class="fa fa-globe"></i>City :</label>
+		<input  title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
 	    

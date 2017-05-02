@@ -175,12 +175,6 @@
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your last name." title="information">&nbsp;</span>
 	    
 	    
-		<label title="Profession" class="text-right"><i class="fa fa-id-card"></i>Profession : </label>
-		<input title="Profession" name="user.profession" maxlength="100" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your profession.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your profession." title="information">&nbsp;</span>
-	    
-	    
 	    <label title="Email" class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input required title="Email" name="user.email" maxlength="100" type="email"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your email address.">&nbsp;</span>
@@ -221,23 +215,7 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the name of your structure.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the name of your structure." title="information">&nbsp;</span>
 	    
-	    
-		<label title="Acronym" class="text-right">Acronym : </label>
-		<input title="Acronym" name="account.structure.acronym" maxlength="30" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the acronym of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is not required and you must enter the acronym of your structure." title="information">&nbsp;</span>
-	    
-	    
-		<label title="Type" class="required text-right">Type :</label>
-		<select title="Type" name="account.structure.type">
-		 	<option value="1">Company</option>
-		 	<option value="2">Organization</option>
-		 	<option value="3">Government</option>
-		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the type of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the type of your structure." title="information">&nbsp;</span>
-	    
-	    
+	   
 		<label title="Primary Business" class="required text-right">Primary Business :</label>
 		<select title="Primary Business" name="account.structure.business">
 		    <option value="1">Accommodations</option>
@@ -310,30 +288,7 @@
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the size of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label title="State" class="required text-right">State :</label>
-		<select title="State" name="account.structure.state">
-		    <option value="1">seed</option>
-		 	<option value="2">rising</option>
-		 	<option value="3" selected>growing</option>
-		 	<option value="4">strong</option>
-		 	<option value="5">struggling</option>
-		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the state of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the state of your structure." title="information">&nbsp;</span>
-	    
-	    
-		<label title="Target" class="required text-right">Target :</label>
-		<select title="Target" name="account.structure.target">
-		 	<option value="1">Companies</option>
-		 	<option value="2">Organizations</option>
-		 	<option value="3">Governments</option>
-		 	<option value="4">Communities</option>
-		 	<option value="5">all</option>
-		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the target of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the target of your structure." title="information">&nbsp;</span>
-	    
-	    
+		  
 		<label title="Country" class="required text-right"><i class="fa fa-globe"></i>Country :</label>
 		<select class="country" required title="Country" name="account.structure.address.country">
 		</select>
@@ -341,18 +296,12 @@
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the country of your structure." title="information">&nbsp;</span>
 	    
 	    
-		<label title="City" class="required text-right"><i class="fa fa-globe"></i>City :</label>
-		<input  required title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
+		<label title="City" class="text-right"><i class="fa fa-globe"></i>City :</label>
+		<input title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
 	    
-	    
-		<label title="Address" class="text-right"><i class="fa fa-globe"></i>Address :</label>
-		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is not required and you must enter the address of your structure." title="information">&nbsp;</span>
-	    
-	    
+	   
 	</fieldset>
 	
 	</section>

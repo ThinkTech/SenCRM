@@ -101,6 +101,7 @@ app.ready(function(){
 			});
 			$("section",form).css("opacity","1").css("margin-top","0px");
 			$("input:first",form).focus();
+			page.release();
 		 });
 	});
 	form.on("submit",function(event){

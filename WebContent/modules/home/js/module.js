@@ -25,7 +25,6 @@ app.ready(function(){
 		});
 		$(".rslides p,.rslides h1").addClass("animated "+items[0]);
 		$(".rslides img").addClass("animated "+items[0]);
-		$(".button,a").addClass("animated jello");
 		page.release();
 	 });
 	const testimonials = $(".testimonial");
