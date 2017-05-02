@@ -1,28 +1,10 @@
-var speak = function(text) {
-	var msg = new SpeechSynthesisUtterance();
-	msg.text = text;
-	var voices = speechSynthesis.getVoices();
-	msg.voice = voices[4];
-	msg.lang = 'en-US';
-	msg.rate = 0.8;
-	msg.pitch = 0.65;
-	window.speechSynthesis.speak(msg);
-	function resumeInfinity() {
-	    window.speechSynthesis.resume();
-	    timeoutResumeInfinity = setTimeout(resumeInfinity, 1000);
-	}
-	msg.onstart = function(event) {
-	    resumeInfinity();
-	};
-	msg.onend = function(event) {
-	    clearTimeout(timeoutResumeInfinity);
-	};
-};
 app.ready(function(){
 	page.wait();
 	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", function() {
 		const items = ['rotateIn','flipInX','lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
-		               ,'jackInTheBox','flash','swing','fadeInUpBig'];
+		               ,'jackInTheBox','flash','swing','fadeInUpBig','rotateInDownLeft','rotateInDownRight','rotateInUpLeft','rotateInUpRight',
+		               'zoomInDown','zoomInLeft','zoomInRight','zoomInUp','bounceIn','bounceInDown',
+		               'bounceInLeft','bounceInRight','bounceInUp'];
 		$(".rslides").responsiveSlides({
 			  auto: true,             // Boolean: Animate automatically, true or false
 			  speed: 400,            // Integer: Speed of the transition, in milliseconds
@@ -64,18 +46,18 @@ app.ready(function(){
 			text += $("p",element).html();
 			text += $(".sign a",element).text();
 		});
-		speak(text);
+		page.speak(text);
 	});
 	$(".pager-placeholder span.voice").click(function(){
 		var text = "";
 		$(".rslides p").each(function(index,element){
 			text += $(element).html();
 		});
-		speak(text);
+		page.speak(text);
 	});
 	$(".module span.voice").click(function(){
 		var text = $(this).parent().parent().find("p").html();
-		speak(text);
+		page.speak(text);
 	});
 	$(".button.wizard").fadeIn(2000).click(function(){
 		const div = $(".modules");

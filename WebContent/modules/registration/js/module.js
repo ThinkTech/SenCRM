@@ -46,7 +46,8 @@ app.ready(function(){
 					        	const val = $(element).val();
 								if(val.trim() == '') {
 									$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
-									alert("this field is required",function(){
+									const message = $(this).next().attr("data-info");
+									alert(message,function(){
 										$(element).addClass("error").focus();
 									});
 								    return valid = false;
@@ -154,24 +155,7 @@ app.ready(function(){
 	});
 	$(".voice").click(function(){
 		const info = $(this).attr("data-info");
-		var msg = new SpeechSynthesisUtterance();
-		msg.text = info;
-		var voices = speechSynthesis.getVoices();
-		msg.voice = voices[4];
-		msg.lang = 'en-US';
-		msg.rate = 0.8;
-		msg.pitch = 0.65;
-		window.speechSynthesis.speak(msg);
-		function resumeInfinity() {
-		    window.speechSynthesis.resume();
-		    timeoutResumeInfinity = setTimeout(resumeInfinity, 1000);
-		}
-		msg.onstart = function(event) {
-		    resumeInfinity();
-		};
-		msg.onend = function(event) {
-		    clearTimeout(timeoutResumeInfinity);
-		};
+		page.speak(info);
 	});
 	$("span.wrench").click(function(event){
 		const radio = $("input[type='radio'][value='private']");

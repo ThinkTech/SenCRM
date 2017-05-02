@@ -178,6 +178,27 @@ page.highlight = function() {
 	if($("aside a.active").length>1) $("aside a.active:first").removeClass("active");
 };
 
+page.speak = function(text) {
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text;
+	var voices = speechSynthesis.getVoices();
+	msg.voice = voices[4];
+	msg.lang = 'en-US';
+	msg.rate = 0.8;
+	msg.pitch = 0.65;
+	window.speechSynthesis.speak(msg);
+	function resumeInfinity() {
+	    window.speechSynthesis.resume();
+	    timeoutResumeInfinity = setTimeout(resumeInfinity, 1000);
+	}
+	msg.onstart = function(event) {
+	    resumeInfinity();
+	};
+	msg.onend = function(event) {
+	    clearTimeout(timeoutResumeInfinity);
+	};
+};
+
 page.init = function() {
 	$("body").append('<div id="wait"><div id="loader"/></div>');
 	$("body").append('<div id="alert-dialog-container">'+
