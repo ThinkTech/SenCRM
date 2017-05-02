@@ -138,6 +138,13 @@ header {
     margin: 1em auto;
     background:#000;
 }
+
+footer {
+	width : 100%;
+	color : #fff;
+	height : 350px;
+	margin-top : 70px;
+}
 h1.agile_head {
 	font-size: 2.5em;
     text-transform: uppercase;
@@ -327,9 +334,7 @@ div.search i {
 .agileits_w3layouts_copyright  p,.agileits_w3layouts_copyright  a{
 	font-size: 15px;
 }
-.agileits_w3layouts_copyright  p{
-    color: #000;
-}
+
 .agileits_w3layouts_copyright  a{
     color: #00BCD4;
 }

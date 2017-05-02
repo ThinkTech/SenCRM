@@ -157,6 +157,10 @@ div.wizard {
 	margin-top: 90px;
 }
 
+.modules .center {
+	width : 85%
+}
+
 .module {
 	width : 32%;
 	display : inline-block;
@@ -294,6 +298,7 @@ div.wizard {
 	 .rslides .images img {height : 128px;width:128px}
 	  .module { width : 49%;margin-left : auto;margin-right : auto;height : 250px }
 	  .module p {height : 150px}
+	  .modules .center {width : 78%}
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
@@ -302,6 +307,7 @@ div.wizard {
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
 	 .button.wizard{margin-top : -160px}
+	 .modules .center {width : 99%}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
@@ -314,6 +320,7 @@ div.wizard {
 	 .modules {padding : 5px;}
 	 .module p {height : 160px}
 	 .modules h1 {margin-top : 40px;}
+	 .modules .center {width : 99%}
 }
 @media(max-width:640px){
 	.rslides {height:440px;padding : 20px 5px}
@@ -334,12 +341,16 @@ div.wizard {
 	.rslides .images {display : none}
 	div.wizard {padding-bottom:20px}
 	.button.signup {font-size : 1em;}
+	.modules .center {width : 95%}
+	.module p {height : 150px}
+	.module { height : 270px }
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
 	.button.wizard{margin-top : -220px}
 	.module p {height : 150px}
 	.module { height : 270px }
+	.modules .center {width : 95%}
 }
 @media(max-width:320px ){
 }
