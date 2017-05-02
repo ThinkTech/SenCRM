@@ -210,7 +210,7 @@ div.wizard {
     font-weight : bold;
 }
 
-.module .subscribe, .module .required {
+.module .subscribe, .module .required,.module .subscribed {
     display: inline-block;
     color: #fff;
     padding: 5px;
@@ -232,6 +232,11 @@ div.wizard {
 	color : #222;
 	background : #efe9e9;
 	cursor : default;
+}
+
+.module .subscribed {
+	color : #222;
+	background : #efe9e9;
 }
 
 .registration {

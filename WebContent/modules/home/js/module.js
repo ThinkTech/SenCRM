@@ -90,4 +90,16 @@ app.ready(function(){
 	});
 	$("div.wizard .signup").click(function(){
 		$("div.registration input:first").focus();
-	});});
+	});
+	$(".module .subscribe").click(function(){
+		if($(this).hasClass("subscribe")) {
+			$(this).removeAttr('class').addClass("animated flash subscribed");
+			$("i",this).removeAttr('class').addClass("fa fa-check-square-o");
+			$("span",this).html("Subscribed");
+		}else {
+			$(this).removeAttr('class').addClass("animated pulse subscribe");
+			$("i",this).removeAttr('class').addClass("fa fa-shopping-cart");
+			$("span",this).html("Subscribe");
+		}
+	});
+});
