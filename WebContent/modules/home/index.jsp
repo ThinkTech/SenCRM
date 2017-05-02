@@ -414,7 +414,7 @@
 	<div>
 	   <p>
 	      <input title="Mailing list subscription" value="true" name="registration.mailing" type="checkbox" checked/> 
-		  <span title="Mailing list subscription">Yes, send me emails on ThinkTech Products, Services and Events.
+		  <span class="mailing" title="Mailing list subscription">Yes, send me emails on ThinkTech Products, Services and Events.
 		  <i class="info fa fa-info adjust"  data-info="Check this field to receive emails on ThinkTech Products, Services and Events.">&nbsp;</i>
 	      <i class="voice fa fa-microphone adjust"  data-info="Check this field to receive emails on ThinkTech Products, Services and Events." title="information">&nbsp;</i>
 		  </span> 
