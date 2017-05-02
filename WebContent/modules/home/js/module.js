@@ -71,12 +71,14 @@ app.ready(function(){
 		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 		  }
 	});
+	$("div.registration input,div.registration select").attr("disabled","disabled");
 	$("div.wizard .signup").click(function(){
 		page.wait();
 		head.load( "modules/registration/css/module.css","modules/registration/js/module.js",function() {
 			$("div.registration").css("opacity",1).addClass("animated jackInTheBox");
-			$("div.registration input:first").focus();
+			$("div.registration input,div.registration select").removeAttr("disabled");
 			page.release();
+			$("div.registration input:first").focus();
 		});
 	});
 	$("html, body").animate({ scrollTop: 0 }, 500);
