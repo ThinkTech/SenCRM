@@ -84,7 +84,7 @@ app.ready(function(){
 		head.load("modules/registration/css/module.css","modules/registration/js/module.js",function() {
 			$("div.registration").css("opacity","0.3").addClass("animated fadeIn jackInTheBox");
 			$("div.registration input,div.registration select").removeAttr("disabled");
-			$("div.registration input:first").focus();
+			$("select[name='account.structure.size']").val("2").trigger("change");
 		});
 	});
 	$("div.wizard .signup").click(function(){
