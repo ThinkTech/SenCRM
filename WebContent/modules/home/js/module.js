@@ -73,11 +73,9 @@ app.ready(function(){
 	});
 	$("div.registration input,div.registration select").attr("disabled","disabled");
 	$("div.wizard .signup").click(function(){
-		page.wait();
 		head.load( "modules/registration/css/module.css","modules/registration/js/module.js",function() {
 			$("div.registration").css("opacity",1).addClass("animated jackInTheBox");
 			$("div.registration input,div.registration select").removeAttr("disabled");
-			page.release();
 			$("div.registration input:first").focus();
 		});
 	});
