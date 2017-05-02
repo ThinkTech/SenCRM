@@ -1,4 +1,5 @@
 app.ready(function(){
+	$("html, body").animate({ scrollTop: 0 }, 500);
 	page.wait();
 	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", 
 			"modules/registration/css/module.css","modules/registration/js/module.js",function() {
@@ -66,22 +67,27 @@ app.ready(function(){
 		$("html, body").animate({ scrollTop: div.offset().top }, 500);
 	});
 	$(window).scroll(function(){
+		  this.clicked = false;
 		  const div = $(".modules");
 		  if($(this).scrollTop() >= div.offset().top-50) {
 		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 		  }
 		  const button = $("div.wizard .signup");
-		  if($(this).scrollTop() >= button.offset().top-200) {
-			button.click();
+		  if($(this).scrollTop() >= button.offset().top-300) {
+			if(!this.clicked) {
+				button.click();
+				this.clicked = true;
+			}
 		  }
 	});
 	$("div.registration input,div.registration select").attr("disabled","disabled");
-	$("div.wizard .signup").click(function(){
-		head.load( "modules/registration/css/module.css","modules/registration/js/module.js",function() {
+	$("div.wizard .signup").one("click",function(){
+		head.load("modules/registration/css/module.css","modules/registration/js/module.js",function() {
 			$("div.registration").css("opacity","0.3").addClass("animated fadeIn jackInTheBox");
 			$("div.registration input,div.registration select").removeAttr("disabled");
 			$("div.registration input:first").focus();
 		});
 	});
-	$("html, body").animate({ scrollTop: 0 }, 500);
-});
+	$("div.wizard .signup").click(function(){
+		$("div.registration input:first").focus();
+	});});
