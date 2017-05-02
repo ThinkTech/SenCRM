@@ -104,6 +104,20 @@
 	z-index : 99999;
 }
 
+div.wizard {
+	text-align:center;
+	padding-top : 40px;
+	padding-bottom : 30px;
+}
+
+.button.signup {
+	float : none;
+	text-align : center;
+	padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .button.wizard .fa-play {
 	margin-left : 8px;
 }
@@ -188,7 +202,7 @@
     padding-top: 6px;
     font-size: 65%;
     border: 1px solid;
-    width: 90px;
+    width: 70px;
     height: 34px;
     vertical-align: top;
     white-space: nowrap;
@@ -220,6 +234,12 @@
 	background : #efe9e9;
 	cursor : default;
 }
+
+.registration {
+	opacity : 0;
+}
+
+
 .block {
 	width : 60%;
 	margin : auto;
@@ -303,13 +323,13 @@
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
 	 .rslides h1 {margin-bottom :15px}
-	 .button.wizard{margin-top : -200px}
+	 .button.wizard{margin-top : -230px}
 	.rslides {height:350px}
 	.rslides .images {display : none}
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
-	.button.wizard{margin-top : -150px}
+	.button.wizard{margin-top : -220px}
 	.module p {height : 150px}
 	.module { height : 270px }
 }

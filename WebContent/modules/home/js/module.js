@@ -1,6 +1,7 @@
 app.ready(function(){
 	page.wait();
-	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", function() {
+	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", 
+			"modules/registration/css/module.css","modules/registration/js/module.js",function() {
 		const items = ['rotateIn','flipInX','lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
 		               ,'jackInTheBox','flash','swing','fadeInUpBig','rotateInDownLeft','rotateInDownRight','rotateInUpLeft','rotateInUpRight',
 		               'zoomInDown','zoomInLeft','zoomInRight','zoomInUp','bounceIn','bounceInDown',
@@ -70,4 +71,13 @@ app.ready(function(){
 		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 		  }
 	});
+	$("div.wizard .signup").click(function(){
+		page.wait();
+		head.load( "modules/registration/css/module.css","modules/registration/js/module.js",function() {
+			$("div.registration").css("opacity",1).addClass("animated jackInTheBox");
+			$("div.registration input:first").focus();
+			page.release();
+		});
+	});
+	$("html, body").animate({ scrollTop: 0 }, 500);
 });

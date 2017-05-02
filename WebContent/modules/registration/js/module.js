@@ -146,18 +146,19 @@ app.ready(function(){
 			$("#amount").html(amount.toString().formatDigits());
 		});
     });
-	$("span.price").each(function(index,element){
+	$("span.price",form).each(function(index,element){
 		$(this).html($(this).html().formatDigits());
 	});
-	$(".info").click(function(){
+	$(".info",form).click(function(){
 		const info = $(this).attr("data-info");
 		alert(info);
 	});
-	$(".voice").click(function(){
+	$(".voice",form).click(function(){
 		const info = $(this).attr("data-info");
+		console.log(info);
 		page.speak(info);
 	});
-	$("span.wrench").click(function(event){
+	$("#form span.wrench").click(function(event){
 		const radio = $("input[type='radio'][value='private']");
 		radio.attr('checked', true).trigger('change');
 		const id = $(this).attr("data-element");
@@ -167,12 +168,11 @@ app.ready(function(){
 		settings.css({top : top, left : 50}).toggle();
 		if(!settings.is(":hidden")){
 			$("input:first",settings).focus();
-			$("html, body").animate({ scrollTop: top }, 500);
 			$(".settings input:first").trigger("change");
 		}
 		return false;
 	});
-	$(".settings input").on("change",function(event){
+	$("#form .settings input").on("change",function(event){
 		const val = parseInt($(this).val());
 		if(val>=0) {
 			const action = $(this).attr("data-action")+"("+val+");";
