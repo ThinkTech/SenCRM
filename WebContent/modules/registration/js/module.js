@@ -151,11 +151,14 @@ app.ready(function(){
 	});
 	$(".info",form).click(function(){
 		const info = $(this).attr("data-info");
-		alert(info);
+		const input = $(this).prev();
+		alert(info,function(){
+			input.focus();
+		});
 	});
 	$(".voice",form).click(function(){
 		const info = $(this).attr("data-info");
-		console.log(info);
+		$(this).prev().prev().focus();
 		page.speak(info);
 	});
 	$("#form span.wrench").click(function(event){
