@@ -92,16 +92,22 @@ app.ready(function(){
 		$("div.registration input:first").focus();
 	});
 	$(".module .subscribe").click(function(){
-		if($(this).hasClass("subscribe")) {
-			$(this).removeAttr('class').addClass("animated flash subscribed");
-			$("i",this).removeAttr('class').addClass("fa fa-check-square-o");
-			$("span",this).html("Subscribed");
-			$("input[type=checkbox][value="+$(this).attr("data-id")+"]").attr("checked","checked");
+		const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");
+		input[0].checked = !input.is(":checked") ? true : false;
+	    input.trigger("change");
+	});
+	
+	$("input[type=checkbox]").on("change",function(){
+		const val = $(this).val();
+		const span = $(".module span[data-id="+val+"]");
+		if(span.hasClass("subscribe")) {
+			span.removeAttr('class').addClass("animated flash subscribed");
+			$("i",span).removeAttr('class').addClass("fa fa-check-square-o");
+			$("span",span).html("Subscribed");
 		}else {
-			$(this).removeAttr('class').addClass("animated pulse subscribe");
-			$("i",this).removeAttr('class').addClass("fa fa-shopping-cart");
-			$("span",this).html("Subscribe");
-			$("input[type=checkbox][value="+$(this).attr("data-id")+"]").removeAttr("checked");
+			span.removeAttr('class').addClass("animated pulse subscribe");
+			$("i",span).removeAttr('class').addClass("fa fa-shopping-cart");
+			$("span",span).html("Subscribe");
 		}
 	});
 });
