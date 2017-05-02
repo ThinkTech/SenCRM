@@ -155,7 +155,7 @@
 </s:iterator>
 </div>
 <div class="wizard">
-   <a title="Sign up" class="button signup"><i class="fa fa-user"></i>SIGN UP</a>
+   <a title="Sign up" class="button signup"><i class="fa fa-user"></i>CREATE YOUR ACCOUNT</a>
 </div>
 <div class="content">
 <div class="registration">
