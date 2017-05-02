@@ -96,10 +96,12 @@ app.ready(function(){
 			$(this).removeAttr('class').addClass("animated flash subscribed");
 			$("i",this).removeAttr('class').addClass("fa fa-check-square-o");
 			$("span",this).html("Subscribed");
+			$("input[type=checkbox][value="+$(this).attr("data-id")+"]").attr("checked","checked");
 		}else {
 			$(this).removeAttr('class').addClass("animated pulse subscribe");
 			$("i",this).removeAttr('class').addClass("fa fa-shopping-cart");
 			$("span",this).html("Subscribe");
+			$("input[type=checkbox][value="+$(this).attr("data-id")+"]").removeAttr("checked");
 		}
 	});
 });

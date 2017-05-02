@@ -148,7 +148,7 @@
 	<p>${details}</p>
 	<div>
 	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
-	<span class="subscribe"  title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span>Subscribe</span></span>
+	<span class="subscribe" data-id="${id}" title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span>Subscribe</span></span>
 	<span class="required"  title="Required" style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i>Required</span>
 	</div>
 </div>
