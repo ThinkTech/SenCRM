@@ -301,6 +301,12 @@
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
 	    
+	    <label title="Address" class="text-right"><i class="fa fa-globe"></i>Address :</label>
+		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
+		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure.">&nbsp;</span>
+	    <span class="voice fa fa-microphone"  data-info="This field is not required and you must enter the address of your structure." title="information">&nbsp;</span>
+	    
+	  
 	   
 	</fieldset>
 	
