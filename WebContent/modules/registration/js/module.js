@@ -124,7 +124,7 @@ app.ready(function(){
 		const checked = $(element).attr("data-checked");
 		if(checked=='true') {
 			$(element).attr("checked","true").on('change', function() {
-			    this.checked=!this.checked?!alert('this option is mandatory'):true;
+			    this.checked=!this.checked?!alert('this option is required'):true;
 			});
 		}else {
 			$(element).on('change', function() {

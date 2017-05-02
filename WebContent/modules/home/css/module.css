@@ -149,6 +149,7 @@
 	height : 250px;
 	margin-top : 15px;
 	padding : 15px 5px;
+	opacity : 0;
 }
 
 .module img {
@@ -309,6 +310,8 @@
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
 	.button.wizard{margin-top : -150px}
+	.module p {height : 150px}
+	.module { height : 270px }
 }
 @media(max-width:320px ){
 }

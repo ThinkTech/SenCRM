@@ -81,4 +81,10 @@ app.ready(function(){
 		const div = $(".modules");
 		$("html, body").animate({ scrollTop: div.offset().top }, 500);
 	});
+	$(window).scroll(function(){
+		  const div = $(".modules");
+		  if($(this).scrollTop() >= div.offset().top-50) {
+		    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
+		  }
+	});
 });
