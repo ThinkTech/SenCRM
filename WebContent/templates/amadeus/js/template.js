@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	window.scollTop(0);
 	//Horizontal Tab
 	$('#parentHorizontalTab_agile').easyResponsiveTabs({
 		type: 'default', //Types: default, vertical, accordion
