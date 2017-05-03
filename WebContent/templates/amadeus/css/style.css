@@ -150,7 +150,7 @@ footer {
 }
 
 footer h1 {
-	padding: 60px 20px;
+	padding: 60px 0px;
     padding-bottom: 22px;
 	font-size : 2em;
 	text-shadow : none;
@@ -165,12 +165,35 @@ footer h1 {
 footer ul {
 	text-align : left;
 	width : auto;
-	padding: 0px 50px;
+	padding: 0px 32px;
 }
 
 footer li {
 	font-size: 1.2em;
     font-weight: bold;
+}
+
+.newsletter {
+	text-align : left;
+}
+
+.newsletter input {
+	display : inline-block;
+}
+
+.newsletter input[type=text] {
+	height : 33px;
+	border : 1px solid #06d0d8;
+	font-size : 90%;
+	padding-left : 5px;
+	width : 60%;
+}
+
+.newsletter input[type=submit] {
+	margin-left : 5px;
+	margin-top : 0px;
+	position: relative;
+    top: 0.49px;
 }
 
 h1.agile_head {
@@ -418,7 +441,7 @@ div.search i {
 	.aside {padding-left:2px;clear:both;position : initial;width:auto}
 	.aside a {display:inline-block}
 	header {height : 120px}
-	.footer-item {width:50%}
+	.footer-item {width:65%}
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {
@@ -500,6 +523,7 @@ div.search i {
 	
 	#wait {padding-top : 50%;padding-left : 35%}
     div.search i {margin-left : 30px}
+    .footer-item {width:100%}
 }
 @media screen and (max-width: 414px){
 	

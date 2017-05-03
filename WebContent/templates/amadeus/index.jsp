@@ -59,6 +59,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li>Understanding ${app_name}</li>
        <li>How ${app_name} works</li>
        <li>How to use ${app_name}</li>
+       <li>Customers</li>
+       <li>Partners</li>
      </ul>
    </div>
    <div class="footer-item">
@@ -66,6 +68,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      <ul>
        <li>Pricing</li>
        <li>Documentation</li>
+       <li>Blog</li>
        <li>Support</li>
        <li>Community</li>
        <li>News</li>
@@ -74,6 +77,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    </div>
    <div class="footer-item">
      <h1>Subscribe to the news</h1>
+     <div class="newsletter">
+       <input type="text" placeholder="Your email address" title="Your email address"/>
+       <input type="submit" value="Subscribe" title="Subscribe"/>
+     </div>
    </div>
    <div class="agileits_w3layouts_copyright text-center">
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
