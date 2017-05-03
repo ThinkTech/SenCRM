@@ -142,14 +142,14 @@ header {
 
 .content {
 	background : #ccc;
-	 min-height : 500px;
+	 min-height : 540px;
 	 padding-top : 10px;
 	 padding-bottom : 30px;
 }
 
 .wrap {
 	padding: 1.5em;
-    width: 32%;
+    width: 31%;
     margin: 1em auto;
     background:#000;
 }
@@ -158,7 +158,6 @@ footer {
 	width : 100%;
 	color : #fff;
 	height : 110%;
-	margin-top : 70px;
 	text-align : center;
 	padding-left : 5%;
 	padding-right : 5%;
