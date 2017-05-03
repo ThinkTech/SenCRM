@@ -1,5 +1,5 @@
 app.ready(function(){
-	$("html, body").animate({ scrollTop: 0 }, 500);
+	$("html, body").animate({ scrollTop: 0 }, 0);
 	page.wait();
 	head.load("modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css", 
 			"modules/registration/css/module.css","modules/registration/js/module.js",function() {

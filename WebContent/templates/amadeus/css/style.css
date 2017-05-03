@@ -142,13 +142,16 @@ header {
 footer {
 	width : 100%;
 	color : #fff;
-	height : 350px;
+	height : 110%;
 	margin-top : 70px;
 	text-align : center;
+	padding-left : 5%;
+	padding-right : 5%;
 }
 
 footer h1 {
-	padding : 40px 20px;
+	padding: 60px 20px;
+    padding-bottom: 22px;
 	font-size : 2em;
 	text-shadow : none;
 }
@@ -156,6 +159,18 @@ footer h1 {
 .footer-item {
 	display : inline-block;
 	width : 30%;
+	vertical-align : top;
+}
+
+footer ul {
+	text-align : left;
+	width : auto;
+	padding: 0px 50px;
+}
+
+footer li {
+	font-size: 1.2em;
+    font-weight: bold;
 }
 
 h1.agile_head {

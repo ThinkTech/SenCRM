@@ -55,9 +55,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <footer>
    <div class="footer-item">
      <h1>Getting Started</h1>
+     <ul>
+       <li>Understanding ${app_name}</li>
+       <li>How ${app_name} works</li>
+       <li>How to use ${app_name}</li>
+     </ul>
    </div>
    <div class="footer-item">
      <h1>Quick Links</h1>
+     <ul>
+       <li>Pricing</li>
+       <li>Documentation</li>
+       <li>Support</li>
+       <li>Community</li>
+       <li>News</li>
+       <li>FAQ</li>
+     </ul>
    </div>
    <div class="footer-item">
      <h1>Subscribe to the news</h1>

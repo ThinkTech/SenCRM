@@ -16,8 +16,9 @@
 
 .center h2 {
 	text-transform : capitalize;
-	height : 45px;
+	height : 41px;
 	padding-left : 10px;
+	font-size : 1.4em;
 }
 
 .bgcolor {
@@ -27,6 +28,7 @@
 
 .bgcolor ol {
 	margin-left : 45px;
+	font-size : 97%;
 }
 
 /*--------------------*/
