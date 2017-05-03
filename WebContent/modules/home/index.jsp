@@ -394,7 +394,6 @@
 </div>
 <div class="center">
 <div class="center browser">
-<p>
 <h2>${app_name} is tested with the following browser</h2>
     <ul class="list">
       <li>Chrome 54,55,56</li>
@@ -403,7 +402,6 @@
       <li>Opera 41,42,43</li>
       <li>Edge 12,13,14</li>
     </ul>
-</p>
 </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>

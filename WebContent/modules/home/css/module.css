@@ -274,7 +274,7 @@ div.wizard {
 .testimonials .testimonial:first-of-type {display : block;}
 
 
-.browser {margin-top : 50px;}
+.browser {margin-top : 100px;margin-bottom : 100px;}
 
 /*--------------------*/
 /* Responsive Style */

@@ -73,7 +73,7 @@ h1.header {
     margin-top: 20px;
 }
 
-p{
+ol,ul,p{
 	margin:0;
 	font-family : Lato;
 }
