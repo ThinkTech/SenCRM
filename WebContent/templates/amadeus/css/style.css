@@ -75,7 +75,13 @@ h1.header {
 
 p{
 	margin:0;
+	font-family : Lato;
 }
+
+.rslides p{
+	font-family : Exo;
+}
+
 ul{
 	margin:0;
 	padding:0;
@@ -147,6 +153,7 @@ footer {
 	text-align : center;
 	padding-left : 5%;
 	padding-right : 5%;
+	font-family : Lato;
 }
 
 footer .socials {
@@ -276,6 +283,7 @@ div.search i {
 	padding-top : 15px;
 	z-index : 9999;
 	top: 33%;
+	font-family : Lato;
 }
 
 .aside.right {
@@ -306,6 +314,7 @@ div.search i {
 	border : none;
 	font-size : 80%;
 	color : #f9f4f0;
+	font-family : Lato;
 }
 
 #wait {padding-top : 17%;padding-left : 46%}
