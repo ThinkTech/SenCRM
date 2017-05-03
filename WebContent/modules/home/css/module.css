@@ -50,7 +50,7 @@
 .rslides_tabs li {
 	display : inline-block;
     margin-right: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #cc9a9a;
     font-size : 65%;
     cursor : pointer;
 }
@@ -164,7 +164,7 @@ div.wizard {
 .module {
 	width : 32%;
 	display : inline-block;
-	border : 1px solid;
+	border : 1px solid #cc9a9a;
 	vertical-align : top;
 	height : 300px;
 	margin-top : 15px;
@@ -207,7 +207,7 @@ div.wizard {
     padding: 5px;
     padding-top: 6px;
     font-size: 65%;
-    border: 1px solid;
+    border: 1px solid #cc9a9a;
     width: 65px;
     height: 34px;
     vertical-align: top;
@@ -223,8 +223,8 @@ div.wizard {
     padding: 5px;
     padding-top: 6px;
     font-size: 70%;
-    border: 1px solid #21560a;
-    width: 110px;
+    border: 1px solid #cc9a9a;
+    width: 90px;
     height: 34px;
     vertical-align: top;
     white-space: nowrap;
