@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <id>mod_social</id>
+	<name>social</name>
+	<roles>manager</roles>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>Module for managing your social presence</description>
+	<details>The social module may prove beneficial from a marketing standpoint. Businesses can use the two-way communication of social media to respond to customers quickly and with personalized responses, to boost social presence and solidify relationships.</details>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<price>10</price>
+</module>
