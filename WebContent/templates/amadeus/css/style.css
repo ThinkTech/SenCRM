@@ -76,6 +76,7 @@ h1.header {
 ol,ul,p{
 	margin:0;
 	font-family : Lato;
+	color : #1b100a;
 }
 
 .rslides p{
@@ -133,7 +134,7 @@ header {
 }
 
 .module {
-	background : #f9f4f0;
+	background : #cccccc;
 }
 
 .success {
