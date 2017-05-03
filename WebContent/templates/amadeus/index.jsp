@@ -82,6 +82,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <input type="submit" value="Subscribe" title="Subscribe"/>
      </div>
    </div>
+   <div class="socials">
+	     <a title="facebook"><i class="fa fa-facebook"></i></a>
+	     <a title="twitter"><i class="fa fa-twitter"></i></a>
+	     <a title="youtube"><i class="fa fa-youtube"></i></a>
+	    </div>
    <div class="agileits_w3layouts_copyright text-center">
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
