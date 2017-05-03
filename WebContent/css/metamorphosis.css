@@ -889,17 +889,16 @@ ul.tabs li h2 {
 }
 
 .info[data-info]:hover:after{
-    background: #333;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.95);
     border-radius: 5px;
     color: #fff;
     content: attr(data-info);
-    right: 12%;
+    right: 16%;
     padding: 10px 15px;
     position: absolute;
     z-index: 98;
-    width: 240px;
-    line-height : 1.15em;
+    width: 290px;
+    line-height : 1.2em;
     font-size : 90%;
 }
 
