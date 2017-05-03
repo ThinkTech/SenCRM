@@ -85,9 +85,6 @@ app.ready(function(){
 			$("select[name='account.structure.size']").val("2").trigger("change");
 		});
 	});
-	$("div.wizard .signup").click(function(){
-		$("div.registration input:first").focus();
-	});
 	$(".module .subscribe").click(function(){
 		const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");
 		input[0].checked = !input.is(":checked") ? true : false;

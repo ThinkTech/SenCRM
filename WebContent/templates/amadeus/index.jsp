@@ -53,6 +53,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
    <script src="js/metamorphosis.js"></script>
    <footer>
+   <div class="footer-item">
+     <h1>Getting Started</h1>
+   </div>
+   <div class="footer-item">
+     <h1>Quick Links</h1>
+   </div>
+   <div class="footer-item">
+     <h1>Subscribe to the news</h1>
+   </div>
    <div class="agileits_w3layouts_copyright text-center">
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>

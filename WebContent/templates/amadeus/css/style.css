@@ -118,11 +118,11 @@ header {
 }
 
 .module {
-	background : #fff;
+	background : #fbfbf1;
 }
 
 .success {
-	background-color: #fff;
+	background-color: #fbfbf1;
 }
 
 .content {
@@ -144,7 +144,20 @@ footer {
 	color : #fff;
 	height : 350px;
 	margin-top : 70px;
+	text-align : center;
 }
+
+footer h1 {
+	padding : 40px 20px;
+	font-size : 2em;
+	text-shadow : none;
+}
+
+.footer-item {
+	display : inline-block;
+	width : 30%;
+}
+
 h1.agile_head {
 	font-size: 2.5em;
     text-transform: uppercase;
@@ -335,6 +348,11 @@ div.search i {
 	font-size: 15px;
 }
 
+.agileits_w3layouts_copyright  p {
+	position: relative;
+    top: 137px;
+}
+
 .agileits_w3layouts_copyright  a{
     color: #00BCD4;
 }
@@ -385,6 +403,7 @@ div.search i {
 	.aside {padding-left:2px;clear:both;position : initial;width:auto}
 	.aside a {display:inline-block}
 	header {height : 120px}
+	.footer-item {width:50%}
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {
@@ -446,6 +465,7 @@ div.search i {
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4;}
 	div.search i {margin-left : 35px}
+	.footer-item {width : 90%;}
 }
 @media screen and (max-width: 480px){
 	div.search {display : block;}
