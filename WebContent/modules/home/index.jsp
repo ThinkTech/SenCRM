@@ -154,10 +154,12 @@
 </div>
 </s:iterator>
 </div>
+<div class="content">
+<div class="browser">
 <div class="wizard">
    <a title="Sign up" class="button signup"><i class="fa fa-user"></i>CREATE YOUR ACCOUNT</a>
 </div>
-<div class="content">
+<div>
 <div class="registration">
 <form id="form" action="registration/register" method="post" class="form-horizontal"> 
    <section class="step" data-step-title="Profile">
@@ -392,16 +394,6 @@
 </div>
 </div>
 </div>
-<div class="center">
-<div class="center browser">
-<h2>${app_name} is tested with the following browser</h2>
-    <ul class="list">
-      <li>Chrome 54,55,56</li>
-      <li>Firefox 49,50,51</li>
-      <li>IE 9,10,11</li>
-      <li>Opera 41,42,43</li>
-      <li>Edge 12,13,14</li>
-    </ul>
 </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
