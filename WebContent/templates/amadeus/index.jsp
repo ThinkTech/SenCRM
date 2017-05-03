@@ -78,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      </ul>
    </div>
    <div class="footer-item">
-     <h1>Subscribe to the news</h1>
+     <h1>Subscribe to the newsletter</h1>
      <div class="newsletter">
        <input type="text" placeholder="Your email address" title="Your email address"/>
        <input type="submit" value="Subscribe" title="Subscribe"/>
