@@ -1,3 +1,9 @@
+<div class="buttons">
+    <a title="Documentation" href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
+    <a title="Pricing"  target="_blank"  class="button"><i class="fa fa-money"></i>Pricing</a>
+    <a title="Sign up" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
+    <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
+</div>
 <div class="registration terms">
 <h1 class="text-center"><i class="fa fa-sticky-note-o"></i>Privacy Policy</h1>
 <p class="bgcolor">
@@ -5,13 +11,13 @@ This page informs you of our policies regarding the collection, use and disclosu
 We use your Personal Information only for providing and improving the Site. By using the Site, you
 agree to the collection and use of information in accordance with this policy.
 </p>
-<h2 class="text-center">Information Collection And Use</h2>
+<h2 class="text-center title"><i class="fa fa-commenting"></i>Information Collection And Use</h2>
 <p class="bgcolor">
 While using our Site, we may ask you to provide us with certain personally identifiable information
 that can be used to contact or identify you. Personally identifiable information may include, but is not
 limited to your name ("Personal Information").
 </p> 
-<h2 class="text-center">Log Data</h2>
+<h2 class="text-center title"><i class="fa fa-commenting"></i>Log Data</h2>
 <p class="bgcolor">
 Like many site operators, we collect information that your browser sends whenever you visit our Site
 ("Log Data").
@@ -19,18 +25,18 @@ This Log Data may include information such as your computer's Internet Protocol 
 browser type, browser version, the pages of our Site that you visit, the time and date of your visit,
 the time spent on those pages and other statistics.
 </p>
-<h2 class="text-center">Communications</h2>
+<h2 class="text-center title"><i class="fa fa-commenting"></i>Communications</h2>
 <p class="bgcolor">
 We may use your Personal Information to contact you with newsletters, marketing or promotional
 materials and other information.</p>
-<h2 class="text-center">Security</h2>
+<h2 class="text-center title"><i class="fa fa-commenting"></i>Security</h2>
 <p class="bgcolor">
 The security of your Personal Information is important to us, but remember that no method of
 transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to
 use commercially acceptable means to protect your Personal Information, we cannot guarantee its
 absolute security.
 </p>
-<h2 class="text-center">Changes To This Privacy Policy</h2>
+<h2 class="text-center title"><i class="fa fa-commenting"></i>Changes To This Privacy Policy</h2>
 <p class="bgcolor">
 This Privacy Policy is effective as of 16 april 2017 and will remain in effect except with respect to any
 changes in its provisions in the future, which will be in effect immediately after being posted on this

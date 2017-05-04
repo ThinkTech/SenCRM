@@ -6,15 +6,20 @@
 
 .terms {
 	width : 50%;
+	padding-bottom : 30px;
 }
 
 .terms p {
 	font-size : 95%;
 }
 
-.terms > h1 {
-	padding-top:10px;
+.terms > h2 {
+	width : 90%;
+	margin : auto;
+	margin-bottom : 10px;
+	margin-top:10px;
 }
+
 
 .registration p {
     padding: 20px;
@@ -95,7 +100,7 @@
 
 .success {
 	margin-top : 50px;
-	margin-bottom : 100px;
+	margin-bottom : 195px;
 	width : 50%;
 	border-radius : 5px;
 	border : 1px solid;
