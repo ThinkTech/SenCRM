@@ -28,7 +28,7 @@
 
 .rslides .images {
 	 width : 85%;
-	 padding-left:15%;
+	 padding-left:16%;
 	margin : auto;
 	margin-top : 20px;
 	height : 210px;
@@ -311,7 +311,7 @@ div.wizard {
 
 @media(max-width:1199px ){
 	.rslides {height:450px;padding : 20px 5px}
-	.rslides .images {width : 85%;padding-left:25%}
+	.rslides .images {width : 85%;padding-left:28%}
 	 .rslides .images img {height : 128px;width:128px}
 	.module {height : 330px }
 	.module p {height : 220px}
