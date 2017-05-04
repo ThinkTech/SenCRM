@@ -144,7 +144,7 @@
 <s:iterator value="moduleManager.backendModules">
 <div class="module bgcolor">
 	<img src="modules/${folder.name}/images/icon-32.png"/>
-	<label>${name}<span class="voice fa fa-microphone" title="information">&nbsp;</span></label>
+	<label title="${description}">${name}<span class="voice fa fa-microphone" title="information">&nbsp;</span></label>
 	<p>${details}</p>
 	<div>
 	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>

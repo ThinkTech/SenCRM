@@ -121,7 +121,6 @@ input {
   text-decoration: none;
   width: 50px;
   z-index: 999999999;
-  border:1px solid;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;

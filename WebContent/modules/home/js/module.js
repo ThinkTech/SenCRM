@@ -12,7 +12,10 @@ app.ready(function(){
 			  speed: 400,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 8000,          // Integer: Time between slide transitions, in milliseconds
 			  pager: true,           // Boolean: Show pager, true or false
+			  nav: true,             // Boolean: Show navigation, true or false
 			  pause: true,          // Boolean: Pause on hover, true or false
+			  prevText: "<",   // String: Text for the "previous" button
+			  nextText: ">",       // String: Text for the "next" button
 			  before : function() {
 				  $(".rslides img:visible").removeAttr('class');
 				  var item =  items[Math.floor(Math.random()*items.length)];
