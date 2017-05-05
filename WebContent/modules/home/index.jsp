@@ -282,9 +282,10 @@
 	    
 		<label title="Size" class="required text-right"><i class="fa fa-level-up"></i>Size :</label>
 		<select title="Size" name="account.structure.size">
-		 	<option value="1">small</option>
-		 	<option value="2">medium</option>
-		 	<option value="3">big</option>
+		 	<option value="1">micro</option>
+		 	<option value="2">small</option>
+		 	<option value="3">medium</option>
+		 	<option value="4">big</option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the size of your structure.">&nbsp;</span>
 	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the size of your structure." title="information">&nbsp;</span>
