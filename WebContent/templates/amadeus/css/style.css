@@ -266,6 +266,8 @@ div.search {
     margin-top: 11.4px;
 }
 
+div.search i {margin-left : 1.5%}
+
 div.search input {
 	min-height: 35px;
     font-size: 75%;
@@ -441,7 +443,7 @@ div.search i {
 	.wrap {
      width: 37%;}
      div.search input {width : 330px;}
-     div.search i {margin-left : 2%}
+     div.search i {margin-left : 1.6%}
 }
 
 @media screen and (max-width: 1100px){
@@ -461,7 +463,7 @@ div.search i {
      #wait {padding-top : 27%;padding-left : 45%}
      div.search {display : block;}
 	div.search input {width : 70%;}
-	div.search i {margin-left : 6%}
+	div.search i {margin-left : 5.5%}
 	.aside {padding-left : 20px;}
 	.aside.right {padding-top:0px;margin-top:-15px}
 	.aside a {font-size : 70%;padding:12px}
@@ -491,7 +493,7 @@ div.search i {
 @media screen and (max-width: 736px){
 	.wrap {
      width: 60%;}
-     div.search i {margin-left : 45px}
+     div.search i {margin-left : 37px}
 }
 @media screen and (max-width: 667px){
 	.wrap {
@@ -504,7 +506,7 @@ div.search i {
 	
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4}
-	div.search i {margin-left : 40px}
+	div.search i {margin-left : 37px}
 }
 @media screen and (max-width: 600px){
 	.wrap {
@@ -531,7 +533,7 @@ div.search i {
 	width: 85%;}
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4;}
-	div.search i {margin-left : 35px}
+	div.search i {margin-left : 30px}
 	.footer-item {width : 90%;}
 }
 @media screen and (max-width: 480px){
@@ -551,7 +553,7 @@ div.search i {
 	}
 	
 	#wait {padding-top : 50%;padding-left : 35%}
-    div.search i {margin-left : 30px}
+    div.search i {margin-left : 24px}
     .footer-item {width:100%}
 }
 @media screen and (max-width: 414px){
@@ -590,7 +592,7 @@ div.search i {
 	.wrap {
     width: 95%;
     padding: 1.5em;}
-    div.search i {margin-left : 25px}
+    div.search i {margin-left : 20px}
 }
 @media screen and (max-width: 320px){
 	
