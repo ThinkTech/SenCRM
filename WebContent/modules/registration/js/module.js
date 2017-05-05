@@ -185,7 +185,7 @@ app.ready(function(){
 	});
 	$("select[name='account.structure.size']").on("change",function(event){
 		const val = parseInt($(this).val());
-		if(val==2 || val==3) {
+		if(val==3 || val==4) {
 			$("input[type='radio'][value='colocation']").attr("disabled","disabled");
 			$("input[type='radio'][value='private']").attr("checked","checked").click();
 		}else {
