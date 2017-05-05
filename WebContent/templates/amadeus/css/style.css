@@ -177,6 +177,7 @@ footer h1 {
 	font-size : 2.5em;
 	text-shadow : none;
 	color : #f9f4f0;
+	white-space: nowrap;
 }
 
 .footer-item {
@@ -327,6 +328,7 @@ div.search i {
 	color : #f9f4f0;
 	font-family : Lato;
 }
+
 
 #wait {padding-top : 17%;padding-left : 46%}
 
@@ -507,6 +509,7 @@ div.search i {
 	.agileits_w3layouts_copyright p, .agileits_w3layouts_copyright a {
 	line-height: 1.4}
 	div.search i {margin-left : 37px}
+	
 }
 @media screen and (max-width: 600px){
 	.wrap {

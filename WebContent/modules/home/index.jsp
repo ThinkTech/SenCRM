@@ -397,4 +397,22 @@
 </div>
 </div>
 </div>
+<div class="benefits">
+   <div>
+     <h2><i class="fa fa-money"></i>Build your business</h2>
+     <p>Achieve greater profitability by exploring our cloud opportunities for new ways to optimize your strategy and to boost your business.</p>
+   </div>
+   <div>
+     <h2><i class="fa fa-ticket"></i>Find help when you need it</h2>
+     <p>Get support from our experts through email or live chat. Connect with a community of users through forums, guided courses and events around the world.</p>
+   </div>
+   <div>
+     <h2><i class="fa fa-key"></i>A secure SaaS you can count on</h2>
+     <p>${app_name} will always be available, secure, and your data kept private and automatically backed up. Anti-spam protection is built in its core.</p>
+   </div>
+   <div>
+     <h2><i class="fa fa-magic"></i>Do more with features</h2>
+     <p>Add extra features to your ${app_name} like advanced galleries, forms, charts, polls, sophisticated comments, and much more.</p>
+   </div>
+</div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>

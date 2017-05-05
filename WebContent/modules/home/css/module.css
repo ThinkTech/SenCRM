@@ -274,6 +274,8 @@ div.wizard {
 	background : #efe9e9;
 }
 
+
+
 .registration {
 	opacity : 0;
 }
@@ -304,6 +306,41 @@ div.wizard {
 
 .browser {margin-top : 100px;margin-bottom : 100px;}
 
+.benefits {
+	background : #fff;
+	padding-top : 90px;
+	padding-bottom : 100px;
+	padding-left : 16%;
+}
+
+.benefits div {
+	display : inline-block;
+	width : 45%;
+	vertical-align : top;
+}
+
+.benefits div h2 {
+	margin-bottom : 10px;
+	margin-top : 10px;
+	color : #06d0d8;
+	font-weight : bold;
+}
+
+.benefits div h2 i {
+	position: absolute;
+    margin-top: -7px;
+    font-size: 1.5em;
+    margin-left: -52px;
+    margin-top : 3px;
+    color : #2f2e2d;
+}
+
+.benefits div p {
+	width : 75%;
+	padding-left : 2px;
+}
+
+
 /*--------------------*/
 /* Responsive Style */
 /*--------------------*/
@@ -318,7 +355,9 @@ div.wizard {
 	.button.wizard{margin-top : -235px}
 	.rslides_nav {margin-top: -220px;}
 	.rslides_nav.prev {margin-left : 195px}
-	  .rslides_nav.next {margin-right : 170px}
+	.rslides_nav.next {margin-right : 170px}
+	.benefits {padding-left:20%}
+	.benefits div h2 {padding-right:149px}
 }
 
 @media(max-width:1024px ){
@@ -332,6 +371,8 @@ div.wizard {
 	  .modules .center {width : 78%}
 	  .rslides_nav.prev {margin-left : 195px}
 	  .rslides_nav.next {margin-right : 170px}
+	  .benefits {padding-left:20%}
+	  .benefits div h2 {padding-right:149px}
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
@@ -343,6 +384,9 @@ div.wizard {
 	 .modules .center {width : 99%}
 	 .rslides_nav.prev {margin-left : 20px}
 	 .rslides_nav.next {margin-right : 20px}
+	 .benefits div h2 {font-size:1em;padding-right:75px}
+	  .benefits {padding-left:10%}
+	  .benefits div h2 i {margin-top : 1px;}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
@@ -351,7 +395,8 @@ div.wizard {
 	.rslides .images {width : 85%;padding-left:20%}
 	 .rslides .images img {height : 128px;width:128px}
 	 .center h1 {font-size : 2em}
-	 .module { width : 49%;margin-left : auto;margin-right : auto;height : 300px }
+	 .benefits {padding-left:15%}
+	 .module,.benefits div { width : 49%;margin-left : auto;margin-right : auto;height : 300px }
 	 .modules {padding : 5px;}
 	 .module p {height : 195px}
 	 .modules > h1 {margin-top : 40px;}
@@ -365,9 +410,10 @@ div.wizard {
 	.center {width: 99.5%;}
 	 .rslides .images {width : 85%;padding-left:10%}
 	 .rslides .images img {height : 128px;width:128px}
-	 .module { width : 95%;margin-left : auto;margin-right : auto;height : auto }
+	 .module,.benefits div { width : 95%;margin-left : auto;margin-right : auto;height : auto }
 	 .module p {height : auto;margin-bottom : 20px}
 	 .button.wizard{margin-top : -190px}
+	 .benefits {padding-left:15%}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
