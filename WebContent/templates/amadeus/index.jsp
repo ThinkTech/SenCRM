@@ -64,6 +64,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li>How to use ${app_name}</li>
        <li>Customers</li>
        <li>Partners</li>
+       <li>Terms of Service</li>
+       <li>Privacy Policy</li>
      </ul>
    </div>
    <div class="footer-item">
