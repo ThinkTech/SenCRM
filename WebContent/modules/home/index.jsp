@@ -14,7 +14,7 @@
 				<span>We offer a modular and extensible cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, business intelligence, marketing, sales, commerce and social.</span>
 				<div class="images">
 				     <img src="${images}/help-support-headset-bubble.png" class="animated rollIn"/>
-				     <img src="${images}/customer.png" class="animated shake"/>
+				     <img src="${images}/connection.png" class="animated shake"/>
 				  </div>
 			 </p>
   </div>
