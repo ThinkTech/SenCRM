@@ -429,7 +429,7 @@
    </div>
    <div>
      <h2><i class="fa fa-magic"></i>Do more with features</h2>
-     <p>Add extra features to ${app_name} like advanced galleries, forms, charts, polls, sophisticated comments, and much more.</p>
+     <p>Add extra features to ${app_name} like advanced galleries, forms, charts, polls, sophisticated comments and much more.</p>
    </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
