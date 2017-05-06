@@ -178,11 +178,17 @@
 	
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
+	     <label title="Provider" class="required text-right"><i class="fa fa-industry"></i>Provider</label>
+		 <select title="Provider" name="registration.provider">
+		    <option value="1">MIRhosting</option>
+		 </select>
+		 <span class="info fa fa-info adjust"  data-info="Your database will be hosted on the selected hosting provider.">&nbsp;</span>
+		  <span class="voice fa fa-microphone"  data-info="Your database will be hosted on the selected hosting provider." title="information">&nbsp;</span>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/mo"><span>10</span> ${initParam.app_currency}/mo</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is micro or small.">&nbsp;</span>
-		 <span class="voice fa fa-microphone"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is small." title="information">&nbsp;</span>
+		 <span class="voice fa fa-microphone"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is micro or small." title="information">&nbsp;</span>
 	     <label title="Dedicated Server" class="text-right"><i class="fa fa-database"></i>Dedicated Server</label>
 		 <input title="Dedicated Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/mo"><span>20</span> ${initParam.app_currency}/mo</span>

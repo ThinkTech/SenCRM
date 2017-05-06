@@ -152,6 +152,7 @@ class Registration {
     String subscription
     boolean mailing
     String database_name
+    String provider
     String hosting
     int nodes
     int fixedCloudlets

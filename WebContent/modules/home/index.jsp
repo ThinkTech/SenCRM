@@ -331,6 +331,12 @@
 	
 	<fieldset>
 	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
+	      <label title="Provider" class="required text-right"><i class="fa fa-industry"></i>Provider</label>
+		 <select title="Provider" name="registration.provider">
+		    <option value="1">MIRhosting</option>
+		 </select>
+		 <span class="info fa fa-info adjust"  data-info="Your database will be hosted on the selected hosting provider.">&nbsp;</span>
+		  <span class="voice fa fa-microphone"  data-info="Your database will be hosted on the selected hosting provider." title="information">&nbsp;</span>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/mo"><span>10</span> ${initParam.app_currency}/mo</span>

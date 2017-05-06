@@ -151,6 +151,10 @@
 	border : 1px solid;
 }
 
+#form select[name="registration.provider"] {
+	width : 37.7%;
+}
+
 #form input[type=checkbox],#form input[type=radio] {
 	margin-right : 2px;
 	width : 35px;
@@ -286,15 +290,18 @@ transform-origin:0 0 !important;
 @media(max-width:1199px ){
 	.success {width : 60%;}
 	.registration {width : 55%;}
+	#form select[name="registration.provider"] {width: 37.8%;}
 }
 
 @media(max-width:1024px ){
 	.registration {width : 60%;}
+	#form select[name="registration.provider"] {width: 37.2%;}
 }
   
 @media(max-width:991px ){
 	.success {width : 50%;}
 	.registration {width : 67%;}
+	#form select[name="registration.provider"] {width: 36.8%;}
 }
 
 @media(max-width:767px ){
@@ -302,6 +309,7 @@ transform-origin:0 0 !important;
 	.registration {width : 80%;}
 	.registration p {width : 99%}
 	.captcha {margin-left:0px}
+	#form select[name="registration.provider"] {width: 37.3%;}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
@@ -312,6 +320,7 @@ transform-origin:0 0 !important;
     .registration > h1 {font-size:1.5em;padding-top:20px}
     #form .voice {margin-left : -5px}
     #form fieldset .voice:last-of-type {margin-left : 0px}
+   #form select[name="registration.provider"] {width: 39.3%;}
 }
 
  
@@ -326,6 +335,7 @@ transform-origin:0 0 !important;
     .easyWizardSteps li {padding-bottom:0px}
 	#form .settings .voice:last-of-type {margin-left : 5px}
 	#form .wrench {margin-left : 6px;}
+	#form select[name="registration.provider"] {width: 41.5%;}
 }
 @media(max-width:360px ){
 	#form fieldset label {width : 45%;font-size: 75%;padding-top: 7px;}
@@ -334,10 +344,12 @@ transform-origin:0 0 !important;
     .captcha{max-width:286px;width:286px;overflow:hidden}
     .registration .price {width:24%}
     #form fieldset {padding-left : 2px;padding-right : 0px;}
+    #form select[name="registration.provider"] {width: 36.5%;}
 }
 @media(max-width:320px ){
 	.captcha{max-width:286px;width:286px;overflow:hidden}
 	#form fieldset label {width: 43%;font-size: 60%;padding-top: 9px;}
 	#form input:not([type="submit"]), #form select {width : 43%;}
 	#form input[type=checkbox],#form input[type=radio] {width:35px;margin-right:0%}
+	#form select[name="registration.provider"] {width: 38.5%;}
 }
