@@ -97,7 +97,7 @@ label{
 }
 
 .text-right,.title {
-	background: #000;
+	background: #1f1e1e;
     color: #f9f4f0;
     border: 1px solid;
     font-family : Lato;
@@ -152,7 +152,7 @@ header {
 	padding: 1.5em;
     width: 31%;
     margin: 1em auto;
-    background:#000;
+    background:#1f1e1e;
 }
 
 footer {
