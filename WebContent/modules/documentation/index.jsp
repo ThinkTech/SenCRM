@@ -8,8 +8,9 @@
 <div class="content">
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
-   <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-user"></i>Setup</h2>
+   <div class="center bgcolor doc">
+     <i class="fa fa-user adjust"></i>
+     <label class="title">Setup</label>
      <ol>
        <li>Signing up for an account</li>
        <li>Confirming your registration</li>
@@ -20,8 +21,9 @@
      </ol>
    </div>
    <s:iterator value="moduleManager.backendModules">
-    <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-puzzle-piece"></i>Module ${name}</h2>
+    <div class="center bgcolor doc">
+     <img src="modules/${folder.name}/images/icon-32.png"/>
+     <label class="title" title="${description}">${name}</label>
      <ol>
        <li>item 1</li>
        <li>item 2</li>
@@ -29,31 +31,35 @@
      </ol>
    </div>
    </s:iterator>
-   <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-code"></i>Developers</h2>
+   <div class="center bgcolor doc">
+     <i class="fa fa-code adjust"></i>
+     <label class="title">Developers</label>
      <ol>
         <li>item 1</li>
        <li>item 2</li>
        <li>item 3</li>
      </ol>
    </div>
-   <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-code"></i>Designers</h2>
+   <div class="center bgcolor doc">
+     <i class="fa fa-code adjust"></i>
+     <label class="title">Designers</label>
      <ol>
         <li>item 1</li>
        <li>item 2</li>
        <li>item 3</li>
      </ol>
    </div>
-   <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-handshake-o"></i>Programs</h2>
+   <div class="center bgcolor doc">
+     <i class="fa fa-handshake-o"></i>
+     <label class="title">Programs</label>
      <ol>
         <li>Become a partner</li>
        <li>Become a reseller</li>
      </ol>
    </div>
-   <div class="center bgcolor">
-     <h2 class="title"><i class="fa fa-sticky-note-o"></i>Site Policy</h2>
+   <div class="center bgcolor doc">
+     <i class="fa fa-sticky-note-o adjust"></i>
+     <label class="title">Site Policy</label>
      <ol>
        <li>${app_name} Terms of Service</li>
        <li>${app_name} Privacy Policy</li>

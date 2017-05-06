@@ -16,9 +16,9 @@
 
 .center h2 {
 	text-transform : capitalize;
-	height : 41px;
+	height : 33px;
 	padding-left : 10px;
-	font-size : 1.4em;
+	font-size : 1.1em;
 }
 
 .bgcolor {
@@ -27,9 +27,52 @@
 }
 
 .bgcolor ol {
-	margin-left : 45px;
+	margin-left : 63px;
 	font-size : 97%;
 }
+
+.doc {
+	width : 32%;
+	display : inline-block;
+	border : 1px solid #cc9a9a;
+	vertical-align : top;
+	height : 280px;
+	margin-top : 15px;
+	padding : 15px 5px;
+}
+
+.doc img {
+	display : inline-block;
+	width : 32px;
+	height : 32px;
+}
+
+.doc > i {
+	font-size: 1.5em;
+    margin-top: 4px;
+    margin-right: 0px;
+    width: 27px;
+    height: 32px;
+}
+
+.doc > i.adjust {
+	position : relative;
+	left : 6px;
+}
+
+.doc label {
+	display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    padding-top: 1px;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 33px;
+    min-width: 85%;
+    border : 1px solid #cc9a9a;
+}
+
 
 /*--------------------*/
 /* Responsive Style */
@@ -40,6 +83,7 @@
 }
 
 @media(max-width:1024px ){
+	 .doc { width : 49%;margin-left : auto;margin-right : auto;height : 280px }
 }
   
 @media(max-width:991px ){
@@ -47,9 +91,12 @@
 }
 
 @media(max-width:767px ){
+	.doc { width : 49%;margin-left : auto;margin-right : auto;height : 300px }
+	 
 }
 @media(max-width:640px){
-	
+	.doc { width : 95%;margin-left : auto;margin-right : auto;height : auto }
+	 
 }
 
  
