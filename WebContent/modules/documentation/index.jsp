@@ -11,59 +11,59 @@
    <div class="center bgcolor doc">
      <i class="fa fa-user adjust"></i>
      <label class="title">Setup</label>
-     <ol>
+     <ul>
        <li>Signing up for an account</li>
        <li>Confirming your registration</li>
        <li>Signing in to ${app_name}</li>
        <li>Managing your account</li>
        <li>Managing your subscription</li>
        <li>Deleting your account</li>
-     </ol>
+     </ul>
    </div>
    <s:iterator value="moduleManager.backendModules">
     <div class="center bgcolor doc">
      <img src="modules/${folder.name}/images/icon-32.png"/>
      <label class="title" title="${description}">${name}</label>
-     <ol>
+     <ul>
        <li>item 1</li>
        <li>item 2</li>
        <li>item 3</li>
-     </ol>
+     </ul>
    </div>
    </s:iterator>
    <div class="center bgcolor doc">
      <i class="fa fa-code adjust"></i>
      <label class="title">Developers</label>
-     <ol>
+     <ul>
         <li>item 1</li>
        <li>item 2</li>
        <li>item 3</li>
-     </ol>
+     </ul>
    </div>
    <div class="center bgcolor doc">
      <i class="fa fa-code adjust"></i>
      <label class="title">Designers</label>
-     <ol>
+     <ul>
         <li>item 1</li>
        <li>item 2</li>
        <li>item 3</li>
-     </ol>
+     </ul>
    </div>
    <div class="center bgcolor doc">
      <i class="fa fa-handshake-o"></i>
      <label class="title">Programs</label>
-     <ol>
+     <ul>
         <li>Become a partner</li>
        <li>Become a reseller</li>
-     </ol>
+     </ul>
    </div>
    <div class="center bgcolor doc">
      <i class="fa fa-sticky-note-o adjust"></i>
      <label class="title">Site Policy</label>
-     <ol>
+     <ul>
        <li>${app_name} Terms of Service</li>
        <li>${app_name} Privacy Policy</li>
-     </ol>
+     </ul>
    </div>
 </div>
 </div>

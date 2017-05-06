@@ -26,9 +26,10 @@
 	margin-bottom : 10px;
 }
 
-.bgcolor ol {
+.bgcolor ul {
 	margin-left : 63px;
 	font-size : 97%;
+	list-style-type : square;
 }
 
 .doc {
