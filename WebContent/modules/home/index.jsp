@@ -93,6 +93,17 @@
 			  </p>
     </div>
   </li>
+   <li>
+    <div class="center">
+       <h1><i class="fa fa-server"></i>Choose your hosting provider</h1>
+              <p>
+				  <span>Multi-cloud feature provides the ability to achieve higher availability through geo-distribution among different data centers or clouds with the trusted cloud vendors.</span>
+				  <div class="images">
+				     <img src="${images}/multicloud.png" style="width: 80%;margin:auto"/>
+				  </div>
+			  </p>
+    </div>
+  </li>
   <li>
     <div class="center">
        <h1><i class="fa fa-drivers-license"></i>Get Started</h1>
