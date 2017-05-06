@@ -24,7 +24,7 @@ app.ready(function(){
 				  });
 			  }
 		});
-		$(".rslides img").addClass("animated "+items[0]);
+		$(".rslides img").addClass("animated "+items[Math.floor(Math.random()*items.length)]);
 		page.release();
 	 });
 	const testimonials = $(".testimonial");
