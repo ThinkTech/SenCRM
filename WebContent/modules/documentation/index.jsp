@@ -41,28 +41,11 @@
      </ul>
    </div>
    <div class="center bgcolor doc">
-     <i class="fa fa-code adjust"></i>
-     <label class="title">Designers</label>
-     <ul>
-        <li>item 1</li>
-       <li>item 2</li>
-       <li>item 3</li>
-     </ul>
-   </div>
-   <div class="center bgcolor doc">
      <i class="fa fa-handshake-o"></i>
      <label class="title">Programs</label>
      <ul>
         <li>Become a partner</li>
        <li>Become a reseller</li>
-     </ul>
-   </div>
-   <div class="center bgcolor doc">
-     <i class="fa fa-sticky-note-o adjust"></i>
-     <label class="title">Site Policy</label>
-     <ul>
-       <li>${app_name} Terms of Service</li>
-       <li>${app_name} Privacy Policy</li>
      </ul>
    </div>
 </div>
