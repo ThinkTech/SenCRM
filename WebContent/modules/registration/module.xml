@@ -2,7 +2,7 @@
 <module>
 	<name>Registration</name>
 	<type>front-end</type>
-	<cached>true</cached>
+	<cached>false</cached>
 	<title>Registration</title>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
