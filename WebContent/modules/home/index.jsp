@@ -95,7 +95,7 @@
   </li>
    <li>
     <div class="center">
-       <h1><i class="fa fa-server"></i>Choose Your Hosting Provider</h1>
+       <h1><i class="fa fa-industry"></i>Choose Your Hosting Provider</h1>
               <p>
 				  <span>Multi-cloud feature provides the ability to achieve higher availability through geo-distribution among different data centers or clouds with the trusted cloud vendors.</span>
 				  <div class="images">
