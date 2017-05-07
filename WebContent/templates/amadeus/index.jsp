@@ -52,9 +52,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    <a title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
     </div>
    <tiles:insertAttribute name="content"/>
-   <script src="js/jquery-3.1.1.min.js"></script>
-   <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
-   <script src="js/metamorphosis.js"></script>
    <footer>
    <div class="footer-item">
      <h1>Getting Started</h1>
@@ -86,6 +83,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <input type="text" placeholder="Your email address" title="Your email address"/>
        <input type="submit" value="Subscribe" title="Subscribe"/>
      </div>
+     <h1>Tell your friends</h1>
+     <div class="share-this">
+      <div class="sharethis-inline-share-buttons"></div>
+     </div>
    </div>
    <div class="socials">
 	     <a title="facebook"><i class="fa fa-facebook"></i></a>
@@ -97,6 +98,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<p>&copy; 2017 Designed by <a href="//w3layouts.com/" target="_blank">W3layouts</a> and <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
 	</footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+   <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
+   <script src="js/metamorphosis.js"></script>
+   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons"></script>
    <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>
 </body>
