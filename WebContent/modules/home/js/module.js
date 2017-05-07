@@ -36,11 +36,6 @@ app.ready(function(){
 		testimonials.hide();
 		$(".testimonial").eq(index).fadeIn(600);
 	},9000);
-	if ('speechSynthesis' in window) {
-		speechSynthesis.getVoices();
-	} else {
-		$("span.voice").hide();
-	}
 	$(".testimonials span.voice").click(function(){
 		var text = "";
 		testimonials.each(function(index,element){
