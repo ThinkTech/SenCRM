@@ -158,8 +158,9 @@ app.ready(function(){
 		});
 	});
 	$(".voice",form).click(function(){
-		const info = $(this).attr("data-info");
-		$(this).prev().prev().focus();
+		var prev = $(this).prev();
+		const info = prev.attr("data-info");
+		prev.prev().focus();
 		page.speak(info);
 	});
 	$("#form span.wrench").click(function(event){

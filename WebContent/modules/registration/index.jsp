@@ -16,18 +16,18 @@
 		<label title="First Name" class="required text-right"><i class="fa fa-user"></i>First Name : </label>
 		<input required title="First Name" name="user.firstName" maxlength="100"  type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your first name.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your first name." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	   
 		<label title="Last Name" class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
 		<input required title="Last Name" name="user.lastName" maxlength="100" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your last name.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your last name." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 	    <label title="Email" class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
 		<input required title="Email" name="user.email" maxlength="100" type="email"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your email address.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your email address." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		<label title="Language" class="required text-right"><i class="fa fa-language"></i>Language :</label>
@@ -35,19 +35,19 @@
 		        <option value="en">English</option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your language.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select your language." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		<label title="Password" class="required text-right"><i class="fa fa-key"></i>Password :</label>
 		<input required id="password" title="Password" name="user.password" maxlength="100" type="password"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your password which must be between 8 and 100 characters.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter your password which must be between 8 and 100 characters." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		<label title="Confirm" class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
 		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must retype your password.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must retype your password." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 	</fieldset>
@@ -62,7 +62,7 @@
 		<label title="Name" class="required text-right"><i class="fa fa-building-o"></i>Name : </label>
 		<input maxlength="100" required title="Name" name="account.structure.name" maxlength="100"  type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the name of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the name of your structure." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	   
 		<label title="Primary Business" class="required text-right"><i class="fa fa-money"></i>Primary Business :</label>
@@ -124,7 +124,7 @@
 		 	<option value="55">Other</option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your primary business.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select your primary business." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		<label title="Size" class="required text-right"><i class="fa fa-level-up"></i>Size :</label>
@@ -135,7 +135,7 @@
 		 	<option value="4">big</option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the size of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the size of your structure." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		  
@@ -143,18 +143,18 @@
 		<select class="country" required title="Country" name="account.structure.address.country">
 		</select>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the country of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must select the country of your structure." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    
 		<label title="City" class="text-right"><i class="fa fa-globe"></i>City :</label>
 		<input title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is required and you must enter the city of your structure." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	    
 	    <label title="Address" class="text-right"><i class="fa fa-globe"></i>Address :</label>
 		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
 		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"  data-info="This field is not required and you must enter the address of your structure." title="information">&nbsp;</span>
+	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	     
 	   
 	</fieldset>
@@ -171,7 +171,7 @@
 		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
 		   <span class="price bgcolor"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
 		   <span class="info fa fa-info"  data-info="${details}">&nbsp;</span>
-		   <span class="voice fa fa-microphone"  data-info="${details}" title="information">&nbsp;</span>
+		   <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 		</s:iterator>
 	</fieldset>
 
@@ -183,17 +183,17 @@
 		    <option value="1">MIRhosting</option>
 		 </select>
 		 <span class="info fa fa-info adjust"  data-info="Your database will be hosted on the selected hosting provider.">&nbsp;</span>
-		  <span class="voice fa fa-microphone"  data-info="Your database will be hosted on the selected hosting provider." title="information">&nbsp;</span>
+		  <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
 		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/mo"><span>10</span> ${initParam.app_currency}/mo</span>
 		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is micro or small.">&nbsp;</span>
-		 <span class="voice fa fa-microphone"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is micro or small." title="information">&nbsp;</span>
+		 <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
 	     <label title="Dedicated Server" class="text-right"><i class="fa fa-database"></i>Dedicated Server</label>
 		 <input title="Dedicated Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/mo"><span>20</span> ${initParam.app_currency}/mo</span>
 		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology.">&nbsp;</span>
-		 <span class="voice fa fa-microphone"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology." title="information">&nbsp;</span>
+		 <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
 		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
 		 <div id="topology" class="settings">
 		     <fieldset class="bgcolor">
@@ -201,11 +201,11 @@
 		      <label title="Horizontal Scaling" class="text-right"><i class="fa fa-database"></i>Nodes</label>
 		      <input  title="Nodes" name="registration.nodes" min="1" max="30" data-action="setNodes" type="number" value="1"/>
 		       <span class="info fa fa-info"  data-info="According to the size of your structure, you can set the maximum allowed amount of nodes.">&nbsp;</span>
-		       <span class="voice fa fa-microphone"  data-info="According to the size of your structure, you can set the maximum allowed amount of nodes." title="information">&nbsp;</span>
+		       <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
 		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlets</label>
 		      <input  title="Dynamic Cloudlets" min="1" max="70" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="4"/>
 		       <span class="info fa fa-info"  data-info="Dynamic cloudlets defines the amount of resources your structure can access, based on necessity. You pay for them only in the case of real consumption.">&nbsp;</span>
-		       <span class="voice fa fa-microphone"  data-info="Dynamic cloudlets defines the amount of resources your structure can access, based on necessity. You pay for them only in the case of real consumption." title="information">&nbsp;</span>
+		       <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
 		       <h6><span>1 cloudlet = </span>&nbsp;128 MiB + 400 MHz</h6>
 		       <h6><span>Power = </span>&nbsp;<span class="power">128 MiB + 400 MHz</span></h6>
 		      </fieldset>
@@ -227,7 +227,7 @@
 	      <input title="Mailing list subscription" value="true" name="registration.mailing" type="checkbox" checked/> 
 		  <span class="mailing" title="Mailing list subscription">Yes, send me emails on ThinkTech Products, Services and Events.
 		  <i class="info fa fa-info adjust"  data-info="Check this field to receive emails on ThinkTech Products, Services and Events.">&nbsp;</i>
-	      <i class="voice fa fa-microphone adjust"  data-info="Check this field to receive emails on ThinkTech Products, Services and Events." title="information">&nbsp;</i>
+	      <i class="voice fa fa-microphone adjust"   title="information">&nbsp;</i>
 		  </span> 
 		  
 	    
