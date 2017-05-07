@@ -49,7 +49,7 @@
     <div class="center">
        <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
               <p>
-				 <span><b>${app_name}</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.</span>
+				 <span><b>${app_name}</b> is tailored to be responsive and progressive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.</span>
 				 <div class="images">
 				     <img src="${images}/computer.png"/>
 				     <img src="${images}/mobile.png"/>
