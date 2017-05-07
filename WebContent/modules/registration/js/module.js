@@ -30,7 +30,7 @@ const getPower = function(value) {
 }
 
 app.ready(function(){
-	var form = $("form");
+	var form = $(".registration form");
 	if(form.length) {
 	 app.ready(function(){
 		page.wait();

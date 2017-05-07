@@ -49,9 +49,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="aside right">
         <a title="Support" href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i>Support</a>
 	    <a title="Community" class="title"><i class="fa fa-handshake-o"></i>Community</a>
-	    <a title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
+	    <a id="contact" title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
     </div>
    <tiles:insertAttribute name="content"/>
+   <div id="contact-form">
+     <h1><i class="fa fa-envelope"></i>Contact us</h1>
+     <form  action="contact" method="post" class="topBefore">
+		  <input id="name" name="mail.author" required type="text" placeholder="NAME">
+		  <input id="email" name="mail.address" required type="email" placeholder="E-MAIL">
+		  <input id="subject" name="mail.subject" required type="text" placeholder="SUBJECT">
+		  <textarea id="message" name="mail.content" required placeholder="MESSAGE"></textarea>
+  	      <input id="submit" type="submit" value="Send Now">
+	</form>
+   </div>
    <footer>
    <div class="footer-item">
      <h1>Getting Started</h1>

@@ -326,6 +326,135 @@ div.search i {
 	font-size : 100%;
 }
 
+
+#contact-form input::-webkit-input-placeholder, #contact-form  textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+#contact-form  input:focus::-webkit-input-placeholder, #contact-form  textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+#contact-form input::-moz-placeholder, #contact-form  textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+#contact-form input:focus::-moz-placeholder, #contact-form textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+#contact-form input:focus::placeholder, #contact-form textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+#contact-form input::-ms-placeholder, #contact-form textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+#contact-form input:focus::-ms-placeholder, #contact-form textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+#contact-form input:hover::-webkit-input-placeholder, #contact-form textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+#contact-form input:hover:focus::-webkit-input-placeholder, #contact-form textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+#contact-form input:hover::-moz-placeholder, #contact-form textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+#contact-form input:hover:focus::-moz-placeholder, #contact-form textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+#contact-form input:hover::placeholder, #contact-form textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+#contact-form input:hover:focus::placeholder, #contact-form textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+#contact-form input:hover::placeholder, #contact-form textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+#contact-form input:hover:focus::-ms-placeholder, #contact-form textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+
+#contact-form {
+  position: absolute;
+  width: 500px;
+  background: #efeeee;
+  z-index: 99999999999;
+  display : none;
+  left : 50%;
+  padding: 10px 46px 40px 30px;
+  border : 1px solid;
+}
+
+#contact-form input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 99%;
+  height: 30px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+   padding: 5px;
+}
+
+#contact-form h1 {
+	font-size : 2em;
+}
+
+#contact-form textarea {
+  width:99%;
+  height: 110px;
+  max-height: 110px;
+  padding: 5px;
+  outline: none;
+  font-size: 0.875em;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+
+#contact-form #submit {
+ padding: 0;
+ width: 99%;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  outline:none;
+  cursor: pointer;
+  height: 50px;
+}
+
 .button {
 	border : none;
 	font-size : 80%;
@@ -452,6 +581,7 @@ div.search i {
      div.search i {margin-left : 1.6%}
      .footer-item {width : 34%}
      footer {height : 150%}
+     #contact-form {left:25%;}
 }
 
 @media screen and (max-width: 1100px){
@@ -481,6 +611,7 @@ div.search i {
 	.footer-item {width:65%}
 	.footer-item h1{padding:30px 0px;width:65%}
 	footer .socials {margin-top : 10%}
+	#contact-form {left:25%;width:450px;}
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {
@@ -497,6 +628,7 @@ div.search i {
      div.search {display : block;}
 	div.search input {width : 80%;}
 	div.search i {margin-left : 45px}
+	#contact-form {left:25%;width:400px;}
 }
 @media screen and (max-width: 736px){
 	.wrap {
@@ -513,7 +645,7 @@ div.search i {
 	width: 70%;}
 	
 	div.search i {margin-left : 37px}
-	
+	#contact-form {left:25%;width:335px;}
 }
 @media screen and (max-width: 600px){
 	.wrap {
@@ -538,6 +670,7 @@ div.search i {
 	width: 85%;}
 	div.search i {margin-left : 30px}
 	.footer-item {width : 90%;}
+	#contact-form {left:11%;width:335px;}
 }
 @media screen and (max-width: 480px){
 	div.search {display : block;}
@@ -578,7 +711,7 @@ div.search i {
 	.wrap {
     width: 95%;
     padding: 1.5em;}
-	
+	#contact-form {left:1%;width:335px;}
 }	
 @media screen and (max-width: 375px){
 	.wrap {
@@ -603,6 +736,7 @@ div.search i {
 	width: 14px;
     height: 13px;}
 	
+	#contact-form {left:1%;width:290px;}
 	
 	#wait {padding-top : 70%;padding-left : 35%}
 }
