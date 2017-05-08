@@ -9,8 +9,7 @@
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
    <div class="center doc">
-     <i class="fa fa-user adjust"></i>
-     <label class="title">Setup</label>
+     <h2><i class="fa fa-user"></i>Setup</h2>
      <ul>
        <li>Signing up for an account</li>
        <li>Confirming your registration</li>
@@ -22,8 +21,7 @@
    </div>
    <s:iterator value="moduleManager.backendModules">
     <div class="center doc">
-     <img src="modules/${folder.name}/images/icon-32.png"/>
-     <label class="title" title="${description}">${name}</label>
+     <h2><img src="modules/${folder.name}/images/icon-32.png"/>${name}</h2>
      <ul>
        <li>item 1</li>
        <li>item 2</li>
@@ -32,8 +30,7 @@
    </div>
    </s:iterator>
    <div class="center doc">
-     <i class="fa fa-code adjust"></i>
-     <label class="title">Developers</label>
+     <h2><i class="fa fa-code adjust"></i>Developers</h2>
      <ul>
         <li>item 1</li>
        <li>item 2</li>
@@ -41,8 +38,7 @@
      </ul>
    </div>
    <div class="center doc">
-     <i class="fa fa-handshake-o"></i>
-     <label class="title">Programs</label>
+     <h2><i class="fa fa-handshake-o adjust"></i>Programs</h2>
      <ul>
         <li>Become a partner</li>
        <li>Become a reseller</li>

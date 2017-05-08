@@ -341,6 +341,43 @@ div.wizard {
 }
 
 
+.faq {
+	width : 32%;
+	display : inline-block;
+	border : 1px solid #cc9a9a;
+	vertical-align : top;
+	height : 280px;
+	margin-top : 15px;
+	padding : 15px 5px;
+	margin-bottom : 10px;
+}
+
+.faq ul {
+	margin-left : 63px;
+	font-size : 92%;
+	list-style-type : square;
+	margin-top : 10px;
+}
+.faq h2 {
+	text-transform: capitalize;
+    padding-left: 8px;
+    font-size: 1.1em;
+}
+
+.faq h2 i {
+	font-size: 2em;
+    position: relative;
+    top: 6px;
+    width: 32px;
+    margin-right: 4px;
+}
+
+.faq h2 img {
+	position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
 /*--------------------*/
 /* Responsive Style */
 /*--------------------*/
@@ -373,6 +410,7 @@ div.wizard {
 	  .rslides_nav.next {margin-right : 170px}
 	  .benefits {padding-left:20%}
 	  .benefits div h2 {padding-right:149px}
+	   .faq { width : 49%;margin-left : auto;margin-right : auto;height : 280px }
 }
 @media(max-width:991px ){
 	.center {width: 90%;}
@@ -402,6 +440,7 @@ div.wizard {
 	 .modules > h1 {margin-top : 40px;}
 	 .modules .center {width : 99%}
 	 .button.wizard{margin-top : -190px}
+	 .faq { width : 49%;margin-left : auto;margin-right : auto;height : 300px }
 }
 @media(max-width:640px){
 	.rslides {height:440px;padding : 20px 5px}
@@ -414,6 +453,7 @@ div.wizard {
 	 .module p {height : auto;margin-bottom : 20px}
 	 .button.wizard{margin-top : -190px}
 	 .benefits {padding-left:15%}
+	 .faq { width : 95%;margin-left : auto;margin-right : auto;height : auto }
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}

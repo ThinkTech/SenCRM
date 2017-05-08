@@ -8,5 +8,25 @@
 <div class="content"> 
   <div class="center">
    <h1 class="text-center"><i class="fa fa-question-circle"></i>Frequently Asked Questions</h1>
+   <div class="faq">
+     <h2><i class="fa fa-question-circle"></i>General</h2>
+     <div class="faq-content">
+         <ul>
+           <li>How do I...?</li>
+           <li>How do I...?</li>
+         </ul>
+     </div>
+   </div>
+   <s:iterator value="moduleManager.backendModules">
+    <div class="faq">
+     <h2><img src="modules/${folder.name}/images/icon-32.png"/>${name}</h2>
+     <div class="faq-content">
+         <ul>
+           <li>How do I...?</li>
+           <li>How do I...?</li>
+         </ul>
+     </div>
+   </div>
+   </s:iterator>
   </div>
 </div>
