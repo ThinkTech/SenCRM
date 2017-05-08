@@ -123,6 +123,7 @@ a.title:hover {
 header {
 	background : #fff;
 	height : 60px;
+	border-bottom : 1px solid #000000;
 }
 .bg {
 	background-color : #efeeee;
