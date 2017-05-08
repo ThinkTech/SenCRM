@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div class="aside">
 	    <a title="News" href="https://sencrm.wordpress.com/news/" target="_blank" class="title"><i class="fa fa-newspaper-o"></i>News</a>
 	    <a title="Blog" href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i>Blog</a>
-	    <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
+	    <a href="public/faq" title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
 	    <div class="socials">
 	     <a title="facebook"><i class="fa fa-facebook"></i></a>
 	     <a title="twitter"><i class="fa fa-twitter"></i></a>
@@ -66,11 +66,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div class="footer-item">
      <h1>Getting Started</h1>
      <ul>
-       <li>Understanding ${app_name}</li>
-       <li>How ${app_name} works</li>
-       <li>How to use ${app_name}</li>
-       <li>Customers</li>
-       <li>Partners</li>
+       <li><a href="public/understanding">Understanding ${app_name}</a></li>
+       <li><a href="public/overview">How ${app_name} works</a></li>
+       <li><a href="public/usage">How to use ${app_name}</a></li>
+       <li><a href="public/customers">Customers</a></li>
+       <li><a href="public/partners">Partners</a></li>
        <li><a href="registration/terms">Terms of Service</a></li>
        <li><a href="registration/privacy">Privacy Policy</a></li>
      </ul>
@@ -78,13 +78,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div class="footer-item">
      <h1>Quick Links</h1>
      <ul>
-       <li>Pricing</li>
+       <li><a href="public/pricing">Pricing</a></li>
        <li><a href="documentation">Documentation</a></li>
        <li><a href="https://sencrm.wordpress.com/" target="_blank">Blog</a></li>
-       <li>Support</li>
+       <li><a href="http://support.thinktech.sn/login" target="_blank">Support</a></li>
        <li><a href="https://sencrm.wordpress.com/community/" target="_blank">Community</a></li>
        <li><a href="https://sencrm.wordpress.com/news/" target="_blank">News</a></li>
-       <li>FAQ</li>
+       <li><a href="public/faq">FAQ</a></li>
      </ul>
    </div>
    <div class="footer-item">

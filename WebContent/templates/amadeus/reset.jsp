@@ -1,6 +1,6 @@
 <div class="buttons">
      <a title="Documentation" href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
-    <a title="Pricing"  target="_blank"  class="button"><i class="fa fa-money"></i>Pricing</a>
+    <a title="Pricing"   href="public/pricing"  class="button"><i class="fa fa-money"></i>Pricing</a>
     <a title="Registration" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
     <a title="Back" href="${referer}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
 </div>

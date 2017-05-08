@@ -3,6 +3,7 @@
 	<name>Home</name>
 	<type>front-end</type>
 	<title>SenCRM</title>
+	<url>public</url>
 	<main>true</main>
 	<cached>false</cached>
 	<author>ThinkTech</author>
@@ -12,4 +13,27 @@
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>
 	<version>1.0</version>
+	<actions>
+	  <action url="faq">
+	    <result>faq</result>
+	  </action>
+	  <action url="customers">
+	    <result>customers</result>
+	  </action>
+	  <action url="partners">
+	    <result>partners</result>
+	  </action>
+	  <action url="pricing">
+	    <result>pricing</result>
+	  </action>
+	  <action url="understanding">
+	    <result>understanding</result>
+	  </action>
+	  <action url="overview">
+	    <result>overview</result>
+	  </action>
+	  <action url="usage">
+	    <result>usage</result>
+	  </action>
+	</actions>
 </module>
