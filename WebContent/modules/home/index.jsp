@@ -106,6 +106,18 @@
   </li>
   <li>
     <div class="center">
+       <h1><i class="fa fa-money"></i>Build Your Business</h1>
+              <p>
+				  <span>Achieve greater profitability by exploring our cloud opportunities for new ways to optimize your strategy and to boost your business. Get support from our experts through email or live chat.</span>
+				  <div class="images">
+				     <img src="${images}/business1.png"/>
+				     <img src="${images}/business2.png"/>
+				  </div>
+			  </p>
+    </div>
+  </li>
+  <li>
+    <div class="center">
        <h1><i class="fa fa-drivers-license"></i>Get Started</h1>
               <p>
 				  <span>By creating your account, you are just four steps to take your business to the next level and to leverage an ecosystem of services well-designed for your success and your growth.</span>
