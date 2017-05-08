@@ -34,7 +34,8 @@ app.ready(function(){
 	if(form.length) {
 	 app.ready(function(){
 		page.wait();
-		head.load("modules/registration/js/jquery.easyWizard.js", function() { 
+		head.load("css/animate.min.css","modules/registration/js/jquery.easyWizard.js", function() { 
+			$("div.registration").addClass("animated pulse");
 			form.easyWizard({
 				    prevButton: "Back",
 				    nextButton: "Next",

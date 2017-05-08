@@ -1,7 +1,7 @@
 app.ready(function(){
 	$("html, body").animate({ scrollTop: 0 }, 0);
 	page.wait();
-	head.load("modules/registration/css/module.css","modules/registration/js/module.js","modules/home/js/responsiveslides.min.js","modules/home/css/animate.min.css",function() {
+	head.load("modules/registration/css/module.css","modules/registration/js/module.js","modules/home/js/responsiveslides.min.js","css/animate.min.css",function() {
 		const items = ['rotateIn','flipInX','lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
 		               ,'jackInTheBox','flash','swing','fadeInUpBig','rotateInDownLeft','rotateInDownRight','rotateInUpLeft','rotateInUpRight',
 		               'zoomInDown','zoomInLeft','zoomInRight','zoomInUp','bounceIn','bounceInDown',
@@ -76,7 +76,7 @@ app.ready(function(){
 	});
 	$("div.registration input,div.registration select").attr("disabled","disabled");
 	$("div.wizard .signup").one("click",function(){
-		$("div.registration").css("opacity","0.3").addClass("animated fadeIn");
+		$("div.registration").animate({opacity : 1 }, 1000);
 		$("div.registration input,div.registration select").removeAttr("disabled");
 		$("select[name='account.structure.size']").val("2").trigger("change");
 	});
