@@ -65,13 +65,14 @@
 	display: inline-block;
     vertical-align: top;
     text-transform: capitalize;
-    padding-top: 1px;
+    padding-top: 2px;
     padding-left: 6px;
     font-weight: bold;
     font-size: 1.1em;
-    height: 33px;
+    height: 36px;
     min-width: 85%;
-    border : 1px solid #cc9a9a;
+    border: 1px solid #cc9a9a;
+    border-radius: 8px;
 }
 
 
