@@ -36,7 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    </div>
    </header>
    <div class="aside">
-	    <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
+	    <a title="News" href="https://sencrm.wordpress.com/news/" target="_blank" class="title"><i class="fa fa-newspaper-o"></i>News</a>
 	    <a title="Blog" href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i>Blog</a>
 	    <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
 	    <div class="socials">
@@ -48,7 +48,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <div class="aside right">
         <a title="Support" href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i>Support</a>
-	    <a title="Community" class="title"><i class="fa fa-handshake-o"></i>Community</a>
+	    <a title="Community" href="https://sencrm.wordpress.com/community/" target="_blank"  class="title"><i class="fa fa-handshake-o"></i>Community</a>
 	    <a id="contact" title="Contact us" class="title"><i class="fa fa-envelope"></i>Contact us</a>
     </div>
    <tiles:insertAttribute name="content"/>
@@ -82,8 +82,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li><a href="documentation">Documentation</a></li>
        <li><a href="https://sencrm.wordpress.com/" target="_blank">Blog</a></li>
        <li>Support</li>
-       <li>Community</li>
-       <li>News</li>
+       <li><a href="https://sencrm.wordpress.com/community/" target="_blank">Community</a></li>
+       <li><a href="https://sencrm.wordpress.com/news/" target="_blank">News</a></li>
        <li>FAQ</li>
      </ul>
    </div>
