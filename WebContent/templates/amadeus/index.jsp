@@ -49,7 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="aside right">
         <a title="Support" href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i>Support</a>
 	    <a title="Community" class="title"><i class="fa fa-handshake-o"></i>Community</a>
-	    <a id="contact" title="Contact us" class="title"><i class="fa fa-at"></i>Contact us</a>
+	    <a id="contact" title="Contact us" class="title"><i class="fa fa-envelope"></i>Contact us</a>
     </div>
    <tiles:insertAttribute name="content"/>
    <div id="contact-form">
