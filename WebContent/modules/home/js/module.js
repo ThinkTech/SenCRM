@@ -53,7 +53,7 @@ app.ready(function(){
 		page.speak(text);
 	});
 	$(".module span.voice").click(function(){
-		var text = $(this).parent().parent().find("p").html();
+		const text = $(this).parent().find("p").html();
 		page.speak(text);
 	});
 	$(".button.wizard").fadeIn(2000).click(function(){

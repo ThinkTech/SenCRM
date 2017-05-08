@@ -214,10 +214,12 @@ div.wizard {
     text-transform : capitalize;
     padding-top : 2px;
     font-weight : bold;
+    clear : right;
 }
 
-.module label span {
-	margin-left : 5px;
+.module span.voice {
+	float : right;
+	margin-right : 5px;
 }
 
 .module p {
