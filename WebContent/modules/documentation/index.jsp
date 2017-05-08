@@ -8,7 +8,7 @@
 <div class="content">
 <div class="center">
    <h1 class="text-center"><i class="fa fa-book"></i>Documentation</h1>
-   <div class="center bgcolor doc">
+   <div class="center doc">
      <i class="fa fa-user adjust"></i>
      <label class="title">Setup</label>
      <ul>
@@ -21,7 +21,7 @@
      </ul>
    </div>
    <s:iterator value="moduleManager.backendModules">
-    <div class="center bgcolor doc">
+    <div class="center doc">
      <img src="modules/${folder.name}/images/icon-32.png"/>
      <label class="title" title="${description}">${name}</label>
      <ul>
@@ -31,7 +31,7 @@
      </ul>
    </div>
    </s:iterator>
-   <div class="center bgcolor doc">
+   <div class="center doc">
      <i class="fa fa-code adjust"></i>
      <label class="title">Developers</label>
      <ul>
@@ -40,7 +40,7 @@
        <li>item 3</li>
      </ul>
    </div>
-   <div class="center bgcolor doc">
+   <div class="center doc">
      <i class="fa fa-handshake-o"></i>
      <label class="title">Programs</label>
      <ul>
