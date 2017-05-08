@@ -198,6 +198,10 @@ footer li {
     color : #f9f4f0;
 }
 
+footer li a, footer li a:visited {
+	color : #f9f4f0;
+}
+
 .newsletter {
 	text-align : left;
 }

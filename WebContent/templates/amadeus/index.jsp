@@ -37,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    </header>
    <div class="aside">
 	    <a title="News" class="title"><i class="fa fa-newspaper-o"></i>News</a>
-	    <a title="Blog" class="title"><i class="fa fa-rss"></i>Blog</a>
+	    <a title="Blog" href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i>Blog</a>
 	    <a title="FAQ" class="title"><i class="fa fa-question-circle"></i>FAQ</a>
 	    <div class="socials">
 	     <a title="facebook"><i class="fa fa-facebook"></i></a>
@@ -71,16 +71,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li>How to use ${app_name}</li>
        <li>Customers</li>
        <li>Partners</li>
-       <li>Terms of Service</li>
-       <li>Privacy Policy</li>
+       <li><a href="registration/terms">Terms of Service</a></li>
+       <li><a href="registration/privacy">Privacy Policy</a></li>
      </ul>
    </div>
    <div class="footer-item">
      <h1>Quick Links</h1>
      <ul>
        <li>Pricing</li>
-       <li>Documentation</li>
-       <li>Blog</li>
+       <li><a href="documentation">Documentation</a></li>
+       <li><a href="https://sencrm.wordpress.com/" target="_blank">Blog</a></li>
        <li>Support</li>
        <li>Community</li>
        <li>News</li>
