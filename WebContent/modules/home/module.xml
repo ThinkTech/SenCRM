@@ -35,5 +35,8 @@
 	  <action url="usage">
 	    <result>usage</result>
 	  </action>
+	  <action url="search">
+	    <result>search</result>
+	  </action>
 	</actions>
 </module>

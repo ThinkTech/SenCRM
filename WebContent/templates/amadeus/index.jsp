@@ -31,8 +31,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <header>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
    <div class="search">
+      <form action="public/search">
       <i class="fa fa-search"></i>
-      <input type="text" placeholder="Search..."/>
+      <input name="query" type="text" placeholder="Search..."/>
+      </form>
    </div>
    </header>
    <div class="aside">
