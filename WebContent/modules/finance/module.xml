@@ -7,7 +7,7 @@
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<description>Module for managing your finance</description>
 	<details>The finance module gathers financial data and generates reports such as ledgers, trail balance data, overall balance sheets and quarterly financial statements,
-	providing closer integration with financial accounts, such as investment funds, lines of credit, and deposit accounts.
+	providing closer integration with financial accounts, such as investment funds, lines of credit and deposit accounts.
 	</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
