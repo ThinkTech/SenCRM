@@ -228,7 +228,7 @@ div.wizard {
 }
 
 .module > div {
-	text-align : center;
+	text-align : right;
 }
 
 .module .price {
@@ -245,6 +245,7 @@ div.wizard {
     text-align: center;
     margin: auto;
     font-weight : bold;
+    background : #fff;
 }
 
 .module .subscribe, .module .required,.module .subscribed {
