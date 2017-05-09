@@ -50,12 +50,12 @@ app.ready(function(){
 		$(".slider-audio span.voice").click(function(){
 			var text = "";
 			$(".rslides p").each(function(index,element){
-				text += $(element).html();
+				text += $(element).text();
 			});
 			page.speak(text);
 		});
 		$(".module span.voice").click(function(){
-			const text = $(this).parent().find("p").html();
+			const text = $(this).parent().find("p").text();
 			page.speak(text);
 		});
 		$(".button.wizard").fadeIn(2000).click(function(){
