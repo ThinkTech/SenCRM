@@ -55,13 +55,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
    <tiles:insertAttribute name="content"/>
    <div id="contact-form">
+     <img title="close" class="close" src="templates/amadeus/images/close.png"/>
      <h1><i class="fa fa-envelope"></i>Contact us</h1>
      <form  action="contact" method="post" class="topBefore">
 		  <input id="name" name="mail.author" required type="text" placeholder="NAME">
 		  <input id="email" name="mail.address" required type="email" placeholder="E-MAIL">
 		  <input id="subject" name="mail.subject" required type="text" placeholder="SUBJECT">
 		  <textarea id="message" name="mail.content" required placeholder="MESSAGE"></textarea>
-  	      <input id="submit" type="submit" value="Send Now">
+  	      <input id="submit" type="submit" title="Send Now" value="Send Now">
 	</form>
    </div>
    <footer>

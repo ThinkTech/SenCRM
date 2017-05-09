@@ -39,4 +39,7 @@ $(document).ready(function() {
 			$("input[type=text],input[type=email],textarea",contactForm).val("");
 		});
 	});
+	$("#contact-form img").click(function(){
+		$(this).parent().fadeOut();
+	});
 });

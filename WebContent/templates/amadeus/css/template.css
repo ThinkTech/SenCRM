@@ -330,6 +330,16 @@ div.search i {
 	font-size : 100%;
 }
 
+#contact-form .close {
+	border : none;
+	float : right;
+	margin-right : -30px;
+	cursor : pointer;
+}
+
+#contact-form form {
+	clear : right;
+}
 
 #contact-form input::-webkit-input-placeholder, #contact-form  textarea::-webkit-input-placeholder {
   color: #aca49c;
