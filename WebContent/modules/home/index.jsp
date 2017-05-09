@@ -32,19 +32,6 @@
  				</p>
   </div>
   </li>
-  <li>
-    <div class="center">
-       <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
-              <p>
-				 <span>An <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
-				 to build relationships and develop leads.</span>
-				 <div class="images">
-				     <img src="${images}/dynamic-2.png"/>
-				     <img src="${images}/dynamic-1.png"/>
-				  </div>
-			  </p>
-    </div>
-  </li>
    <li>
     <div class="center">
        <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
@@ -100,6 +87,19 @@
 				  <span>Multi-cloud feature provides the ability to achieve higher availability through geo-distribution among different data centers or clouds with the trusted cloud vendors.</span>
 				  <div class="images">
 				     <img src="${images}/multicloud.png" style="width: 80%;margin:auto"/>
+				  </div>
+			  </p>
+    </div>
+  </li>
+  <li>
+    <div class="center">
+       <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
+              <p>
+				 <span>An <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
+				 to build relationships and develop leads.</span>
+				 <div class="images">
+				     <img src="${images}/dynamic-2.png"/>
+				     <img src="${images}/dynamic-1.png"/>
 				  </div>
 			  </p>
     </div>
