@@ -67,6 +67,7 @@ app.ready(function(){
 			  const div = $(".modules");
 			  if($(this).scrollTop() >= div.offset().top-50) {
 			    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
+			    $('.module[data-required=true] span.required').addClass("animated infinite pulse");
 			  }
 			  const button = $("div.wizard .signup");
 			  if($(this).scrollTop() >= button.offset().top-300) {

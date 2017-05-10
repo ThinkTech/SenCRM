@@ -165,7 +165,7 @@
 <div class="center">
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
 <s:iterator value="moduleManager.backendModules">
-<div class="module">
+<div class="module" data-required="${mandatory}">
     <div>
     <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 	<img src="modules/${folder.name}/images/icon-32.png"/>
