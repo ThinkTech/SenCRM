@@ -8,7 +8,7 @@
 </div>
 <div class="content"> 
   <div class="center">
-   <h1 class="text-center"><i class="fa fa-question-circle"></i>Frequently Asked Questions</h1>
+   <h1 class="text-center faq"><i class="fa fa-question-circle"></i>Frequently Asked Questions</h1>
    <ul class="accordion">
       <li>
 	    <input type="checkbox" checked>

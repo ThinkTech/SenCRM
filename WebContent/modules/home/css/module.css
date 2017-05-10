@@ -168,6 +168,10 @@ div.wizard {
     margin-bottom : 30px;
 }
 
+.center h1.faq {
+	 margin-bottom : 20px;
+}
+
 .center p {
     text-align: justify;
     width : 90%;
