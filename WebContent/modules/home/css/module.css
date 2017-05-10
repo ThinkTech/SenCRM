@@ -211,11 +211,11 @@ div.wizard {
 
 .module label {
 	display: inline-block;
-    font-size: 0.9em;
+    font-size: 1.2em;
     vertical-align: top;
     color: inherit;
     text-transform : capitalize;
-    padding-top : 2px;
+    padding-top : 0px;
     font-weight : bold;
     clear : right;
 }
@@ -436,6 +436,7 @@ div.wizard {
 	.button.signup {font-size : 1em;}
 	.modules .center {width : 95%}
 	.rslides_nav {margin-top:-60px}
+	.module label {font-size : 0.9em}
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
