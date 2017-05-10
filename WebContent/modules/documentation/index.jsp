@@ -13,11 +13,14 @@
 	    <input type="checkbox" checked>
 	    <i></i>
 	    <h2><i class="fa fa-user"></i>Setup</h2>
-	   <ul>
-	       <li>item 1</li>
-	       <li>item 2</li>
-	       <li>item 3</li>
-	     </ul>
+	    <ul>
+	       <li>Signing up for an account</li>
+	       <li>Confirming your registration</li>
+	       <li>Signing in to ${app_name}</li>
+	       <li>Managing your account</li>
+	       <li>Managing your subscription</li>
+	       <li>Deleting your account</li>
+       </ul>
 	  </li>
    <s:iterator value="moduleManager.backendModules">
        <li>
