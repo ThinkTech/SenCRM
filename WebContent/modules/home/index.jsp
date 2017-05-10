@@ -166,6 +166,7 @@
 <h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
 <s:iterator value="moduleManager.backendModules">
 <div class="module">
+    <div>
     <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 	<img src="modules/${folder.name}/images/icon-32.png"/>
 	<label title="${description}">${name}</label>
@@ -174,6 +175,7 @@
 	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
 	<span class="subscribe" data-id="${id}" title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span>Subscribe</span></span>
 	<span class="required"  title="Required" style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i>Required</span>
+	</div>
 	</div>
 </div>
 </s:iterator>
