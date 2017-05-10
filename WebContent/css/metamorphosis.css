@@ -1001,6 +1001,8 @@ ul.accordion h2 img {
 	position: relative;
     top: 10px;
     margin-right: 5px;
+    width : 32px;
+    height : 32px;
 }
 
 
