@@ -9,7 +9,7 @@
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1><i class="fa fa-user"></i>Welcome To ${app_name}</h1>
+        <h1><i class="fa fa-globe"></i>Welcome To ${app_name}</h1>
               <p>
 				<span>We offer a modular and extensible cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, business intelligence, marketing, sales, commerce, social and much more.</span>
 				<div class="images">
