@@ -901,6 +901,133 @@ ul.tabs li h2 {
     font-size : 90%;
 }
 
+ul.accordion  {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width : 65%;
+  margin-left : 13%;
+  margin-bottom : 80px;
+}
+ul.accordion > li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul.accordion > li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+ul.accordion > li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+ul.accordion > li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+ul.accordion > li:last-of-type {
+  padding-bottom: 0;
+}
+ul.accordion > li > i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+ul.accordion > li > i:before, ul.accordion > li > i:after {
+  content: "";
+  position: absolute;
+  background-color: #06d0d8;
+  width: 3px;
+  height: 9px;
+}
+ul.accordion > li > i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+ul.accordion > li > i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+ul.accordion > li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul.accordion > li input[type=checkbox]:checked ~ p,ul.accordion > li input[type=checkbox]:checked ~ ul {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul.accordion > li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+ul.accordion > li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+ul.accordion > li p {
+	margin : 10px 44px;
+}
+
+ul.accordion > li ul {
+	margin : 10px 63px;
+	list-style-type : square;
+}
+
+ul.accordion h2 {
+	text-transform: capitalize;
+    padding-left: 8px;
+    font-size: 1.1em;
+}
+
+ul.accordion h2 i {
+	font-size: 2em;
+    position: relative;
+    top: 6px;
+    width: 32px;
+    margin-right: 4px;
+}
+
+ul.accordion h2 i.adjust {
+	font-size : 1.5em;
+	top : 3px;
+}
+
+ul.accordion h2 img {
+	position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
 
 /*!
  *  Font Awesome v4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
