@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <id>mod_accounting</id>
+	<name>accounting</name>
+	<roles>manager</roles>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<description>Module for managing your accounting</description>
+	<details>
+	The accounting module records and processes accounting transactions such as accounts payable, accounts receivable and payroll to support the business by providing information to aid governance, as well as to monitor, analyse and influence best practice management.
+	</details>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<price>10</price>
+</module>
