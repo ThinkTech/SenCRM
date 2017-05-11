@@ -1,5 +1,6 @@
 app.ready(function(){
 	$("html, body").animate({ scrollTop: 0 }, 0);
+	app.translate("modules/home/i18n/module");
 	const slides = $(".rslides");
 	if(slides.length) {	
 		    page.wait();

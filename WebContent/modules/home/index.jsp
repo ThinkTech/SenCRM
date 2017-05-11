@@ -1,17 +1,17 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
-    <a title="Documentation" href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
-    <a title="Pricing"   href="public/pricing"  class="button"><i class="fa fa-money"></i>Pricing</a>
-    <a title="Sign up" href="registration"  class="button"><i class="fa fa-user"></i>Sign up</a>
-    <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
+    <a  href="documentation"  class="button"><i class="fa fa-book"></i><span data-element="documentation"></span></a>
+    <a  href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-element="pricing"></span></a>
+    <a  href="registration"  class="button"><i class="fa fa-user"></i><span data-element="signUp"></span></a>
+    <a  href="login" class="button"><i class="fa fa-key"></i><span data-element="signIn"></span></a>
 </div>
 <div class="content">
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1><i class="fa fa-globe"></i>Welcome To ${app_name}</h1>
+        <h1><i class="fa fa-globe"></i><span data-element="slide-1-title"></span></h1>
               <p>
-				<span>We offer a modular and extensible cloud-based <b>CRM Solution</b> to deliver a seamless user experience across management, manufacturing, business intelligence, marketing, sales, commerce, social and much more.</span>
+				<span data-element="slide-1-content"></span>
 				<div class="images">
 				     <img src="${images}/help-support-headset-bubble.png" class="animated rollIn"/>
 				     <img src="${images}/connection.png" class="animated shake"/>
@@ -21,10 +21,9 @@
   </li>
   <li>
   <div class="center">
-     <h1><i class="fa fa-adjust"></i>Beautiful, Clear & Flexible</h1>
+     <h1><i class="fa fa-adjust"></i><span data-element="slide-2-title"></span></h1>
               <p>
- 				<span>Today's mobile salesforce needs a <b>CRM System</b> that is easy to use and provides the relevant information needed to make sales faster,
- 				to convert the market understanding into tools and tactics.</span>
+ 				<span data-element="slide-2-content"></span>
  				<div class="images">
 				     <img src="${images}/marketing-1.png"/>
 				     <img src="${images}/marketing-2.png"/>
@@ -34,9 +33,9 @@
   </li>
    <li>
     <div class="center">
-       <h1><i class="fa fa-mobile"></i>PC, Mobile & Tablet Friendly</h1>
+       <h1><i class="fa fa-mobile"></i><span data-element="slide-3-title"></span></h1>
               <p>
-				 <span><b>${app_name}</b> is tailored to be responsive to maximize the user experience and you can use it anywhere with any device. All that you need is an internet connection and a compliant browser.</span>
+				 <span data-element="slide-3-content"></span>
 				 <div class="images">
 				     <img src="${images}/computer.png"/>
 				     <img src="${images}/mobile.png"/>
@@ -46,9 +45,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-code"></i>Modern & Fully Customizable</h1>
+       <h1><i class="fa fa-code"></i><span data-element="slide-4-title"></span></h1>
               <p>
-				 <span><b>Templates</b> allow you to change the look and feel of <b>${app_name}</b> to fit that of your structure. You can use those contributed by our community of web designers or you can create and upload your own.</span>
+				 <span data-element="slide-4-content"></span>
 				 <div class="images">
 				     <img src="${images}/theme-1.png"/>
 				     <img src="${images}/theme-2.png"/>
@@ -58,9 +57,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-key"></i>Secure, Powerful & Reliable</h1>
+       <h1><i class="fa fa-key"></i><span data-element="slide-5-title"></span></h1>
               <p>
-				  <span>With <b>our dedicated servers</b>, you can be well assured that we are providing properly setup and user ready hardware which would deliver the highest level quality of service, performance and reliability.</span>
+				  <span data-element="slide-5-content"></span>
 				  <div class="images">
 				     <img src="${images}/server-2.png"/>
 				     <img src="${images}/server-1.png"/>
@@ -70,9 +69,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-server"></i>Jelastic based SaaS</h1>
+       <h1><i class="fa fa-server"></i><span data-element="slide-6-title"></span></h1>
               <p>
-				  <span>You can manually provision resources for your <b>dedicated database server</b> to fit the needs of your structure. A cloudlet which is 128 MiB of memory and 400 MHz processor is used for measure.</span>
+				  <span data-element="slide-6-content"></span>
 				  <div class="images">
 				     <img src="${images}/mysql.png"/>
 				     <img src="${images}/cloudlet.png"/>
@@ -82,9 +81,9 @@
   </li>
    <li>
     <div class="center">
-       <h1><i class="fa fa-industry"></i>Choose Your Hosting Provider</h1>
+       <h1><i class="fa fa-industry"></i><span data-element="slide-7-title"></span></h1>
               <p>
-				  <span>Multi-cloud feature provides the ability to achieve higher availability through geo-distribution among different data centers or clouds with the trusted cloud vendors.</span>
+				  <span data-element="slide-7-content"></span>
 				  <div class="images">
 				     <img src="${images}/multicloud.png" style="width: 80%;margin:auto"/>
 				  </div>
@@ -93,10 +92,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-bolt"></i>Dynamic, Fast & Scalable</h1>
+       <h1><i class="fa fa-bolt"></i><span data-element="slide-8-title"></span></h1>
               <p>
-				 <span>An <b>integrated CRM</b> leverages a multichannel environment for an efficient business to provide better service at a reduced cost,
-				 to build relationships and develop leads.</span>
+				 <span data-element="slide-8-content"></span>
 				 <div class="images">
 				     <img src="${images}/dynamic-2.png"/>
 				     <img src="${images}/dynamic-1.png"/>
@@ -106,9 +104,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-money"></i>Build Your Business</h1>
+       <h1><i class="fa fa-money"></i><span data-element="slide-9-title"></span></h1>
               <p>
-				  <span>Achieve greater profitability by exploring our cloud opportunities for new ways to optimize your strategy and to boost your business. Get support from our experts through email or live chat.</span>
+				  <span data-element="slide-9-content"></span>
 				  <div class="images">
 				     <img src="${images}/business1.png"/>
 				     <img src="${images}/business2.png"/>
@@ -118,9 +116,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-drivers-license"></i>Get Started</h1>
+       <h1><i class="fa fa-drivers-license"></i><span data-element="slide-10-title"></span></h1>
               <p>
-				  <span>By creating your account, you are just four steps to take your business to the next level and to leverage an ecosystem of services well-designed for your success and your growth.</span>
+				  <span data-element="slide-10-content"></span>
 				  <div class="images">
 				     <img src="${images}/start-1.png"/>
 				     <img src="${images}/start-2.png"/>
@@ -133,7 +131,7 @@
 <div class="slider-audio">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
-<a title="Try it Now" class="button wizard">TRY IT NOW<i class="fa fa-play"></i></a>
+<a class="button wizard"> <span data-element="try-it"></span><i class="fa fa-play"></i></a>
 <div class="block">
 <div class="video">
   <div class="video-container">
@@ -163,7 +161,7 @@
 </div>
 <div class="modules">
 <div class="center">
-<h1><i class="fa fa-puzzle-piece"></i>Available Modules</h1>
+<h1><i class="fa fa-puzzle-piece"></i><span data-element="available-modules"></span></h1>
 <s:iterator value="moduleManager.backendModules">
 <div class="module" data-required="${mandatory}">
     <div>
@@ -173,8 +171,8 @@
 	<p>${details}</p>
 	<div>
 	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
-	<span class="subscribe" data-id="${id}" title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span>Subscribe</span></span>
-	<span class="required"  title="Required" style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i>Required</span>
+	<span class="subscribe" data-id="${id}" title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span data-element="subscribe"></span></span>
+	<span class="required"  title="Required" style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i><span data-element="required"></span></span>
 	</div>
 	</div>
 </div>
@@ -431,20 +429,20 @@
 </div>
 <div class="benefits">
    <div>
-     <h2><i class="fa fa-money"></i>Build your business</h2>
-     <p>Achieve greater profitability by exploring our cloud opportunities for new ways to optimize your strategy and to boost your business.</p>
+     <h2><i class="fa fa-money"></i><span data-element="benefit-1-title"></span></h2>
+     <p><span data-element="benefit-1-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-ticket"></i>Find help when you need it</h2>
-     <p>Get support from our experts through email or live chat. Connect with a community of users through forums, guided courses and events around the world.</p>
+     <h2><i class="fa fa-ticket"></i><span data-element="benefit-2-title"></span></h2>
+     <p><span data-element="benefit-2-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-key"></i>A secure SaaS you can count on</h2>
-     <p>${app_name} will always be available, secure, and your data kept private and automatically backed up. Anti-spam protection is built in its core.</p>
+     <h2><i class="fa fa-key"></i><span data-element="benefit-3-title"></span></h2>
+     <p><span data-element="benefit-3-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-magic"></i>Do more with features</h2>
-     <p>Add extra features to ${app_name} like advanced galleries, forms, charts, polls, sophisticated comments and much more.</p>
+     <h2><i class="fa fa-magic"></i><span data-element="benefit-4-title"></span></h2>
+     <p><span data-element="benefit-4-content"></span></p>
    </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>

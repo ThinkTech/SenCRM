@@ -1,8 +1,8 @@
 <div class="buttons">
-     <a title="Documentation" href="documentation"  class="button"><i class="fa fa-book"></i>Documentation</a>
-    <a title="Pricing"   href="public/pricing"  class="button"><i class="fa fa-money"></i>Pricing</a>
-    <a title="Sign in" href="login" class="button"><i class="fa fa-key"></i>Sign in</a>
-    <a href="${baseUrl}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+     <a href="documentation"  class="button"><i class="fa fa-book"></i><span data-element="documentation"></span></a>
+    <a href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-element="pricing"></span></a>
+    <a href="login" class="button"><i class="fa fa-key"></i><span data-element="signIn"></span></a>
+    <a href="${baseUrl}"  class="button"><i class="fa fa-arrow-left"></i><span data-element="back"></span></a>
 </div>
 <div class="registration success">
  <h1><i class="fa fa-user"></i>Account Created</h1>

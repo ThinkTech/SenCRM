@@ -1,5 +1,5 @@
 <div class="buttons">
-    <a href="${baseUrl}"  class="button"><i class="fa fa-arrow-left"></i>Back</a>
+    <a href="${baseUrl}"  class="button"><i class="fa fa-arrow-left"></i><span data-element="back"></span></a>
 </div>
 <div class="registration success">
  <h1><i class="fa fa-user"></i>Email Sent</h1>

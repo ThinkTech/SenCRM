@@ -108,7 +108,7 @@ b {
 	font-family : Exo;
 }
 
-span, .info[data-info]:hover:after {
+.info[data-info]:hover:after {
 	font-family : Lato;
 }
 
