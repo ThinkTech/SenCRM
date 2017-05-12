@@ -32,14 +32,17 @@ const getPower = function(value) {
 app.ready(function(){
 	var form = $(".registration form");
 	if(form.length) {
-	 app.ready(function(){
 		page.wait();
-		head.load("css/animate.min.css","modules/registration/js/jquery.easyWizard.js", function() { 
+		head.load("css/animate.min.css","modules/registration/js/jquery.easyWizard.js", function() {
+			$.each($("section",form),function(index,element){
+				var title = $(element).attr("data-step-title");
+				$(element).attr("data-step-title",i18n(title));
+			});
 			$("div.registration").addClass("animated pulse");
 			form.easyWizard({
-				    prevButton: "Back",
-				    nextButton: "Next",
-				    submitButtonText: "Create",
+				    prevButton: i18n("back"),
+				    nextButton: i18n("next"),
+				    submitButtonText: i18n("create"),
 				    before : function(wizardObj,currentStep,nextStep) {
 				    	if(nextStep.index() > currentStep.index()) {
 					    	var valid = true;
@@ -70,7 +73,7 @@ app.ready(function(){
 							const confirm = $("#confirm",currentStep);
 							if(password.length && password.val() != confirm.val()) {
 								$("html, body").animate({ scrollTop: password.offset().top }, 500);
-								alert("the two passwords are not identicals",function(){
+								alert(i18n("password-mismatch"),function(){
 									password.addClass("error").focus();
 								});
 								valid = false;
@@ -78,7 +81,7 @@ app.ready(function(){
 							const value = password.length ? password.val() : null;
 							if(value && (value.length < 8 || value.length >= 100)) {
 								$("html, body").animate({ scrollTop: password.offset().top }, 500);
-								alert("Your password must be between 8 and 100 characters",function(){
+								alert(password.next().attr("data-info"),function(){
 									password.addClass("error").focus();
 								});
 								valid = false;
@@ -103,7 +106,6 @@ app.ready(function(){
 			$("section",form).css("opacity","1").css("margin-top","0px");
 			$("input:first",form).focus();
 			page.release();
-		 });
 	});
 	form.on("submit",function(event){
 		var url = $(this).attr("action");

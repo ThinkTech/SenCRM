@@ -42,4 +42,8 @@ $(document).ready(function() {
 	$("#contact-form img").click(function(){
 		$(this).parent().fadeOut();
 	});
+	$("div.language select").on("change",function(){
+		var language = $(this).val();
+		app.retranslate(language);
+	}).val(app.language);
 });

@@ -70,6 +70,13 @@
 	margin-left : -8px;
 }
 
+#form .mailing span {
+	width: 367px;
+    position: relative;
+    padding-top: 1px;
+    margin-top: -7px;
+}
+
 .registration .price {
     display: inline-block;
     color: #21560a;

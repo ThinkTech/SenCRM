@@ -33,14 +33,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div class="search">
       <form action="public/search">
       <i class="fa fa-search"></i>
-      <input name="query" type="text" data-element="search"/>
+      <input name="query" type="text" data-translation="search"/>
       </form>
    </div>
+   <div class="language">
+	<span data-translation="language"></span> : 
+	<select id="select">
+	     <option id="english" value="en" data-translation="english"></option>
+	    <option id="french" value="fr" data-translation="french"></option>
+	</select>
+	</div>
    </header>
    <div class="aside">
-	    <a  href="https://sencrm.wordpress.com/news/" target="_blank" class="title"><i class="fa fa-newspaper-o"></i><span data-element="news"></span></a>
-	    <a  href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i><span data-element="blog"></span></a>
-	    <a href="public/faq"  class="title"><i class="fa fa-question-circle"></i><span data-element="faq"></span></a>
+	    <a  href="https://sencrm.wordpress.com/news/" target="_blank" class="title"><i class="fa fa-newspaper-o"></i><span data-translation="news"></span></a>
+	    <a  href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i><span data-translation="blog"></span></a>
+	    <a href="public/faq"  class="title"><i class="fa fa-question-circle"></i><span data-translation="faq"></span></a>
 	    <div class="socials">
 	     <a><i class="fa fa-facebook"></i></a>
 	     <a><i class="fa fa-twitter"></i></a>
@@ -49,54 +56,54 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    </div>
     </div>
     <div class="aside right">
-        <a href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i><span data-element="support"></span></a>
-	    <a  href="https://sencrm.wordpress.com/community/" target="_blank"  class="title"><i class="fa fa-handshake-o"></i><span data-element="community"></span></a>
-	    <a id="contact"  class="title"><i class="fa fa-envelope"></i><span data-element="contact"></span></a>
+        <a href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i><span data-translation="support"></span></a>
+	    <a  href="https://sencrm.wordpress.com/community/" target="_blank"  class="title"><i class="fa fa-handshake-o"></i><span data-translation="community"></span></a>
+	    <a id="contact"  class="title"><i class="fa fa-envelope"></i><span data-translation="contact"></span></a>
     </div>
    <tiles:insertAttribute name="content"/>
    <div id="contact-form">
      <img title="close" class="close" src="templates/amadeus/images/close.png"/>
-     <h1><i class="fa fa-envelope"></i><span data-element="contact"></span></h1>
+     <h1><i class="fa fa-envelope"></i><span data-translation="contact"></span></h1>
      <form  action="contact" method="post" class="topBefore">
-		  <input id="name" name="mail.author" required type="text" data-element="name">
-		  <input id="email" name="mail.address" required type="email" data-element="email">
-		  <input id="subject" name="mail.subject" required type="text" data-element="subject">
-		  <textarea id="message" name="mail.content" required data-element="message"></textarea>
-  	      <input id="submit" type="submit" data-element="send-now">
+		  <input id="name" name="mail.author" required type="text" data-translation="name">
+		  <input id="email" name="mail.address" required type="email" data-translation="email">
+		  <input id="subject" name="mail.subject" required type="text" data-translation="subject">
+		  <textarea id="message" name="mail.content" required data-translation="message"></textarea>
+  	      <input id="submit" type="submit" data-translation="send-now">
 	</form>
    </div>
    <footer>
    <div class="footer-item">
-     <h1 data-element="getting-started"></h1>
+     <h1 data-translation="getting-started"></h1>
      <ul>
-       <li><a href="public/understanding"><span data-element="understanding"></span> ${app_name}</a></li>
-       <li><a href="public/overview"><span data-element="how_it_works"></span></a></li>
-       <li><a href="public/usage"><span data-element="how_to_use_it"></span></a></li>
-       <li><a href="public/customers"><span data-element="customers"></span></a></li>
-       <li><a href="public/partners"><span data-element="partners"></span></a></li>
-       <li><a href="registration/terms"><span data-element="terms"></span></a></li>
-       <li><a href="registration/privacy"><span data-element="privacy"></span></a></li>
+       <li><a href="public/understanding"><span data-translation="understanding"></span> ${app_name}</a></li>
+       <li><a href="public/overview"><span data-translation="how_it_works"></span></a></li>
+       <li><a href="public/usage"><span data-translation="how_to_use_it"></span></a></li>
+       <li><a href="public/customers"><span data-translation="customers"></span></a></li>
+       <li><a href="public/partners"><span data-translation="partners"></span></a></li>
+       <li><a href="registration/terms"><span data-translation="terms"></span></a></li>
+       <li><a href="registration/privacy"><span data-translation="privacy"></span></a></li>
      </ul>
    </div>
    <div class="footer-item">
-     <h1 data-element="quick-links"></h1>
+     <h1 data-translation="quick-links"></h1>
      <ul>
-       <li><a href="public/pricing"><span data-element="pricing"></span></a></li>
-       <li><a href="documentation"><span data-element="documentation"></span></a></li>
-       <li><a href="https://sencrm.wordpress.com/" target="_blank"><span data-element="blog"></span></a></li>
-       <li><a href="http://support.thinktech.sn/login" target="_blank"><span data-element="support"></span></a></li>
-       <li><a href="https://sencrm.wordpress.com/community/" target="_blank"><span data-element="community"></span></a></li>
-       <li><a href="https://sencrm.wordpress.com/news/" target="_blank"><span data-element="news"></span></a></li>
-       <li><a href="public/faq"><span data-element="faq"></span></a></li>
+       <li><a href="public/pricing"><span data-translation="pricing"></span></a></li>
+       <li><a href="documentation"><span data-translation="documentation"></span></a></li>
+       <li><a href="https://sencrm.wordpress.com/" target="_blank"><span data-translation="blog"></span></a></li>
+       <li><a href="http://support.thinktech.sn/login" target="_blank"><span data-translation="support"></span></a></li>
+       <li><a href="https://sencrm.wordpress.com/community/" target="_blank"><span data-translation="community"></span></a></li>
+       <li><a href="https://sencrm.wordpress.com/news/" target="_blank"><span data-translation="news"></span></a></li>
+       <li><a href="public/faq"><span data-translation="faq"></span></a></li>
      </ul>
    </div>
    <div class="footer-item">
-     <h1 data-element="subscribe-newsletter"></h1>
+     <h1 data-translation="subscribe-newsletter"></h1>
      <div class="newsletter">
-       <input type="text" placeholder="Your email address" title="Your email address"/>
-       <input type="submit" value="Subscribe" title="Subscribe"/>
+       <input type="text" data-translation="email"/>
+       <input type="submit" value="" data-translation="subscribe"/>
      </div>
-     <h1 data-element="tell-your-friends"></h1>
+     <h1 data-translation="tell-your-friends"></h1>
      <div class="share-this">
       <div class="sharethis-inline-share-buttons"></div>
      </div>
@@ -108,18 +115,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     <a><i class="fa fa-linkedin"></i></a>
    </div>
    <div class="agileits_w3layouts_copyright text-center">
-			<p>&copy; <span data-element="designed-by"></span> <a href="//w3layouts.com/" target="_blank">W3layouts</a> <span data-element="and"></span> <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
+			<p>&copy; <span data-translation="designed-by"></span> <a href="//w3layouts.com/" target="_blank">W3layouts</a> <span data-translation="and"></span> <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
 	</div>
 	</footer>
     <script src="js/jquery-3.1.1.min.js"></script>
    <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
    <script src="js/metamorphosis.js"></script>
-   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons"></script>
-   <script src="templates/amadeus/js/template.js"></script>
    <script>
-      app.translate("templates/amadeus/i18n/template","${request.locale.language}");
+      app.translate("i18n/app","${request.locale.language}");
+      app.translate("modules/${module.folder.name}/i18n/module");
    </script>
+   <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons" async defer></script>
+   
 </body>
 </html>
 

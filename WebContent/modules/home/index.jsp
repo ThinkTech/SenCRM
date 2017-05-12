@@ -1,17 +1,17 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
-    <a  href="documentation"  class="button"><i class="fa fa-book"></i><span data-element="documentation"></span></a>
-    <a  href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-element="pricing"></span></a>
-    <a  href="registration"  class="button"><i class="fa fa-user"></i><span data-element="signUp"></span></a>
-    <a  href="login" class="button"><i class="fa fa-key"></i><span data-element="signIn"></span></a>
+    <a  href="documentation"  class="button"><i class="fa fa-book"></i><span data-translation="documentation"></span></a>
+    <a  href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing"></span></a>
+    <a  href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp"></span></a>
+    <a  href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn"></span></a>
 </div>
 <div class="content">
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1><i class="fa fa-globe"></i><span data-element="slide-1-title"></span></h1>
+        <h1><i class="fa fa-globe"></i><span data-translation="slide-1-title"></span></h1>
               <p>
-				<span data-element="slide-1-content"></span>
+				<span data-translation="slide-1-content"></span>
 				<div class="images">
 				     <img src="${images}/help-support-headset-bubble.png" class="animated rollIn"/>
 				     <img src="${images}/connection.png" class="animated shake"/>
@@ -21,9 +21,9 @@
   </li>
   <li>
   <div class="center">
-     <h1><i class="fa fa-adjust"></i><span data-element="slide-2-title"></span></h1>
+     <h1><i class="fa fa-adjust"></i><span data-translation="slide-2-title"></span></h1>
               <p>
- 				<span data-element="slide-2-content"></span>
+ 				<span data-translation="slide-2-content"></span>
  				<div class="images">
 				     <img src="${images}/marketing-1.png"/>
 				     <img src="${images}/marketing-2.png"/>
@@ -33,9 +33,9 @@
   </li>
    <li>
     <div class="center">
-       <h1><i class="fa fa-mobile"></i><span data-element="slide-3-title"></span></h1>
+       <h1><i class="fa fa-mobile"></i><span data-translation="slide-3-title"></span></h1>
               <p>
-				 <span data-element="slide-3-content"></span>
+				 <span data-translation="slide-3-content"></span>
 				 <div class="images">
 				     <img src="${images}/computer.png"/>
 				     <img src="${images}/mobile.png"/>
@@ -45,9 +45,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-code"></i><span data-element="slide-4-title"></span></h1>
+       <h1><i class="fa fa-code"></i><span data-translation="slide-4-title"></span></h1>
               <p>
-				 <span data-element="slide-4-content"></span>
+				 <span data-translation="slide-4-content"></span>
 				 <div class="images">
 				     <img src="${images}/theme-1.png"/>
 				     <img src="${images}/theme-2.png"/>
@@ -57,9 +57,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-key"></i><span data-element="slide-5-title"></span></h1>
+       <h1><i class="fa fa-key"></i><span data-translation="slide-5-title"></span></h1>
               <p>
-				  <span data-element="slide-5-content"></span>
+				  <span data-translation="slide-5-content"></span>
 				  <div class="images">
 				     <img src="${images}/server-2.png"/>
 				     <img src="${images}/server-1.png"/>
@@ -69,9 +69,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-server"></i><span data-element="slide-6-title"></span></h1>
+       <h1><i class="fa fa-server"></i><span data-translation="slide-6-title"></span></h1>
               <p>
-				  <span data-element="slide-6-content"></span>
+				  <span data-translation="slide-6-content"></span>
 				  <div class="images">
 				     <img src="${images}/mysql.png"/>
 				     <img src="${images}/cloudlet.png"/>
@@ -81,9 +81,9 @@
   </li>
    <li>
     <div class="center">
-       <h1><i class="fa fa-industry"></i><span data-element="slide-7-title"></span></h1>
+       <h1><i class="fa fa-industry"></i><span data-translation="slide-7-title"></span></h1>
               <p>
-				  <span data-element="slide-7-content"></span>
+				  <span data-translation="slide-7-content"></span>
 				  <div class="images">
 				     <img src="${images}/multicloud.png" style="width: 80%;margin:auto"/>
 				  </div>
@@ -92,9 +92,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-bolt"></i><span data-element="slide-8-title"></span></h1>
+       <h1><i class="fa fa-bolt"></i><span data-translation="slide-8-title"></span></h1>
               <p>
-				 <span data-element="slide-8-content"></span>
+				 <span data-translation="slide-8-content"></span>
 				 <div class="images">
 				     <img src="${images}/dynamic-2.png"/>
 				     <img src="${images}/dynamic-1.png"/>
@@ -104,9 +104,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-money"></i><span data-element="slide-9-title"></span></h1>
+       <h1><i class="fa fa-money"></i><span data-translation="slide-9-title"></span></h1>
               <p>
-				  <span data-element="slide-9-content"></span>
+				  <span data-translation="slide-9-content"></span>
 				  <div class="images">
 				     <img src="${images}/business1.png"/>
 				     <img src="${images}/business2.png"/>
@@ -116,9 +116,9 @@
   </li>
   <li>
     <div class="center">
-       <h1><i class="fa fa-drivers-license"></i><span data-element="slide-10-title"></span></h1>
+       <h1><i class="fa fa-drivers-license"></i><span data-translation="slide-10-title"></span></h1>
               <p>
-				  <span data-element="slide-10-content"></span>
+				  <span data-translation="slide-10-content"></span>
 				  <div class="images">
 				     <img src="${images}/start-1.png"/>
 				     <img src="${images}/start-2.png"/>
@@ -131,7 +131,7 @@
 <div class="slider-audio">
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
-<a class="button wizard"> <span data-element="try-it"></span><i class="fa fa-play"></i></a>
+<a class="button wizard"> <span data-translation="try-it"></span><i class="fa fa-play"></i></a>
 <div class="block">
 <div class="video">
   <div class="video-container">
@@ -140,39 +140,39 @@
 </div>
 <div class="testimonials">
     <div class="testimonial">
-		<p>${app_name} brought me more customers than I thought, which is a given, and it is working well with my business. I really love the product and the people behind it.</p>
+		<p data-translation="testimonial-1-content"></p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>John Doe - CEO of LiveBusiness<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-1-author"></span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
-		<p>I recommend ${app_name} to every business due to the amount of time saved. The product is elegant and powerful and it covers all of my needs.</p>
+		<p data-translation="testimonial-2-content"></p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>Marsha Wright - CEO of TechOnFire<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-2-author"></span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 	<div class="testimonial">
-		<p>Rethinking how nowadays, we manage our businesses was crucial to my adoption of ${app_name} and I'm delighted to be among the users of such great product. Looking forward to more amazing features.</p>
+		<p data-translation="testimonial-3-content"></p>
 		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b>Mansour Fall - CEO of ThinkBig<span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-3-author"></span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
 </div>
 </div>
 <div class="modules">
 <div class="center">
-<h1><i class="fa fa-puzzle-piece"></i><span data-element="available-modules"></span></h1>
+<h1><i class="fa fa-puzzle-piece"></i><span data-translation="available-modules"></span></h1>
 <s:iterator value="moduleManager.backendModules">
 <div class="module" data-required="${mandatory}">
     <div>
     <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 	<img src="modules/${folder.name}/images/icon-32.png"/>
-	<label title="${description}">${name}</label>
-	<p>${details}</p>
+	<label data-translation="${id}"></label>
+	<p data-translation="${id}_details"></p>
 	<div>
-	<span class="price"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
-	<span class="subscribe" data-id="${id}" title="Subscribe" style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span data-element="subscribe"></span></span>
-	<span class="required"  title="Required" style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i><span data-element="required"></span></span>
+	<span class="price"><span data-translation="${id}_price"></span> ${initParam.app_currency}/mo</span>
+	<span class="subscribe" data-id="${id}"  style="display:${mandatory?'none':'inline-block'}"><i class="fa fa-shopping-cart"></i><span data-translation="subscribe"></span></span>
+	<span class="required"  style="display:${!mandatory?'none':'inline-block'}"><i class="fa fa-check-square-o"></i><span data-translation="required"></span></span>
 	</div>
 	</div>
 </div>
@@ -181,69 +181,70 @@
 <div class="content">
 <div class="browser">
 <div class="wizard">
-   <a title="Sign up" class="button signup"><i class="fa fa-user"></i>CREATE YOUR ACCOUNT</a>
+   <a title="Sign up" class="button signup"><i class="fa fa-user"></i><span data-translation="create-account"></span></a>
 </div>
 <div>
 <div class="registration">
-<form id="form" action="registration/register" method="post" class="form-horizontal"> 
-   <section class="step" data-step-title="Profile">
+<form id="form" action="registration/register" method="post"> 
+   <section class="step" data-step-title="profile">
 	 <fieldset>
 		<h1><i class="fa fa-user"></i>Manager</h1>
 		
-		<label title="First Name" class="required text-right"><i class="fa fa-user"></i>First Name : </label>
-		<input required title="First Name" name="user.firstName" maxlength="100"  type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your first name.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label class="required text-right"><i class="fa fa-user"></i><span data-translation="firstName"></span></label>
+		<input required data-translation="firstName" name="user.firstName" maxlength="100"  type="text"/>
+		<span class="info fa fa-info adjust"  data-info="info-firstName">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	   
-		<label title="Last Name" class="required text-right"><i class="fa fa-user"></i>Last Name : </label>
-		<input required title="Last Name" name="user.lastName" maxlength="100" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your last name.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label  class="required text-right"><i class="fa fa-user"></i><span data-translation="lastName"></span></label>
+		<input required data-translation="lastName" name="user.lastName" maxlength="100" type="text"/>
+		<span class="info fa fa-info adjust"  data-info="info-lastName">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-	    <label title="Email" class="required text-right"><i class="fa fa-envelope"></i>Email :</label>
-		<input required title="Email" name="user.email" maxlength="100" type="email"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your email address.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+	    <label class="required text-right"><i class="fa fa-envelope"></i><span data-translation="email"></span></label>
+		<input required data-translation="email" name="user.email" maxlength="100" type="email"/>
+		<span class="info fa fa-info adjust"  data-info="info-email">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-		<label title="Language" class="required text-right"><i class="fa fa-language"></i>Language :</label>
-		<select title="Language" name="user.lang">
-		        <option value="en">English</option>
+		<label class="required text-right"><i class="fa fa-language"></i><span data-translation="language"></span></label>
+		<select data-translation="Language" name="user.lang">
+		       <option id="english" value="en" data-translation="english"></option>
+	    		<option id="french" value="fr" data-translation="french"></option>
 		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your language.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<span class="info fa fa-info adjust"  data-info="info-language">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-		<label title="Password" class="required text-right"><i class="fa fa-key"></i>Password :</label>
-		<input required id="password" title="Password" name="user.password" maxlength="100" type="password"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter your password which must be between 8 and 100 characters.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label  class="required text-right"><i class="fa fa-key"></i><span data-translation="password"></span></label>
+		<input required  data-translation="password" id="password"  name="user.password" maxlength="100" type="password"/>
+		<span class="info fa fa-info adjust"  data-info="info-password">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-		<label title="Confirm" class="required text-right"><i class="fa fa-key"></i>Confirm :</label>
-		<input required id="confirm" title="Confirm" maxlength="100" type="password"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must retype your password.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label class="required text-right"><i class="fa fa-key"></i><span data-translation="confirm"></span></label>
+		<input required id="confirm" data-translation="confirm" maxlength="100" type="password"/>
+		<span class="info fa fa-info adjust"  data-info="info-confirm">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
 	</fieldset>
 	
 	</section>
 	
-	<section class="step" data-step-title="Structure">
+	<section class="step" data-step-title="structure">
 	
 	<fieldset>
 		<h1><i class="fa fa-building"></i>Structure</h1>
 		
-		<label title="Name" class="required text-right"><i class="fa fa-building-o"></i>Name : </label>
-		<input maxlength="100" required title="Name" name="account.structure.name" maxlength="100"  type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the name of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label class="required text-right"><i class="fa fa-building-o"></i><span data-translation="name"></span></label>
+		<input maxlength="100" required data-translation="name" name="account.structure.name" maxlength="100"  type="text"/>
+		<span class="info fa fa-info adjust"  data-info="info-name">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	   
-		<label title="Primary Business" class="required text-right"><i class="fa fa-money"></i>Primary Business :</label>
-		<select title="Primary Business" name="account.structure.business">
+		<label  class="required text-right"><i class="fa fa-money"></i><span data-translation="business"></span></label>
+		<select data-translation="business" name="account.structure.business">
 		    <option value="1">Accommodations</option>
 		    <option value="2">Accounting</option>
 		 	<option value="3">Advertising</option>
@@ -300,38 +301,38 @@
 		 	<option value="54">Web Services</option>
 		 	<option value="55">Other</option>
 		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select your primary business.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<span class="info fa fa-info adjust"  data-info="info-business">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-		<label title="Size" class="required text-right"><i class="fa fa-level-up"></i>Size :</label>
-		<select title="Size" name="account.structure.size">
+		<label  class="required text-right"><i class="fa fa-level-up"></i><span data-translation="size"></span></label>
+		<select data-translation="size" name="account.structure.size">
 		    <option value="1">micro</option>
 		 	<option value="2">small</option>
 		 	<option value="3">medium</option>
 		 	<option value="4">big</option>
 		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the size of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<span class="info fa fa-info adjust"  data-info="info-size">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
 		  
-		<label title="Country" class="required text-right"><i class="fa fa-globe"></i>Country :</label>
-		<select class="country" required title="Country" name="account.structure.address.country">
+		<label  class="required text-right"><i class="fa fa-globe"></i><span data-translation="country"></span></label>
+		<select data-translation="country" class="country" required  name="account.structure.address.country">
 		</select>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must select the country of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<span class="info fa fa-info adjust"  data-info="info-country">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
 	    
-		<label title="City" class="text-right"><i class="fa fa-globe"></i>City :</label>
-		<input title="City" name="account.structure.address.city"  maxlength="200" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is required and you must enter the city of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		<label  class="text-right"><i class="fa fa-globe"></i><span data-translation="city"></span></label>
+		<input data-translation="city" name="account.structure.address.city"  maxlength="200" type="text"/>
+		<span class="info fa fa-info adjust"  data-info="info-city">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	    
-	    <label title="Address" class="text-right"><i class="fa fa-globe"></i>Address :</label>
-		<input  title="Address" name="account.structure.address.location" maxlength="200" type="text"/>
-		<span class="info fa fa-info adjust"  data-info="This field is not required and you must enter the address of your structure.">&nbsp;</span>
-	    <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+	    <label  class="text-right"><i class="fa fa-globe"></i><span data-translation="address"></span></label>
+		<input  data-translation="address" name="account.structure.address.location" maxlength="200" type="text"/>
+		<span class="info fa fa-info adjust"  data-info="info-address">&nbsp;</span>
+	    <span class="voice fa fa-microphone">&nbsp;</span>
 	     
 	   
 	</fieldset>
@@ -339,83 +340,78 @@
 	
 	</section>
 	
-	<section class="step" data-step-title="Subscription">
+	<section class="step" data-step-title="subscription">
 	
 	<fieldset>
-	  <h1><i class="fa fa-puzzle-piece"></i>Modules</h1>
-	   <s:iterator value="moduleManager.backendModules">
-		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i>${name}</label>
+	  <h1><i class="fa fa-puzzle-piece"></i><span data-translation="modules"></span></h1>
+	    <s:iterator value="moduleManager.backendModules">
+		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i><span data-translation="${id}"></span></label>
 		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price bgcolor"  title="${price} ${initParam.app_currency}/mo"><span>${price}</span> ${initParam.app_currency}/mo</span>
-		   <span class="info fa fa-info"  data-info="${details}">&nbsp;</span>
-		   <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
+		   <span class="price bgcolor"><span data-translation="${id}_price"></span> ${initParam.app_currency}/mo</span>
+		   <span class="info fa fa-info"  data-info="${id}_details">&nbsp;</span>
+		   <span class="voice fa fa-microphone">&nbsp;</span>
 		</s:iterator>
 	</fieldset>
 
 	
 	<fieldset>
-	  <h1><i class="fa fa-database"></i>Database Hosting</h1>
-	     <label title="Provider" class="required text-right"><i class="fa fa-industry"></i>Provider</label>
-		 <select title="Provider" name="registration.provider">
+	  <h1><i class="fa fa-database"></i><span data-translation="hosting"></span></h1>
+	     <label  class="required text-right"><i class="fa fa-industry"></i><span data-translation="provider"></span></label>
+		 <select data-translation="provider" name="registration.provider">
 		    <option value="1">MIRhosting</option>
 		 </select>
-		 <span class="info fa fa-info adjust"  data-info="Your database will be hosted on the selected hosting provider.">&nbsp;</span>
-		  <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
-	     <label title="Colocation" class="text-right"><i class="fa fa-database"></i>Colocation</label>
-		 <input title="Colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
+		 <span class="info fa fa-info adjust"  data-info="info-provider">&nbsp;</span>
+		  <span class="voice fa fa-microphone">&nbsp;</span>
+	     <label  class="text-right"><i class="fa fa-database"></i><span data-translation="colocation"></span></label>
+		 <input data-translation="colocation" type="radio" data-price="10" value="colocation" name="registration.hosting" checked/> 
 		 <span class="price bgcolor"  title="10 ${initParam.app_currency}/mo"><span>10</span> ${initParam.app_currency}/mo</span>
-		 <span class="info fa fa-info"  data-info="This server is shared with other users, so all of its resources and power are not under your control and this option is available only if the size of your structure is micro or small.">&nbsp;</span>
-		 <span class="voice fa fa-microphone"   title="information">&nbsp;</span>
-	     <label title="Dedicated Server" class="text-right"><i class="fa fa-database"></i>Dedicated Server</label>
-		 <input title="Dedicated Server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
+		 <span class="info fa fa-info"  data-info="info-colocation">&nbsp;</span>
+		 <span class="voice fa fa-microphone">&nbsp;</span>
+	     <label  class="text-right"><i class="fa fa-database"></i><span data-translation="server"></span></label>
+		 <input data-translation="server" type="radio"  data-price="20" value="private" name="registration.hosting"/> 
 		 <span class="private price bgcolor" title="20 ${initParam.app_currency}/mo"><span>20</span> ${initParam.app_currency}/mo</span>
-		 <span class="info fa fa-info"  data-info="This server is exclusively for your use (not shared with other users), so all of its resources and power are under your control and you can also change its environment topology.">&nbsp;</span>
-		 <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
-		 <span class="wrench fa fa-wrench" data-element="topology" title="Change environment topology">&nbsp;</span>
+		 <span class="info fa fa-info"  data-info="info-server">&nbsp;</span>
+		 <span class="voice fa fa-microphone"  >&nbsp;</span>
+		 <span class="wrench fa fa-wrench" data-element="topology">&nbsp;</span>
 		 <div id="topology" class="settings">
 		     <fieldset class="bgcolor">
-		      <h2><i class="fa fa-wrench"></i>Topology</h2>
-		      <label title="Horizontal Scaling" class="text-right"><i class="fa fa-database"></i>Nodes</label>
-		      <input  title="Nodes" name="registration.nodes" min="1" max="30" data-action="setNodes" type="number" value="1"/>
-		       <span class="info fa fa-info"  data-info="According to the size of your structure, you can set the maximum allowed amount of nodes.">&nbsp;</span>
-		       <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
-		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i>Dynamic Cloudlets</label>
-		      <input  title="Dynamic Cloudlets" min="1" max="70" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="4"/>
-		       <span class="info fa fa-info"  data-info="Dynamic cloudlets defines the amount of resources your structure can access, based on necessity. You pay for them only in the case of real consumption.">&nbsp;</span>
-		       <span class="voice fa fa-microphone"  title="information">&nbsp;</span>
+		      <h2><i class="fa fa-wrench"></i><span data-translation="topology"></span></h2>
+		      <label  class="text-right"><i class="fa fa-database"></i><span data-translation="nodes"></span></label>
+		      <input  name="registration.nodes" min="1" max="30" data-action="setNodes" type="number" value="1"/>
+		       <span class="info fa fa-info"  data-info="info-nodes">&nbsp;</span>
+		       <span class="voice fa fa-microphone"  >&nbsp;</span>
+		       <label title="Vertical Scaling per Node" class="text-right"><i class="fa fa-database"></i><span data-translation="cloudlets"></span></label>
+		      <input  min="1" max="70" data-action='setFlexibleCloudlets' name="registration.flexibleCloudlets"  type="number" value="4"/>
+		       <span class="info fa fa-info"  data-info="info-cloudlets">&nbsp;</span>
+		       <span class="voice fa fa-microphone"  >&nbsp;</span>
 		       <h6><span>1 cloudlet = </span>&nbsp;128 MiB + 400 MHz</h6>
-		       <h6><span>Power = </span>&nbsp;<span class="power">128 MiB + 400 MHz</span></h6>
+		       <h6><span data-translation="power"></span>&nbsp;<span class="power">128 MiB + 400 MHz</span></h6>
 		      </fieldset>
 		 </div>
 	</fieldset>
 	
 	<fieldset>
-	  <h1><i class="fa fa-money"></i>Pricing</h1>
-	     <label title="Amount" class="text-right"><i class="fa fa-money"></i>Amount : </label>
+	  <h1><i class="fa fa-money"></i><span data-translation="pricing"></span></h1>
+	     <label  class="text-right"><i class="fa fa-money"></i><span data-translation="amount"></span></label>
 		 <span  class="price bgcolor"><span id="amount"></span> ${initParam.app_currency}/mo</span>
 	</fieldset>
 	
 	</section>
 	
-	<section class="step" data-step-title="Confirmation">
+	<section class="step" data-step-title="confirmation">
 	
 	<div>
 	   <p>
 	      <input title="Mailing list subscription" value="true" name="registration.mailing" type="checkbox" checked/> 
-		  <span class="mailing" title="Mailing list subscription">Yes, send me emails on ThinkTech Products, Services and Events.
-		  <i class="info fa fa-info adjust"  data-info="Check this field to receive emails on ThinkTech Products, Services and Events.">&nbsp;</i>
-	      <i class="voice fa fa-microphone adjust"   title="information">&nbsp;</i>
+		  <span class="mailing">
+		  <span  data-translation="mailing-list"></span>
+		  <i class="info fa fa-info adjust"  data-info="mailing-list">&nbsp;</i>
+	      <i class="voice fa fa-microphone adjust"   >&nbsp;</i>
 		  </span> 
-		  
-	    
 	   </p>
 	</div>
 	<div>
-	  <p class="bgcolor">
-	   By clicking on the Create button below, you understand and agree that the use of ${app_name} is subject to these <a href="registration/terms" target="_blank">Terms of Service</a> 
-	   and this <a href="registration/privacy" target="_blank">Privacy Policy</a>, including the fact that ThinkTech may transfer your personal information collected in connection with your 
-	   registration to its affiliates globally and to third party entities that provide services to ThinkTech.
-	  </p>
+	  <p class="bgcolor" data-translation="agreement"></p>
 	</div>
 	<div class="captcha">
      <div class="g-recaptcha" data-sitekey="6LfcIBwUAAAAAMpRV6hzY9LHZJWbGyO4k668VXP1"></div>
@@ -429,20 +425,20 @@
 </div>
 <div class="benefits">
    <div>
-     <h2><i class="fa fa-money"></i><span data-element="benefit-1-title"></span></h2>
-     <p><span data-element="benefit-1-content"></span></p>
+     <h2><i class="fa fa-money"></i><span data-translation="benefit-1-title"></span></h2>
+     <p><span data-translation="benefit-1-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-ticket"></i><span data-element="benefit-2-title"></span></h2>
-     <p><span data-element="benefit-2-content"></span></p>
+     <h2><i class="fa fa-ticket"></i><span data-translation="benefit-2-title"></span></h2>
+     <p><span data-translation="benefit-2-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-key"></i><span data-element="benefit-3-title"></span></h2>
-     <p><span data-element="benefit-3-content"></span></p>
+     <h2><i class="fa fa-key"></i><span data-translation="benefit-3-title"></span></h2>
+     <p><span data-translation="benefit-3-content"></span></p>
    </div>
    <div>
-     <h2><i class="fa fa-magic"></i><span data-element="benefit-4-title"></span></h2>
-     <p><span data-element="benefit-4-content"></span></p>
+     <h2><i class="fa fa-magic"></i><span data-translation="benefit-4-title"></span></h2>
+     <p><span data-translation="benefit-4-content"></span></p>
    </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>

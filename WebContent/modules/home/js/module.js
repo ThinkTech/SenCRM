@@ -1,9 +1,9 @@
 app.ready(function(){
 	$("html, body").animate({ scrollTop: 0 }, 0);
-	app.translate("modules/home/i18n/module");
 	const slides = $(".rslides");
 	if(slides.length) {	
 		    page.wait();
+		    app.translate("modules/registration/i18n/module");
 			head.load("modules/registration/css/module.css","modules/registration/js/module.js","modules/home/js/responsiveslides.min.js","css/animate.min.css",function() {
 			 const items = ['rotateIn','flipInX','lightSpeedIn','rotateIn','rollIn','zoomIn','slideInUp','bounceInUp','pulse','rubberBand','shake','headshake'
 			               ,'jackInTheBox','flash','swing','fadeInUpBig','rotateInDownLeft','rotateInDownRight','rotateInUpLeft','rotateInUpRight',

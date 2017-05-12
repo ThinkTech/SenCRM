@@ -5,6 +5,7 @@ app.ready = function(callback) {
 
 app.get = function(url, callback) {
 	 var store =  typeof arguments[2] == 'boolean' ? arguments[2] : false;
+	 var error = arguments[2] instanceof Function ? arguments[2] : arguments[3];
 	 page.wait();
 	 if(store) {
 		 var data = localStorage.getItem(url); 
@@ -30,7 +31,6 @@ app.get = function(url, callback) {
 	     }
 	 }).fail(function(data){
 	  	 page.release();
-	  	 var error = arguments[2] instanceof Function ? arguments[2] : arguments[3];
 	  	 if(error) error(data);
 	 });
 };
@@ -183,7 +183,7 @@ page.speak = function(text) {
 	msg.text = text;
 	var voices = speechSynthesis.getVoices();
 	msg.voice = voices[4];
-	msg.lang = 'en-US';
+	msg.lang = app.language ? app.language : 'en-US';
 	msg.rate = 0.8;
 	msg.pitch = 0.65;
 	window.speechSynthesis.speak(msg);
@@ -381,28 +381,65 @@ app.ready(function() {
 	});
 });
 
+app.bundles = [];
 app.translate = function(url,language) {
-	console.log(url);
-	console.log(language);
-	app.language = language ? language : app.language;
+	app.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : app.language);
 	app.get(url+"_"+app.language+".json",function(data){
-		console.log(data);
+		localStorage.setItem("language",app.language);
+		app.bundles.push(url);
 		i18n.translator.add(data);
-		for(var propertyName in data.values) {
-			console.log(propertyName);
-			var element = $("[data-element="+propertyName+"]");
-			if(element.is('input:submit') ) {
-			  element.val(data.values[propertyName]);
+		$.each($("[data-translation]"),function(index,element){
+			var propertyName = $(element).attr("data-translation");
+			var value = data.values[propertyName];
+			if($(element).is('input:submit')) {
+				$(element).attr("value",value).attr("title",value);
 			}
-			if(element.is('input') || element.is('textarea')) {
-				  element.attr("placeholder",data.values[propertyName]);
+			else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+				$(element).attr("placeholder",value).attr("title",value);
 			}
 			else {
-			  element.html(data.values[propertyName]);
+				$(element).html(value);
 			}
-		}
+		});
+		$.each($("[data-info]"),function(index,element){
+			var propertyName = $(element).attr("data-info");
+			var value = data.values[propertyName];
+			$(element).attr("data-info",value);
+		});
+	},function(){
+		app.translate(url,"en");
 	});
 };
+
+app.retranslate = function(language) {
+	app.language = language;
+	localStorage.setItem("language",app.language);
+	for(var i=0;i<app.bundles.length;i++) {
+		var url = app.bundles[i];
+		app.get(url+"_"+app.language+".json",function(data){
+			i18n.translator.add(data);
+			$.each($("[data-translation]"),function(index,element){
+				var propertyName = $(element).attr("data-translation");
+				var value = data.values[propertyName];
+				if($(element).is('input:submit')) {
+					$(element).attr("value",value).attr("title",value);
+				}
+				else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+					$(element).attr("placeholder",value).attr("title",value);
+				}
+				else {
+					$(element).html(value);
+				}
+			});
+			$.each($("[data-info]"),function(index,element){
+				var propertyName = $(element).attr("data-info");
+				var value = data.values[propertyName];
+				$(element).attr("data-info",value);
+			});
+		});
+	}
+};
+
 
 String.prototype.linkify = function() {
 

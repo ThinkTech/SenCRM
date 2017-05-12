@@ -463,7 +463,6 @@ footer p {
 label i.fa,span i.fa {
 	margin-right : 5px;
 	font-weight : normal;
-	font-size: 80%;
     margin-top: -5px;
 }
 
@@ -893,12 +892,13 @@ ul.tabs li h2 {
     color: #fff;
     content: attr(data-info);
     right: 16%;
-    padding: 10px 15px;
+    padding: 3px 5px;
     position: absolute;
     z-index: 98;
     width: 290px;
     line-height : 1.2em;
     font-size : 90%;
+    text-align : left;
 }
 
 ul.accordion  {
