@@ -8,6 +8,6 @@
 </div>
 <div class="content"> 
   <div class="center">
-   <h1 class="text-center"><i class="fa fa-search"></i>Search Results</h1>
+   <h1 class="text-center"><i class="fa fa-search"></i><span data-translation="search-results"></span></h1>
   </div>
 </div>

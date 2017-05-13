@@ -155,7 +155,7 @@ div.wizard {
 }
 
 .center {
-	width: 95%;
+	width: 100%;
     margin : auto;
     margin-right : 0px;
     clear : both;
@@ -372,13 +372,13 @@ div.wizard {
 	.benefits {padding-left:20%}
 	.benefits div h2 {padding-right:149px}
 	.module {display : block;margin:auto}
-	.center {width: 80%;}
+	.center {width: 100%;}
 	.modules .center {width :100%}
 }
 
 @media(max-width:1024px ){
 	.rslides {height:420px;padding : 20px 5px}
-	.center {width: 76%;}
+	.center {width: 100%;}
 	.block {width : 64%}
 	 .rslides .images {width : 85%;padding-left:25%}
 	 .rslides .images img {height : 128px;width:128px}
