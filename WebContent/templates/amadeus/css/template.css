@@ -524,6 +524,7 @@ div.language > select {display : none;font-size : 89%;width:80px}
 .w3_agile_login p , .agile_its_registration  p{
 	font-size: 1em;
 	color: #fff;
+	height : 20px;
 }
 .w3_agile_login input[type="submit"] {
 	width:98.5%;
