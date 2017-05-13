@@ -37,7 +37,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </form>
    </div>
    <div class="language">
-	<span data-translation="language"></span> : 
 	<select id="select">
 	     <option id="english" value="en" data-translation="english"></option>
 	    <option id="french" value="fr" data-translation="french"></option>

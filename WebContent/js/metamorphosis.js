@@ -382,6 +382,7 @@ app.ready(function() {
 });
 
 app.bundles = [];
+app.failures = {};
 app.translate = function(url,language) {
 	app.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : app.language);
 	app.get(url+"_"+app.language+".json",function(data){
@@ -407,7 +408,10 @@ app.translate = function(url,language) {
 			$(element).attr("data-info",value);
 		});
 	},function(){
-		app.translate(url,"en");
+		if(!app.failures[url+"_en"]){
+			app.translate(url,"en");
+			app.failures[url+"_en"] = url+"_en";
+		}
 	});
 };
 

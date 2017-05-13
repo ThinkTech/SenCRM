@@ -28,6 +28,7 @@ app.ready(function(){
 				  }
 			});
 			$(".rslides img").addClass("animated "+items[Math.floor(Math.random()*items.length)]);
+			slides.animate({opacity : 1 }, 1).addClass("animated flash");
 			page.release();
 		 });
 		const testimonials = $(".testimonial");

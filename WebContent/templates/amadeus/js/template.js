@@ -46,4 +46,6 @@ $(document).ready(function() {
 		var language = $(this).val();
 		app.retranslate(language);
 	}).val(app.language);
+	
+	$(".fa").fadeIn(1000);
 });

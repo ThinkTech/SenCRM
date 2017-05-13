@@ -93,6 +93,11 @@ label{
 	font-size: .9em;
 	color: #dcffff;
 }
+
+.fa {
+	display : none;
+}
+
 .text-center {
 	text-align:center;
 }
@@ -537,7 +542,6 @@ div.language > select {font-size : 89%;width:80px}
 .login_w3ls span {
 	color: #fff;
 	font-size: 1em;
-	margin-left: 10px;
 	margin-right : 10px;
 }
 

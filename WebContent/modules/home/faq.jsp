@@ -13,7 +13,7 @@
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	     <h2><i class="fa fa-question-circle"></i>General</h2>
+	     <h2><i class="fa fa-question-circle"></i><span data-translation="general"></span></h2>
 	    <ul>
 	      <li>How do I...?</li>
           <li>How do I...?</li>
@@ -23,7 +23,7 @@
        <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><img src="modules/${folder.name}/images/icon-32.png"/>${name}</h2>
+	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}"></span></h2>
 	      <ul>
 	      <li>How do I...?</li>
           <li>How do I...?</li>

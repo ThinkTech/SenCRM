@@ -12,7 +12,7 @@
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><i class="fa fa-user"></i>Setup</h2>
+	    <h2><i class="fa fa-user"></i><span data-translation="setup"></span></h2>
 	    <ul>
 	       <li>Signing up for an account</li>
 	       <li>Confirming your registration</li>
@@ -26,7 +26,7 @@
        <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><img src="modules/${folder.name}/images/icon-32.png"/>${name}</h2>
+	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}"></span></h2>
 	       <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
@@ -37,7 +37,7 @@
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><i class="fa fa-code adjust"></i>Developers</h2>
+	    <h2><i class="fa fa-code adjust"></i><span data-translation="developers"></span></h2>
 	    <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
@@ -47,7 +47,7 @@
 	   <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	     <h2><i class="fa fa-handshake-o adjust"></i>Programs</h2>
+	     <h2><i class="fa fa-handshake-o adjust"></i><span data-translation="programs"></span></h2>
 	    <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
