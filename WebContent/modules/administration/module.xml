@@ -5,8 +5,6 @@
 	<roles>manager</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>Module for administering your structure</description>
-	<details>This is the module through which policies are made and communicated. The administrative staff oversee tasks that relate to the structure, but not any specific department, such as negotiating and paying rent, ordering office supplies and handling business licenses.</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>

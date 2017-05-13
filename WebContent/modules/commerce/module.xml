@@ -5,11 +5,6 @@
 	<roles>manager</roles>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>Module for managing your commerce</description>
-	<details>
-	The commerce module gives you the power to deliver online shopping experiences by combining the flexibility of the cloud with a rich set of advanced capabilities
-	for a unified and centralized customer service across brands, geographies, sites and devices.
-	</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>

@@ -8,9 +8,6 @@
 	<mandatory>true</mandatory>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
-	<description>Module for managing your customers, prospects and partners</description>
-	<details>The management module let you manage your customers, prospects and partners in
-	an efficient way by providing all the necessary tools to manage and analyze the interactions and data throughout the lifecycle, with the goal of improving business relationships.</details>
 	<creationDate>2016-09-01</creationDate>
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>
