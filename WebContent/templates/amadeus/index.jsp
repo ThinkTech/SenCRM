@@ -126,7 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    </script>
    <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>
-  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons"></script>
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons" async defer></script>
    
 </body>
 </html>
