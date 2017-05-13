@@ -45,7 +45,9 @@ $(document).ready(function() {
 	$("div.language select").on("change",function(){
 		var language = $(this).val();
 		app.retranslate(language);
-	}).val(app.language);
+	}).val(app.language).fadeIn(1000).addClass("animated rollIn");
 	
-	$(".fa").fadeIn(1000).css("display","inline-block");
+	$(".fa,.button").fadeIn(100).css("display","inline-block");
+	$(".aside a").animate({opacity : 1},100);
+	
 });
