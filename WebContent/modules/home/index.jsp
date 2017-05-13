@@ -9,7 +9,7 @@
 <ul class="rslides">
   <li>
   <div class="center">
-        <h1><i class="fa fa-globe"></i><span data-translation="slide-1-title"></span></h1>
+        <h1><i class="fa fa-puzzle-piece"></i><span data-translation="slide-1-title"></span></h1>
               <p>
 				<span data-translation="slide-1-content"></span>
 				<div class="images">
