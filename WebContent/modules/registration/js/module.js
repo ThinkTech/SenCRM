@@ -99,6 +99,9 @@ app.ready(function(){
 					    }
 				    }
 			});
+			$(".easyWizardButtons button.prev",form).attr("data-translation","back");
+			$(".easyWizardButtons button.next",form).attr("data-translation","next");
+			$(".easyWizardButtons button.submit",form).attr("data-translation","create");
 			$.each($(".easyWizardSteps li",form),function(index,li){
 				const section = $("section[data-step="+(index+1)+"]").css("opacity","1").css("margin-top","0px");
 				const title = section.attr("data-step-title");
