@@ -406,6 +406,7 @@ app.translate = function(url,language) {
 			var propertyName = $(element).attr("data-info");
 			var value = data.values[propertyName];
 			$(element).attr("data-info",value);
+			$(element).attr("data-info-translation",propertyName);
 		});
 	},function(){
 		if(!app.failures[url+"_en"]){
@@ -436,7 +437,7 @@ app.retranslate = function(language) {
 				}
 			});
 			$.each($("[data-info]"),function(index,element){
-				var propertyName = $(element).attr("data-info");
+				var propertyName = $(element).attr("data-info-translation");
 				var value = data.values[propertyName];
 				$(element).attr("data-info",value);
 			});
