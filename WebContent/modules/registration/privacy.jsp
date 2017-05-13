@@ -1,12 +1,12 @@
 <div class="buttons">
-    <a  href="documentation"  class="button"><i class="fa fa-book"></i><span data-translation="documentation"></span></a>
-    <a  href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing"></span></a>
-    <a  href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp"></span></a>
-    <a  href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn"></span></a>
-    <a  href="${referer}"  class="button"><i class="fa fa-arrow-left"></i><span data-translation="back"></span></a>
+    <a  href="documentation"  class="button"><i class="fa fa-book"></i><span data-translation="documentation">&nbsp;</span></a>
+    <a  href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing">&nbsp;</span></a>
+    <a  href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp">&nbsp;</span></a>
+    <a  href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn">&nbsp;</span></a>
+    <a  href="${referer}"  class="button"><i class="fa fa-arrow-left"></i><span data-translation="back">&nbsp;</span></a>
 </div>
 <div class="registration terms">
-<h1 class="text-center"><i class="fa fa-sticky-note-o"></i><span data-translation="privacy"></span></h1>
+<h1 class="text-center"><i class="fa fa-sticky-note-o"></i><span data-translation="privacy">&nbsp;</span></h1>
 <p class="bgcolor">
 This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.
 We use your Personal Information only for providing and improving the Site. By using the Site, you

@@ -4,6 +4,7 @@
     "structure":"Structure",
     "subscription":"Subscription",
     "confirmation":"Confirmation",
+    "manager":"Manager",
 	"firstName":"First Name",
 	"info-firstName":"This field is required and you must enter your first name.",
 	"lastName":"Last Name",

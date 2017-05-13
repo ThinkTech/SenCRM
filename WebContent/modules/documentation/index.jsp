@@ -1,18 +1,18 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
-    <a href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing"></span></a>
-    <a href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp"></span></a>
-    <a href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn"></span></a>
-    <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i><span data-translation="back"></span></a>
+    <a href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing">&nbsp;</span></a>
+    <a href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp">&nbsp;</span></a>
+    <a href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn">&nbsp;</span></a>
+    <a href="${referer}"  class="button"><i class="fa fa-arrow-left"></i><span data-translation="back">&nbsp;</span></a>
 </div>
 <div class="content">
 <div class="center">
-<h1 class="text-center"><i class="fa fa-book"></i><span data-translation="documentation"></span></h1>
+<h1 class="text-center"><i class="fa fa-book"></i><span data-translation="documentation">&nbsp;</span></h1>
   <ul class="accordion">
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><i class="fa fa-user"></i><span data-translation="setup"></span></h2>
+	    <h2><i class="fa fa-user"></i><span data-translation="setup">&nbsp;</span></h2>
 	    <ul>
 	       <li>Signing up for an account</li>
 	       <li>Confirming your registration</li>
@@ -26,7 +26,7 @@
        <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}"></span></h2>
+	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}">&nbsp;</span></h2>
 	       <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
@@ -37,7 +37,7 @@
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	    <h2><i class="fa fa-code adjust"></i><span data-translation="developers"></span></h2>
+	    <h2><i class="fa fa-code adjust"></i><span data-translation="developers">&nbsp;</span></h2>
 	    <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
@@ -47,7 +47,7 @@
 	   <li>
 	    <input type="checkbox" checked>
 	    <i></i>
-	     <h2><i class="fa fa-handshake-o adjust"></i><span data-translation="programs"></span></h2>
+	     <h2><i class="fa fa-handshake-o adjust"></i><span data-translation="programs">&nbsp;</span></h2>
 	    <ul>
 	       <li>item 1</li>
 	       <li>item 2</li>
