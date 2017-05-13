@@ -2,6 +2,7 @@
 "values":{
 	"setup":"Démarrage",
 	"developers":"Développeurs",
-	"programs":"Programmes"
+	"programs":"Programmes",
+	"general" : "Général"
 }
 }

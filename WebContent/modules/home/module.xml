@@ -14,9 +14,6 @@
 	<license>Commercial</license>
 	<version>1.0</version>
 	<actions>
-	  <action url="faq">
-	    <result>faq</result>
-	  </action>
 	  <action url="customers">
 	    <result>customers</result>
 	  </action>

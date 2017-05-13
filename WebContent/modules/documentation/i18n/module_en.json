@@ -2,6 +2,7 @@
 "values":{
 	"setup":"SetUp",
 	"developers":"Developers",
-	"programs":"Programs"
+	"programs":"Programs",
+	"general" : "General"
 }
 }

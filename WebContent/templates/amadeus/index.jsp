@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div class="aside">
 	    <a  href="https://sencrm.wordpress.com/news/" target="_blank" class="title"><i class="fa fa-newspaper-o"></i><span data-translation="news"></span></a>
 	    <a  href="https://sencrm.wordpress.com/" target="_blank" class="title"><i class="fa fa-rss"></i><span data-translation="blog"></span></a>
-	    <a href="public/faq"  class="title"><i class="fa fa-question-circle"></i><span data-translation="faq"></span></a>
+	    <a href="documentation/faq"  class="title"><i class="fa fa-question-circle"></i><span data-translation="faq"></span></a>
 	    <div class="socials">
 	     <a><i class="fa fa-facebook"></i></a>
 	     <a><i class="fa fa-twitter"></i></a>
@@ -93,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li><a href="http://support.thinktech.sn/login" target="_blank"><span data-translation="support"></span></a></li>
        <li><a href="https://sencrm.wordpress.com/community/" target="_blank"><span data-translation="community"></span></a></li>
        <li><a href="https://sencrm.wordpress.com/news/" target="_blank"><span data-translation="news"></span></a></li>
-       <li><a href="public/faq"><span data-translation="faq"></span></a></li>
+       <li><a href="documentation/faq"><span data-translation="faq"></span></a></li>
      </ul>
    </div>
    <div class="footer-item">
