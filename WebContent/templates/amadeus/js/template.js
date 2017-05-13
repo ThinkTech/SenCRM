@@ -47,5 +47,5 @@ $(document).ready(function() {
 		app.retranslate(language);
 	}).val(app.language);
 	
-	$(".fa").fadeIn(1000);
+	$(".fa").fadeIn(1000).css("display","inline-block");
 });
