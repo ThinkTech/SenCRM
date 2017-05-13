@@ -34,10 +34,6 @@ app.ready(function(){
 	if(form.length) {
 		page.wait();
 		head.load("css/animate.min.css","modules/registration/js/jquery.easyWizard.js", function() {
-			$.each($("section",form),function(index,element){
-				var title = $(element).attr("data-step-title");
-				$(element).attr("data-step-title",i18n(title));
-			});
 			$("div.registration").addClass("animated pulse");
 			form.easyWizard({
 				    prevButton: i18n("back"),
@@ -103,7 +99,14 @@ app.ready(function(){
 					    }
 				    }
 			});
-			$("section",form).css("opacity","1").css("margin-top","0px");
+			$.each($(".easyWizardSteps li",form),function(index,li){
+				const section = $("section[data-step="+(index+1)+"]").css("opacity","1").css("margin-top","0px");
+				const title = section.attr("data-step-title");
+				$(li).html("<span>"+(index+1)+"</span> . ");
+				const span = $("<span>"+i18n(title)+"</span>");
+				span.attr("data-translation",title);
+				$(li).append(span);
+			});
 			$("input:first",form).focus();
 			page.release();
 	});
