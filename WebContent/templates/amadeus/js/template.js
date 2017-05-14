@@ -44,6 +44,6 @@ $(document).ready(function() {
 	});
 	$("div.language select").on("change",function(){
 		var language = $(this).val();
-		app.retranslate(language);
-	}).val(app.language);
+		page.retranslate(language);
+	}).val(page.language);
 });

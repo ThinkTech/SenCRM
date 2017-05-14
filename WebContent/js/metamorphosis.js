@@ -181,7 +181,7 @@ page.highlight = function() {
 page.speak = function(text) {
 	var msg = new SpeechSynthesisUtterance();
 	msg.text = text;
-	msg.lang = app.language ? app.language : 'en-US';
+	msg.lang = page.language ? page.language : 'en-US';
 	msg.rate = 0.8;
 	msg.pitch = 0.65;
 	window.speechSynthesis.speak(msg);
@@ -197,11 +197,78 @@ page.speak = function(text) {
 	};
 };
 
+page.bundles = [];
+page.failures = {};
+page.translate = function(url,language) {
+	page.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : page.language);
+	const callback = arguments[1] instanceof Function ? arguments[1] : arguments[2];
+	app.get(url+"_"+page.language+".json",function(data){
+		localStorage.setItem("language",page.language);
+		page.bundles.push(url);
+		i18n.translator.add(data);
+		$.each($("[data-translation]"),function(index,element){
+			var propertyName = $(element).attr("data-translation");
+			var value = data.values[propertyName];
+			if($(element).is('input:submit')) {
+				$(element).attr("value",value).attr("title",value);
+			}
+			else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+				$(element).attr("placeholder",value).attr("title",value);
+			}
+			else {
+				$(element).html(value);
+			}
+		});
+		$.each($("[data-info]"),function(index,element){
+			var propertyName = $(element).attr("data-info");
+			var value = data.values[propertyName];
+			$(element).attr("data-info",value);
+			$(element).attr("data-info-translation",propertyName);
+		});
+		if(callback) callback();
+	},function(){
+		if(!page.failures[url+"_en"]){
+			page.translate(url,"en");
+			page.failures[url+"_en"] = url+"_en";
+			if(callback) callback();
+		}
+	});
+};
+
+page.retranslate = function(language) {
+	page.language = language;
+	localStorage.setItem("language",page.language);
+	for(var i=0;i<page.bundles.length;i++) {
+		var url = page.bundles[i];
+		app.get(url+"_"+page.language+".json",function(data){
+			i18n.translator.add(data);
+			$.each($("[data-translation]"),function(index,element){
+				var propertyName = $(element).attr("data-translation");
+				var value = data.values[propertyName];
+				if($(element).is('input:submit')) {
+					$(element).attr("value",value).attr("title",value);
+				}
+				else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+					$(element).attr("placeholder",value).attr("title",value);
+				}
+				else {
+					$(element).html(value);
+				}
+			});
+			$.each($("[data-info]"),function(index,element){
+				var propertyName = $(element).attr("data-info-translation");
+				var value = data.values[propertyName];
+				$(element).attr("data-info",value);
+			});
+		});
+	}
+};
+
 page.init = function() {
 	$("body").append('<div id="wait"><div id="loader"/></div>');
 	$("body").append('<div id="alert-dialog-container">'+
-			'<div><span>Information</span><span></span>'+
-			'<a tabindex="3" id="alert-dialog-ok">OK</a></div></div>');
+			'<div><span data-translation="information">Information</span><span></span>'+
+			'<a tabindex="3" id="alert-dialog-ok" data-translation="ok">OK</a></div></div>');
 	$("#alert-dialog-container").on('keydown', function(event) {     
        switch (event.keyCode) {
             case 27:
@@ -214,10 +281,10 @@ page.init = function() {
        return false;
 	}); 
 	$("body").append('<div id="confirm-dialog-container">'+
-			'<div><span>Confirmation</span>'+
+			'<div><span data-translation="confirmation">Confirmation</span>'+
 			'<span class="confirmation-dialog-title"></span>'+
-			'<a id="confirm-dialog-ok" tabindex="1">OK</a>'+
-			'<a id="confirm-dialog-cancel" tabindex="2">Cancel</a></div></div>');
+			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
+			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Cancel</a></div></div>');
 	
 	$("#confirm-dialog-cancel").click(function() { 
 		$("#confirm-dialog-container").hide();
@@ -378,73 +445,6 @@ app.ready(function() {
 		page.release();
 	});
 });
-
-app.bundles = [];
-app.failures = {};
-app.translate = function(url,language) {
-	app.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : app.language);
-	const callback = arguments[1] instanceof Function ? arguments[1] : arguments[2];
-	app.get(url+"_"+app.language+".json",function(data){
-		localStorage.setItem("language",app.language);
-		app.bundles.push(url);
-		i18n.translator.add(data);
-		$.each($("[data-translation]"),function(index,element){
-			var propertyName = $(element).attr("data-translation");
-			var value = data.values[propertyName];
-			if($(element).is('input:submit')) {
-				$(element).attr("value",value).attr("title",value);
-			}
-			else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
-				$(element).attr("placeholder",value).attr("title",value);
-			}
-			else {
-				$(element).html(value);
-			}
-		});
-		$.each($("[data-info]"),function(index,element){
-			var propertyName = $(element).attr("data-info");
-			var value = data.values[propertyName];
-			$(element).attr("data-info",value);
-			$(element).attr("data-info-translation",propertyName);
-		});
-		if(callback) callback();
-	},function(){
-		if(!app.failures[url+"_en"]){
-			app.translate(url,"en");
-			app.failures[url+"_en"] = url+"_en";
-			if(callback) callback();
-		}
-	});
-};
-
-app.retranslate = function(language) {
-	app.language = language;
-	localStorage.setItem("language",app.language);
-	for(var i=0;i<app.bundles.length;i++) {
-		var url = app.bundles[i];
-		app.get(url+"_"+app.language+".json",function(data){
-			i18n.translator.add(data);
-			$.each($("[data-translation]"),function(index,element){
-				var propertyName = $(element).attr("data-translation");
-				var value = data.values[propertyName];
-				if($(element).is('input:submit')) {
-					$(element).attr("value",value).attr("title",value);
-				}
-				else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
-					$(element).attr("placeholder",value).attr("title",value);
-				}
-				else {
-					$(element).html(value);
-				}
-			});
-			$.each($("[data-info]"),function(index,element){
-				var propertyName = $(element).attr("data-info-translation");
-				var value = data.values[propertyName];
-				$(element).attr("data-info",value);
-			});
-		});
-	}
-};
 
 
 String.prototype.linkify = function() {
