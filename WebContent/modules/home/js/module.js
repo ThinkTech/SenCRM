@@ -97,11 +97,11 @@ app.ready(function(){
 			if(span.hasClass("subscribe")) {
 				span.removeAttr('class').addClass("animated flash subscribed");
 				$("i",span).removeAttr('class').addClass("fa fa-check-square-o");
-				$("span",span).html("Subscribed");
+				$("span",span).html(i18n("subscribed")).attr("data-translation","subscribed");
 			}else {
 				span.removeAttr('class').addClass("animated pulse subscribe");
 				$("i",span).removeAttr('class').addClass("fa fa-shopping-cart");
-				$("span",span).html("Subscribe");
+				$("span",span).html(i18n("subscribe")).attr("data-translation","subscribe");;
 			}
 		});
 	}

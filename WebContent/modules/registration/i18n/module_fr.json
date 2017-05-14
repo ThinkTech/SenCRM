@@ -43,6 +43,10 @@
 	"mailing-list" : "Oui, envoyez-moi des emails sur les produits, les services et les événements de ThinkTech.",
 	"agreement" : "En cliquant sur le bouton Créer ci-dessous, vous comprenez et acceptez que l'utilisation de SenCRM est soumise à ces <a href='registration/terms' target='_blank'>conditions d'utilisation</a> et à cette <a href='registration/privacy' target='_blank'>Politique de confidentialité</a>, y compris le fait que ThinkTech peut transférer vos informations personnelles recueillies dans le cadre de votre inscription à ses sociétés affiliées à l'échelle mondiale et à des entités tierces qui fournissent des services à ThinkTech.",
 	"create" : "Créer",
-	"next" : "Suivant"
+	"next" : "Suivant",
+	"error-registration":"erreur lors de l'inscription, essayez encore",
+	"email-invalid":"cet email est invalide",
+	"option-required":"cet option est requis",
+	"check-captcha":"vous devez cochez le captcha"
 }
 }

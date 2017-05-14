@@ -59,7 +59,7 @@ app.ready(function(){
 					        	var re = /\S+@\S+\.\S+/;
 						        valid = re.test(email.val());
 						        if(!valid) {
-						        	alert("this email is invalid",function(){
+						        	alert(i18n("email-invalid"),function(){
 										$(email).addClass("error").focus();
 									});
 						        }
@@ -94,7 +94,7 @@ app.ready(function(){
 				    },
 				    beforeSubmit: function(wizardObj) {
 				    	if(!grecaptcha.getResponse()) {
-						  alert("you must check the captcha");
+						  alert(i18n("check-captcha"));
 						  return false;
 					    }
 				    }
@@ -120,7 +120,7 @@ app.ready(function(){
 			window.location.href = response.url;
 		}, function(error) {
 			$("body").css("opacity","1");
-			alert("error during the registration, please try again", function() {
+			alert(i18n("error-registration"), function() {
 				$("input,a,select").removeAttr("disabled");
 				$("input[name='user.firstName']").focus();
 			});
@@ -135,7 +135,7 @@ app.ready(function(){
 		const checked = $(element).attr("data-checked");
 		if(checked=='true') {
 			$(element).attr("checked","true").on('change', function() {
-			    this.checked=!this.checked?!alert('this option is required'):true;
+			    this.checked=!this.checked?!alert(i18n("option-required")):true;
 			});
 		}else {
 			$(element).on('change', function() {

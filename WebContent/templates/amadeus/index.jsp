@@ -122,7 +122,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <script src="js/metamorphosis.js"></script>
    <script>
       app.translate("i18n/app","${request.locale.language}");
-      app.translate("modules/${module.folder.name}/i18n/module");
+      app.translate("modules/${module.folder.name}/i18n/module",function(){
+    	  $("body").animate({opacity : 1},10);
+      });
    </script>
    <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>

@@ -44,6 +44,10 @@
 	"info-mailing-list" : "Yes, send me emails on ThinkTech Products, Services and Events.",
 	"agreement" : "By clicking on the Create button below, you understand and agree that the use of ${app_name} is subject to these <a href='registration/terms' target='_blank'>Terms of Service</a> and this <a href='registration/privacy' target='_blank'>Privacy Policy</a>, including the fact that ThinkTech may transfer your personal information collected in connection with your  registration to its affiliates globally and to third party entities that provide services to ThinkTech.",
 	"create" : "Create",
-	"next" : "Next"
+	"next" : "Next",
+	"error-registration":"error during the registration, please try again",
+	"email-invalid":"this email is invalid",
+	"option-required":"this option is required",
+	"check-captcha":"you must check the captcha"
 }
 }

@@ -383,6 +383,7 @@ app.bundles = [];
 app.failures = {};
 app.translate = function(url,language) {
 	app.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : app.language);
+	const callback = arguments[1] instanceof Function ? arguments[1] : arguments[2];
 	app.get(url+"_"+app.language+".json",function(data){
 		localStorage.setItem("language",app.language);
 		app.bundles.push(url);
@@ -406,10 +407,12 @@ app.translate = function(url,language) {
 			$(element).attr("data-info",value);
 			$(element).attr("data-info-translation",propertyName);
 		});
+		if(callback) callback();
 	},function(){
 		if(!app.failures[url+"_en"]){
 			app.translate(url,"en");
 			app.failures[url+"_en"] = url+"_en";
+			if(callback) callback();
 		}
 	});
 };
