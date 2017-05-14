@@ -88,7 +88,7 @@ app.authenticate = function(form) {
 	app.post(url,data, function(response) {
 		window.location.href = response.url;
 	}, function(error) {
-		alert("email or password incorrect", function() {
+		alert(i18n("error-login"), function() {
 			$("input[type=email]").focus();
 		});
 	});

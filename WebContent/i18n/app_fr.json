@@ -37,6 +37,7 @@
 	"french" : "Français",
 	"identification" : "Identification",
 	"password" : "Mot de Passe",
+	"error-login":"email ou mot de passe incorrect",
 	"create-account" : "Créez Votre Compte",
 	"forgot-password" : "Mot de Passe oublié",
 	"confirm" : "Confirmer",

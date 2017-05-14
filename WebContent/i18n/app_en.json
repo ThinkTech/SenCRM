@@ -37,6 +37,7 @@
 	"french" : "French",
 	"identification" : "Identification",
 	"password" : "Password",
+	"error-login":"email or password incorrect",
 	"create-account" : "Create Your Account",
 	"forgot-password" : "Forgot Password",
 	"confirm" : "Confirm",
