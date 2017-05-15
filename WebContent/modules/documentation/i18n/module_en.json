@@ -3,6 +3,13 @@
 	"setup":"SetUp",
 	"developers":"Developers",
 	"programs":"Programs",
-	"general" : "General"
+	"general" : "General",
+	"signing-up":"Signing up to SenCRM",
+	"confirming-registration":"Confirming your registration",
+	"signing-in":"Signing in to SenCRM",
+	"managing-account":"Managing your account",
+	"managing-subscription":"Managing your subscription",
+	"deleting-account":"Deleting your account",
+	"item":"item"
 }
 }

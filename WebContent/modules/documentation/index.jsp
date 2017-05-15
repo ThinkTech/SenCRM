@@ -14,12 +14,12 @@
 	    <i></i>
 	    <h2><i class="fa fa-user"></i><span data-translation="setup">&nbsp;</span></h2>
 	    <ul>
-	       <li>Signing up for an account</li>
-	       <li>Confirming your registration</li>
-	       <li>Signing in to ${app_name}</li>
-	       <li>Managing your account</li>
-	       <li>Managing your subscription</li>
-	       <li>Deleting your account</li>
+	       <li data-translation="signing-up"></li>
+	       <li data-translation="confirming-registration"></li>
+	       <li data-translation="signing-in"></li>
+	       <li data-translation="managing-account"></li>
+	       <li data-translation="managing-subscription"></li>
+	       <li data-translation="deleting-account"></li>
        </ul>
 	  </li>
    <s:iterator value="moduleManager.backendModules">
@@ -28,9 +28,9 @@
 	    <i></i>
 	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}">&nbsp;</span></h2>
 	       <ul>
-	       <li>item 1</li>
-	       <li>item 2</li>
-	       <li>item 3</li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
 	     </ul>
 	  </li>
    </s:iterator>
@@ -39,9 +39,9 @@
 	    <i></i>
 	    <h2><i class="fa fa-code adjust"></i><span data-translation="developers">&nbsp;</span></h2>
 	    <ul>
-	       <li>item 1</li>
-	       <li>item 2</li>
-	       <li>item 3</li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
 	     </ul>
 	  </li>
 	   <li>
@@ -49,9 +49,9 @@
 	    <i></i>
 	     <h2><i class="fa fa-handshake-o adjust"></i><span data-translation="programs">&nbsp;</span></h2>
 	    <ul>
-	       <li>item 1</li>
-	       <li>item 2</li>
-	       <li>item 3</li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
 	     </ul>
 	  </li>
    </ul>

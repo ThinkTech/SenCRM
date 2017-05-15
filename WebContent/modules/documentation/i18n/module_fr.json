@@ -3,6 +3,13 @@
 	"setup":"Démarrage",
 	"developers":"Développeurs",
 	"programs":"Programmes",
-	"general" : "Général"
+	"general" : "Général",
+	"signing-up":"Inscription à SenCRM",
+	"confirming-registration":"Confirmation de votre inscription",
+	"signing-in":"Se connecter à SenCRM",
+	"managing-account":"Gérer votre compte",
+	"managing-subscription":"Gestion de votre souscription",
+	"deleting-account":"Suppression de votre compte",
+	"item":"élément"
 }
 }
