@@ -83,7 +83,7 @@ app.ready(function(){
 		$("div.wizard .signup").one("click",function(){
 			$("div.registration").animate({opacity : 1 }, 1000);
 			$("div.registration input,div.registration select").removeAttr("disabled");
-			$("select[name='account.structure.size']").val("2").trigger("change");
+			$("select[name='account.structure.size']").val("small").trigger("change");
 		});
 		$(".module .subscribe").click(function(){
 			const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");

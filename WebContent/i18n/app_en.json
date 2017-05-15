@@ -72,7 +72,7 @@
 	"new":"New",
 	"change-password" : "Change Password",
 	"reset-password" : "Reset Password",
-	"mod_accounting":"Accouting",
+	"mod_accounting":"Accounting",
 	"mod_accounting_details":"The accounting module records and processes accounting transactions such as accounts payable, accounts receivable and payroll to support the business by providing information to aid governance, as well as to monitor, analyse and influence best practice management.",
 	"mod_accounting_price":"10",
 	"mod_administration":"Administration",

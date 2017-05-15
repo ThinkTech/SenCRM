@@ -68,61 +68,56 @@
 	   
 		<label  class="required text-right"><i class="fa fa-money"></i><span data-translation="business">&nbsp;</span></label>
 		<select data-translation="business" name="account.structure.business">
-		    <option value="1">Accommodations</option>
-		    <option value="2">Accounting</option>
-		 	<option value="3">Advertising</option>
-		 	<option value="4">Aerospace</option>
-		 	<option value="5">Agriculture & Agribusiness</option>
-		 	<option value="6">Air Transportation</option>
-		 	<option value="7">Apparel & Accessories </option>
-		 	<option value="8">Auto</option>
-		 	<option value="9">Banking</option>
-		 	<option value="10">Beauty & Cosmetics</option>
-		 	<option value="11">Biotechnology</option>
-		 	<option value="12">Chemical</option>
-		 	<option value="13">Computer</option>
-		 	<option value="14">Construction</option>
-		 	<option value="15">Consulting</option>
-		 	<option value="16">Consumer Products</option>
-		 	<option value="17">Education</option>
-		 	<option value="18">Electronics</option>
-		 	<option value="19">Employment</option>
-		 	<option value="20">Energy</option>
-		 	<option value="21">Entertainment & Recreation</option>
-		 	<option value="22">Fashion</option>
-		 	<option value="23">Financial Services</option>
-		 	<option value="24">Fine Arts</option>
-		 	<option value="25">Food & Beverage</option>
-		 	<option value="26">Green Technology</option>
-		 	<option value="27">Government</option>
-		 	<option value="28">Health</option>
-		 	<option value="29">Information</option>
-		 	<option value="30" selected>Information Technology</option>
-		 	<option value="31">insurance</option>
-		 	<option value="32">Journalism & News</option>
-		 	<option value="33">Manufacturing</option>
-		 	<option value="34">Media & Broadcasting</option>
-		 	<option value="35">Medical Devices & Supplies</option>
-		 	<option value="36">Motion Pictures & Video</option>
-		 	<option value="37">Music</option>
-		 	<option value="38">Pharmaceutical</option>
-		 	<option value="39">Public Administration</option>
-		 	<option value="40">Public Relations</option>
-		 	<option value="41">Publishing</option>
-		 	<option value="42">Rail</option>
-		 	<option value="43">Real Estate</option>
-		 	<option value="44">Retail</option>
-		 	<option value="45">Service</option>
-		 	<option value="46">Sports</option>
-		 	<option value="47">Technology</option>
-		 	<option value="48">Telecommunications</option>
-		 	<option value="49">Tourism</option>
-		 	<option value="50">Transportation</option>
-		 	<option value="51">Travel</option>
-		 	<option value="52">Utilities</option>
-		 	<option value="53">Video Game</option>
-		 	<option value="54">Web Services</option>
-		 	<option value="55">Other</option>
+		    <option data-translation='accommodations' value='accommodations'></option>
+			<option data-translation='accounting' value='accounting'></option>
+			<option data-translation='advertising' value='advertising'></option>
+			<option data-translation='aerospace' value='aerospace'></option>
+			<option data-translation='agriculture' value='agriculture'></option>
+			<option data-translation='air' value='air'></option>
+			<option data-translation='apparel' value='apparel'></option>
+			<option data-translation='automobile' value='automobile'></option>
+			<option data-translation='banking' value='banking'></option>
+			<option data-translation='beauty' value='beauty'></option>
+			<option data-translation='biotechnology' value='biotechnology'></option>
+			<option data-translation='construction' value='construction'></option>
+			<option data-translation='consulting' value='consulting'></option>
+			<option data-translation='consumer' value='consumer'></option>
+			<option data-translation='education' value='education'></option>
+			<option data-translation='electronics' value='electronics'></option>
+			<option data-translation='employment' value='employment'></option>
+			<option data-translation='energy' value='energy'></option>
+			<option data-translation='entertainment' value='entertainment'></option>
+			<option data-translation='fashion' value='fashion'></option>
+			<option data-translation='financial' value='financial'></option>
+			<option data-translation='arts' value='arts'></option>
+			<option data-translation='food' value='food'></option>
+			<option data-translation='green' value='green'></option>
+			<option data-translation='government' value='government'></option>
+			<option data-translation='health' value='health'></option>
+			<option data-translation='information' value='information'></option>
+			<option data-translation='technology' value='technology' selected></option>
+			<option data-translation='insurance' value='insurance'></option>
+			<option data-translation='journalism' value='journalism'></option>
+			<option data-translation='manufacturing' value='manufacturing'></option>
+			<option data-translation='media' value='media'></option>
+			<option data-translation='medical' value='medical'></option>
+			<option data-translation='motion' value='motion'></option>
+			<option data-translation='music' value='music'></option>
+			<option data-translation='pharmaceutical' value='pharmaceutical'></option>
+			<option data-translation='administration' value='administration'></option>
+			<option data-translation='relations' value='relations'></option>
+			<option data-translation='publishing' value='publishing'></option>
+			<option data-translation='rail' value='rail'></option>
+			<option data-translation='estate' value='estate'></option>
+			<option data-translation='retail' value='retail'></option>
+			<option data-translation='service' value='service'></option>
+			<option data-translation='sports' value='sports'></option>
+			<option data-translation='telecommunications' value='telecommunications'></option>
+			<option data-translation='tourism' value='tourism'></option>
+			<option data-translation='Transportation' value='Transportation'></option>
+			<option data-translation='travel' value='travel'></option>
+			<option data-translation='utilities' value='utilities'></option>
+			<option data-translation='other' value='other'></option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="info-business">&nbsp;</span>
 	    <span class="voice fa fa-microphone">&nbsp;</span>
@@ -130,10 +125,10 @@
 	    
 		<label  class="required text-right"><i class="fa fa-level-up"></i><span data-translation="size">&nbsp;</span></label>
 		<select data-translation="size" name="account.structure.size">
-		    <option value="1">micro</option>
-		 	<option value="2">small</option>
-		 	<option value="3">medium</option>
-		 	<option value="4">big</option>
+		    <option value="micro" data-translation="micro"></option>
+		 	<option value="small" data-translation="small"></option>
+		 	<option value="medium" data-translation="medium"></option>
+		 	<option value="big" data-translation="big"></option>
 		</select>
 		<span class="info fa fa-info adjust"  data-info="info-size">&nbsp;</span>
 	    <span class="voice fa fa-microphone">&nbsp;</span>

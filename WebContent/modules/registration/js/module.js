@@ -194,14 +194,14 @@ app.ready(function(){
 		}
 	});
 	$("select[name='account.structure.size']").on("change",function(event){
-		const val = parseInt($(this).val());
-		if(val==3 || val==4) {
+		const val = $(this).val();
+		if(val=="medium" || val=="big") {
 			$("input[type='radio'][value='colocation']").attr("disabled","disabled");
 			$("input[type='radio'][value='private']").attr("checked","checked").click();
 		}else {
 			$("input[type='radio'][value='colocation']").removeAttr("disabled");
 		}
-	}).val("2").trigger("change");
+	}).val("small").trigger("change");
 	$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
 		var price = parseInt($(element).attr("data-price"));
 		amount+=price;
