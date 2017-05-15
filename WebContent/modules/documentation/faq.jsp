@@ -15,8 +15,8 @@
 	    <i></i>
 	     <h2><i class="fa fa-question-circle"></i><span data-translation="general">&nbsp;</span></h2>
 	    <ul>
-	      <li>How do I...?</li>
-          <li>How do I...?</li>
+	      <li data-translation="how-to"></li>
+          <li data-translation="how-to"></li>
 	     </ul>
 	  </li>
    <s:iterator value="moduleManager.backendModules">
@@ -25,8 +25,8 @@
 	    <i></i>
 	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}">&nbsp;</span></h2>
 	      <ul>
-	      <li>How do I...?</li>
-          <li>How do I...?</li>
+	      <li data-translation="how-to"></li>
+          <li data-translation="how-to"></li>
 	     </ul>
 	  </li>
    </s:iterator>  
