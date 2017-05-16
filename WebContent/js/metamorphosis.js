@@ -85,6 +85,24 @@ app.delete = function(url, callback, error) {
 app.authenticate = function(form) {
 	var url = form.attr("action");
 	var data = form.serialize();
+	const email = $("input[type=email]",form);
+    if(email.length) {
+        if(!email.val().trim()) {
+        	alert(i18n("enter-email"),function(){
+				$(email).addClass("error").focus();
+			});
+            return false;
+        }
+    }
+    const password = $("input[type=password]",form);
+    if(password.length) {
+        if(!password.val().trim()) {
+        	alert(i18n("enter-password"),function(){
+				password.addClass("error").focus();
+			});
+            return false;
+        }
+    }
 	app.post(url,data, function(response) {
 		window.location.href = response.url;
 	}, function(error) {

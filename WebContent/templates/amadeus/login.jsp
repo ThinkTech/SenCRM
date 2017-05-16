@@ -15,13 +15,13 @@
                       <p><i class="fa fa-envelope"></i><span data-translation="email">&nbsp;</span></p>
                       <span class="info fa fa-info"  data-info="enter-email">&nbsp;</span>
 	   				  <span class="voice fa fa-microphone">&nbsp;</span>
-					  <input id="email" type="email" data-translation="email" name="user.email" required="required" />
+					  <input id="email" type="email" data-translation="email" name="user.email"/>
 					  	
 	   				 
 					  <p><i class="fa fa-key"></i><span data-translation="password">&nbsp;</span></p>
 					   <span class="info fa fa-info"  data-info="enter-password">&nbsp;</span>
 	   				   <span class="voice fa fa-microphone">&nbsp;</span>
-					   <input type="password" data-translation="password" name="user.password" required="required" class="password" />
+					   <input type="password" data-translation="password" name="user.password" class="password" />
 					  <input type="submit" value="" data-translation="signIn" class="agileinfo" />
 					</form>
 					 <div class="login_w3ls">
