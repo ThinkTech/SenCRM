@@ -13,9 +13,9 @@
                <div class="w3_agile_login">
                     <form action="registration/password/change"  method="post">
                       <p><i class="fa fa-key"></i><span data-translation="new">&nbsp;</span></p>
-					  <input type="password" name="user.password" required="required" class="password" /> 
+					  <input type="password" data-translation="new" name="user.password" required="required" class="password" /> 
 					  <p><i class="fa fa-key"></i><span data-translation="confirm">&nbsp;</span></p>
-					  <input type="password" name="user.password" required="required" class="password" /> 
+					  <input type="password" data-translation="confirm" name="user.password" required="required" class="password" /> 
 					  <input type="submit" value="" data-translation="change" class="agileinfo" />
 					</form>
                 </div>

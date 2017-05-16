@@ -63,6 +63,8 @@
 	"ok" : "OK",
 	"cancel" : "Cancel",
 	"password" : "Password",
+	"enter-email":"you must enter your email address",
+	"enter-password":"you must enter your password",
 	"error-login":"email or password incorrect",
 	"create-account" : "Create Your Account",
 	"forgot-password" : "Forgot Password",

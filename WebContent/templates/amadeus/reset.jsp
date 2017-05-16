@@ -13,7 +13,9 @@
                <div class="w3_agile_login">
                     <form action="registration/password/reset"  method="post">
                       <p><i class="fa fa-envelope"></i><span data-translation="email">&nbsp;</span></p>
-					  <input id="email" type="email" name="user.email" required="required" />
+                      <span class="info fa fa-info"  data-info="enter-email">&nbsp;</span>
+	   				  <span class="voice fa fa-microphone">&nbsp;</span>
+					  <input id="email" type="email" data-translation="email" name="user.email" required="required" />
 					  <input type="submit" value="" data-translation="reset" class="agileinfo" />
 					</form>  
                 </div>

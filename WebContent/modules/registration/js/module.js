@@ -159,13 +159,6 @@ app.ready(function(){
 	$("span.price",form).each(function(index,element){
 		$(this).html($(this).html().formatDigits());
 	});
-	$(".info",form).click(function(){
-		const info = $(this).attr("data-info");
-		const input = $(this).prev();
-		alert(info,function(){
-			input.focus();
-		});
-	});
 	$(".voice",form).click(function(){
 		var prev = $(this).prev();
 		const info = prev.attr("data-info");
@@ -210,10 +203,5 @@ app.ready(function(){
 	$.get("https://ipinfo.io", function(response) {
 		  app.getCountries("en",response.country);
 	}, "jsonp");
-	}
-	if ('speechSynthesis' in window) {
-		speechSynthesis.getVoices();
-	} else {
-		$(".voice").hide();
 	}
 });

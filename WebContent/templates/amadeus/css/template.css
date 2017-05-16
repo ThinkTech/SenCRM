@@ -516,10 +516,20 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	outline: none;
 	letter-spacing: 1px;
 }
+
+.info,.voice {
+	cursor : pointer;
+}
+
+.w3_agile_login .fa {
+	color : #fff;
+}
 .w3_agile_login p , .agile_its_registration  p{
 	font-size: 1em;
 	color: #fff;
 	height : 20px;
+	width : 88%;
+	display : inline-block;
 }
 .w3_agile_login input[type="submit"] {
 	width:98.5%;

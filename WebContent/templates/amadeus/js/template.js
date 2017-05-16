@@ -46,4 +46,12 @@ $(document).ready(function() {
 		var language = $(this).val();
 		page.retranslate(language);
 	}).val(page.language);
+	
+	$(".w3_agile_login .voice").click(function(){
+		var prev = $(this).prev();
+		const info = prev.attr("data-info");
+		prev.prev().focus();
+		page.speak(info);
+	});
+	
 });

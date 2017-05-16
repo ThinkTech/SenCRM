@@ -321,10 +321,23 @@ page.init = function() {
 	    return false;
 	});
 	
+	$(".info").click(function(){
+		const info = $(this).attr("data-info");
+		const input = $(this).prev();
+		alert(info,function(){
+			input.focus();
+		});
+	});
+	
 	page.highlight();
 	
 	page.language = localStorage.getItem("language") ? localStorage.getItem("language") : "en";
 	
+	if('speechSynthesis' in window) {
+		speechSynthesis.getVoices();
+	}else {
+		$(".voice").hide();
+	}
 };
 
 page.table = {};

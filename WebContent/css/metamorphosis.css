@@ -895,7 +895,7 @@ ul.tabs li h2 {
     padding: 3px 5px;
     position: absolute;
     z-index: 98;
-    width: 290px;
+    max-width: 290px;
     line-height : 1.2em;
     font-size : 90%;
     text-align : left;

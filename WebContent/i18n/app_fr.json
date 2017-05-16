@@ -63,6 +63,8 @@
 	"ok" : "OK",
 	"cancel" : "Annuler",
 	"password" : "Mot De Passe",
+	"enter-email":"vous devez entrer votre adresse email",
+	"enter-password":"vous devez entrer votre mot de passe",
 	"error-login":"email ou mot de passe incorrect",
 	"create-account" : "Créez Votre Compte",
 	"forgot-password" : "Mot de Passe oublié",
