@@ -323,6 +323,8 @@ page.init = function() {
 	
 	page.highlight();
 	
+	page.language = localStorage.getItem("language") ? localStorage.getItem("language") : "en";
+	
 };
 
 page.table = {};
