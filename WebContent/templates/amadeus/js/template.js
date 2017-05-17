@@ -27,6 +27,19 @@ $(document).ready(function() {
 	const contactForm = $("#contact-form > form");
 	contactForm.submit(function(event){
 		event.preventDefault();
+		var valid = true;
+        $('input,textarea',contactForm).removeClass("error").each(function(index,element) {
+        	const val = $(element).val();
+			if(val.trim() == '') {
+				$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
+				const message = $(this).next().attr("data-info");
+				alert(message,function(){
+					$(element).addClass("error").focus();
+				});
+			    return valid = false;
+			}
+        });
+        if(!valid) return valid;
 		$.ajax({
 			url: contactForm.attr('action'),
 			type : 'POST',
@@ -47,7 +60,7 @@ $(document).ready(function() {
 		page.retranslate(language);
 	}).val(page.language);
 	
-	$(".w3_agile_login .voice").click(function(){
+	$("#contact-form .voice,.w3_agile_login .voice").click(function(){
 		var prev = $(this).prev();
 		const info = prev.attr("data-info");
 		prev.prev().focus();

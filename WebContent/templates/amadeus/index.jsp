@@ -63,11 +63,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <div id="contact-form">
      <img title="close" class="close" src="templates/amadeus/images/close.png"/>
      <h1><i class="fa fa-envelope"></i><span data-translation="contact">&nbsp;</span></h1>
-     <form  action="contact" method="post" class="topBefore">
-		  <input id="name" name="mail.author" required type="text" data-translation="name">
-		  <input id="email" name="mail.address" required type="email" data-translation="email">
-		  <input id="subject" name="mail.subject" required type="text" data-translation="subject">
-		  <textarea id="message" name="mail.content" required data-translation="message"></textarea>
+     <form  action="contact" method="post">
+		  <input id="name" name="mail.author"  type="text" data-translation="name">
+		  <span class="info fa fa-info"  data-info="enter-name">&nbsp;</span>
+	   	  <span class="voice fa fa-microphone">&nbsp;</span>	  
+		  <input id="email" name="mail.address" type="email" data-translation="email">
+		  <span class="info fa fa-info"  data-info="enter-email">&nbsp;</span>
+	   	  <span class="voice fa fa-microphone">&nbsp;</span>
+		  <input id="subject" name="mail.subject" type="text" data-translation="subject">
+		  <span class="info fa fa-info"  data-info="enter-subject">&nbsp;</span>
+	   	  <span class="voice fa fa-microphone">&nbsp;</span>
+		  <textarea id="message" name="mail.content"  data-translation="message"></textarea>
+		  <span class="info fa fa-info"  data-info="enter-message">&nbsp;</span>
+	   	  <span class="voice fa fa-microphone">&nbsp;</span>
   	      <input id="submit" type="submit" data-translation="send-now">
 	</form>
    </div>

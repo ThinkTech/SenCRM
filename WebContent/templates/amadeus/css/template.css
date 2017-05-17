@@ -438,7 +438,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 #contact-form input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 99%;
+  width: 90%;
   height: 30px;
   margin-bottom: 8px;
   border: 1px solid #ccc;
@@ -447,6 +447,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
    padding: 5px;
+   display : inline-block;
 }
 
 #contact-form h1 {
@@ -454,7 +455,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 }
 
 #contact-form textarea {
-  width:99%;
+  width:90%;
   height: 110px;
   max-height: 110px;
   padding: 5px;
@@ -464,12 +465,13 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
+  display : inline-block;
 }
 
 
 #contact-form #submit {
  padding: 0;
- width: 99%;
+ width: 90%;
   margin: -5px 0px 0px 0px;
   font-size: 0.875em;
   outline:none;
@@ -519,6 +521,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 
 .info,.voice {
 	cursor : pointer;
+	vertical-align : top;
 }
 
 .w3_agile_login .fa {

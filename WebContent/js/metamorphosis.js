@@ -226,22 +226,25 @@ page.translate = function(url,language) {
 		i18n.translator.add(data);
 		$.each($("[data-translation]"),function(index,element){
 			var propertyName = $(element).attr("data-translation");
-			var value = data.values[propertyName];
-			if($(element).is('input:submit')) {
-				$(element).attr("value",value).attr("title",value);
-			}
-			else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
-				$(element).attr("placeholder",value).attr("title",value);
-			}
-			else {
-				$(element).html(value);
+			if(data.values[propertyName] !== undefined){
+				var value = data.values[propertyName];
+				if($(element).is('input:submit')) {
+					$(element).attr("value",value).attr("title",value);
+				}
+				else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+					$(element).attr("placeholder",value).attr("title",value);
+				}
+				else {
+					$(element).html(value);
+				}
 			}
 		});
 		$.each($("[data-info]"),function(index,element){
 			var propertyName = $(element).attr("data-info");
-			var value = data.values[propertyName];
-			$(element).attr("data-info",value);
-			$(element).attr("data-info-translation",propertyName);
+			if(data.values[propertyName] !== undefined){
+				$(element).attr("data-info",i18n(propertyName));
+				$(element).attr("data-info-translation",propertyName);
+			}
 		});
 		if(callback) callback();
 	},function(){
@@ -275,8 +278,7 @@ page.retranslate = function(language) {
 			});
 			$.each($("[data-info]"),function(index,element){
 				var propertyName = $(element).attr("data-info-translation");
-				var value = data.values[propertyName];
-				$(element).attr("data-info",value);
+				$(element).attr("data-info",i18n(propertyName));
 			});
 		});
 	}
