@@ -203,7 +203,7 @@ page.speak = function(text) {
 	window.speechSynthesis.speak(msg);
 	function resumeInfinity() {
 	    window.speechSynthesis.resume();
-	    timeoutResumeInfinity = setTimeout(resumeInfinity, 3000);
+	    timeoutResumeInfinity = setTimeout(resumeInfinity, 10);
 	}
 	msg.onstart = function(event) {
 	    resumeInfinity();
