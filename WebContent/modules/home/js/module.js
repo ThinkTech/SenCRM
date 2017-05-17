@@ -93,6 +93,11 @@ app.ready(function(){
 			const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");
 			input[0].checked = !input.is(":checked") ? true : false;
 		    input.trigger("change");
+		    const parent = $(this).parent().parent().parent();
+		    if(!$("span.required",parent.next()).is(":visible"))
+		      $("html, body").animate({ scrollTop: parent.next().offset().top }, 500);	
+		    else 
+		      $("html, body").animate({ scrollTop: parent.next().next().offset().top }, 500);	
 		});
 		
 		$("input[type=checkbox]").on("change",function(){
