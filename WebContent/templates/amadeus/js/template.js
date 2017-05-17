@@ -67,4 +67,14 @@ $(document).ready(function() {
 		page.speak(info);
 	});
 	
+	$(window).scroll(function(){
+		  const div = $("#contact-form");
+		  if($(this).scrollTop() > div.offset().top || div.offset().top > $(this).scrollTop()) {
+				if(!div.is(":hidden")) {
+				  var top = $(this).scrollTop()+20;
+				  div.css("top",top);
+				}
+		  }
+	});
+	
 });

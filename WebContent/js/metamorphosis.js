@@ -200,8 +200,6 @@ page.speak = function(text) {
 	var msg = new SpeechSynthesisUtterance();
 	msg.text = text;
 	msg.lang = page.language ? page.language : 'en-US';
-	msg.rate = 0.8;
-	msg.pitch = 0.65;
 	window.speechSynthesis.speak(msg);
 	function resumeInfinity() {
 	    window.speechSynthesis.resume();
