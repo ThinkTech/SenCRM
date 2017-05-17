@@ -524,8 +524,10 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	vertical-align : top;
 }
 
-.w3_agile_login .fa {
+.w3_agile_login form > .fa {
 	color : #fff;
+	position: relative;
+    margin-top: 4px;
 }
 .w3_agile_login p , .agile_its_registration  p{
 	font-size: 1em;
