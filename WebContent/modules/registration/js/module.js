@@ -42,12 +42,12 @@ app.ready(function(){
 				    before : function(wizardObj,currentStep,nextStep) {
 				    	if(nextStep.index() > currentStep.index()) {
 					    	var valid = true;
-					        $('input[required]',currentStep).removeClass("error").each(function(index,element) {
+					        $('input[required]',currentStep).each(function(index,element) {
 					        	const val = $(element).val();
 								if(val.trim() == '') {
 									const message = $(this).next().attr("data-info");
 									alert(message,function(){
-										$(element).addClass("error").focus();
+										$(element).focus();
 									});
 								    return valid = false;
 								}
@@ -59,7 +59,7 @@ app.ready(function(){
 						        valid = re.test(email.val());
 						        if(!valid) {
 						        	alert(i18n("email-invalid"),function(){
-										$(email).addClass("error").focus();
+										$(email).focus();
 									});
 						        }
 					        }
@@ -68,14 +68,14 @@ app.ready(function(){
 							const confirm = $("#confirm",currentStep);
 							if(password.length && password.val() != confirm.val()) {
 								alert(i18n("password-mismatch"),function(){
-									password.addClass("error").focus();
+									password.focus();
 								});
 								valid = false;
 							}
 							const value = password.length ? password.val() : null;
 							if(value && (value.length < 8 || value.length >= 100)) {
 								alert(password.next().attr("data-info"),function(){
-									password.addClass("error").focus();
+									password.focus();
 								});
 								valid = false;
 							}

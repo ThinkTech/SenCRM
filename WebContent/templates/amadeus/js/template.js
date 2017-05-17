@@ -13,12 +13,12 @@ $(document).ready(function() {
 	});
 	$(".change-password").submit(function(event){
 		var valid = true;
-        $('input',this).removeClass("error").each(function(index,element) {
+        $('input',this).each(function(index,element) {
         	const val = $(element).val();
 			if(val.trim() == '') {
 				const message = $(this).prev().prev().attr("data-info");
 				alert(message,function(){
-					$(element).addClass("error").focus();
+					$(element).focus();
 				});
 			    return valid = false;
 			}
@@ -28,7 +28,7 @@ $(document).ready(function() {
 		const confirm = $("#confirm",this);
 		if(password.length && password.val() != confirm.val()) {
 			alert(i18n("password-mismatch"),function(){
-				password.addClass("error").focus();
+				password.focus();
 			});
 			valid = false;
 			if(!valid) return valid;
@@ -36,7 +36,7 @@ $(document).ready(function() {
 		const value = password.length ? password.val() : null;
 		if(value && (value.length < 8 || value.length >= 100)) {
 			alert(i18n("password-length"),function(){
-				password.addClass("error").focus();
+				password.focus();
 			});
 			valid = false;
 		}
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	    if(email.length) {
 	        if(!email.val().trim()) {
 	        	alert(i18n("enter-email"),function(){
-					$(email).addClass("error").focus();
+					$(email).focus();
 				});
 	            return false;
 	        }
@@ -70,12 +70,12 @@ $(document).ready(function() {
 	contactForm.submit(function(event){
 		event.preventDefault();
 		var valid = true;
-        $('input,textarea',contactForm).removeClass("error").each(function(index,element) {
+        $('input,textarea',contactForm).each(function(index,element) {
         	const val = $(element).val();
 			if(val.trim() == '') {
 				const message = $(this).next().attr("data-info");
 				alert(message,function(){
-					$(element).addClass("error").focus();
+					$(element).focus();
 				});
 			    return valid = false;
 			}
