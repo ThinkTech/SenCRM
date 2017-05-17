@@ -11,6 +11,48 @@ $(document).ready(function() {
 		app.authenticate($(this));
 		return false;
 	});
+	$(".change-password").submit(function(event){
+		var valid = true;
+        $('input',this).removeClass("error").each(function(index,element) {
+        	const val = $(element).val();
+			if(val.trim() == '') {
+				const message = $(this).prev().prev().attr("data-info");
+				alert(message,function(){
+					$(element).addClass("error").focus();
+				});
+			    return valid = false;
+			}
+        });
+        if(!valid) return valid;
+        const password = $("#password",this);
+		const confirm = $("#confirm",this);
+		if(password.length && password.val() != confirm.val()) {
+			alert(i18n("password-mismatch"),function(){
+				password.addClass("error").focus();
+			});
+			valid = false;
+			if(!valid) return valid;
+		}
+		const value = password.length ? password.val() : null;
+		if(value && (value.length < 8 || value.length >= 100)) {
+			alert(i18n("password-length"),function(){
+				password.addClass("error").focus();
+			});
+			valid = false;
+		}
+		if(!valid) return valid;
+	});
+	$(".reset-password").submit(function(event){
+		const email = $("input[type=email]",this);
+	    if(email.length) {
+	        if(!email.val().trim()) {
+	        	alert(i18n("enter-email"),function(){
+					$(email).addClass("error").focus();
+				});
+	            return false;
+	        }
+	    }
+	});
 	$("#contact").click(function(event){
 		const div = $("#contact-form");
 		if(div.is(":hidden")) {
@@ -31,7 +73,6 @@ $(document).ready(function() {
         $('input,textarea',contactForm).removeClass("error").each(function(index,element) {
         	const val = $(element).val();
 			if(val.trim() == '') {
-				$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
 				const message = $(this).next().attr("data-info");
 				alert(message,function(){
 					$(element).addClass("error").focus();

@@ -12,7 +12,6 @@
 	"info-email":"Ce champ est requis et vous devez entrer votre adresse e-mail.",
 	"info-language":"Ce champ est requis et vous devez sélectionner votre langue.",
 	"info-password":"Ce champ est requis et vous devez entrer votre mot de passe qui doit comporter entre 8 et 100 caractères.",
-	"password-mismatch":"les deux mots de passe ne sont pas identiques",
 	"info-confirm":"Ce champ est requis et vous devez confirmer votre mot de passe.",
 	"info-name":"Ce champ est requis et vous devez entrer le nom de votre structure.",
 	"business":"Activité Primaire",

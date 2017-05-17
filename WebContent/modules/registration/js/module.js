@@ -45,7 +45,6 @@ app.ready(function(){
 					        $('input[required]',currentStep).removeClass("error").each(function(index,element) {
 					        	const val = $(element).val();
 								if(val.trim() == '') {
-									$("html, body").animate({ scrollTop: $(element).offset().top }, 500);
 									const message = $(this).next().attr("data-info");
 									alert(message,function(){
 										$(element).addClass("error").focus();
@@ -68,7 +67,6 @@ app.ready(function(){
 					        const password = $("#password",currentStep);
 							const confirm = $("#confirm",currentStep);
 							if(password.length && password.val() != confirm.val()) {
-								$("html, body").animate({ scrollTop: password.offset().top }, 500);
 								alert(i18n("password-mismatch"),function(){
 									password.addClass("error").focus();
 								});
@@ -76,7 +74,6 @@ app.ready(function(){
 							}
 							const value = password.length ? password.val() : null;
 							if(value && (value.length < 8 || value.length >= 100)) {
-								$("html, body").animate({ scrollTop: password.offset().top }, 500);
 								alert(password.next().attr("data-info"),function(){
 									password.addClass("error").focus();
 								});

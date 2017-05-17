@@ -73,6 +73,8 @@
 	"error-login":"email or password incorrect",
 	"create-account" : "Create Your Account",
 	"forgot-password" : "Forgot Password",
+	"password-mismatch":"The two passwords are not identicals",
+	"password-length":"your password must be between 8 and 100 characters.",
 	"confirm" : "Confirm",
 	"change":"Change",
 	"reset":"Reset",

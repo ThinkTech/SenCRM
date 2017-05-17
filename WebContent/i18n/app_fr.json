@@ -73,6 +73,8 @@
 	"error-login":"email ou mot de passe incorrect",
 	"create-account" : "Créez Votre Compte",
 	"forgot-password" : "Mot de Passe oublié",
+	"password-mismatch":"les deux mots de passe ne sont pas identiques",
+	"password-length":"votre mot de passe doit comporter entre 8 et 100 caractères.",
 	"confirm" : "Confirmer",
 	"change":"Changer",
 	"reset":"Réinitialiser",
