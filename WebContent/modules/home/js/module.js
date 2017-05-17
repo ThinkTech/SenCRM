@@ -66,7 +66,7 @@ app.ready(function(){
 		});
 		var clicked = false;
 		$(window).scroll(function(){
-			  const div = $(".modules");
+			  var div = $(".modules");
 			  if($(this).scrollTop() >= div.offset().top-50) {
 			    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
 			    $('.module[data-required=true] span.required').addClass("animated infinite pulse");
@@ -77,6 +77,10 @@ app.ready(function(){
 					button.click();
 					clicked = true;
 				}
+			  }
+			  div = $(".users");
+			  if($(this).scrollTop() >= div.offset().top-550) {
+			    div.addClass("animated zoomIn");
 			  }
 		});
 		$("div.registration input,div.registration select").attr("disabled","disabled");
