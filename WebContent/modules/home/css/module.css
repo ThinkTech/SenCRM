@@ -363,6 +363,7 @@ div.wizard {
 	text-align : center;
 	font-size : 2.5em;
 	font-weight : bold;
+	margin-left : -90px;
 }
 
 /*--------------------*/
@@ -411,6 +412,7 @@ div.wizard {
 	 .benefits div h2 {font-size:1em;padding-right:75px}
 	  .benefits {padding-left:10%}
 	  .benefits div h2 i {margin-top : 1px;}
+	  .users h1 {font-size : 1.5em}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
@@ -452,7 +454,6 @@ div.wizard {
 	.modules .center {width : 95%}
 	.rslides_nav {margin-top:-60px}
 	.module label {font-size : 0.9em}
-	.users h1 {font-size : 1.5em}
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
