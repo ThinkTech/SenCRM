@@ -1,4 +1,3 @@
-<%@ taglib prefix="s" uri="/struts-tags"%>
 <div class="buttons">
     <a href="public/pricing"  class="button"><i class="fa fa-money"></i><span data-translation="pricing">&nbsp;</span></a>
     <a href="registration"  class="button"><i class="fa fa-user"></i><span data-translation="signUp">&nbsp;</span></a>
@@ -22,18 +21,6 @@
 	       <li data-translation="deleting-account"></li>
        </ul>
 	  </li>
-   <s:iterator value="moduleManager.backendModules">
-       <li>
-	    <input type="checkbox" checked>
-	    <i></i>
-	    <h2><img src="modules/${folder.name}/images/icon-32.png"/><span data-translation="${id}">&nbsp;</span></h2>
-	       <ul>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
-	     </ul>
-	  </li>
-   </s:iterator>
       <li>
 	    <input type="checkbox" checked>
 	    <i></i>
