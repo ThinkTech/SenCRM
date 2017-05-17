@@ -364,6 +364,7 @@ div.wizard {
 	font-size : 2.5em;
 	font-weight : bold;
 	margin-left : -90px;
+	line-height : 60px;
 }
 
 /*--------------------*/
@@ -442,6 +443,7 @@ div.wizard {
 	.module > div {padding: 10px; padding-bottom: 20px;}
 	.module {height:300px;}
 	.module p {height:180px;}
+	.users h1 {margin-left:10px}
 }
 @media(max-width:480px ){
 	.center h1 {font-size : 1.5em}
