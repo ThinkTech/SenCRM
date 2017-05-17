@@ -192,6 +192,7 @@ app.ready(function(){
 			$("input[type='radio'][value='colocation']").removeAttr("disabled");
 		}
 	}).val("small").trigger("change");
+	$("select[name='user.lang']").val(page.language);
 	$("input[data-price][type=radio]:checked,input[data-price][type=checkbox]:checked").each(function(index,element){
 		var price = parseInt($(element).attr("data-price"));
 		amount+=price;
