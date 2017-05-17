@@ -138,26 +138,6 @@
      <iframe id="player" src="https://www.youtube.com/embed/xn0vCV_fxNM"  frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
-<div class="testimonials">
-    <div class="testimonial">
-		<p data-translation="testimonial-1-content"></p>
-		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-1-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
-		</div>
-	</div>
-	<div class="testimonial">
-		<p data-translation="testimonial-2-content"></p>
-		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-2-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
-		</div>
-	</div>
-	<div class="testimonial">
-		<p data-translation="testimonial-3-content"></p>
-		<div class="sign">
-			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-3-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
-		</div>
-	</div>
-</div>
 </div>
 <div class="modules">
 <div class="center">
@@ -416,6 +396,29 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="users">
+   <h1><i class="fa fa-users"></i><span data-translation="users-title"></span></h1>
+   <div class="testimonials">
+    <div class="testimonial">
+		<p data-translation="testimonial-1-content"></p>
+		<div class="sign">
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-1-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+		</div>
+	</div>
+	<div class="testimonial">
+		<p data-translation="testimonial-2-content"></p>
+		<div class="sign">
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-2-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+		</div>
+	</div>
+	<div class="testimonial">
+		<p data-translation="testimonial-3-content"></p>
+		<div class="sign">
+			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-3-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
+		</div>
+	</div>
 </div>
 </div>
 <div class="benefits">
