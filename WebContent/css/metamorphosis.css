@@ -891,14 +891,15 @@ ul.tabs li h2 {
     border-radius: 5px;
     color: #fff;
     content: attr(data-info);
-    right: 16%;
+    right: 18%;
     padding: 3px 5px;
     position: absolute;
     z-index: 98;
-    max-width: 290px;
+    width: 290px;
     line-height : 1.2em;
     font-size : 13px;
     text-align : left;
+    margin-right : 20px;
 }
 
 ul.accordion  {
