@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    </div>
     </div>
     <div class="aside right">
-        <a href="http://support.thinktech.sn/login" target="_blank" class="title"><i class="fa fa-ticket"></i><span data-translation="support">&nbsp;</span></a>
+        <a href="https://sencrm.mircloud.host/login" target="_blank" class="title"><i class="fa fa-ticket"></i><span data-translation="support">&nbsp;</span></a>
 	    <a  href="https://sencrm.wordpress.com/community/" target="_blank"  class="title"><i class="fa fa-handshake-o"></i><span data-translation="community">&nbsp;</span></a>
 	    <a id="contact"  class="title"><i class="fa fa-envelope"></i><span data-translation="contact">&nbsp;</span></a>
     </div>
@@ -98,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <li><a href="public/pricing"><span data-translation="pricing">&nbsp;</span></a></li>
        <li><a href="documentation"><span data-translation="documentation">&nbsp;</span></a></li>
        <li><a href="https://sencrm.wordpress.com/" target="_blank"><span data-translation="blog">&nbsp;</span></a></li>
-       <li><a href="http://support.thinktech.sn/login" target="_blank"><span data-translation="support">&nbsp;</span></a></li>
+       <li><a href="https://sencrm.mircloud.host/login" target="_blank"><span data-translation="support">&nbsp;</span></a></li>
        <li><a href="https://sencrm.wordpress.com/community/" target="_blank"><span data-translation="community">&nbsp;</span></a></li>
        <li><a href="https://sencrm.wordpress.com/news/" target="_blank"><span data-translation="news">&nbsp;</span></a></li>
        <li><a href="documentation/faq"><span data-translation="faq">&nbsp;</span></a></li>
