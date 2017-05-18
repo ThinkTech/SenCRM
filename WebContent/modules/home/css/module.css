@@ -390,8 +390,8 @@ div.wizard {
 	.aside {position : absolute}
 	  .module {width: 49%; display: inline-block;background-image: none;height:285px;padding:5px 5px;margin-top:0px}
 	.module > div {padding: 10px; padding-bottom: 20px;}
-	.module {height:300px;}
-	.module p {height:180px;}
+	.module {height:250px;}
+	.module p {height:130px;}
 }
 
 @media(max-width:1024px ){
@@ -424,6 +424,8 @@ div.wizard {
 	  .users h1 {font-size : 1.5em}
 	  .center p {margin-right:auto}
 	  .aside {position:initial}
+	  .module {height:300px;}
+	.module p {height:180px;}
 }
 @media(max-width:767px ){
 	.center {width: 90%;margin-left:2px}
