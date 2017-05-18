@@ -23,9 +23,19 @@
 	    <i></i>
 	    <h2><i class="fa fa-code adjust"></i><span data-translation="developers">&nbsp;</span></h2>
 	    <ul>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
+	     </ul>
+	  </li>
+	  <li>
+	    <input type="checkbox" checked>
+	    <i></i>
+	    <h2><i class="fa fa-code adjust"></i><span data-translation="designers">&nbsp;</span></h2>
+	    <ul>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
 	     </ul>
 	  </li>
 	   <li>
@@ -33,9 +43,9 @@
 	    <i></i>
 	     <h2><i class="fa fa-handshake-o adjust"></i><span data-translation="programs">&nbsp;</span></h2>
 	    <ul>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
-	       <li data-translation="item"></li>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
+	       <li data-translation="how-to"></li>
 	     </ul>
 	  </li>
    </ul>

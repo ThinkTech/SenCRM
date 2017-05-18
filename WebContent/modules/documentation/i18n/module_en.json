@@ -2,6 +2,7 @@
 "values":{
 	"setup":"SetUp",
 	"developers":"Developers",
+	"designers":"Designers",
 	"programs":"Programs",
 	"general" : "General",
 	"signing-up":"Signing up to SenCRM",

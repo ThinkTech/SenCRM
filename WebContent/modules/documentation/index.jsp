@@ -31,6 +31,16 @@
 	       <li data-translation="item"></li>
 	     </ul>
 	  </li>
+	  <li>
+	    <input type="checkbox" checked>
+	    <i></i>
+	    <h2><i class="fa fa-code adjust"></i><span data-translation="designers">&nbsp;</span></h2>
+	    <ul>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
+	       <li data-translation="item"></li>
+	     </ul>
+	  </li>
 	   <li>
 	    <input type="checkbox" checked>
 	    <i></i>
