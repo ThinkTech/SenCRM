@@ -107,8 +107,9 @@ app.ready(function(){
 			       $("html, body").animate({ scrollTop: module.offset().top }, 500);
 			      }else {
 			    	  const div = $("div.registration");
-			    	  $("html, body").animate({ scrollTop: div.offset().top }, 500);
-			    	  $("input:first",div).focus();
+			    	  $("html, body").animate({ scrollTop: div.offset().top }, 500, function(){
+			    		  $("input:first",div).focus();
+			    	  });
 			      }
 			    }
 		    }
