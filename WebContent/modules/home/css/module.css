@@ -29,7 +29,7 @@
 
 .rslides .images {
 	 width : 85%;
-	 padding-left:18%;
+	 padding-left:19%;
 	margin : auto;
 	margin-top : 20px;
 	height : 210px;
@@ -62,7 +62,7 @@
 .rslides_nav.prev {
 	float : left;
 	vertical-align : middle;
-	margin-left : 160px;
+	margin-left : 175px;
 }
 
 .rslides_nav.next {
@@ -167,6 +167,7 @@ div.wizard {
     line-height: 40px;
     text-transform : none;
     margin-bottom : 30px;
+    padding-left : 70px;
 }
 
 .center h1.faq {
