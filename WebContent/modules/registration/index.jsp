@@ -160,19 +160,7 @@
 	
 	<section class="step" data-step-title="subscription">
 	
-	<fieldset>
-	  <h1><i class="fa fa-puzzle-piece"></i><span data-translation="modules">&nbsp;</span></h1>
-	   <s:iterator value="moduleManager.backendModules">
-		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i><span data-translation="${id}">&nbsp;</span></label>
-		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
-		   <span class="price bgcolor"><span data-translation="${id}_price">&nbsp;</span> ${initParam.app_currency}/mo</span>
-		   <span class="info fa fa-info"  data-info="${id}_details">&nbsp;</span>
-		   <span class="voice fa fa-microphone">&nbsp;</span>
-		</s:iterator>
-	</fieldset>
-
-	
-	<fieldset>
+		<fieldset>
 	  <h1><i class="fa fa-database"></i><span data-translation="hosting">&nbsp;</span></h1>
 	     <label  class="required text-right"><i class="fa fa-industry"></i><span data-translation="provider">&nbsp;</span></label>
 		 <select data-translation="provider" name="registration.provider">
@@ -207,6 +195,19 @@
 		      </fieldset>
 		 </div>
 	</fieldset>
+	
+	
+	<fieldset>
+	  <h1><i class="fa fa-puzzle-piece"></i><span data-translation="modules">&nbsp;</span></h1>
+	   <s:iterator value="moduleManager.backendModules">
+		   <label title="${description}" class="${mandatory ? 'required' : ''} text-right"><i class="fa fa-puzzle-piece"></i><span data-translation="${id}">&nbsp;</span></label>
+		   <input type="checkbox" data-price="${price}" value="${id}" name="registration.subscription" data-checked="${mandatory}"/> 
+		   <span class="price bgcolor"><span data-translation="${id}_price">&nbsp;</span> ${initParam.app_currency}/mo</span>
+		   <span class="info fa fa-info"  data-info="${id}_details">&nbsp;</span>
+		   <span class="voice fa fa-microphone">&nbsp;</span>
+		</s:iterator>
+	</fieldset>
+
 	
 	<fieldset>
 	  <h1><i class="fa fa-money"></i><span data-translation="pricing">&nbsp;</span></h1>
