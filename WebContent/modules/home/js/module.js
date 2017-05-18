@@ -88,16 +88,30 @@ app.ready(function(){
 			$("div.registration").animate({opacity : 1 }, 1000);
 			$("div.registration input,div.registration select").removeAttr("disabled");
 			$("select[name='account.structure.size']").val("small").trigger("change");
+			$("html, body").animate({ scrollTop: $("div.registration").offset().top }, 500);
 		});
 		$(".module .subscribe").click(function(){
 			const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");
 			input[0].checked = !input.is(":checked") ? true : false;
 		    input.trigger("change");
-		    const parent = $(this).parent().parent().parent();
-		    if(!$("span.required",parent.next()).is(":visible"))
-		      $("html, body").animate({ scrollTop: parent.next().offset().top }, 500);	
-		    else 
-		      $("html, body").animate({ scrollTop: parent.next().next().offset().top }, 500);	
+		    if(input.is(":checked")) {
+			    const parent = $(this).parent().parent().parent();
+			    var module;
+			    if(!$("span.required",parent.next()).is(":visible")) {
+			      module = parent.next();
+			      $("html, body").animate({ scrollTop: module.offset().top }, 500);	
+			    }
+			    else {
+			      module = parent.next().next();
+			      if(module.length){
+			       $("html, body").animate({ scrollTop: module.offset().top }, 500);
+			      }else {
+			    	  const div = $("div.registration");
+			    	  $("html, body").animate({ scrollTop: div.offset().top }, 500);
+			    	  $("input:first",div).focus();
+			      }
+			    }
+		    }
 		});
 		
 		$("input[type=checkbox]").on("change",function(){
