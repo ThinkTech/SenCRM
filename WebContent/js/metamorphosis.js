@@ -218,6 +218,10 @@ page.failures = {};
 page.translate = function(url,language) {
 	page.language = localStorage.getItem("language") ? localStorage.getItem("language") : (language ? language : page.language);
 	const callback = arguments[1] instanceof Function ? arguments[1] : arguments[2];
+	if(url.indexOf("//")!=-1) {
+		if(callback) callback();
+		return;
+	}
 	app.get(url+"_"+page.language+".json",function(data){
 		localStorage.setItem("language",page.language);
 		page.bundles.push(url);
