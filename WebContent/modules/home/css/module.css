@@ -374,8 +374,8 @@ div.wizard {
 
 @media(max-width:1199px ){
 	.rslides {height:450px;padding : 20px 5px}
-	.rslides .images {width : 85%;padding-left:22%}
-	 .rslides .images img {height : 128px;width:128px}
+	.rslides .images {width : 85%;padding-left:12%}
+	 .rslides .images img {height : 128px;width:220px}
 	.button.wizard{margin-top : -200px}
 	.rslides_nav {margin-top: -230px;}
 	.rslides_nav.prev {margin-left : 115px}
