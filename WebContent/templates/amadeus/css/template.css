@@ -170,10 +170,11 @@ header {
 
 .wrap {
 	padding: 1.5em;
-    width: 31%;
+    width: 31.5%;
     margin: 1em auto;
     background : #efeeee;
     border : 1px solid;
+    padding-top: 35px;
 }
 
 footer {
