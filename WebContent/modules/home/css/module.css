@@ -29,7 +29,7 @@
 
 .rslides .images {
 	 width : 85%;
-	 padding-left:19%;
+	 padding-left:17%;
 	margin : auto;
 	margin-top : 20px;
 	height : 210px;
@@ -38,7 +38,7 @@
   display: inline-block;
   height: 200px;
   float: left;
-  width: 250px;
+  width: 280px;
   margin-right : 40px;
   border: 0;
 }
