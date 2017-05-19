@@ -361,6 +361,10 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	cursor : pointer;
 }
 
+#contact-form .info, #contact-form .voice {
+	vertical-align : top;
+}
+
 #contact-form form {
 	clear : right;
 }

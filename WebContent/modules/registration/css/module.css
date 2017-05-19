@@ -131,6 +131,7 @@
 	margin-bottom : 5px;
 	padding-top : 5px;
 	padding-bottom : 26px;
+	padding-right : 25px;
 	background : #efeeee;
 }
 
@@ -157,7 +158,7 @@
 }
 
 #form select[name="registration.provider"] {
-	width : 37.7%;
+	width : 37.8%;
 }
 
 #form input[type=checkbox],#form input[type=radio] {
@@ -313,7 +314,7 @@ transform-origin:0 0 !important;
 	.registration {width : 80%;}
 	.registration p {width : 99%}
 	.captcha {margin-left:0px}
-	#form select[name="registration.provider"] {width: 37.3%;}
+	#form select[name="registration.provider"] {width: 37.8%;}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
