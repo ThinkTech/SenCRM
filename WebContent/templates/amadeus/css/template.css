@@ -133,9 +133,9 @@ input:not([type="submit"]):focus,#form input:not([type="submit"]):focus, #form s
 
 .w3_agile_login form div {
 	background: #252424;
-    height: 43px;
+    height: 44px;
     font-size: 84%;
-    padding-top: 10px;
+    padding-top: 12px;
     width: 98.5%;
 }
 
