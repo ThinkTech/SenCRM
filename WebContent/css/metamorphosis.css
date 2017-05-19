@@ -70,7 +70,7 @@ h1 .fa {
 }
 
 h2 i.fa, a i.fa, p i.fa {
-	margin-right : 2px;
+	margin-right : 3px;
 }
 
 a {
@@ -461,7 +461,7 @@ footer p {
 
 
 label i.fa,span i.fa {
-	margin-right : 2px;
+	margin-right : 3px;
 	font-weight : normal;
     margin-top: -5px;
 }
