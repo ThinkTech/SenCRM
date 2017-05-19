@@ -349,6 +349,8 @@ page.init = function() {
 		alert(info,function(){
 			input.focus();
 		});
+	}).hover(function(event){
+		$(":after",this).attr("data-right",event.pageX-50+"px");
 	});
 	
 	page.highlight();

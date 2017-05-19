@@ -891,7 +891,7 @@ ul.tabs li h2 {
     border-radius: 5px;
     color: #fff;
     content: attr(data-info);
-    right: 18%;
+    right: 28%;
     padding: 3px 5px;
     position: absolute;
     z-index: 98;

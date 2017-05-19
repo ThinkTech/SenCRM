@@ -133,7 +133,7 @@ input:not([type="submit"]):focus,#form input:not([type="submit"]):focus, #form s
 
 .w3_agile_login form div {
 	background: #252424;
-    height: 40px;
+    height: 42px;
     font-size: 84%;
     padding-top: 10px;
     width: 98.5%;
@@ -532,6 +532,10 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	outline: none;
 	letter-spacing: 1px;
 	height : 37px;
+}
+
+.w3_agile_login .info[data-info]:hover:after{
+	right : 40%;
 }
 
 .info,.voice {
