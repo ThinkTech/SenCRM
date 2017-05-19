@@ -12,13 +12,17 @@
             <div class="resp-tabs-container hor_1">
                <div class="w3_agile_login">
                     <form action="registration/password/change" class="change-password"  method="post">
-                      <p><i class="fa fa-key"></i><span data-translation="new">&nbsp;</span></p>
+                     <div>
+                      <p class="required"><i class="fa fa-key"></i><span data-translation="new">&nbsp;</span></p>
                       <span class="info fa fa-info"  data-info="enter-new-password">&nbsp;</span>
 	   				  <span class="voice fa fa-microphone">&nbsp;</span>
-					  <input id="password" type="password" data-translation="new" name="user.password" class="password" /> 
-					  <p><i class="fa fa-key"></i><span data-translation="confirm">&nbsp;</span></p>
+	   				 </div>
+					  <input id="password" type="password" data-translation="new" name="user.password" class="password" />
+					  <div> 
+					  <p class="required"><i class="fa fa-key"></i><span data-translation="confirm">&nbsp;</span></p>
 					   <span class="info fa fa-info"  data-info="enter-confirm-password">&nbsp;</span>
 	   				  <span class="voice fa fa-microphone">&nbsp;</span>
+	   				 </div>
 					  <input id="confirm" type="password" data-translation="confirm" name="user.password"  class="password" /> 
 					  <input type="submit" value="" data-translation="change" class="agileinfo" />
 					</form>

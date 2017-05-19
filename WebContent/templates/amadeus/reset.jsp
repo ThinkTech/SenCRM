@@ -12,9 +12,11 @@
             <div class="resp-tabs-container hor_1">
                <div class="w3_agile_login">
                     <form action="registration/password/reset" class="reset-password"  method="post">
-                      <p><i class="fa fa-envelope"></i><span data-translation="email">&nbsp;</span></p>
+                    <div>
+                      <p class="required"><i class="fa fa-envelope"></i><span data-translation="email">&nbsp;</span></p>
                       <span class="info fa fa-info"  data-info="enter-email">&nbsp;</span>
 	   				  <span class="voice fa fa-microphone">&nbsp;</span>
+	   				 </div>
 					  <input id="email" type="email" data-translation="email" name="user.email"/>
 					  <input type="submit" value="" data-translation="reset" class="agileinfo" />
 					</form>  

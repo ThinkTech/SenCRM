@@ -70,7 +70,7 @@ h1 .fa {
 }
 
 h2 i.fa, a i.fa, p i.fa {
-	margin-right : 5px;
+	margin-right : 2px;
 }
 
 a {
@@ -461,15 +461,15 @@ footer p {
 
 
 label i.fa,span i.fa {
-	margin-right : 5px;
+	margin-right : 2px;
 	font-weight : normal;
     margin-top: -5px;
 }
 
-label.required:before {
+.required:before {
 	content: "*";
 	color: red;
-	margin-right : 2px;
+	margin-right : 3px;
 }
 
 #form input:not([type="submit"]),#form select {
