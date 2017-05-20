@@ -320,7 +320,7 @@ div.language {margin-right: 9px;float:right;z-index: 9999;margin-top: 65px;font-
 div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4px;}
 
 .aside {
-	position : fixed;
+	position : absolute;
 	padding : 14px;
 	padding-left : 8px;
 	text-align : center;

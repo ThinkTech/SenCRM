@@ -140,7 +140,7 @@
 </div>
 </div>
 <div class="modules">
-<div class="center">
+<div>
 <h1><i class="fa fa-puzzle-piece"></i><span data-translation="available-modules">&nbsp;</span></h1>
 <s:iterator value="moduleManager.backendModules">
 <div class="module" data-required="${mandatory}">
