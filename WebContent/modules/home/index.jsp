@@ -158,13 +158,12 @@
 </div>
 </s:iterator>
 </div>
-<div>
-<div class="browser">
-<div class="wizard">
-   <a title="Sign up" class="button signup"><i class="fa fa-user"></i><span data-translation="create-account">&nbsp;</span></a>
 </div>
+<div class="content">
+<div class="browser">
 <div>
 <div class="registration">
+<h1 class="text-center"><i class="fa fa-user"></i><span data-translation="create-account">&nbsp;</span></h1>
 <form id="form" action="registration/register" method="post"> 
    <section class="step" data-step-title="profile">
 	 <fieldset>
@@ -398,8 +397,8 @@
 </div>
 </div>
 </div>
-</div>
 <div class="users">
+<div>
    <h1><i class="fa fa-users"></i><span data-translation="users-title"></span></h1>
    <div class="testimonials">
     <div class="testimonial">
@@ -420,6 +419,7 @@
 			<a href="#"><i class="fa fa-user"></i><b><span data-translation="testimonial-3-author">&nbsp;</span><span class="voice fa fa-microphone" title="information">&nbsp;</span></b></a>
 		</div>
 	</div>
+</div>
 </div>
 </div>
 <div class="benefits">

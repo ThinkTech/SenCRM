@@ -68,28 +68,29 @@ app.ready(function(){
 		$(window).scroll(function(){
 			  var div = $(".modules");
 			  if($(this).scrollTop() >= div.offset().top-50) {
-			    $('.module').css("opacity","0.3").addClass("animated fadeIn rotateIn");
+			    $('.module').css("opacity","1").addClass("animated lightSpeedIn slideInUp");
 			    $('.module[data-required=true] span.required').addClass("animated infinite pulse");
 			  }
-			  const button = $("div.wizard .signup");
-			  if($(this).scrollTop() >= button.offset().top-300) {
+			  div = $("div.registration");
+			  if($(this).scrollTop() >= div.offset().top-300) {
 				if(!clicked) {
-					button.click();
+					$("div.registration").animate({opacity : 1 }, 1000);
+					$("div.registration input,div.registration select").removeAttr("disabled");
+					$("select[name='account.structure.size']").val("small").trigger("change");
+					$("html, body").animate({ scrollTop: $("div.registration").offset().top }, 500);
 					clicked = true;
 				}
 			  }
-			  div = $(".users");
-			  if($(this).scrollTop() >= div.offset().top-550) {
+			  div = $(".users > div");
+			  if($(this).scrollTop() >= div.offset().top-600) {
 			    div.addClass("animated zoomIn");
+			  }
+			  div = $(".benefits");
+			  if($(this).scrollTop() >= div.offset().top-500) {
+				  $(".benefits > div").addClass("animated fadeIn slideInUp");
 			  }
 		});
 		$("div.registration input,div.registration select").attr("disabled","disabled");
-		$("div.wizard .signup").one("click",function(){
-			$("div.registration").animate({opacity : 1 }, 1000);
-			$("div.registration input,div.registration select").removeAttr("disabled");
-			$("select[name='account.structure.size']").val("small").trigger("change");
-			$("html, body").animate({ scrollTop: $("div.registration").offset().top }, 500);
-		});
 		$(".module .subscribe").click(function(){
 			const input = $("input[type=checkbox][value="+$(this).attr("data-id")+"]");
 			input[0].checked = !input.is(":checked") ? true : false;

@@ -304,7 +304,7 @@ div.wizard {
 .video-container{background-color : #000;border:1px solid;position:relative;padding-bottom:56%;height:0;overflow:hidden}.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
 
 .testimonials{width:60%;margin:auto}
-.testimonial p{font-size : 100%;font-style:italic;line-height:24px;padding:30px;position:relative;overflow:hidden;}
+.testimonial p{color : #fff;font-size : 120%;font-style:italic;line-height:24px;padding:30px;position:relative;overflow:hidden;}
 .testimonial p:before, .testimonial p:after {
     content: ' " ';
     font-weight : bold;
@@ -312,7 +312,7 @@ div.wizard {
 }
 .testimonial span.voice {margin-left : 5px}
 .testimonial .sign{text-align:right;float:right;}
-.testimonial .sign a{color:#222;font-size:70%;text-decoration:none;}
+.testimonial .sign a{color:#fff;font-size:70%;text-decoration:none;}
 .testimonials .testimonial {display : none;}
 .testimonials .testimonial:first-of-type {display : block;}
 
@@ -356,6 +356,8 @@ div.wizard {
 .users {
 	padding-top : 80px;
 	padding-bottom : 160px;
+	background-image : url(../images/photo-4.jpg);
+	background-repeat : no-repeat;
 }
 
 .users h1 {
@@ -364,6 +366,7 @@ div.wizard {
 	font-weight : bold;
 	margin-left : -90px;
 	line-height : 60px;
+	color : #fff;
 }
 
 /*--------------------*/
