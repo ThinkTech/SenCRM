@@ -5,6 +5,7 @@
     <a  href="login" class="button"><i class="fa fa-key"></i><span data-translation="signIn">&nbsp;</span></a>
     <a  href="${referer}"  class="button"><i class="fa fa-arrow-left"></i><span data-translation="back">&nbsp;</span></a>
 </div>
+<div class="content">
 <div class="registration terms">
 <h1 class="text-center"><i class="fa fa-sticky-note-o"></i><span data-translation="privacy">&nbsp;</span></h1>
 <p class="bgcolor" data-translation="policy"></p>
@@ -18,4 +19,5 @@
 <p class="bgcolor" data-translation="security"></p>
 <h2 class="text-center title"><i class="fa fa-commenting"></i><span data-translation="privacy-changes-title">&nbsp;</span></h2>
 <p class="bgcolor" data-translation="privacy-changes"></p>
+</div>
 </div>

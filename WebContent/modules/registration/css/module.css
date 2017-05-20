@@ -135,6 +135,10 @@
 	background : #efeeee;
 }
 
+#form h1 {
+	color : #252424;
+}
+
 #form section  {
 	opacity : 0;
 }
@@ -245,8 +249,8 @@
 }
 
 .easyWizardSteps {list-style:none;width:auto;margin:0;padding:0;text-align:center;}
-.easyWizardSteps li {font-size:18px;display:inline-block;padding:15px;color:#7b4c4c;margin-right:0px;}
-.easyWizardSteps li.current {color:#000}
+.easyWizardSteps li {font-size:18px;display:inline-block;padding:15px;color:#ffe;margin-right:0px;}
+.easyWizardSteps li.current {color:rgb(234, 133, 17)}
 .easyWizardButtons {overflow:hidden;}
 .easyWizardButtons button, .easyWizardButtons .submit {cursor:pointer}
 .easyWizardButtons .prev {

@@ -158,7 +158,7 @@
 </div>
 </s:iterator>
 </div>
-<div class="content">
+<div>
 <div class="browser">
 <div class="wizard">
    <a title="Sign up" class="button signup"><i class="fa fa-user"></i><span data-translation="create-account">&nbsp;</span></a>
