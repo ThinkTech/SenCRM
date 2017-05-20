@@ -77,7 +77,6 @@ app.ready(function(){
 					$("div.registration").animate({opacity : 1 }, 1000);
 					$("div.registration input,div.registration select").removeAttr("disabled");
 					$("select[name='account.structure.size']").val("small").trigger("change");
-					$("html, body").animate({ scrollTop: $("div.registration").offset().top }, 500);
 					clicked = true;
 				}
 			  }
