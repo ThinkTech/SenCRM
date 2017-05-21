@@ -64,7 +64,7 @@ app.ready(function(){
 			const div = $(".modules");
 			$("html, body").animate({ scrollTop: div.offset().top }, 500);
 		});
-		var clicked = false;
+		var visible = false;
 		$(window).scroll(function(){
 			  var div = $(".modules");
 			  if($(this).scrollTop() >= div.offset().top-50) {
@@ -72,12 +72,12 @@ app.ready(function(){
 			    $('.module[data-required=true] span.required').addClass("animated infinite pulse");
 			  }
 			  div = $("div.registration");
-			  if($(this).scrollTop() >= div.offset().top-300) {
-				if(!clicked) {
+			  if($(this).scrollTop() >= div.offset().top-500) {
+				if(!visible) {
 					$("div.registration").animate({opacity : 1 }, 1000);
 					$("div.registration input,div.registration select").removeAttr("disabled");
 					$("select[name='account.structure.size']").val("small").trigger("change");
-					clicked = true;
+					visible = true;
 				}
 			  }
 			  div = $(".users > div");

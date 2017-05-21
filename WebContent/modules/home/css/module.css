@@ -104,6 +104,7 @@
 
 .slider-audio {
 	padding-left : 76.4%;
+	position: absolute;
 }
 
 .slider-audio .voice {
@@ -183,7 +184,6 @@ div.wizard {
 .modules {
 	padding: 50px;
     background:#ccc; 
-    margin-top: 90px;
     padding-left : 50px;
     padding-right : 20px;
 }
@@ -235,7 +235,7 @@ div.wizard {
 .module > div {
 	padding: 15px 15px;
     padding-bottom: 39px;
-    border : 1px solid #cc9a9a;
+    border : 1px solid #9a9191;
 }
 
 .module > div div { 
@@ -248,7 +248,7 @@ div.wizard {
     padding: 5px;
     padding-top: 8px;
     font-size: 65%;
-    border: 1px solid #cc9a9a;
+    border: 1px solid #9a9191;
     width: 65px;
     height: 34px;
     vertical-align: top;
@@ -265,7 +265,7 @@ div.wizard {
     padding: 5px;
     padding-top: 6px;
     font-size: 70%;
-    border: 1px solid #cc9a9a;
+    border: 1px solid #9a9191;
     width: 90px;
     height: 34px;
     vertical-align: top;
@@ -294,11 +294,15 @@ div.wizard {
 	opacity : 0;
 }
 
+.block-parent {
+	background : #fff;
+	height: 670px;
+	padding-top: 200px;
+}
+
 .block {
 	width: 60%;
     margin: auto;
-    margin-top: 210px;
-    height: 445px;
 }
 
 .video {vertical-align:top;width:60%;margin:auto}

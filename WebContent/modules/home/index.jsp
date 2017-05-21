@@ -132,11 +132,13 @@
 <span class="voice fa fa-microphone" title="information">&nbsp;</span>
 </div>
 <a class="button wizard"> <span data-translation="try-it">&nbsp;</span><i class="fa fa-play"></i></a>
+<div class="block-parent">
 <div class="block">
 <div class="video">
   <div class="video-container">
      <iframe id="player" src="https://www.youtube.com/embed/xn0vCV_fxNM"  frameborder="0" allowfullscreen></iframe>
   </div>
+</div>
 </div>
 </div>
 <div class="modules">
