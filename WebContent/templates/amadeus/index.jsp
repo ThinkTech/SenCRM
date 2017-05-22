@@ -21,7 +21,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 <link href="templates/amadeus/css/template.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" type="text/css" href="templates/amadeus/css/easy-responsive-tabs.css" />
 <link href="${css}/module.css" rel="stylesheet" />
  <link rel="shortcut icon" href="images/logo.png"  sizes="32x32"/>  
 </head>
@@ -126,7 +125,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	</footer>
     <script src="js/jquery-3.1.1.min.js"></script>
-   <script src="templates/amadeus/js/easyResponsiveTabs.js"></script>
    <script src="js/metamorphosis.js"></script>
    <script src="templates/amadeus/js/template.js" async defer></script>
   <script src="${js}/module.js" async defer></script>

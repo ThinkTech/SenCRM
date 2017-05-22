@@ -303,7 +303,7 @@ page.init = function() {
        return false;
 	}); 
 	$("body").append('<div id="confirm-dialog-container" style="display:none">'+
-			'<div><span data-translation="confirmation"><i class="fa fa-question-circle"></i>Confirmation</span>'+
+			'<i class="fa fa-question-circle"></i><div><span data-translation="confirmation">Confirmation</span>'+
 			'<span class="confirmation-dialog-title"></span>'+
 			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
 			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Cancel</a></div></div>');
