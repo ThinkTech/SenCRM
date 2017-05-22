@@ -62,12 +62,13 @@
     padding-right: 8px;
     line-height: 1.2em;
     padding-top: 10px;
+    color : #fff;
 }
 
 #form p span .voice {
 	position : relative;
 	margin-top : 4px;
-	margin-left : -8px;
+	margin-left : -4px;
 }
 
 #form .mailing span {
@@ -162,7 +163,7 @@
 }
 
 #form select[name="registration.provider"] {
-	width : 37.8%;
+	width : 38%;
 }
 
 #form input[type=checkbox],#form input[type=radio] {
@@ -299,7 +300,7 @@ transform-origin:0 0 !important;
 @media(max-width:1199px ){
 	.success {width : 60%;}
 	.registration {width : 55%;}
-	#form select[name="registration.provider"] {width: 37.8%;}
+	#form select[name="registration.provider"] {width: 38%;}
 }
 
 @media(max-width:1024px ){
@@ -318,7 +319,7 @@ transform-origin:0 0 !important;
 	.registration {width : 80%;}
 	.registration p {width : 99%}
 	.captcha {margin-left:0px}
-	#form select[name="registration.provider"] {width: 37.8%;}
+	#form select[name="registration.provider"] {width: 38%;}
 }
 @media(max-width:640px){
 	.success {width : 90%;}
