@@ -288,7 +288,7 @@ page.retranslate = function(language) {
 
 page.init = function() {
 	$("body").append('<div id="wait"><div id="loader"/></div>');
-	$("body").append('<div id="alert-dialog-container">'+
+	$("body").append('<div id="alert-dialog-container" style="display:none">'+
 			'<div><span data-translation="information">Information</span><span></span>'+
 			'<a tabindex="3" id="alert-dialog-ok" data-translation="ok">OK</a></div></div>');
 	$("#alert-dialog-container").on('keydown', function(event) {     
@@ -302,7 +302,7 @@ page.init = function() {
        }
        return false;
 	}); 
-	$("body").append('<div id="confirm-dialog-container">'+
+	$("body").append('<div id="confirm-dialog-container" style="display:none">'+
 			'<div><span data-translation="confirmation">Confirmation</span>'+
 			'<span class="confirmation-dialog-title"></span>'+
 			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
