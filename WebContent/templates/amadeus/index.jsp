@@ -18,8 +18,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/metamorphosis.css" rel="stylesheet" type="text/css" media="all" />
-<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 <link href="templates/amadeus/css/template.css" rel="stylesheet" type="text/css" media="all" />
 <link href="${css}/module.css" rel="stylesheet" />
  <link rel="shortcut icon" href="images/logo.png"  sizes="32x32"/>  
