@@ -601,6 +601,13 @@ input[type=submit] {
 	display: none;
 }
 
+#confirm-dialog-container i, #alert-dialog-container i {
+    position: absolute;
+    margin-left: -133px;
+    margin-top: 9px;
+    color: white; 
+}
+
 #confirm-dialog-container > div, #alert-dialog-container > div {
 	background: #fcfdff;
 	border: 1px solid #06d0d8;

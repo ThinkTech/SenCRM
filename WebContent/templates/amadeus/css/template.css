@@ -630,11 +630,6 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
     word-spacing : 2px;
 }
 
-#alert-dialog-container span:nth-child(1) {
-	background-image : url(../images/alert-24.png);
-	background-position-y : 3px;
-	padding-bottom : 10px;
-}
 
 /* //copyright */
 /* -- Responsive code -- */
