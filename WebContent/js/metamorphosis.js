@@ -157,7 +157,8 @@ page.render = function(element, data) {
 };
 
 page.wait = function() { 
-	$("#wait").show();
+	const div = $("#wait");
+	div.css("width",$(document).width()).css("height",$(document).height()).show();
 };
 
 page.release = function() { 
@@ -476,7 +477,8 @@ app.getCountries = function(lang,selected) {
 app.ready(function() {
 	page.init();
 	window.addEventListener('offline', function(){
-		$("<div id='offline'><span>You are currently offline</span></div>").appendTo($("body"));
+		const div = $("<div id='offline'><span>You are currently offline</span></div>");
+		div.css("width",$(document).width()).css("height",$(document).height()).appendTo($("body"));
 		page.wait();
 	});
 	window.addEventListener('online', function(){
