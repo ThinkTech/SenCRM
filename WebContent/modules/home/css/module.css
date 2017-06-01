@@ -395,7 +395,6 @@ div.wizard {
 	.center {width: 100%;}
 	.center p {margin-right:0}
 	.modules .center {width :100%}
-	.aside {position : absolute}
 	  .module {width: 49%; display: inline-block;background-image: none;height:285px;padding:5px 5px;margin-top:0px}
 	.module > div {padding: 10px; padding-bottom: 20px;}
 	.module {height:250px;}
@@ -431,7 +430,6 @@ div.wizard {
 	  .benefits div h2 i {margin-top : 1px;}
 	  .users h1 {font-size : 1.5em}
 	  .center p {margin-right:auto}
-	  .aside {position:initial}
 	  .module {height:300px;}
 	.module p {height:180px;}
 }

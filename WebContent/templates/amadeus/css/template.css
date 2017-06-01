@@ -206,11 +206,11 @@ header {
 
 .wrap {
 	padding: 1.5em;
-    width: 32%;
+    width: 31%;
     margin: 1em auto;
-    background : #efeeee;
-    border : 1px solid;
-    padding-top: 35px;
+    background: #efeeee;
+    border: 1px solid;
+    padding-top: 30px;
 }
 
 footer {
@@ -617,8 +617,8 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 }
 
 .login_w3ls span {
-	font-size: 1em;
-	margin-right : 10px;
+    font-size: 80%;
+    margin-right: 10px;
 }
 
 .login_w3ls a {
@@ -698,15 +698,15 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
      div.search {display : block;}
 	div.search input {width : 70%;}
 	div.search i {margin-left : 5.5%}
-	.aside {padding-left : 20px;}
 	.aside.right {padding-top:0px;margin-top:-15px}
 	.aside a {font-size : 70%;padding:12px}
-	.aside {padding-left:2px;clear:both;position : initial;width:auto}
+	.aside {margin-top: 45px;padding-left:2px;clear:none;position : initial;width:auto}
 	.aside a {display:inline-block}
 	.footer-item {width:65%}
 	.footer-item h1{padding:30px 0px;width:65%}
 	footer .socials {margin-top : 10%}
 	#contact-form {left:25%;width:450px;}
+	div.language {margin-top: 9px;}
 }
 @media screen and (max-width: 800px){
 	h1.agile_head {
@@ -721,11 +721,10 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
      width: 60%;}
      #wait {padding-top : 30%;padding-left : 43%}
      div.search {display : block;}
-	div.search input {width : 80%;}
+	div.search input {width : 70%;}
 	div.search i {margin-left : 45px}
 	#contact-form {left:25%;width:400px;}
-	h1.header {font-size : 2em}
-	div.language {position: absolute;top: -15px;right: 10px;}
+	h1.header {font-size : 2em;margin-top:30px}
 }
 @media screen and (max-width: 736px){
 	.wrap {
@@ -764,16 +763,16 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
    font-size: 1.6em;
     letter-spacing: 4px;display:none}
 	.wrap {
-	width: 85%;}
+	width: 80%;}
 	div.search i {margin-left : 30px}
 	.footer-item {width : 90%;}
 	#contact-form {left:11%;width:335px;}
 }
 @media screen and (max-width: 480px){
 	div.search {display : block;}
-	div.search input {width : 90%;}
+	div.search input {width : 60%;}
 	.wrap {
-    width: 95%;
+    width: 85%;
 	margin: 2em auto;}
 	
 	h1.agile_head {
@@ -806,14 +805,14 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
     font-size: .8em;}
 	
 	.wrap {
-    width: 95%;
-    padding: 1.5em;}
+    width: 98%;
+    padding: 1.5em;
+    padding-left: 4px;
+    padding-right: 4px;
+   }
 	#contact-form {left:1%;width:335px;}
 }	
 @media screen and (max-width: 375px){
-	.wrap {
-    width: 95%;
-    padding: 1.5em;}
     div.search i {margin-left : 20px}
 }
 @media screen and (max-width: 320px){
