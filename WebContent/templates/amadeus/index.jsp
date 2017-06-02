@@ -113,7 +113,7 @@
 	     <a><i class="fa fa-linkedin"></i></a>
    </div>
    <div class="agileits_w3layouts_copyright text-center">
-			<p>&copy; <span data-translation="designed-by">&nbsp;</span> <a href="//w3layouts.com/" target="_blank">W3layouts</a> <span data-translation="and">&nbsp;</span> <a href="https://www.thinktech.sn/" target="_blank">ThinkTech</a></p>
+			<p data-translation="designed-by"></p>
 	</div>
 	</footer>
     <script src="js/jquery-3.1.1.min.js"></script>

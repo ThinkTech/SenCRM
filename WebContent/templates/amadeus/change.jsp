@@ -6,10 +6,7 @@
 </div>
 <div class="content">
 <h1 class="header"><i class="fa fa-user"></i><span data-translation="change-password">&nbsp;</span></h1>
-   <div class="w3layouts_main wrap">
-    <!--Horizontal Tab-->
-        <div id="parentHorizontalTab_agile">
-            <div class="resp-tabs-container hor_1">
+   <div class="wrap">
                <div class="w3_agile_login">
                     <form action="registration/password/change" class="change-password"  method="post">
                      <div>
@@ -28,8 +25,5 @@
 					</form>
                 </div>
             </div>
-        </div>
-		 <!-- //Horizontal Tab -->
-    </div>
 </div>
 <link href="templates/amadeus/css/responsive.css" rel="stylesheet" type="text/css" media="all" />

@@ -33,32 +33,6 @@
 }
 
 
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/*--reset--*/
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
-/*--start editing from here--*/
-a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */
-.pos-relative{position:relative;}/* Position Relative */
-.pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
-nav.vertical ul li{	display:block;}/* vertical menu */
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-img{max-width:100%;}
-/*--end reset--*/
 body {
 	position : absolute;
 	margin:0;
@@ -494,7 +468,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 #contact-form input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 90%;
+  width: 85%;
   height: 30px;
   margin-bottom: 8px;
   border: 1px solid #ccc;
@@ -508,10 +482,11 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 
 #contact-form h1 {
 	font-size : 2em;
+	white-space : nowrap;
 }
 
 #contact-form textarea {
-  width:90%;
+  width:85%;
   height: 110px;
   max-height: 110px;
   padding: 5px;
@@ -527,7 +502,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 
 #contact-form #submit {
  padding: 0;
- width: 90%;
+ width: 85%;
   margin: -5px 0px 0px 0px;
   font-size: 0.875em;
   outline:none;
@@ -742,6 +717,9 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	
 	div.search i {margin-left : 37px}
 	#contact-form {left:25%;width:335px;}
+	#contact-form h1 {
+	font-size : 1.5em;
+}
 }
 @media screen and (max-width: 600px){
 	.wrap {
