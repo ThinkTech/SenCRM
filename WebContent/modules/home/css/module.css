@@ -386,7 +386,7 @@ div.wizard {
 	.rslides {height:450px;padding : 20px 5px}
 	.rslides .images {width : 85%;padding-left:12%}
 	 .rslides .images img {height : 128px;width:220px}
-	.button.wizard{margin-top : -200px}
+	.button.wizard{margin-top : -175px}
 	.rslides_nav {margin-top: -230px;}
 	.rslides_nav.prev {margin-left : 115px}
 	.rslides_nav.next {margin-right : 220px}
@@ -447,7 +447,7 @@ div.wizard {
 	 .modules {padding : 5px;}
 	 .modules > h1 {margin-top : 40px;}
 	 .modules .center {width : 100%}
-	 .button.wizard{margin-top : -80px}
+	 .button.wizard{margin-top : -55px}
 	 .modules h1 {margin-top: 35px;}
 }
 @media(max-width:640px){
@@ -460,7 +460,7 @@ div.wizard {
 	 .rslides .images {width : 91%;padding-left:14%}
 	 .rslides .images img {height : 128px;width:128px}
 	 .benefits div { width : 95%;margin-left : auto;margin-right : auto;height : auto }
-	 .button.wizard{margin-top : -165px}
+	 .button.wizard{margin-top : -139px}
 	 .benefits {padding-left:15%}
 	 .module {width: 95%; display: inline-block;background-image: none;height:285px;padding:5px 5px;margin-top:0px}
 	.module > div {padding: 10px; padding-bottom: 20px;}
@@ -472,7 +472,7 @@ div.wizard {
 	.center h1 {font-size : 1.5em}
 	.modules h1 {font-size : 1.5em;padding-left:0px}
 	 .rslides h1 {margin-bottom :15px}
-	 .button.wizard{margin-top : -100px}
+	 .button.wizard{margin-top : -80px}
 	.rslides {height:350px}
 	.rslides .images {display : none}
 	div.wizard {padding-bottom:20px}
@@ -483,12 +483,11 @@ div.wizard {
 }
 @media(max-width:360px ){
 	.rslides {height:390px;padding : 10px 5px}
-	.button.wizard{margin-top : -80px}
+	.button.wizard{margin-top : -55px}
 	.modules .center {width : 95%}
 	.rslides_nav {margin-top:-60px}
 	.module {height:335px;}
 	.module p {height:215px;}
 }
 @media(max-width:320px ){
-	.button.wizard{margin-top : -75px}
 }
