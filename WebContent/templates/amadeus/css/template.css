@@ -518,7 +518,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	margin-right : 3px;
 }
 
-#wait {padding-top : 17%;padding-left : 46%}
+#wait {padding-top : 17%;}
 
 .w3layouts_main h1 {
 	text-align: center;
@@ -662,14 +662,14 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 @media screen and (max-width: 1024px){
 	.wrap {
      width: 40%;}
-     #wait {padding-top : 23%;padding-left : 45%}
+     #wait {padding-top : 23%;}
       div.search {margin-left:-10px;}
 	div.search input {width : 230px;}
 }	 
 @media screen and (max-width: 991px){
 	.wrap {
      width: 45%;}
-     #wait {padding-top : 27%;padding-left : 45%}
+     #wait {padding-top : 27%;}
      div.search {display : block;}
 	div.search input {width : 70%;}
 	div.search i {margin-left : 5.5%}
@@ -687,14 +687,14 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	h1.agile_head {
     font-size: 2em;}
 	.wrap {padding: 1.5em;width: 55%;}
-	#wait {padding-top : 30%;padding-left : 45%}
+	#wait {padding-top : 30%;}
 }
 @media screen and (max-width: 768px){
 	h1.agile_head {
     font-size: 1.7em;}
 	.wrap {
      width: 60%;}
-     #wait {padding-top : 30%;padding-left : 43%}
+     #wait {padding-top : 30%;}
      div.search {display : block;}
 	div.search input {width : 70%;}
 	div.search i {margin-left : 45px}
@@ -709,7 +709,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 @media screen and (max-width: 667px){
 	.wrap {
 	width: 60%;}
-	#wait {padding-top : 40%;padding-left : 40%}
+	#wait {padding-top : 40%;}
 }
 @media screen and (max-width: 640px){
 	.wrap {
@@ -727,9 +727,6 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	
 	h1.agile_head {
     font-size: 1.6em;}
-	
-	.agile_its_registration input[type="submit"], .agile_its_registration input[type="reset"] {
-    width: 49.2%;}
 	
 	.w3_agile_login input[type="email"], .w3_agile_login input[type="password"], .agile_its_registration input[type="text"], .agile_its_registration input[type="password"], .agile_its_registration input[type="email"] {
 	}
@@ -757,7 +754,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
     font-size: 1.4em;
 	letter-spacing: 3px;}
 	
-	#wait {padding-top : 50%;padding-left : 35%}
+	#wait {padding-top : 50%;}
     div.search i {margin-left : 24px}
     .footer-item {width:100%}
 }
@@ -771,7 +768,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
     width: 95%;
     padding: 1.5em;}
     
-    #wait {padding-top : 60%;padding-left : 35%}
+    #wait {padding-top : 60%;}
 }
 @media screen and (max-width: 384px){
 	h1.agile_head {
@@ -799,19 +796,11 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
     letter-spacing: 3px;
 	padding-top: 1em;}
 	
-	.w3_agile_login p, .agile_its_registration p {
+	.w3_agile_login p {
     font-size: 0.9em;}    
-	
-	.check label {
-	margin-left: -10px;}
-	
-	.checkbox i {
-	left: 11px;
-	width: 14px;
-    height: 13px;}
-	
+    
 	#contact-form {left:1%;width:290px;}
 	
-	#wait {padding-top : 70%;padding-left : 35%}
+	#wait {padding-top : 70%;}
 }
 /* -- Responsive code -- */

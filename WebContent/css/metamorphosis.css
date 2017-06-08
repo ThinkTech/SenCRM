@@ -517,7 +517,7 @@ input[type=submit] {
 	top: 0px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	padding-left : 50%;
+	padding-left : 0px;
 	padding-top : 15%;
 }
 
@@ -527,6 +527,7 @@ input[type=submit] {
     border-radius: 50%;
     width: 90px;
     height: 90px;
+    margin : auto;
     animation: spin 1s linear infinite;
 }
 

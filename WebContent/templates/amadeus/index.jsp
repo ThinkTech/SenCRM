@@ -22,7 +22,7 @@
    <header>
    <div class="app_title"><img src="${logo}"/><a href="${baseUrl}">${app_name}</a></div>
    <div class="search">
-      <form action="public/search">
+      <form action="search">
       <i class="fa fa-search"></i>
       <input name="query" type="text" data-translation="search"/>
       </form>
@@ -74,11 +74,11 @@
    <div class="footer-item">
      <h1 data-translation="getting-started"></h1>
      <ul>
-       <li><a href="public/understanding"><span data-translation="understanding">&nbsp;</span> ${app_name}</a></li>
-       <li><a href="public/overview"><span data-translation="how_it_works">&nbsp;</span></a></li>
-       <li><a href="public/usage"><span data-translation="how_to_use_it">&nbsp;</span></a></li>
-       <li><a href="public/customers"><span data-translation="customers">&nbsp;</span></a></li>
-       <li><a href="public/partners"><span data-translation="partners">&nbsp;</span></a></li>
+       <li><a href="understanding"><span data-translation="understanding">&nbsp;</span> ${app_name}</a></li>
+       <li><a href="overview"><span data-translation="how_it_works">&nbsp;</span></a></li>
+       <li><a href="usage"><span data-translation="how_to_use_it">&nbsp;</span></a></li>
+       <li><a href="customers"><span data-translation="customers">&nbsp;</span></a></li>
+       <li><a href="partners"><span data-translation="partners">&nbsp;</span></a></li>
        <li><a href="registration/terms"><span data-translation="terms">&nbsp;</span></a></li>
        <li><a href="registration/privacy"><span data-translation="privacy">&nbsp;</span></a></li>
      </ul>
@@ -86,7 +86,7 @@
    <div class="footer-item">
      <h1 data-translation="quick-links"></h1>
      <ul>
-       <li><a href="public/pricing"><span data-translation="pricing">&nbsp;</span></a></li>
+       <li><a href="pricing"><span data-translation="pricing">&nbsp;</span></a></li>
        <li><a href="documentation"><span data-translation="documentation">&nbsp;</span></a></li>
        <li><a href="https://sencrm.wordpress.com/" target="_blank"><span data-translation="blog">&nbsp;</span></a></li>
        <li><a href="https://sencrm.mircloud.host/login" target="_blank"><span data-translation="support">&nbsp;</span></a></li>

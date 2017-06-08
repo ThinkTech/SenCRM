@@ -3,7 +3,6 @@
 	<name>Home</name>
 	<type>front-end</type>
 	<title>SenCRM</title>
-	<url>public</url>
 	<main>true</main>
 	<cached>false</cached>
 	<author>ThinkTech</author>
