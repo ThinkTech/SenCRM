@@ -12,26 +12,12 @@
 	<license>Commercial</license>
 	<version>1.0</version>
 	<actions>
-	  <action url="customers">
-	    <result>customers</result>
-	  </action>
-	  <action url="partners">
-	    <result>partners</result>
-	  </action>
-	  <action url="pricing">
-	    <result>pricing</result>
-	  </action>
-	  <action url="understanding">
-	    <result>understanding</result>
-	  </action>
-	  <action url="overview">
-	    <result>overview</result>
-	  </action>
-	  <action url="usage">
-	    <result>usage</result>
-	  </action>
-	  <action url="search">
-	    <result>search</result>
-	  </action>
+	  <action url="customers" page="customers"/>
+	  <action url="partners" page="partners"/>
+	  <action url="pricing" page="pricing"/>
+	  <action url="understanding" page="understanding"/>
+	  <action url="overview" page="overview"/>
+	  <action url="usage" page="usage"/>
+	  <action url="search" page="search"/>
 	</actions>
 </module>

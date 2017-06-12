@@ -11,32 +11,16 @@
 	<license>Commercial</license>
 	<version>1.0</version>
     <actions>
-    
 		<action url="register" method="register"/>
-	
-	    <action url="success">
-			<result>success</result>
-		</action>
-		
+	    <action url="success" page="success"/>	
 		<action url="account/confirm" method="confirm">
 			<result type="redirect">/login</result>
 		</action>	
-		
-		<action url="password/reset" method="resetPassword">
-			<result>reset</result>
-		</action>
-		
+		<action url="password/reset" method="resetPassword" page="reset"/>
 		<action url="password/change" method="changePassword">
 			<result type="redirect">/login</result>
 		</action>
-		
-		<action url="terms">
-			<result>terms</result>
-		</action>
-		
-		<action url="privacy">
-			<result>privacy</result>
-		</action>
-		
+		<action url="terms" page="terms"/>
+		<action url="privacy" page="privacy"/>
 	</actions>
 </module>
