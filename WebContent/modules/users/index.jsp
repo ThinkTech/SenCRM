@@ -17,7 +17,7 @@
 </div>
 <div class="change-password">
 <img src="${images}/security_64.png" width="64px" height="64px"/>
-<form id="form" action="${changePassword}" method="post">
+<form id="form" action="users/changePassword" method="post">
 <fieldset>
    <legend>Change your password </legend>
 	<label class="text-right">New : </label>

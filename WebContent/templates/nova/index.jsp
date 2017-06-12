@@ -33,7 +33,7 @@
 		   </div>
 		   <div class="user-actions" style="display:${security==true?'inline-block':'none'}">
 				<a  class="account-16" href="users" title="Account">Account</a>
-				<a  href="${logout}" title="Log Out" class="signout">Log Out</a>
+				<a  href="users/logout" title="Log Out" class="signout">Log Out</a>
 			</div>
 		</header>
 		   <aside>

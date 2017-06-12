@@ -19,12 +19,12 @@
 		</menu>
 	</menus>
 	<actions>
-		<action name="login"  url="login"  global="true"  method="login"/>
-		<action name="logout" url="logout" global="true"  method="logout">
+		<action  url="login"  method="login"/>
+		<action  url="logout" method="logout">
 			<result type="redirect">/</result>
 		</action>
-		<action name="selectTemplate" url="settings/templates/select"   method="selectTemplate"/>
-		<action name="changePassword" url="changePassword"   method="changePassword">
+		<action url="settings/templates/select"   method="selectTemplate"/>
+		<action url="changePassword"   method="changePassword">
 		    <result type="redirect">/users</result>
 		</action>
 		

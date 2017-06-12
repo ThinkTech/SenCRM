@@ -8,7 +8,7 @@
 <h1 class="header"><i class="fa fa-user"></i><span data-translation="identification">&nbsp;</span></h1>
    <div class="wrap">
               <div class="w3_agile_login">
-                   <form action="${login}" class="agile_form" method="post">
+                   <form action="users/login" class="agile_form" method="post">
                      <div>
                       <p class="required"><i class="fa fa-envelope"></i><span  data-translation="email">&nbsp;</span></p>
                       <span class="info fa fa-info"  data-info="enter-email">&nbsp;</span>

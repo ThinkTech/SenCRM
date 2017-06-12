@@ -16,7 +16,7 @@
 		  <div class="info">
 		  <span class="extension-name">${name}</span>
 		  <span>${author}</span>
-		  <span style="display:${template==name?'none':'inline-block'}"><a title="select" href="${selectTemplate}?id=${id}">[Select]</a></span>
+		  <span style="display:${template==name?'none':'inline-block'}"><a title="select" href="users/settings/templates/select?id=${id}">[Select]</a></span>
 		  </div>
 		  <div class="extensionDetails">
 		      	  <span>Name : ${name}</span>
