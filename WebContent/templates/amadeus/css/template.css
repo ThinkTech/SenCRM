@@ -191,11 +191,13 @@ header {
 footer {
 	width : 100%;
 	color : #fff;
-	height : 120%;
+	height : 130%;
 	text-align : center;
 	padding-left : 5%;
 	padding-right : 5%;
 	font-family : Lato;
+	background : #000;
+	font-size : 65%;
 }
 
 footer .socials {
@@ -211,6 +213,7 @@ footer h1 {
 	text-shadow : none;
 	color : #f9f4f0;
 	white-space: nowrap;
+	text-align : left;
 }
 
 .footer-item {
@@ -370,10 +373,21 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	float : right;
 	margin-right : -30px;
 	cursor : pointer;
+	text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
 }
+
+#contact-form .close:hover, #contact-form .close:focus {
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
 
 #contact-form .info, #contact-form .voice {
 	vertical-align : top;
+	margin-top : 9px;
 }
 
 #contact-form form {
@@ -652,7 +666,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
      div.search input {width : 330px;}
      div.search i {margin-left : 1.6%}
      .footer-item {width : 34%}
-     footer {height : 150%}
+     footer {height : 210%}
      #contact-form {left:25%;}
 }
 
