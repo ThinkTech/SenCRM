@@ -98,8 +98,11 @@
    <div class="footer-item">
      <h1 data-translation="subscribe-newsletter"></h1>
      <div class="newsletter">
+      <form action="subscribe">
        <input type="text" data-translation="email"/>
+       <span class="info"  data-info="enter-email">&nbsp;</span>
        <input type="submit" value="" data-translation="subscribe"/>
+       </form>
      </div>
      <h1 data-translation="tell-your-friends"></h1>
      <div class="share-this">

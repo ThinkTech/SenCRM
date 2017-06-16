@@ -101,6 +101,36 @@ $(document).ready(function() {
 		page.speak(info);
 	});
 	
+	const subscribeForm = $(".newsletter form");
+	subscribeForm.submit(function(event){
+		event.preventDefault();
+		var valid = true;
+        $('input',subscribeForm).each(function(index,element) {
+        	const val = $(element).val();
+			if(val.trim() == '') {
+				const message = $(this).next().attr("data-info");
+				alert(message,function(){
+					$(element).focus();
+				});
+			    return valid = false;
+			}
+        });
+        if(!valid) return valid;
+		$.ajax({
+			url: subscribeForm.attr('action'),
+			type : 'POST',
+			data : subscribeForm.serialize(),
+			beforeSend: function(){
+				subscribeForm.addClass("animated infinite pulse");
+			}
+		}).done(function(data){
+			subscribeForm.removeClass("animated infinite pulse").fadeOut();
+			$("input[type=email]",subscribeForm).val("");
+		}).fail(function(data){
+			subscribeForm.removeClass("animated infinite pulse");
+		});
+	});
+	
 	$(window).scroll(function(){
 		  const div = $("#contact-form");
 		  if($(this).scrollTop() > div.offset().top || div.offset().top > $(this).scrollTop()) {
