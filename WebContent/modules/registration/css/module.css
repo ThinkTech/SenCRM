@@ -160,6 +160,7 @@
 #form input:not([type="submit"]), #form select {
 	width : 60%;
 	height : 35px;
+	border: 1px solid #06d0d8;
 }
 
 #form select[name="registration.provider"] {

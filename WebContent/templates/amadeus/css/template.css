@@ -108,7 +108,7 @@ label{
 .text-right,.title {
 	background: #1f1e1e;
     color: #f9f4f0;
-    border: 1px solid;
+    border: 1px solid #06d0d8;
     font-family : Lato;
 }
 
@@ -127,7 +127,7 @@ a.title:hover {
 	color : #222;
 }
 
-input:not([type="submit"]):focus,#form input:not([type="submit"]):focus, #form select:focus,a:focus { 
+a:focus { 
 	border : 1px solid rgb(234, 133, 17);
 }
 
@@ -155,7 +155,7 @@ header {
 
 .bgcolor {
 	background-color: #efeeee;
-	border : 1px solid #222;
+	border: 1px solid #06d0d8;
 }
 
 .module div {
@@ -486,7 +486,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
   width: 85%;
   height: 30px;
   margin-bottom: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #06d0d8;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -512,6 +512,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   display : inline-block;
+  border: 1px solid #06d0d8;
 }
 
 
@@ -552,6 +553,14 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	background : transparent;
 }
 
+select {
+	border: 1px solid #06d0d8;
+}
+
+input {
+    padding-left: 5px;
+}
+
 .w3_agile_login input[type="email"],.w3_agile_login input[type="password"],.agile_its_registration input[type="text"],.agile_its_registration input[type="password"],.agile_its_registration input[type="email"]{
     padding: 0.7em 0.4em;
     margin: 0.8em 0em 0.8em 0;
@@ -561,6 +570,7 @@ div.language > select {font-size : 89%;width:80px;border-radius: 5px;padding: 4p
 	outline: none;
 	letter-spacing: 1px;
 	height : 37px;
+	border: 1px solid #06d0d8;
 }
 
 .w3_agile_login .info[data-info]:hover:after{
