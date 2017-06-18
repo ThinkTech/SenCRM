@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <id>mod_education</id>
+	<name>education</name>
+	<roles>manager</roles>
+	<author>ThinkTech</author>
+	<authorEmail>dev@thinktech.sn</authorEmail>
+	<creationDate>2016-09-01</creationDate>
+	<copyright>© 2017 ThinkTech</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<price>10</price>
+</module>

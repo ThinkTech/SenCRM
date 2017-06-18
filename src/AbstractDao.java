@@ -45,8 +45,4 @@ public abstract class AbstractDao {
 		return user;
 	}
 	
-	public String getValue(String key,String value) {
-	   return DataManager.getInstance().getValue(key,value);	
-	}
-	
 }
