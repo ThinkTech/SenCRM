@@ -237,7 +237,7 @@ div.wizard {
 .module > div {
 	padding: 15px 15px;
     padding-bottom: 39px;
-    border : 1px solid #9a9191;
+    border : 1px solid rgb(234, 133, 17);
 }
 
 .module > div div { 
