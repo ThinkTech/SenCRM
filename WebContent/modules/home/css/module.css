@@ -250,7 +250,7 @@ div.wizard {
     padding: 5px;
     padding-top: 8px;
     font-size: 65%;
-    border: 1px solid #9a9191;
+    border: 1px solid rgb(234, 133, 17);
     width: 65px;
     height: 34px;
     vertical-align: top;
@@ -267,7 +267,7 @@ div.wizard {
     padding: 5px;
     padding-top: 6px;
     font-size: 70%;
-    border: 1px solid #9a9191;
+    border: 1px solid rgb(234, 133, 17);
     width: 90px;
     height: 34px;
     vertical-align: top;
