@@ -11,7 +11,6 @@
 	<copyright>© 2017 ThinkTech</copyright>
 	<license>Commercial</license>
 	<version>1.0</version>
-	<price>0</price>
 	<menus>
 		<menu>
 			<menuItem label="Account" />
