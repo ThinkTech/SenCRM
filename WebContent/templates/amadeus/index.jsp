@@ -126,11 +126,7 @@
   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons" async defer></script>
   <script>
       app.ready(function(){
-    	  page.translate("i18n/app","${request.locale.language}");
-          page.translate("modules/${module.folder.name}/i18n/module",function(){
-        	  $("body").animate({opacity : 1},10);
-          });
-         
+          page.translate(["i18n/app","modules/${module.folder.name}/i18n/module"],"${request.locale.language}");
       });
   </script>
 </body>
