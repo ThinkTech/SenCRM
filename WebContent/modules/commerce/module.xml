@@ -3,6 +3,7 @@
     <id>mod_commerce</id>
 	<name>commerce</name>
 	<roles>manager</roles>
+	<type>back-end</type>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>
 	<creationDate>2016-09-01</creationDate>
