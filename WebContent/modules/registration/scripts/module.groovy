@@ -1,7 +1,6 @@
 import org.metamorphosis.core.ActionSupport
 import org.metamorphosis.core.Account
 import org.metamorphosis.core.User
-import org.metamorphosis.core.DatabaseInfo
 import org.metamorphosis.core.Mail
 import org.metamorphosis.core.MailConfig
 import org.metamorphosis.core.MailSender

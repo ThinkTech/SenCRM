@@ -1,5 +1,4 @@
 {
-"values":{
 	"setup":"SetUp",
 	"developers":"Developers",
 	"designers":"Designers",
@@ -13,5 +12,4 @@
 	"deleting-account":"Deleting your account",
 	"item":"item",
 	"how-to":"How to...?"
-}
 }
