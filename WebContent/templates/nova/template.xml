@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template>
     <name>nova</name>
+    <type>back-end</type>
     <selected>true</selected>
 	<author>ThinkTech</author>
 	<authorEmail>dev@thinktech.sn</authorEmail>

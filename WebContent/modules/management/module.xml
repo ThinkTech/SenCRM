@@ -4,6 +4,7 @@
 	<name>management</name>
 	<url>company</url>
 	<roles>manager</roles>
+	<type>back-end</type>
 	<main>true</main>
 	<mandatory>true</mandatory>
 	<author>ThinkTech</author>

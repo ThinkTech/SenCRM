@@ -1,5 +1,4 @@
 {
-"values":{
 	"setup":"Démarrage",
 	"developers":"Développeurs",
 	"designers":"Designers",
@@ -13,5 +12,4 @@
 	"deleting-account":"Suppression de votre compte",
 	"item":"élément",
 	"how-to":"Comment...?"
-}
 }
