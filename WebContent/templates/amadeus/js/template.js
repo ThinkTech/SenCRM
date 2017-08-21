@@ -140,5 +140,9 @@ $(document).ready(function() {
 				}
 		  }
 	});
-	
+	if('speechSynthesis' in window) {
+		speechSynthesis.getVoices();
+	}else {
+		$(".voice").hide();
+	}
 });
